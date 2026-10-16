@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="90" viewBox="0 0 740 90" role="img" aria-label="If x equals the square root of (2 plus square root 3) divided by (2 minus square root 3), determine x squared plus x minus 9.">
+<rect width="740" height="90" fill="white"/>
+<g fill="black" font-family="Georgia, 'Times New Roman', serif" font-size="24">
+<text x="8" y="52">If x =</text>
+<text x="108" y="32" font-size="21">2+√3</text>
+<text x="108" y="66" font-size="21">2−√3</text>
+<text x="183" y="52">, then determine the value of x² + x − 9?</text>
+</g>
+<g fill="none" stroke="black" stroke-width="1.5"><path d="M78 48L84 44L92 73L103 9H174"/><path d="M107 40H170"/></g>
+</svg>
