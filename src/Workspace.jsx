@@ -1,3 +1,6 @@
+import MemberChat from './MemberChat';
+import { StudyFocus, ExamAndProgress } from './DashboardSidebars';
+import SocialWall from './SocialWall';
 import { ALL_BRANCHES, DEFAULT_BRANCH, getBranchOptions, getMockBranch, matchesMockBranch } from './mockBranches.mjs';
 import MockAttemptHistory, { AttemptScorecard } from './MockAttemptHistory';
 import React, { useEffect, useRef, useState } from 'react';
@@ -12,6 +15,19 @@ const Card = ({ children, className = '' }) => <section className={`card ${class
 function AuthPanel({ user, onLogout, setPage }) {
   const [error, setError] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
+  const [publicProfile, setPublicProfile] = useState(null);
+  useEffect(() => {
+    let active = true;
+    const sync = () => {
+      if (!supabase) return;
+      supabase.rpc('social_profile', { p_id: user.id }).then(({ data, error }) => {
+        if (active && !error) setPublicProfile(data);
+      }).catch(() => {});
+    };
+    sync(); window.addEventListener('member-profile-updated', sync);
+    return () => { active = false; window.removeEventListener('member-profile-updated', sync); };
+  }, [user.id]);
+
   async function logout() {
     const { error: signOutError } = await supabase.auth.signOut();
     if (signOutError) setError(signOutError.message);
@@ -20,25 +36,20 @@ function AuthPanel({ user, onLogout, setPage }) {
       onLogout();
     }
   }
-  const displayName = user.user_metadata?.full_name || user.user_metadata?.name || user.email;
-  const initials = displayName?.split(/[\s@]/).filter(Boolean).slice(0, 2).map(part => part[0]).join('').toUpperCase() || 'U';
-  return <div className="relative flex items-center gap-3 text-xs">
+  const displayName = publicProfile?.display_name || user.user_metadata?.full_name || user.user_metadata?.name || 'Student';
+  const initials = displayName.slice(0, 1).toUpperCase();
+  return <div className="relative flex items-center gap-2 text-xs">
+    <MemberChat user={user} />
     <button
-      className="account-trigger"
+      className="account-trigger account-trigger-compact"
       type="button"
       aria-expanded={menuOpen}
       aria-haspopup="menu"
-      aria-label="Open account menu"
+      aria-label={`Open account menu for ${displayName}`} title={displayName}
       onClick={() => setMenuOpen(open => !open)}
     >
-      {user.user_metadata?.avatar_url
-        ? <img className="account-avatar" src={user.user_metadata.avatar_url} alt="" />
-        : <span className="account-avatar account-avatar-fallback">{initials}</span>}
-      <span className="hidden max-w-40 truncate text-left sm:block">
-        <span className="block font-bold text-slate-700">{displayName}</span>
-        <span className="mt-0.5 block text-[10px] text-slate-500">{user.email}</span>
-      </span>
-      <ChevronDown size={14} className={`text-slate-400 transition-transform ${menuOpen ? 'rotate-180' : ''}`} />
+      <span className="account-avatar account-avatar-fallback">{initials}</span>
+      <ChevronDown size={12} className="account-avatar-chevron" />
     </button>
     {menuOpen && <div className="account-menu" role="menu">
       <div className="account-menu-heading">
@@ -159,8 +170,6 @@ function CreateAccountScreen({ onSignIn, onGoogle, googleBusy, authError }) {
         <p className="small">{sent ? 'If registration is available for this email, you will receive a confirmation link. Follow it to finish signing up.' : 'Join JobForSure to practice mock tests and save your progress.'}</p>
       </div>
       {sent ? <div className="mt-6"><p className="profile-success" role="status">Check the inbox and spam folder for {email}.</p><button className="btn btn-primary auth-submit" onClick={onSignIn}>Back to sign in</button></div> : <>
-        <button className="auth-google" type="button" disabled={busy || googleBusy || !supabase} onClick={onGoogle}><span className="google-g" aria-hidden="true">G</span>Continue with Google</button>
-        <div className="auth-divider"><span>or create an account with email</span></div>
         <form className="auth-form" onSubmit={register}>
           <label htmlFor="signup-name">Full name</label>
           <input className="field" id="signup-name" autoComplete="name" placeholder="Your full name" value={name} onChange={e => setName(e.target.value)} maxLength={100} required disabled={busy || googleBusy} pattern=".*\S.*" />
@@ -267,11 +276,6 @@ function AuthScreen({ authError }) {
         <span className="auth-kicker">{mode === 'signin' ? 'WELCOME BACK' : 'GET STARTED'}</span>
         <h2 id="auth-heading" tabIndex={-1}>{mode === 'signin' ? 'Sign in to your account' : 'Create your student account'}</h2>
         <p className="small">{mode === 'signin' ? 'Pick up where your preparation left off.' : 'Create an account to start your exam preparation.'}</p>
-        <button className="auth-google" type="button" disabled={busy || !supabase} onClick={signInWithGoogle}>
-          <span className="google-g" aria-hidden="true">G</span>
-          Continue with Google
-        </button>
-        <div className="auth-divider"><span>or continue with email</span></div>
         <form className="auth-form" onSubmit={submit}>
           <label htmlFor="auth-email">Email address</label>
           <input id="auth-email" className="field" type="email" autoComplete="email" placeholder="you@example.com" value={email} onChange={event => setEmail(event.target.value)} required />
@@ -442,7 +446,7 @@ function ProfilePage({ user, setUser }) {
   return <div className="mx-auto max-w-3xl space-y-4">
     <Card className="p-5 sm:p-7">
       <div className="eyebrow">YOUR STUDENT PROFILE</div>
-      <h2 className="mt-2 text-xl font-extrabold">Preparation preferences</h2><p className="small mt-2">Choose a field of study to use it across your study sections. Leave it blank or select Others to browse all branches.</p>{!editing && <button className="btn mt-3" onClick={() => { setEditing(true); setSaved(false); }}>Edit profile</button>}
+      <h2 className="mt-2 text-xl font-extrabold">Preparation preferences</h2><p className="small mt-2">Choose a field of study as your default. You can always browse other branches in each section. Leave it blank or select Others for no preference.</p>{!editing && <button className="btn mt-3" onClick={() => { setEditing(true); setSaved(false); }}>Edit profile</button>}
       <p className="small mt-2">Update your exam goals and focus subject to personalize your dashboard and practice suggestions.</p>
       <div className="mt-5 rounded-lg bg-slate-50 p-3">
         <span className="eyebrow">ACCOUNT EMAIL</span>
@@ -475,12 +479,6 @@ function ProfilePage({ user, setUser }) {
     </Card>
   </div>;
 }
-
-const demoDiscussionPosts = [
-  { id: 'demo-kvl', author: 'Rahul K.', initials: 'RK', label: 'Electrical Engineering · 18 min ago', title: 'Why does KVL fail when a time-varying magnetic field is present?', body: 'Faraday’s law suggests a non-zero closed-loop integral of the electric field. How should we handle this in a GATE circuit problem?', likes: 42, comments: [{ author: 'Dr. Sneha Patel · Mentor', body: 'KVL assumes a conservative electric field. With changing magnetic flux, use Faraday’s law: the induced electric field is non-conservative.' }, { author: 'Meera S.', body: 'So for the usual lumped-circuit questions, we can use KVL unless changing flux is specified?' }] },
-  { id: 'demo-study-plan', author: 'Aarav M.', initials: 'AM', label: 'Computer Science · 1 hr ago', title: 'How are you balancing revision with full-length mocks?', body: 'I have 10 weeks left and keep losing time reviewing every question. What review routine is working for you?', likes: 28, comments: [{ author: 'Nisha R.', body: 'I tag misses by topic and review only the two weakest areas the next morning.' }] },
-  { id: 'demo-resource', author: 'Ishita P.', initials: 'IP', label: 'Mechanical Engineering · 3 hrs ago', title: 'Thermodynamics: quick revision checklist', body: 'Shared a short checklist for cycles, property relations, and common sign-convention mistakes. What would you add before a mock?', likes: 16, comments: [] },
-];
 
 const mechanicalSubjects = [
   { name: 'Engineering Mechanics', question: 'A 100 N force acts at 30° above the horizontal. What is its horizontal component?', options: ['50 N', '86.6 N', '100 N', '115.5 N'], answer: 1, explanation: 'The horizontal component is F cos(30°) = 100 × 0.866 = 86.6 N.' },
@@ -686,63 +684,8 @@ function PracticeSubjectBrowser({
   </div>;
 }
 
-function Dashboard({ setPage, onPracticePreferred, preferences }) {
-  const [posts, setPosts] = useState(() => demoDiscussionPosts.map(post => ({ ...post, comments: [...post.comments], liked: false })));
-  const [draft, setDraft] = useState('');
-  const [commentDrafts, setCommentDrafts] = useState({});
-  const [openComments, setOpenComments] = useState({ 'demo-kvl': true });
-  function publishPost(event) {
-    event.preventDefault();
-    const body = draft.trim();
-    if (!body) return;
-    setPosts(previous => [{ id: `local-${Date.now()}`, author: 'You', initials: 'YO', label: 'Just now · Demo post', title: body.split('\n')[0].slice(0, 120), body, likes: 0, comments: [], liked: false }, ...previous]);
-    setDraft('');
-  }
-
-  function toggleLike(postId) {
-    setPosts(previous => previous.map(post => post.id === postId ? { ...post, liked: !post.liked, likes: post.likes + (post.liked ? -1 : 1) } : post));
-  }
-
-  function addComment(event, postId) {
-    event.preventDefault();
-    const body = commentDrafts[postId]?.trim();
-    if (!body) return;
-    setPosts(previous => previous.map(post => post.id === postId ? { ...post, comments: [...post.comments, { author: 'You', body }] } : post));
-    setCommentDrafts(previous => ({ ...previous, [postId]: '' }));
-    setOpenComments(previous => ({ ...previous, [postId]: true }));
-  }
-
-  return <><div className="mb-4 flex justify-end"><DashboardProgress /></div>
-    <div className="grid items-start gap-4 lg:grid-cols-[minmax(190px,0.72fr)_minmax(0,1.8fr)_minmax(230px,0.9fr)]">
-    <aside className="space-y-4">
-      <Card className="p-4"><div className="eyebrow">YOUR WEEK</div><div className="mt-3 flex items-center justify-between"><span className="text-xs text-slate-600">Study streak</span><span className="inline-flex items-center gap-1 text-xs font-bold"><Flame size={14} className="text-orange-500" /> 6 days</span></div><div className="mt-4 flex items-center justify-between"><span className="text-xs text-slate-600">Learning time</span><b className="text-xs">8h 40m</b></div><div className="mt-3 h-1.5 rounded bg-slate-100"><div className="h-full w-[72%] rounded bg-emerald-500" /></div><p className="small mt-2">72% of your weekly goal</p></Card>
-      <Card><div className="card-head"><b>Your focus</b><Target size={16} className="text-indigo-600" /></div><div className="p-4"><span className="eyebrow">{preferences.preferredBranch || 'All branches'}</span><b className="mt-2 block text-sm">{preferences.preferredSubject || 'Explore subjects at your own pace'}</b><div className="mt-3 flex flex-wrap gap-1.5">{preferences.exams.map(exam => <span className="pill" key={exam}>{exam}</span>)}</div><button className="btn btn-primary mt-4 w-full justify-center" onClick={onPracticePreferred}>{preferences.preferredSubject ? 'Practice this subject' : 'Browse subjects'} <ArrowRight size={13} /></button></div><button className="w-full border-t border-slate-100 p-3 text-xs font-bold text-indigo-700 hover:bg-slate-50" onClick={() => setPage('Profile')}>Edit preparation profile</button></Card>
-      <Card><div className="card-head"><b>Continue learning</b><BookOpen size={16} className="text-indigo-600" /></div><button className="w-full p-4 text-left" onClick={onPracticePreferred}><span className="eyebrow">{preferences.preferredBranch || 'All branches'}</span><b className="mt-2 block text-xs">{preferences.preferredSubject || 'Explore subjects at your own pace'}</b><span className="small mt-2 block">{preferences.preferredSubject ? 'Continue with your preferred subject' : 'Choose a branch and subject to begin'}</span></button></Card>
-    </aside>
-
-    <section className="min-w-0 space-y-4" aria-label="Engineering community feed">
-      <Card><form className="p-4" onSubmit={publishPost}><label className="mb-2 block text-xs font-bold" htmlFor="dashboard-post">Start a discussion</label><textarea id="dashboard-post" className="field min-h-20 resize-y" placeholder="Ask a question, share a study tip, or start a topic..." value={draft} onChange={event => setDraft(event.target.value)} /><div className="mt-3 flex flex-wrap items-center justify-between gap-2"><span className="small">Posting to the student community</span><button className="btn btn-primary" disabled={!draft.trim()}><Send size={14} /> Share post</button></div></form></Card>
-      {posts.map(post => <Card key={post.id}>
-        <article className="p-4 sm:p-5"><div className="flex items-start gap-3"><div className="avatar bg-indigo-50 text-indigo-700">{post.initials}</div><div className="min-w-0 flex-1"><div className="flex flex-wrap items-center gap-x-2 gap-y-1"><b className="text-xs">{post.author}</b><span className="small">{post.label}</span></div><h2 className="mt-3 text-sm font-bold leading-5">{post.title}</h2><p className="mt-2 whitespace-pre-wrap text-sm leading-6 text-slate-700">{post.body}</p><div className="mt-4 flex items-center justify-between border-b border-slate-100 pb-3 text-xs text-slate-500"><span>{post.likes} reactions</span><span>{post.comments.length} comments</span></div><div className="flex gap-2 border-b border-slate-100 py-2"><button className={`btn border-0 px-2 ${post.liked ? 'text-indigo-700' : ''}`} onClick={() => toggleLike(post.id)}><ThumbsUp size={14} /> Like</button><button className="btn border-0 px-2" onClick={() => setOpenComments(previous => ({ ...previous, [post.id]: !previous[post.id] }))}><MessageCircle size={14} /> Comment</button></div>
-          {openComments[post.id] && <div className="space-y-3 pt-3">{post.comments.map((comment, index) => <div key={`${post.id}-${index}`} className="flex gap-2"><div className="avatar h-7 w-7 bg-slate-100 text-slate-600">{comment.author.split(' ').slice(0, 2).map(part => part[0]).join('').replace('.', '')}</div><div className="min-w-0 flex-1 rounded-lg bg-slate-50 px-3 py-2"><b className="text-[11px]">{comment.author}</b><p className="mt-1 text-xs leading-5 text-slate-600">{comment.body}</p></div></div>)}<form className="flex gap-2" onSubmit={event => addComment(event, post.id)}><input className="field" aria-label={`Comment on ${post.title}`} placeholder="Write a comment..." value={commentDrafts[post.id] || ''} onChange={event => setCommentDrafts(previous => ({ ...previous, [post.id]: event.target.value }))} /><button className="btn" disabled={!commentDrafts[post.id]?.trim()} aria-label="Submit comment"><Send size={14} /></button></form></div>}
-        </div></div></article>
-      </Card>)}
-      <p className="small text-center">Dashboard discussions are sample content for preview. Community page posts use Supabase.</p>
-    </section>
-
-    <aside className="space-y-4">
-      <Card><div className="card-head"><div><b>Important updates</b><p className="small mt-1">For your preparation</p></div><Bell size={16} className="text-indigo-600" /></div><div className="divide-y divide-slate-100">
-        <button className="block w-full p-4 text-left hover:bg-slate-50" onClick={() => setPage('Notifications')}><span className="pill">EXAM ALERT</span><b className="mt-2 block text-xs">{preferences.exams[0]} exam updates</b><span className="small mt-1 block">Review dates and set a reminder</span><span className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold text-indigo-700">View notifications <ArrowRight size={12} /></span></button>
-        <button className="block w-full p-4 text-left hover:bg-slate-50" onClick={() => setPage('Tutorials')}><span className="pill pill-green">NEW LESSON</span><b className="mt-2 block text-xs">Control Systems: Root Locus</b><span className="small mt-1 block">A new tutorial is ready to explore</span></button>
-        <div className="p-4"><span className="pill">LIVE DISCUSSION</span><b className="mt-2 block text-xs">Power systems Q&amp;A</b><span className="small mt-1 block">Today · 6:30 PM</span></div>
-      </div></Card>
-      <Card className="p-4"><div className="flex items-center gap-2"><TrendingUp size={16} className="text-emerald-600" /><b className="text-xs">Recent progress</b></div><div className="mt-4 space-y-3"><div className="flex justify-between text-xs"><span className="text-slate-600">Tutorials completed</span><b>12 / 16</b></div><div className="flex justify-between text-xs"><span className="text-slate-600">Mock accuracy</span><b>78%</b></div><div className="flex items-center gap-2 text-xs text-emerald-700"><CheckCircle2 size={14} /> Up 6% this month</div></div><button className="btn mt-4 w-full justify-center" onClick={() => setPage('Mock Tests')}>View mock tests <ArrowRight size={13} /></button></Card>
-    </aside>
-  </div></>;
-}
-
-function DashboardProgress() {
-  return <div className="min-w-[190px] rounded-lg border border-slate-200 bg-white px-4 py-3"><div className="flex items-baseline justify-between gap-4"><span className="text-xs font-semibold text-slate-500">Overall progress</span><b className="text-2xl font-extrabold text-indigo-700">78%</b></div><div className="mt-2 h-1.5 rounded bg-slate-100"><div className="h-full w-[78%] rounded bg-indigo-600" /></div><p className="small mt-2">On track this week</p></div>;
+function Dashboard({ user, setPage, onPracticePreferred, preferences }) {
+  return <SocialWall user={user} onPreferences={() => setPage('Study Preferences')} leftSidebar={<StudyFocus user={user} preferences={preferences} onPractice={onPracticePreferred} setPage={setPage} />} rightSidebar={<ExamAndProgress user={user} setPage={setPage} />} />;
 }
 
 function PracticePage({ user, setPage, setPracticeFilters, focusPreferredSubject }) {
@@ -926,17 +869,13 @@ function PracticePage({ user, setPage, setPracticeFilters, focusPreferredSubject
   }, [focusPreferredSubject, loading, preferences.preferredBranch, preferences.preferredSubject, databaseBranches]);
 
   async function chooseBranch(branch) {
-    if (user.user_metadata?.jobforsure_preferences?.preferredBranch && branch.name !== user.user_metadata.jobforsure_preferences.preferredBranch) return;
     setSelectedBranchName(branch.name);
     setActiveSubject(null);
     setActiveTopicId('');
     setQuestionPage(1);
     setChosenAnswer(null);
     localStorage.setItem('jobforsure.practice.branch', branch.name);
-    if (user && supabase && !String(branch.id).startsWith('fallback:')) {
-      const { error: saveError } = await supabase.from('profiles').update({ branch_id: branch.id }).eq('id', user.id);
-      if (saveError) setError(saveError.message);
-    }
+
   }
 
   function chooseExamGoal(value) {
@@ -998,7 +937,7 @@ function PracticePage({ user, setPage, setPracticeFilters, focusPreferredSubject
     {supabase && !questionError && questionTotal > 0 && <div className="flex items-center justify-between gap-3"><button className="btn" disabled={questionPage <= 1 || questionLoading} onClick={() => setQuestionPage(page => page - 1)}>Previous</button><span className="small">Page {questionPage} of {Math.ceil(questionTotal / 15)}</span><button className="btn" disabled={questionPage >= Math.ceil(questionTotal / 15) || questionLoading} onClick={() => setQuestionPage(page => page + 1)}>Next</button></div>}
     {error && <p className="text-xs text-rose-700" role="alert">{error}</p>}
   </div> : <PracticeSubjectBrowser
-    branches={preferences.preferredBranch ? branches.filter(branch => branch.name === preferences.preferredBranch) : branches}
+    branches={branches}
     selectedBranch={selectedBranch}
     examGoal={examGoal}
     onExamChange={chooseExamGoal}
@@ -1153,6 +1092,7 @@ function NotificationsPage({ user, setPage }) {
 }
 
 function TutorialsPage({ user }) {
+  const [tutorialBranch, setTutorialBranch] = useState(user?.user_metadata?.jobforsure_preferences?.preferredBranch || 'All branches');
   const [tutorials, setTutorials] = useState([]);
   const [progress, setProgress] = useState({});
   const [selectedId, setSelectedId] = useState('');
@@ -1164,7 +1104,7 @@ function TutorialsPage({ user }) {
       if (!supabase) { setLoading(false); return; }
       const { data, error: queryError } = await supabase.from('tutorials').select('id,title,content,code_example,equation_latex,video_url,difficulty,estimated_minutes,topic_id,topics(title,subjects(name,engineering_branches(name)))').eq('is_published', true).order('created_at', { ascending: false });
       if (!active) return;
-      if (queryError) setError(queryError.message); else { const relevant = (data || []).filter(item => !user?.user_metadata?.jobforsure_preferences?.preferredBranch || item.topics?.subjects?.engineering_branches?.name === user.user_metadata.jobforsure_preferences.preferredBranch); setTutorials(relevant); setSelectedId(current => relevant.some(item => item.id === current) ? current : relevant[0]?.id || ''); }
+      if (queryError) setError(queryError.message); else { const relevant = data || []; setTutorials(relevant); setSelectedId(current => relevant.some(item => item.id === current) ? current : relevant[0]?.id || ''); }
       if (user) {
         const { data: rows, error: progressError } = await supabase.from('student_progress').select('tutorial_id,status,progress_percent').eq('student_id', user.id);
         if (!active) return;
@@ -1174,7 +1114,8 @@ function TutorialsPage({ user }) {
     }
     load(); return () => { active = false; };
   }, [user]);
-  const selected = tutorials.find(item => item.id === selectedId);
+  const visibleTutorials = tutorials.filter(item => tutorialBranch === 'All branches' || item.topics?.subjects?.engineering_branches?.name === tutorialBranch);
+  const selected = visibleTutorials.find(item => item.id === selectedId) || visibleTutorials[0];
   async function updateProgress(status, percent) {
     if (!user || !selected) { setError('Sign in to save tutorial progress.'); return; }
     const row = { student_id: user.id, tutorial_id: selected.id, status, progress_percent: percent, last_accessed_at: new Date().toISOString() };
@@ -1182,9 +1123,9 @@ function TutorialsPage({ user }) {
     if (saveError) setError(saveError.message); else setProgress(previous => ({ ...previous, [selected.id]: row }));
   }
   return <div className="grid items-start gap-4 lg:grid-cols-[minmax(220px,0.8fr)_minmax(0,2fr)]"><Card>
-    <div className="card-head"><div><b>Published tutorials</b><p className="small mt-1">Browse by topic</p></div><BookOpen size={17} className="text-indigo-600" /></div>
-    {loading && <p className="p-4 small">Loading tutorials...</p>}{!loading && !tutorials.length && <p className="p-4 small">No published tutorials yet.</p>}
-    <div className="divide-y divide-slate-100">{tutorials.map(item => <button key={item.id} className={`block w-full p-4 text-left hover:bg-slate-50 ${item.id === selectedId ? 'bg-indigo-50/70' : ''}`} onClick={() => setSelectedId(item.id)}><span className="block text-xs font-bold">{item.title}</span><span className="small mt-1 block">{item.topics?.subjects?.name || 'Engineering'} · {item.topics?.title || 'Topic'}</span>{progress[item.id] && <span className="mt-2 block text-[10px] font-bold text-emerald-700">{progress[item.id].progress_percent}% complete</span>}</button>)}</div>
+    <div className="card-head"><div><b>Published tutorials</b><p className="small mt-1">Browse by topic</p><label className="sr-only" htmlFor="tutorial-branch">Tutorial branch</label><select id="tutorial-branch" className="field mt-2" value={tutorialBranch} onChange={event => { setTutorialBranch(event.target.value); setSelectedId(''); }}>{[...new Set(['All branches', ...practiceBranches.map(item => item.name), ...tutorials.map(item => item.topics?.subjects?.engineering_branches?.name).filter(Boolean)])].map(branch => <option key={branch}>{branch}</option>)}</select></div><BookOpen size={17} className="text-indigo-600" /></div>
+    {loading && <p className="p-4 small">Loading tutorials...</p>}{!loading && !visibleTutorials.length && <p className="p-4 small">No published tutorials yet.</p>}
+    <div className="divide-y divide-slate-100">{visibleTutorials.map(item => <button key={item.id} className={`block w-full p-4 text-left hover:bg-slate-50 ${item.id === selectedId ? 'bg-indigo-50/70' : ''}`} onClick={() => setSelectedId(item.id)}><span className="block text-xs font-bold">{item.title}</span><span className="small mt-1 block">{item.topics?.subjects?.name || 'Engineering'} · {item.topics?.title || 'Topic'}</span>{progress[item.id] && <span className="mt-2 block text-[10px] font-bold text-emerald-700">{progress[item.id].progress_percent}% complete</span>}</button>)}</div>
   </Card><Card>{!selected ? <div className="p-6"><h2 className="text-sm font-bold">Tutorial reader</h2><p className="small mt-2">{supabase ? 'Choose a published tutorial to begin.' : 'Connect Supabase to load published tutorials.'}</p></div> : <article className="p-5 sm:p-7"><div className="eyebrow">{selected.topics?.subjects?.name || 'ENGINEERING'} · {selected.topics?.title || 'TUTORIAL'}</div><h2 className="mt-2 text-xl font-extrabold">{selected.title}</h2><div className="mt-3 flex gap-2"><span className="pill">{selected.difficulty}</span>{selected.estimated_minutes && <span className="pill">{selected.estimated_minutes} min</span>}</div><div className="mt-6 whitespace-pre-wrap text-sm leading-7 text-slate-700">{selected.content}</div>{selected.equation_latex && <pre className="terminal mt-5">{selected.equation_latex}</pre>}{selected.code_example && <pre className="terminal mt-4">{selected.code_example}</pre>}{selected.video_url && <a className="mt-4 inline-block text-xs font-bold text-indigo-700" href={selected.video_url} target="_blank" rel="noreferrer">Open video lesson</a>}<div className="mt-7 flex flex-wrap gap-2 border-t border-slate-100 pt-4"><button className="btn" onClick={() => updateProgress('in_progress', Math.max(progress[selected.id]?.progress_percent || 0, 50))}>Mark in progress</button><button className="btn btn-primary" onClick={() => updateProgress('completed', 100)}><Check size={14} /> Mark complete</button></div></article>}{error && <p className="px-5 pb-4 text-xs text-rose-700" role="alert">{error}</p>}</Card></div>;
 }
 
@@ -1210,6 +1151,7 @@ function SimulationsPage({ user, filters }) {
   const [result, setResult] = useState(null);
   const [historyRefresh, setHistoryRefresh] = useState(0);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const closeAttemptHistory = React.useCallback(() => setHistoryOpen(false), []);
   const [remaining, setRemaining] = useState(0);
   const [loading, setLoading] = useState(true);
   const [busy, setBusy] = useState(false);
@@ -1332,7 +1274,7 @@ function SimulationsPage({ user, filters }) {
   const clock = `${String(Math.floor(remaining / 60)).padStart(2, '0')}:${String(remaining % 60).padStart(2, '0')}`;
   const getCategory = test => /^GATE/i.test(test.title) ? 'GATE' : /ssc\s*cgl/i.test(test.title) ? 'SSC CGL' : /tgpsc|tspsc/i.test(test.title) ? 'TGPSC AEE' : test.title.toLowerCase().includes('junior engineer') ? 'SSC JE' : String(test.exam_type || 'Other');
   const branchOptions = getBranchOptions(tests, mockSubjects, mockBranches);
-  const activeBranch = user?.user_metadata?.jobforsure_preferences?.preferredBranch || selectedBranch;
+  const activeBranch = selectedBranch;
   const branchTests = tests.filter(test => matchesMockBranch(test, activeBranch, mockSubjects, mockBranches));
   const categories = ['All tests', ...new Set(branchTests.map(getCategory))];
   const activeCategory = categories.includes(selectedCategory) ? selectedCategory : 'All tests';
@@ -1353,21 +1295,21 @@ function SimulationsPage({ user, filters }) {
     <section className="overflow-hidden rounded-2xl border border-indigo-100 bg-white shadow-sm">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 px-5 py-4">
         <div className="flex items-center gap-3"><div className="rounded-xl bg-indigo-50 p-2.5 text-indigo-600"><GraduationCap size={22} /></div><div><h2 className="text-base font-extrabold text-slate-900">Find your next mock test</h2><p className="mt-0.5 text-xs text-slate-500">Timed practice with instant scores and section insights.</p></div></div>
-        <div className="flex items-center gap-2"><span className="rounded-full bg-indigo-50 px-3 py-1.5 text-xs font-bold text-indigo-700">{branchTests.length} available {branchTests.length === 1 ? 'test' : 'tests'}</span><button className="btn" aria-expanded={historyOpen} aria-controls="mock-attempt-history" onClick={() => setHistoryOpen(value => !value)}>{historyOpen ? 'Hide attempts' : 'View attempts'}</button></div>
+        <div className="flex items-center gap-2"><span className="rounded-full bg-indigo-50 px-3 py-1.5 text-xs font-bold text-indigo-700">{branchTests.length} available {branchTests.length === 1 ? 'test' : 'tests'}</span><button className="btn" aria-expanded={historyOpen} aria-controls="mock-attempt-history" onClick={() => setHistoryOpen(value => !value)}>View attempts</button></div>
       </div>
 
-      <MockAttemptHistory open={historyOpen} supabase={supabase} user={user} refresh={historyRefresh} onSelect={row => { setResult(row); window.scrollTo({ top: 0, behavior: 'smooth' }); }} />
+      <MockAttemptHistory open={historyOpen} supabase={supabase} user={user} refresh={historyRefresh} onClose={closeAttemptHistory} />
 
       <div className="mock-branch-layout">
         <aside className="mock-branch-sidebar" aria-label="Mock test branches">
-          <h3>{user?.user_metadata?.jobforsure_preferences?.preferredBranch ? 'Your profile branch' : 'Choose your branch'}</h3>
+          <h3>Choose your branch</h3>
           <p>Find exams in your domain.</p>
           <nav aria-label="Filter mock tests by branch">
-            {branchOptions.filter(branch => !user?.user_metadata?.jobforsure_preferences?.preferredBranch || branch === activeBranch).map(branch => <button key={branch} type="button" aria-pressed={activeBranch === branch} onClick={() => chooseBranch(branch)} className={`mock-branch-button ${activeBranch === branch ? 'mock-branch-button-active' : ''}`}>
+            {branchOptions.map(branch => <button key={branch} type="button" aria-pressed={activeBranch === branch} onClick={() => chooseBranch(branch)} className={`mock-branch-button ${activeBranch === branch ? 'mock-branch-button-active' : ''}`}>
               <span>{branch}</span><span className="mock-branch-count">{tests.filter(test => matchesMockBranch(test, branch, mockSubjects, mockBranches)).length}</span>
             </button>)}
           </nav>
-          <p className="mock-branch-hint">Change your branch in Profile. Common general studies and aptitude exams are also included.</p>
+          <p className="mock-branch-hint">Browse any branch here. Your profile branch remains your default. Common general studies and aptitude exams are also included.</p>
         </aside>
         <div className="mock-branch-content">
       <div className="border-b border-slate-100 p-4 sm:p-6">
@@ -1391,7 +1333,7 @@ function SimulationsPage({ user, filters }) {
         </div>
         {loading && <div className="rounded-xl border border-slate-200 bg-white p-6 text-sm text-slate-500">Loading available tests...</div>}
         {!loading && !tests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-12 text-center"><GraduationCap size={26} className="mx-auto text-indigo-400" /><h4 className="mt-3 text-sm font-bold text-slate-800">No mock tests available yet</h4><p className="mt-1 text-xs text-slate-500">Published tests will appear here when they are ready.</p></div>}
-        {!loading && tests.length > 0 && !visibleTests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-10 text-center"><p className="text-sm font-bold text-slate-800">No matching tests</p><p className="mt-1 text-xs text-slate-500">Try another exam category or search term, or update your branch in Profile.</p></div>}
+        {!loading && tests.length > 0 && !visibleTests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-10 text-center"><p className="text-sm font-bold text-slate-800">No matching tests</p><p className="mt-1 text-xs text-slate-500">Try another exam category or search term, or choose a different branch.</p></div>}
         <div className="mock-catalog-grid">
           {visibleTests.map(test => <article key={test.id} className="mock-catalog-card">
             <div className="mock-catalog-top">
@@ -1422,26 +1364,7 @@ function SimulationsPage({ user, filters }) {
 }
 
 function CommunityPage({ user }) {
-  const [posts, setPosts] = useState([]);
-  const [draft, setDraft] = useState('');
-  const [error, setError] = useState('');
-  const [busy, setBusy] = useState(false);
-  useEffect(() => {
-    let active = true;
-    if (!supabase) return undefined;
-    supabase.from('community_posts').select('id,title,content,post_type,created_at').order('created_at', { ascending: false }).limit(30).then(({ data, error: queryError }) => { if (!active) return; if (queryError) setError(queryError.message); else setPosts(data || []); });
-    return () => { active = false; };
-  }, []);
-  async function publish(event) {
-    event.preventDefault();
-    if (!user) { setError('Sign in to post to the community.'); return; }
-    const content = draft.trim(); if (!content) return;
-    setBusy(true); setError('');
-    const { data, error: insertError } = await supabase.from('community_posts').insert({ student_id: user.id, title: content.split('\n')[0].slice(0, 250), content }).select('id,title,content,post_type,created_at').single();
-    if (insertError) setError(insertError.message); else { setPosts(previous => [data, ...previous]); setDraft(''); }
-    setBusy(false);
-  }
-  return <div className="space-y-4"><Card><div className="card-head"><b>Community discussions</b><MessageCircle size={17} className="text-indigo-600" /></div><form className="p-4" onSubmit={publish}><textarea className="field min-h-24" placeholder="Share a question or discussion" value={draft} onChange={event => setDraft(event.target.value)} /><button className="btn btn-primary mt-3" disabled={busy}><Send size={14} /> Post</button></form></Card>{posts.map(post => <Card key={post.id} className="p-4"><div className="flex items-center gap-2"><span className="pill">{post.post_type}</span><time className="small">{new Date(post.created_at).toLocaleDateString()}</time></div><h2 className="mt-3 text-sm font-bold">{post.title}</h2><p className="mt-2 whitespace-pre-wrap text-sm leading-6 text-slate-700">{post.content}</p></Card>)}{!supabase && <p className="small">Connect Supabase to load and publish discussions.</p>}{error && <p className="text-xs text-rose-700" role="alert">{error}</p>}</div>;
+  return <SocialWall user={user} />;
 }
 
 export default function App() {
@@ -1506,7 +1429,8 @@ export default function App() {
       : page === 'Mock Tests' ? <SimulationsPage user={user} filters={practiceFilters} />
         : page === 'Previous Papers' ? <PreviousYearPapers key={preferences.preferredBranch} preferredBranch={preferences.preferredBranch} />
         : page === 'Community' ? <CommunityPage user={user} />
-          : page === 'Profile' ? <ProfilePage user={user} setUser={setUser} />
-            : <Dashboard setPage={setPage} onPracticePreferred={openPreferredPractice} preferences={preferences} />;
-  return <div className="min-h-screen bg-[#F8FAFC] text-slate-900"><header className="sticky top-0 z-20 border-b border-slate-200 bg-white"><div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3"><button className="flex items-center gap-2 text-left" onClick={() => setPage('Dashboard')}><span className="grid h-9 w-9 place-items-center rounded-lg bg-indigo-600 font-black text-white">J.</span><span className="text-lg font-extrabold">JobFor<span className="text-indigo-600">Sure</span></span></button><AuthPanel user={user} onLogout={() => setUser(null)} setPage={setPage} /></div><nav className="mx-auto flex max-w-7xl gap-1 overflow-x-auto px-3 pb-2">{pages.map(([name, Icon]) => <button key={name} onClick={() => setPage(name)} className={`nav-item ${page === name ? 'nav-active' : ''}`}><Icon size={15} />{name}</button>)}</nav></header><main className="mx-auto max-w-7xl px-4 py-6 sm:px-5">{page !== 'Mock Tests' && <div className="mb-5"><div className="eyebrow">STUDENT LEARNING WORKSPACE</div><h1 className="mt-1 text-2xl font-extrabold">{page === 'Dashboard' ? 'Your learning hub' : page}</h1><p className="small mt-1">Learn consistently. Prepare with purpose.</p></div>}{content}</main></div>;
+          : page === 'Profile' ? <SocialWall user={user} ownProfile onPreferences={() => setPage('Study Preferences')} />
+          : page === 'Study Preferences' ? <ProfilePage user={user} setUser={setUser} />
+            : <Dashboard user={user} setPage={setPage} onPracticePreferred={openPreferredPractice} preferences={preferences} />;
+  return <div className="min-h-screen bg-[#F8FAFC] text-slate-900"><header className="sticky top-0 z-20 border-b border-slate-200 bg-white"><div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3"><button className="flex items-center gap-2 text-left" onClick={() => setPage('Dashboard')}><span className="grid h-9 w-9 place-items-center rounded-lg bg-indigo-600 font-black text-white">J.</span><span className="text-lg font-extrabold">JobFor<span className="text-indigo-600">Sure</span></span></button><AuthPanel user={user} onLogout={() => setUser(null)} setPage={setPage} /></div><nav className="mx-auto flex max-w-7xl gap-1 overflow-x-auto px-3 pb-2">{pages.map(([name, Icon]) => <button key={name} onClick={() => setPage(name)} className={`nav-item ${page === name ? 'nav-active' : ''}`}><Icon size={15} />{name}</button>)}</nav></header><main className="mx-auto max-w-7xl px-4 py-6 sm:px-5">{content}</main></div>;
 }

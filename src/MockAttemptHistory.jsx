@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const marks = value => Number(value || 0).toLocaleString(undefined, { maximumFractionDigits: 2 });
 export function AttemptScorecard({ result, onClose }) {
@@ -15,22 +15,96 @@ export function AttemptScorecard({ result, onClose }) {
   </section>;
 }
 
-export default function MockAttemptHistory({ supabase, user, refresh, onSelect, open }) {
-  const [rows,setRows] = useState([]);
-  const [loading,setLoading] = useState(false);
-  const [error,setError] = useState('');
-  const [more,setMore] = useState(false);
-  async function load(offset=0) {
-    if (!supabase || !user) return;
-    setLoading(true); setError('');
-    const {data,error: e} = await supabase.rpc('get_mock_attempt_history',{p_limit:20,p_offset:offset});
-    if (e) setError('Attempt history is unavailable. '+e.message);
-    else { setRows(previous => offset ? [...previous,...data] : data || []); setMore(data?.length === 20); }
-    setLoading(false);
-  }
-  useEffect(() => { if (open) load(); },[open,refresh,user?.id]);
-  if (!open) return null;
-  return <section id="mock-attempt-history" aria-label="My attempt history" className="border-b border-slate-100 px-5 pb-4">
-    {open && <div className="mt-4">{!user && <p className="small">Sign in to view your attempts.</p>}{error && <p role="alert" className="text-sm text-rose-700">{error}</p>}{!loading && !error && user && !rows.length && <p className="small">No attempts yet. Start a mock test to begin.</p>}<div className="divide-y divide-slate-100">{rows.map(row => <div key={row.attempt_id} className="flex flex-wrap items-center justify-between gap-3 py-3"><div><p className="text-sm font-bold">{row.title}</p><p className="small mt-1">{new Date(row.started_at).toLocaleString()} · {row.status.replace('_',' ')}{row.status==='submitted' && ` · ${marks(row.score)} / ${marks(row.total_marks)} marks`}</p></div><button className="btn" onClick={() => onSelect(row)}>View {row.status==='submitted' ? 'scorecard' : 'details'}</button></div>)}</div>{loading && <p className="small" role="status">Loading attempts…</p>}{more && <button className="btn mt-3" disabled={loading} onClick={() => load(rows.length)}>Load older attempts</button>}</div>}
+function ScoreStatistics({ rows }) {
+  const completed = rows.filter(row => row.status === 'submitted' && Number(row.total_marks) > 0);
+  if (!completed.length) return null;
+  const percent = row => 100 * Number(row.score || 0) / Number(row.total_marks);
+  const average = completed.reduce((sum, row) => sum + percent(row), 0) / completed.length;
+  return <section className="attempt-statistics" aria-label="Score statistics">
+    <div className="attempt-summary">
+      <div><span>Completed tests</span><strong>{completed.length}</strong></div>
+      <div><span>Average score</span><strong>{marks(average)}%</strong></div>
+      <div><span>Best score</span><strong>{marks(Math.max(...completed.map(percent)))}%</strong></div>
+    </div>
+    <h3 className="mt-5 text-sm font-bold">Scores by attempt</h3>
+    <p className="small mt-1">Based on loaded completed attempts. Percentages allow comparison across tests with different maximum marks.</p>
+    <div className="attempt-chart">{[...completed].reverse().map(row => <div className="attempt-chart-row" key={row.attempt_id}>
+      <div><b>{row.title}</b><span>{new Date(row.started_at).toLocaleDateString()}</span></div>
+      <div className="attempt-chart-track" aria-hidden="true"><div style={{ width: `${Math.min(100, Math.max(0, percent(row)))}%` }} /></div>
+      <span>{marks(row.score)} / {marks(row.total_marks)}<small>{marks(percent(row))}%</small></span>
+    </div>)}</div>
   </section>;
+}
+
+export default function MockAttemptHistory({ supabase, user, refresh, open, onClose }) {
+  const [rows, setRows] = useState([]);
+  const [selected, setSelected] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [more, setMore] = useState(false);
+  const dialog = useRef(null);
+  const requestId = useRef(0);
+  const backButton = useRef(null);
+    async function load(offset = 0) {
+    if (!supabase || !user) return;
+    const current = ++requestId.current;
+    setLoading(true); setError('');
+    try {
+      const { data, error: e } = await supabase.rpc('get_mock_attempt_history', { p_limit: 20, p_offset: offset });
+      if (requestId.current !== current) return;
+      if (e) throw e;
+      setRows(previous => offset ? [...previous, ...(data || [])] : data || []);
+      setMore(data?.length === 20);
+    } catch (e) {
+      if (requestId.current === current) setError('Attempt history is unavailable. ' + e.message);
+    } finally { if (requestId.current === current) setLoading(false); }
+  }
+  useEffect(() => {
+    if (open) { setRows([]); setSelected(null); setMore(false); load(); }
+    return () => { requestId.current++; };
+  }, [open, refresh, user?.id]);
+  useEffect(() => {
+    if (!open) return;
+    const previousFocus = document.activeElement;
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    dialog.current?.querySelector('button')?.focus();
+    const keydown = event => {
+      if (event.key === 'Escape') { event.preventDefault(); onClose(); }
+      if (event.key !== 'Tab') return;
+      const controls = [...dialog.current.querySelectorAll('button:not(:disabled), a[href], [tabindex="0"]')];
+      const first = controls[0], last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+    };
+    document.addEventListener('keydown', keydown);
+    return () => {
+      document.body.style.overflow = overflow;
+      document.removeEventListener('keydown', keydown);
+      previousFocus?.focus();
+    };
+  }, [open, onClose]);
+  useEffect(() => { if (selected) backButton.current?.focus(); }, [selected]);
+  if (!open) return null;
+  return <div className="attempt-modal-backdrop" onClick={event => { if (event.target === event.currentTarget) onClose(); }}>
+    <section ref={dialog} id="mock-attempt-history" className="attempt-modal" role="dialog" aria-modal="true" aria-labelledby="attempt-history-title">
+      <header className="attempt-modal-header"><div><span className="eyebrow">YOUR MOCK TESTS</span><h2 id="attempt-history-title">{selected ? 'Attempt details' : 'My attempts'}</h2></div><div className="flex gap-2">
+        {selected && <button ref={backButton} className="btn" onClick={() => { setSelected(null); requestAnimationFrame(() => { const button = [...(dialog.current?.querySelectorAll('[data-attempt-id]') || [])].find(item => item.dataset.attemptId === selected.attempt_id); button?.focus(); }); }}>Back to attempts</button>}
+        <button className="btn" onClick={onClose}>Close</button>
+      </div></header>
+      <div className="attempt-modal-body">
+        {selected ? <AttemptScorecard result={selected} /> : <>
+          {!user && <p className="small">Sign in to view your attempts.</p>}
+          {error && <p role="alert" className="text-sm text-rose-700">{error}</p>}
+          {!loading && !error && user && !rows.length && <p className="small">No attempts yet. Start a mock test to begin.</p>}
+          <ScoreStatistics rows={rows} />
+          {rows.length > 0 && <h3 className="mt-6 text-sm font-bold">Attempt history</h3>}
+          <div className="divide-y divide-slate-100">{rows.map(row => <div key={row.attempt_id} className="flex flex-wrap items-center justify-between gap-3 py-3"><div><p className="text-sm font-bold">{row.title}</p><p className="small mt-1">{new Date(row.started_at).toLocaleString()} - {row.status.replaceAll('_', ' ')}{row.status === 'submitted' && ` - ${marks(row.score)} / ${marks(row.total_marks)} marks`}</p></div><button className="btn" data-attempt-id={row.attempt_id} onClick={() => setSelected(row)}>View {row.status === 'submitted' ? 'scorecard' : 'details'}</button></div>)}</div>
+          {loading && <p className="small" role="status">Loading attempts...</p>}
+          {error && <button className="btn mt-3" disabled={loading} onClick={() => load()}>Retry</button>}
+          {more && <button className="btn mt-3" disabled={loading} onClick={() => load(rows.length)}>Load older attempts</button>}
+        </>}
+      </div>
+    </section>
+  </div>;
 }
