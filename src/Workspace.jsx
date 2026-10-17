@@ -2,6 +2,7 @@ import MemberChat from './MemberChat';
 import { StudyFocus, ExamAndProgress } from './DashboardSidebars';
 import SocialWall from './SocialWall';
 import { ALL_BRANCHES, DEFAULT_BRANCH, getBranchOptions, getMockBranch, matchesMockBranch } from './mockBranches.mjs';
+import MockTestReview from './MockTestReview';
 import MockAttemptHistory, { AttemptScorecard } from './MockAttemptHistory';
 import React, { useEffect, useRef, useState } from 'react';
 import { Activity, ArrowLeft, ArrowRight, Atom, Bell, BookOpen, Briefcase, Building2, CalendarDays, Calculator, Check, CheckCircle2, ChevronDown, ChevronRight, Clock3, Cpu, CircuitBoard, Droplets, ExternalLink, Factory, FileQuestion, Flame, FlaskConical, GraduationCap, Grid2X2, Layers, LayoutDashboard, List, LogOut, MapPin, MessageCircle, Play, Ruler, Search, Send, Settings, SlidersHorizontal, Sparkles, Target, Thermometer, ThumbsUp, TrendingUp, UserRound, Wrench, Zap } from 'lucide-react';
@@ -1151,6 +1152,8 @@ function SimulationsPage({ user, filters }) {
   const [result, setResult] = useState(null);
   const [historyRefresh, setHistoryRefresh] = useState(0);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [reviewAttempt, setReviewAttempt] = useState(null);
+  function openReview(row) { setHistoryOpen(false); setReviewAttempt(row); window.scrollTo(0, 0); }
   const closeAttemptHistory = React.useCallback(() => setHistoryOpen(false), []);
   const [remaining, setRemaining] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -1264,7 +1267,7 @@ function SimulationsPage({ user, filters }) {
     const { data, error: submitError } = await supabase.rpc('submit_saved_mock_attempt', { p_attempt_id: attempt.attempt_id, p_session_token: attempt.session_token, p_answers: payload });
     if (submitError) setError(submitError.message); else {
       const completed = attempt;
-      setResult({ ...data, title: completed.test_title, total_marks: completed.total_marks });
+      setResult({ ...data, attempt_id: completed.attempt_id, title: completed.test_title, total_marks: completed.total_marks });
       attemptRef.current = null; setAttempt(null); setHistoryRefresh(value => value + 1);
       const { data: history } = await supabase.rpc('get_mock_attempt_history', { p_attempt_id: completed.attempt_id, p_limit: 1, p_offset: 0 });
       if (history?.[0]) setResult(history[0]);
@@ -1289,8 +1292,9 @@ function SimulationsPage({ user, filters }) {
     const matchesSearch = !query || `${test.title} ${test.description || ''} ${getCategory(test)}`.toLowerCase().includes(query);
     return matchesCategory && matchesSearch;
   });
+  if (reviewAttempt) return <div className="space-y-4"><h2 className="text-xl font-bold">{reviewAttempt.title}</h2><MockTestReview supabase={supabase} attemptId={reviewAttempt.attempt_id} onClose={() => { setReviewAttempt(null); setResult(null); setHistoryOpen(false); window.scrollTo(0, 0); }} onBack={() => { setResult(reviewAttempt); setReviewAttempt(null); window.scrollTo(0, 0); }} /></div>;
   return <div className="space-y-4">{attempt ? <MockExam key={attempt.session_token} attempt={attempt} onPause={pauseAttempt} onStateChange={setExamState} saveStatus={saveStatus} answers={answers} setAnswers={setAnswers} clock={clock} busy={busy} onSubmit={submitAttempt} error={error} /> : <>
-    {result && <AttemptScorecard result={result} onClose={() => setResult(null)} />}
+    {result && <AttemptScorecard result={result} supabase={supabase} onReview={openReview} onClose={() => setResult(null)} />}
 
     <section className="overflow-hidden rounded-2xl border border-indigo-100 bg-white shadow-sm">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 px-5 py-4">
@@ -1298,7 +1302,7 @@ function SimulationsPage({ user, filters }) {
         <div className="flex items-center gap-2"><span className="rounded-full bg-indigo-50 px-3 py-1.5 text-xs font-bold text-indigo-700">{branchTests.length} available {branchTests.length === 1 ? 'test' : 'tests'}</span><button className="btn" aria-expanded={historyOpen} aria-controls="mock-attempt-history" onClick={() => setHistoryOpen(value => !value)}>View attempts</button></div>
       </div>
 
-      <MockAttemptHistory open={historyOpen} supabase={supabase} user={user} refresh={historyRefresh} onClose={closeAttemptHistory} />
+      <MockAttemptHistory onReview={openReview} open={historyOpen} supabase={supabase} user={user} refresh={historyRefresh} onClose={closeAttemptHistory} />
 
       <div className="mock-branch-layout">
         <aside className="mock-branch-sidebar" aria-label="Mock test branches">

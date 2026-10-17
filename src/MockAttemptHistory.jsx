@@ -1,7 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 
+import MockTestReview from './MockTestReview';
+
 const marks = value => Number(value || 0).toLocaleString(undefined, { maximumFractionDigits: 2 });
-export function AttemptScorecard({ result, onClose }) {
+export function AttemptScorecard({ result, onClose, supabase, onReview }) {
+  const [review, setReview] = useState(false);
+  useEffect(() => { setReview(false); }, [result.attempt_id]);
   const sections = result.sections || [];
   const weakest = [...sections].filter(s => Number(s.total_marks) > 0).sort((a,b) => a.score/a.total_marks - b.score/b.total_marks).slice(0, 2);
   return <section className="rounded-2xl border border-indigo-100 bg-white p-5" aria-label="Attempt scorecard">
@@ -11,6 +15,7 @@ export function AttemptScorecard({ result, onClose }) {
       <p className="small mt-2">{result.correct_answers} correct · {result.incorrect_answers} incorrect · {result.unanswered ?? Math.max(0, result.total_questions-result.correct_answers-result.incorrect_answers)} unanswered{result.time_taken_seconds != null && ` · ${Math.floor(result.time_taken_seconds/60)}m ${result.time_taken_seconds%60}s`}</p>
       {sections.length > 0 && <div className="mt-5 overflow-x-auto"><table className="w-full text-left text-sm"><caption className="mb-2 text-left font-bold">Section performance</caption><thead><tr className="border-b text-slate-500">{['Section','Marks','Correct','Incorrect','Unanswered'].map(h => <th className="p-2" key={h}>{h}</th>)}</tr></thead><tbody>{sections.map(s => <tr className="border-b border-slate-100" key={s.section}><th className="p-2 font-semibold">{s.section}</th><td className="p-2">{marks(s.score)} / {marks(s.total_marks)}</td><td className="p-2">{s.correct}</td><td className="p-2">{s.incorrect}</td><td className="p-2">{s.unanswered}</td></tr>)}</tbody></table></div>}
       {weakest.length > 0 && <div className="mt-4 rounded-xl bg-indigo-50 p-4"><h4 className="text-sm font-bold">Where to concentrate next</h4><ul className="mt-2 space-y-2 text-sm">{weakest.map(s => <li key={s.section}><strong>{s.section}:</strong> {Number(s.incorrect) > Number(s.unanswered) ? 'Review mistakes and revise the concepts before another timed attempt.' : Number(s.unanswered) > 0 ? 'Practise timed questions to improve coverage and pacing.' : s.score/s.total_marks >= 0.8 ? 'Maintain your performance with regular practice.' : 'Revise this section and practise a fresh set of questions.'}</li>)}</ul><p className="small mt-2">Based on section marks in this attempt. Topic-level weaknesses cannot be inferred from section totals alone.</p></div>}
+      {supabase && result.attempt_id && (review ? <MockTestReview supabase={supabase} attemptId={result.attempt_id} onBack={() => setReview(false)} /> : <button className="btn btn-primary mt-5" onClick={() => onReview ? onReview(result) : setReview(true)}>Review Test</button>)}
     </>}
   </section>;
 }
@@ -36,7 +41,7 @@ function ScoreStatistics({ rows }) {
   </section>;
 }
 
-export default function MockAttemptHistory({ supabase, user, refresh, open, onClose }) {
+export default function MockAttemptHistory({ supabase, user, refresh, open, onClose, onReview }) {
   const [rows, setRows] = useState([]);
   const [selected, setSelected] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -93,7 +98,7 @@ export default function MockAttemptHistory({ supabase, user, refresh, open, onCl
         <button className="btn" onClick={onClose}>Close</button>
       </div></header>
       <div className="attempt-modal-body">
-        {selected ? <AttemptScorecard result={selected} /> : <>
+        {selected ? <AttemptScorecard result={selected} supabase={supabase} onReview={onReview} /> : <>
           {!user && <p className="small">Sign in to view your attempts.</p>}
           {error && <p role="alert" className="text-sm text-rose-700">{error}</p>}
           {!loading && !error && user && !rows.length && <p className="small">No attempts yet. Start a mock test to begin.</p>}
