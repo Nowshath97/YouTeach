@@ -124,12 +124,80 @@ const upcomingExamNotices = [
   },
 ];
 
+function CreateAccountScreen({ onSignIn, onGoogle, googleBusy, authError }) {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmation, setConfirmation] = useState('');
+  const [interestBranch, setInterestBranch] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState('');
+  const [sent, setSent] = useState(false);
+
+  async function register(event) {
+    event.preventDefault();
+    if (busy || googleBusy || !supabase) return;
+    if (password !== confirmation) { setError('Passwords do not match.'); return; }
+    setBusy(true); setError('');
+    try {
+      const { data, error: signupError } = await supabase.auth.signUp({
+        email: email.trim(), password,
+        options: { data: { full_name: name.trim(), jobforsure_preferences: { preferredBranch: interestBranch === 'others' ? '' : interestBranch, educationInterest: interestBranch } }, emailRedirectTo: window.location.origin },
+      });
+      if (signupError) throw signupError;
+      if (!data.session) setSent(true);
+    } catch (e) {
+      setError(e.message || 'Unable to create your account. Please try again.');
+    } finally { setBusy(false); }
+  }
+
+  return <main className="auth-page auth-signup-page">
+    <section className="auth-card auth-signup-card" aria-labelledby="signup-heading">
+      <a href="#/sign-in" className="auth-brand"><span className="auth-brand-mark">J.</span><span>JobFor<span className="text-indigo-600">Sure</span></span></a>
+      <div className="mt-7"><span className="auth-kicker">START YOUR PREPARATION</span>
+        <h1 id="signup-heading" tabIndex={-1}>{sent ? 'Check your email' : 'Create your account'}</h1>
+        <p className="small">{sent ? 'If registration is available for this email, you will receive a confirmation link. Follow it to finish signing up.' : 'Join JobForSure to practice mock tests and save your progress.'}</p>
+      </div>
+      {sent ? <div className="mt-6"><p className="profile-success" role="status">Check the inbox and spam folder for {email}.</p><button className="btn btn-primary auth-submit" onClick={onSignIn}>Back to sign in</button></div> : <>
+        <button className="auth-google" type="button" disabled={busy || googleBusy || !supabase} onClick={onGoogle}><span className="google-g" aria-hidden="true">G</span>Continue with Google</button>
+        <div className="auth-divider"><span>or create an account with email</span></div>
+        <form className="auth-form" onSubmit={register}>
+          <label htmlFor="signup-name">Full name</label>
+          <input className="field" id="signup-name" autoComplete="name" placeholder="Your full name" value={name} onChange={e => setName(e.target.value)} maxLength={100} required disabled={busy || googleBusy} pattern=".*\S.*" />
+          <label htmlFor="signup-branch">Graduation / field of study (optional)</label><select id="signup-branch" className="field" value={interestBranch} onChange={e => setInterestBranch(e.target.value)} disabled={busy || googleBusy}><StudyInterestOptions /></select>
+          <label htmlFor="signup-email">Email address</label>
+          <input className="field" id="signup-email" type="email" autoComplete="email" placeholder="you@example.com" value={email} onChange={e => setEmail(e.target.value)} required disabled={busy || googleBusy} />
+          <label htmlFor="signup-password">Password</label>
+          <input className="field" id="signup-password" type="password" autoComplete="new-password" placeholder="At least 6 characters" value={password} onChange={e => setPassword(e.target.value)} minLength={6} required disabled={busy || googleBusy} />
+          <label htmlFor="signup-confirm">Confirm password</label>
+          <input className="field" id="signup-confirm" type="password" autoComplete="new-password" placeholder="Enter your password again" value={confirmation} onChange={e => setConfirmation(e.target.value)} minLength={6} required disabled={busy || googleBusy} />
+          <button className="btn btn-primary auth-submit" disabled={busy || googleBusy || !supabase}>{busy ? 'Creating account...' : 'Create account'}</button>
+        </form>
+        {(error || authError) && <p className="auth-message" role="alert">{error || authError}</p>}
+        {!supabase && <p className="auth-notice" role="status">Account creation is currently unavailable.</p>}
+        <p className="auth-switch">Already have an account?<button type="button" disabled={busy || googleBusy} onClick={onSignIn}>Sign in</button></p>
+      </>}
+    </section>
+  </main>;
+}
+
 function AuthScreen({ authError }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [mode, setMode] = useState('signin');
+  const [mode, setMode] = useState(() => window.location.hash === '#/create-account' ? 'signup' : 'signin');
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
+  useEffect(() => {
+    const navigate = () => {
+      setMode(window.location.hash === '#/create-account' ? 'signup' : 'signin');
+      setMessage(''); setPassword('');
+    };
+    window.addEventListener('hashchange', navigate);
+    return () => window.removeEventListener('hashchange', navigate);
+  }, []);
+  useEffect(() => {
+    document.getElementById(mode === 'signup' ? 'signup-heading' : 'auth-heading')?.focus();
+  }, [mode]);
 
   async function submit(event) {
     event.preventDefault();
@@ -174,6 +242,8 @@ function AuthScreen({ authError }) {
     }
   }
 
+  if (mode === 'signup') return <CreateAccountScreen onSignIn={() => { window.location.hash = '/sign-in'; }} onGoogle={signInWithGoogle} googleBusy={busy} authError={message || authError} />;
+
   return <main className="auth-page">
     <div className="auth-layout">
       <section className="auth-intro">
@@ -195,7 +265,7 @@ function AuthScreen({ authError }) {
       </section>
       <section className="auth-card" aria-labelledby="auth-heading">
         <span className="auth-kicker">{mode === 'signin' ? 'WELCOME BACK' : 'GET STARTED'}</span>
-        <h2 id="auth-heading">{mode === 'signin' ? 'Sign in to your account' : 'Create your student account'}</h2>
+        <h2 id="auth-heading" tabIndex={-1}>{mode === 'signin' ? 'Sign in to your account' : 'Create your student account'}</h2>
         <p className="small">{mode === 'signin' ? 'Pick up where your preparation left off.' : 'Create an account to start your exam preparation.'}</p>
         <button className="auth-google" type="button" disabled={busy || !supabase} onClick={signInWithGoogle}>
           <span className="google-g" aria-hidden="true">G</span>
@@ -216,7 +286,7 @@ function AuthScreen({ authError }) {
         {message && <p className="auth-message" role="alert">{message}</p>}
         <p className="auth-switch">
           {mode === 'signin' ? 'New to JobForSure?' : 'Already have an account?'}
-          <button type="button" disabled={busy} onClick={() => { setMode(mode === 'signin' ? 'signup' : 'signin'); setMessage(''); }}>
+          <button type="button" disabled={busy} onClick={() => { window.location.hash = '/create-account'; }}>
             {mode === 'signin' ? 'Create an account' : 'Sign in'}
           </button>
         </p>
@@ -228,8 +298,8 @@ function AuthScreen({ authError }) {
 
 function Onboarding({ user, setUser }) {
   const [exams, setExams] = useState([]);
-  const [branch, setBranch] = useState(practiceBranches[0].name);
-  const [subject, setSubject] = useState(practiceBranches[0].subjects[0].name);
+  const [branch, setBranch] = useState(user.user_metadata?.jobforsure_preferences?.educationInterest || user.user_metadata?.jobforsure_preferences?.preferredBranch || '');
+  const [subject, setSubject] = useState(() => practiceBranches.find(item => item.name === user.user_metadata?.jobforsure_preferences?.preferredBranch)?.subjects[0]?.name || '');
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
   const availableSubjects = practiceBranches.find(item => item.name === branch)?.subjects || [];
@@ -254,7 +324,8 @@ function Onboarding({ user, setUser }) {
     setMessage('');
     const preferences = {
       exams,
-      preferredBranch: branch,
+      preferredBranch: branch === 'others' ? '' : branch,
+      educationInterest: branch,
       preferredSubject: subject,
       completedAt: new Date().toISOString(),
     };
@@ -290,16 +361,16 @@ function Onboarding({ user, setUser }) {
             </label>)}
           </div>
         </fieldset>
-        <label htmlFor="preferred-branch">Your engineering branch</label>
+        <label htmlFor="preferred-branch">Graduation / field of study (optional)</label>
         <select id="preferred-branch" className="field" value={branch} onChange={event => changeBranch(event.target.value)}>
-          {practiceBranches.map(item => <option key={item.name} value={item.name}>{item.name}</option>)}
+          <StudyInterestOptions />
         </select>
         <label htmlFor="preferred-subject">Your preferred subject</label>
-        <select id="preferred-subject" className="field" value={subject} onChange={event => setSubject(event.target.value)} required>
+        <select id="preferred-subject" className="field" value={subject} onChange={event => setSubject(event.target.value)} disabled={!availableSubjects.length} required={availableSubjects.length > 0}>{!availableSubjects.length && <option value="">Choose any subject later</option>}
           {availableSubjects.map(item => <option key={item.name} value={item.name}>{item.name}</option>)}
         </select>
         {message && <p className="auth-message" role="alert">{message}</p>}
-        <button className="btn btn-primary auth-submit" type="submit" disabled={busy || !subject}>
+        <button className="btn btn-primary auth-submit" type="submit" disabled={busy || (availableSubjects.length > 0 && !subject)}>
           {busy ? 'Saving your preferences...' : 'Continue to your workspace'}
         </button>
       </form>
@@ -310,10 +381,11 @@ function Onboarding({ user, setUser }) {
 function ProfilePage({ user, setUser }) {
   const savedPreferences = user.user_metadata?.jobforsure_preferences || {};
   const [exams, setExams] = useState(savedPreferences.exams || []);
-  const [branch, setBranch] = useState(savedPreferences.preferredBranch || practiceBranches[0].name);
-  const [subject, setSubject] = useState(savedPreferences.preferredSubject || practiceBranches[0].subjects[0].name);
+  const [branch, setBranch] = useState(savedPreferences.educationInterest || savedPreferences.preferredBranch || '');
+  const [subject, setSubject] = useState(savedPreferences.preferredSubject || '');
   const [message, setMessage] = useState('');
   const [saved, setSaved] = useState(false);
+  const [editing, setEditing] = useState(false);
   const [busy, setBusy] = useState(false);
   const availableSubjects = practiceBranches.find(item => item.name === branch)?.subjects || [];
 
@@ -331,6 +403,7 @@ function ProfilePage({ user, setUser }) {
 
   async function saveProfile(event) {
     event.preventDefault();
+    if (!editing || busy) return;
     if (!exams.length) {
       setMessage('Choose at least one exam you are preparing for.');
       setSaved(false);
@@ -342,7 +415,8 @@ function ProfilePage({ user, setUser }) {
     const preferences = {
       ...savedPreferences,
       exams,
-      preferredBranch: branch,
+      preferredBranch: branch === 'others' ? '' : branch,
+      educationInterest: branch,
       preferredSubject: subject,
       completedAt: savedPreferences.completedAt || new Date().toISOString(),
       updatedAt: new Date().toISOString(),
@@ -356,7 +430,7 @@ function ProfilePage({ user, setUser }) {
         setUser(data.user);
         localStorage.setItem('jobforsure.practice.branch', branch);
         localStorage.setItem('jobforsure.practice.exam', exams[0]);
-        setSaved(true);
+        setSaved(true); setEditing(false);
       }
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Unable to save your profile. Please try again.');
@@ -368,13 +442,13 @@ function ProfilePage({ user, setUser }) {
   return <div className="mx-auto max-w-3xl space-y-4">
     <Card className="p-5 sm:p-7">
       <div className="eyebrow">YOUR STUDENT PROFILE</div>
-      <h2 className="mt-2 text-xl font-extrabold">Preparation preferences</h2>
+      <h2 className="mt-2 text-xl font-extrabold">Preparation preferences</h2><p className="small mt-2">Choose a field of study to use it across your study sections. Leave it blank or select Others to browse all branches.</p>{!editing && <button className="btn mt-3" onClick={() => { setEditing(true); setSaved(false); }}>Edit profile</button>}
       <p className="small mt-2">Update your exam goals and focus subject to personalize your dashboard and practice suggestions.</p>
       <div className="mt-5 rounded-lg bg-slate-50 p-3">
         <span className="eyebrow">ACCOUNT EMAIL</span>
         <p className="mt-1 text-sm font-semibold">{user.email}</p>
       </div>
-      <form className="onboarding-form mt-6" onSubmit={saveProfile}>
+      <form className="onboarding-form mt-6" onSubmit={saveProfile}><fieldset className="contents" disabled={!editing || busy}>
         <fieldset>
           <legend>Which exams are you preparing for?</legend>
           <div className="exam-options">
@@ -384,17 +458,17 @@ function ProfilePage({ user, setUser }) {
             </label>)}
           </div>
         </fieldset>
-        <label htmlFor="profile-branch">Your engineering branch</label>
+        <label htmlFor="profile-branch">Graduation / field of study (optional)</label>
         <select id="profile-branch" className="field" value={branch} onChange={event => changeBranch(event.target.value)}>
-          {practiceBranches.map(item => <option key={item.name} value={item.name}>{item.name}</option>)}
+          <StudyInterestOptions />
         </select>
         <label htmlFor="profile-subject">Your preferred subject</label>
-        <select id="profile-subject" className="field" value={subject} onChange={event => { setSubject(event.target.value); setSaved(false); }} required>
+        <select id="profile-subject" className="field" value={subject} onChange={event => { setSubject(event.target.value); setSaved(false); }} disabled={!availableSubjects.length} required={availableSubjects.length > 0}>{!availableSubjects.length && <option value="">Choose any subject later</option>}
           {availableSubjects.map(item => <option key={item.name} value={item.name}>{item.name}</option>)}
         </select>
         {message && <p className="auth-message" role="alert">{message}</p>}
-        {saved && <p className="profile-success" role="status">Your profile is saved. Your dashboard will use these preferences.</p>}
-        <button className="btn btn-primary auth-submit" type="submit" disabled={busy || !subject}>
+        </fieldset>{saved && <p className="profile-success" role="status">Your profile is saved. All study sections will use these preferences.</p>}
+        <button className="btn btn-primary auth-submit" type="submit" disabled={!editing || busy || (availableSubjects.length > 0 && !subject)}>
           {busy ? 'Saving profile...' : 'Save profile'}
         </button>
       </form>
@@ -435,6 +509,10 @@ const practiceBranches = [
   { name: 'Computer Science', subjects: ['Programming and Data Structures', 'Algorithms', 'Operating Systems', 'Database Management Systems', 'Computer Networks', 'Computer Organization', 'Theory of Computation', 'Compiler Design'].map(name => ({ name })) },
   { name: 'Electronics and Communication Engineering', subjects: ['Network Theory', 'Electronic Devices', 'Analog Circuits', 'Digital Circuits', 'Signals and Systems', 'Control Systems', 'Communications', 'Electromagnetics'].map(name => ({ name })) },
 ];
+
+function StudyInterestOptions() {
+  return <><option value="">Not specified - explore all branches</option>{practiceBranches.map(item => <option key={item.name} value={item.name}>B.Tech / B.E. - {item.name}</option>)}<option value="others">Others - explore all branches</option></>;
+}
 
 function fallbackBranch(name) {
   const normalized = name.toLowerCase();
@@ -638,8 +716,8 @@ function Dashboard({ setPage, onPracticePreferred, preferences }) {
     <div className="grid items-start gap-4 lg:grid-cols-[minmax(190px,0.72fr)_minmax(0,1.8fr)_minmax(230px,0.9fr)]">
     <aside className="space-y-4">
       <Card className="p-4"><div className="eyebrow">YOUR WEEK</div><div className="mt-3 flex items-center justify-between"><span className="text-xs text-slate-600">Study streak</span><span className="inline-flex items-center gap-1 text-xs font-bold"><Flame size={14} className="text-orange-500" /> 6 days</span></div><div className="mt-4 flex items-center justify-between"><span className="text-xs text-slate-600">Learning time</span><b className="text-xs">8h 40m</b></div><div className="mt-3 h-1.5 rounded bg-slate-100"><div className="h-full w-[72%] rounded bg-emerald-500" /></div><p className="small mt-2">72% of your weekly goal</p></Card>
-      <Card><div className="card-head"><b>Your focus</b><Target size={16} className="text-indigo-600" /></div><div className="p-4"><span className="eyebrow">{preferences.preferredBranch}</span><b className="mt-2 block text-sm">{preferences.preferredSubject}</b><div className="mt-3 flex flex-wrap gap-1.5">{preferences.exams.map(exam => <span className="pill" key={exam}>{exam}</span>)}</div><button className="btn btn-primary mt-4 w-full justify-center" onClick={onPracticePreferred}>Practice this subject <ArrowRight size={13} /></button></div><button className="w-full border-t border-slate-100 p-3 text-xs font-bold text-indigo-700 hover:bg-slate-50" onClick={() => setPage('Profile')}>Edit preparation profile</button></Card>
-      <Card><div className="card-head"><b>Continue learning</b><BookOpen size={16} className="text-indigo-600" /></div><button className="w-full p-4 text-left" onClick={onPracticePreferred}><span className="eyebrow">{preferences.preferredBranch}</span><b className="mt-2 block text-xs">{preferences.preferredSubject}</b><span className="small mt-2 block">Continue with your preferred subject</span></button></Card>
+      <Card><div className="card-head"><b>Your focus</b><Target size={16} className="text-indigo-600" /></div><div className="p-4"><span className="eyebrow">{preferences.preferredBranch || 'All branches'}</span><b className="mt-2 block text-sm">{preferences.preferredSubject || 'Explore subjects at your own pace'}</b><div className="mt-3 flex flex-wrap gap-1.5">{preferences.exams.map(exam => <span className="pill" key={exam}>{exam}</span>)}</div><button className="btn btn-primary mt-4 w-full justify-center" onClick={onPracticePreferred}>{preferences.preferredSubject ? 'Practice this subject' : 'Browse subjects'} <ArrowRight size={13} /></button></div><button className="w-full border-t border-slate-100 p-3 text-xs font-bold text-indigo-700 hover:bg-slate-50" onClick={() => setPage('Profile')}>Edit preparation profile</button></Card>
+      <Card><div className="card-head"><b>Continue learning</b><BookOpen size={16} className="text-indigo-600" /></div><button className="w-full p-4 text-left" onClick={onPracticePreferred}><span className="eyebrow">{preferences.preferredBranch || 'All branches'}</span><b className="mt-2 block text-xs">{preferences.preferredSubject || 'Explore subjects at your own pace'}</b><span className="small mt-2 block">{preferences.preferredSubject ? 'Continue with your preferred subject' : 'Choose a branch and subject to begin'}</span></button></Card>
     </aside>
 
     <section className="min-w-0 space-y-4" aria-label="Engineering community feed">
@@ -848,6 +926,7 @@ function PracticePage({ user, setPage, setPracticeFilters, focusPreferredSubject
   }, [focusPreferredSubject, loading, preferences.preferredBranch, preferences.preferredSubject, databaseBranches]);
 
   async function chooseBranch(branch) {
+    if (user.user_metadata?.jobforsure_preferences?.preferredBranch && branch.name !== user.user_metadata.jobforsure_preferences.preferredBranch) return;
     setSelectedBranchName(branch.name);
     setActiveSubject(null);
     setActiveTopicId('');
@@ -919,7 +998,7 @@ function PracticePage({ user, setPage, setPracticeFilters, focusPreferredSubject
     {supabase && !questionError && questionTotal > 0 && <div className="flex items-center justify-between gap-3"><button className="btn" disabled={questionPage <= 1 || questionLoading} onClick={() => setQuestionPage(page => page - 1)}>Previous</button><span className="small">Page {questionPage} of {Math.ceil(questionTotal / 15)}</span><button className="btn" disabled={questionPage >= Math.ceil(questionTotal / 15) || questionLoading} onClick={() => setQuestionPage(page => page + 1)}>Next</button></div>}
     {error && <p className="text-xs text-rose-700" role="alert">{error}</p>}
   </div> : <PracticeSubjectBrowser
-    branches={branches}
+    branches={preferences.preferredBranch ? branches.filter(branch => branch.name === preferences.preferredBranch) : branches}
     selectedBranch={selectedBranch}
     examGoal={examGoal}
     onExamChange={chooseExamGoal}
@@ -1083,9 +1162,9 @@ function TutorialsPage({ user }) {
     let active = true;
     async function load() {
       if (!supabase) { setLoading(false); return; }
-      const { data, error: queryError } = await supabase.from('tutorials').select('id,title,content,code_example,equation_latex,video_url,difficulty,estimated_minutes,topic_id,topics(title,subjects(name))').eq('is_published', true).order('created_at', { ascending: false });
+      const { data, error: queryError } = await supabase.from('tutorials').select('id,title,content,code_example,equation_latex,video_url,difficulty,estimated_minutes,topic_id,topics(title,subjects(name,engineering_branches(name)))').eq('is_published', true).order('created_at', { ascending: false });
       if (!active) return;
-      if (queryError) setError(queryError.message); else { setTutorials(data || []); setSelectedId(current => current || data?.[0]?.id || ''); }
+      if (queryError) setError(queryError.message); else { const relevant = (data || []).filter(item => !user?.user_metadata?.jobforsure_preferences?.preferredBranch || item.topics?.subjects?.engineering_branches?.name === user.user_metadata.jobforsure_preferences.preferredBranch); setTutorials(relevant); setSelectedId(current => relevant.some(item => item.id === current) ? current : relevant[0]?.id || ''); }
       if (user) {
         const { data: rows, error: progressError } = await supabase.from('student_progress').select('tutorial_id,status,progress_percent').eq('student_id', user.id);
         if (!active) return;
@@ -1114,7 +1193,7 @@ function SimulationsPage({ user, filters }) {
   const [mockSubjects, setMockSubjects] = useState([]);
   const [mockBranches, setMockBranches] = useState([]);
   const [selectedBranch, setSelectedBranch] = useState(() => {
-    try { return localStorage.getItem('jobforsure.mocks.branch') || DEFAULT_BRANCH; }
+    try { return user?.user_metadata?.jobforsure_preferences?.preferredBranch || DEFAULT_BRANCH; }
     catch { return DEFAULT_BRANCH; }
   });
   const [testSearch, setTestSearch] = useState('');
@@ -1253,7 +1332,7 @@ function SimulationsPage({ user, filters }) {
   const clock = `${String(Math.floor(remaining / 60)).padStart(2, '0')}:${String(remaining % 60).padStart(2, '0')}`;
   const getCategory = test => /^GATE/i.test(test.title) ? 'GATE' : /ssc\s*cgl/i.test(test.title) ? 'SSC CGL' : /tgpsc|tspsc/i.test(test.title) ? 'TGPSC AEE' : test.title.toLowerCase().includes('junior engineer') ? 'SSC JE' : String(test.exam_type || 'Other');
   const branchOptions = getBranchOptions(tests, mockSubjects, mockBranches);
-  const activeBranch = branchOptions.includes(selectedBranch) ? selectedBranch : DEFAULT_BRANCH;
+  const activeBranch = user?.user_metadata?.jobforsure_preferences?.preferredBranch || selectedBranch;
   const branchTests = tests.filter(test => matchesMockBranch(test, activeBranch, mockSubjects, mockBranches));
   const categories = ['All tests', ...new Set(branchTests.map(getCategory))];
   const activeCategory = categories.includes(selectedCategory) ? selectedCategory : 'All tests';
@@ -1281,14 +1360,14 @@ function SimulationsPage({ user, filters }) {
 
       <div className="mock-branch-layout">
         <aside className="mock-branch-sidebar" aria-label="Mock test branches">
-          <h3>Choose your branch</h3>
+          <h3>{user?.user_metadata?.jobforsure_preferences?.preferredBranch ? 'Your profile branch' : 'Choose your branch'}</h3>
           <p>Find exams in your domain.</p>
           <nav aria-label="Filter mock tests by branch">
-            {branchOptions.map(branch => <button key={branch} type="button" aria-pressed={activeBranch === branch} onClick={() => chooseBranch(branch)} className={`mock-branch-button ${activeBranch === branch ? 'mock-branch-button-active' : ''}`}>
+            {branchOptions.filter(branch => !user?.user_metadata?.jobforsure_preferences?.preferredBranch || branch === activeBranch).map(branch => <button key={branch} type="button" aria-pressed={activeBranch === branch} onClick={() => chooseBranch(branch)} className={`mock-branch-button ${activeBranch === branch ? 'mock-branch-button-active' : ''}`}>
               <span>{branch}</span><span className="mock-branch-count">{tests.filter(test => matchesMockBranch(test, branch, mockSubjects, mockBranches)).length}</span>
             </button>)}
           </nav>
-          <p className="mock-branch-hint">Branch sections also include common general studies and aptitude exams.</p>
+          <p className="mock-branch-hint">Change your branch in Profile. Common general studies and aptitude exams are also included.</p>
         </aside>
         <div className="mock-branch-content">
       <div className="border-b border-slate-100 p-4 sm:p-6">
@@ -1312,7 +1391,7 @@ function SimulationsPage({ user, filters }) {
         </div>
         {loading && <div className="rounded-xl border border-slate-200 bg-white p-6 text-sm text-slate-500">Loading available tests...</div>}
         {!loading && !tests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-12 text-center"><GraduationCap size={26} className="mx-auto text-indigo-400" /><h4 className="mt-3 text-sm font-bold text-slate-800">No mock tests available yet</h4><p className="mt-1 text-xs text-slate-500">Published tests will appear here when they are ready.</p></div>}
-        {!loading && tests.length > 0 && !visibleTests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-10 text-center"><p className="text-sm font-bold text-slate-800">No matching tests</p><p className="mt-1 text-xs text-slate-500">Try another exam category or search term, or choose a different branch.</p></div>}
+        {!loading && tests.length > 0 && !visibleTests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-10 text-center"><p className="text-sm font-bold text-slate-800">No matching tests</p><p className="mt-1 text-xs text-slate-500">Try another exam category or search term, or update your branch in Profile.</p></div>}
         <div className="mock-catalog-grid">
           {visibleTests.map(test => <article key={test.id} className="mock-catalog-card">
             <div className="mock-catalog-top">
@@ -1372,6 +1451,10 @@ export default function App() {
   const [authError, setAuthError] = useState('');
   const [focusPreferredSubject, setFocusPreferredSubject] = useState(false);
   const [practiceFilters, setPracticeFilters] = useState({ subjectId: null, examType: '' });
+  useEffect(() => {
+    setPracticeFilters({ subjectId: null, examType: '' });
+    setFocusPreferredSubject(false);
+  }, [user?.id, user?.user_metadata?.jobforsure_preferences?.preferredBranch]);
   const setPage = nextPage => {
     setFocusPreferredSubject(false);
     setPageState(nextPage === 'Exam Simulations' ? 'Mock Tests' : nextPage);
@@ -1414,14 +1497,14 @@ export default function App() {
   if (authLoading) return <main className="auth-page"><div className="auth-loading" role="status">Loading your student workspace...</div></main>;
   if (!user) return <AuthScreen authError={authError} />;
   const preferences = user.user_metadata?.jobforsure_preferences;
-  const needsOnboarding = !Array.isArray(preferences?.exams) || preferences.exams.length === 0 || !preferences.preferredSubject;
+  const needsOnboarding = !Array.isArray(preferences?.exams) || preferences.exams.length === 0 || (Boolean(preferences.preferredBranch) && !preferences.preferredSubject);
   if (needsOnboarding) return <Onboarding user={user} setUser={setUser} />;
 
   const content = page === 'Practice' ? <PracticePage user={user} setPage={setPage} setPracticeFilters={setPracticeFilters} focusPreferredSubject={focusPreferredSubject} />
     : page === 'Notifications' ? <NotificationsPage user={user} setPage={setPage} />
     : page === 'Tutorials' ? <TutorialsPage user={user} />
       : page === 'Mock Tests' ? <SimulationsPage user={user} filters={practiceFilters} />
-        : page === 'Previous Papers' ? <PreviousYearPapers />
+        : page === 'Previous Papers' ? <PreviousYearPapers key={preferences.preferredBranch} preferredBranch={preferences.preferredBranch} />
         : page === 'Community' ? <CommunityPage user={user} />
           : page === 'Profile' ? <ProfilePage user={user} setUser={setUser} />
             : <Dashboard setPage={setPage} onPracticePreferred={openPreferredPractice} preferences={preferences} />;
