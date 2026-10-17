@@ -320,6 +320,21 @@
 @media(max-width:580px){.mock-branch-content .mock-catalog-grid{grid-template-columns:minmax(0,1fr)}}
 
 .mock-exit-hint{font-size:10px;text-align:center;color:#64748b;white-space:nowrap}
+/* Reserve useful navigation space instead of letting sidebar text squeeze the grid. */
+.mock-candidate{padding:10px 16px;gap:8px}
+.mock-candidate>svg{width:24px;height:24px}
+.mock-candidate span{margin-top:2px}
+.mock-sidebar-body{padding:12px;overflow-y:auto;overscroll-behavior:contain}
+.mock-legend{margin-top:8px;gap:8px}
+.mock-legend .mock-number{min-width:28px;height:28px;font-size:11px}
+.mock-palette-label{margin:12px 0 8px}
+.mock-palette-label strong{margin-top:2px}
+.mock-palette{flex:1 0 178px;min-height:178px;grid-auto-rows:32px;gap:8px;padding:6px;scrollbar-gutter:stable;overscroll-behavior:contain}
+.mock-sidebar-body>.mock-hint:not([role="status"]){display:none}
+.mock-sidebar-body>.mock-hint[role="status"]{margin-top:8px}
+.mock-sidebar-actions{margin-top:8px;gap:8px}
+@media(min-width:1001px){.mock-layout{grid-template-columns:minmax(0,1fr) 300px}.mock-palette{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.mock-question-text{white-space:pre-line}
 
 .btn.mock-exit-button{background:#fef3c7;border-color:#d97706;color:#92400e;font-weight:700}
 .btn.mock-exit-button:hover:not(:disabled){background:#fde68a;border-color:#b45309}
