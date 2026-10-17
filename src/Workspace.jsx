@@ -1,6 +1,6 @@
 import { ALL_BRANCHES, DEFAULT_BRANCH, getBranchOptions, getMockBranch, matchesMockBranch } from './mockBranches.mjs';
 import MockAttemptHistory, { AttemptScorecard } from './MockAttemptHistory';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Activity, ArrowLeft, ArrowRight, Atom, Bell, BookOpen, Briefcase, Building2, CalendarDays, Calculator, Check, CheckCircle2, ChevronDown, ChevronRight, Clock3, Cpu, CircuitBoard, Droplets, ExternalLink, Factory, FileQuestion, Flame, FlaskConical, GraduationCap, Grid2X2, Layers, LayoutDashboard, List, LogOut, MapPin, MessageCircle, Play, Ruler, Search, Send, Settings, SlidersHorizontal, Sparkles, Target, Thermometer, ThumbsUp, TrendingUp, UserRound, Wrench, Zap } from 'lucide-react';
 import { supabase } from './supabase';
 import MockExam from './MockExam';
@@ -1121,6 +1121,13 @@ function SimulationsPage({ user, filters }) {
   const [selectedCategory, setSelectedCategory] = useState('All tests');
   const [attempt, setAttempt] = useState(null);
   const [answers, setAnswers] = useState({});
+  const [examState, setExamState] = useState({});
+  const [savedAttempts, setSavedAttempts] = useState([]);
+  const [saveStatus, setSaveStatus] = useState('');
+  const [restartTest, setRestartTest] = useState(null);
+  const deadline = useRef(0);
+  const attemptRef = useRef(null);
+  const saveQueue = useRef(Promise.resolve());
   const [result, setResult] = useState(null);
   const [historyRefresh, setHistoryRefresh] = useState(0);
   const [historyOpen, setHistoryOpen] = useState(false);
@@ -1156,27 +1163,88 @@ function SimulationsPage({ user, filters }) {
     return () => { active = false; };
   }, [filters.subjectId, filters.examType]);
   useEffect(() => {
+    let active = true;
+    setSavedAttempts([]);
+    if (!supabase || !user) return () => { active = false; };
+    supabase.rpc('get_saved_mock_attempts').then(({ data, error: savedError }) => {
+      if (!active) return;
+      if (savedError) setError('Saved tests are unavailable. ' + savedError.message);
+      else setSavedAttempts(data || []);
+    });
+    return () => { active = false; };
+  }, [user?.id, historyRefresh]);
+  useEffect(() => {
     if (!attempt) return undefined;
-    const timer = setInterval(() => setRemaining(value => Math.max(0, value - 1)), 1000);
-    return () => clearInterval(timer);
+    const timer = setInterval(() => setRemaining(Math.max(0, Math.ceil((deadline.current - Date.now()) / 1000))), 1000);
+    const warn = event => { event.preventDefault(); event.returnValue = ''; };
+    window.addEventListener('beforeunload', warn);
+    return () => { clearInterval(timer); window.removeEventListener('beforeunload', warn); };
   }, [attempt]);
   useEffect(() => { if (attempt && remaining === 0 && !busy) submitAttempt(); }, [attempt, remaining, busy]);
-  async function start(test) {
+  // Serialize saves so that a delayed autosave cannot overwrite the pause snapshot.
+  function queueSave(pause = false) {
+    const captured = attempt;
+    const payload = { p_attempt_id: captured.attempt_id, p_session_token: captured.session_token,
+      p_answers: Object.fromEntries(Object.entries(answers).filter(([,v]) => String(v).trim() !== '')),
+      p_state: examState, p_pause: pause };
+    const request = saveQueue.current.catch(() => {}).then(async () => {
+      if (attemptRef.current?.session_token !== captured.session_token) return null;
+      const { data, error: saveError } = await supabase.rpc('save_mock_attempt', payload);
+      if (saveError) throw new Error(saveError.message);
+      return data;
+    });
+    saveQueue.current = request;
+    return request;
+  }
+  useEffect(() => {
+    if (!attempt || busy) return undefined;
+    setSaveStatus('Saving answers...');
+    const timer = setTimeout(() => {
+      queueSave().then(data => { if (data) setSaveStatus('Answers saved'); }).catch(e => {
+        setSaveStatus('Not saved - check your connection'); setError(e.message);
+      });
+    }, 700);
+    return () => clearTimeout(timer);
+  }, [attempt, answers, examState, busy]);
+  useEffect(() => () => { attemptRef.current = null; }, []);
+  async function start(test, savedId = null, restart = false) {
     if (!user) { setError('Sign in before starting a simulation.'); return; }
     setBusy(true); setError(''); setResult(null);
-    const { data, error: startError } = await supabase.rpc('start_mock_attempt', { p_mock_test_id: test.id });
-    if (startError) setError(startError.message); else { setAttempt({ ...data, total_marks: test.total_marks, test_description: test.description }); setAnswers({}); setRemaining(data.duration_minutes * 60); }
+    const { data, error: startError } = await supabase.rpc('open_mock_attempt', {
+      p_mock_test_id: test.id, p_attempt_id: savedId, p_restart: restart,
+    });
+    if (startError) setError(startError.message);
+    else if (data.status === 'expired') { setError('This saved attempt has run out of time. Start the test again.'); setHistoryRefresh(value => value + 1); }
+    else {
+      attemptRef.current = data;
+      deadline.current = Date.now() + data.remaining_seconds * 1000;
+      setAnswers(data.answers || {}); setExamState(data.exam_state || {});
+      setSaveStatus('Answers saved'); setRemaining(data.remaining_seconds); setAttempt(data);
+      setRestartTest(null);
+    }
+    setBusy(false);
+  }
+  async function pauseAttempt() {
+    if (!attempt || busy || remaining <= 0) return;
+    setBusy(true); setError('');
+    try {
+      const data = await queueSave(true);
+      if (!data) throw new Error('The exam session changed. Please try again.');
+      attemptRef.current = null; setAttempt(null); setSaveStatus('');
+      setHistoryRefresh(value => value + 1);
+    } catch (e) { setError('Could not pause. Your exam is still running. ' + e.message); }
     setBusy(false);
   }
   async function submitAttempt() {
     if (!attempt || busy) return;
     setBusy(true); setError('');
     const payload = Object.entries(answers).filter(([, value]) => String(value).trim() !== '').map(([question_id, selected_answer]) => ({ question_id, selected_answer }));
-    const { data, error: submitError } = await supabase.rpc('submit_mock_attempt', { p_attempt_id: attempt.attempt_id, p_answers: payload });
+    await saveQueue.current.catch(() => {});
+    const { data, error: submitError } = await supabase.rpc('submit_saved_mock_attempt', { p_attempt_id: attempt.attempt_id, p_session_token: attempt.session_token, p_answers: payload });
     if (submitError) setError(submitError.message); else {
       const completed = attempt;
       setResult({ ...data, title: completed.test_title, total_marks: completed.total_marks });
-      setAttempt(null); setHistoryRefresh(value => value + 1);
+      attemptRef.current = null; setAttempt(null); setHistoryRefresh(value => value + 1);
       const { data: history } = await supabase.rpc('get_mock_attempt_history', { p_attempt_id: completed.attempt_id, p_limit: 1, p_offset: 0 });
       if (history?.[0]) setResult(history[0]);
     }
@@ -1200,7 +1268,7 @@ function SimulationsPage({ user, filters }) {
     const matchesSearch = !query || `${test.title} ${test.description || ''} ${getCategory(test)}`.toLowerCase().includes(query);
     return matchesCategory && matchesSearch;
   });
-  return <div className="space-y-4">{attempt ? <MockExam attempt={attempt} answers={answers} setAnswers={setAnswers} clock={clock} busy={busy} onSubmit={submitAttempt} error={error} /> : <>
+  return <div className="space-y-4">{attempt ? <MockExam key={attempt.session_token} attempt={attempt} onPause={pauseAttempt} onStateChange={setExamState} saveStatus={saveStatus} answers={answers} setAnswers={setAnswers} clock={clock} busy={busy} onSubmit={submitAttempt} error={error} /> : <>
     {result && <AttemptScorecard result={result} onClose={() => setResult(null)} />}
 
     <section className="overflow-hidden rounded-2xl border border-indigo-100 bg-white shadow-sm">
@@ -1259,7 +1327,10 @@ function SimulationsPage({ user, filters }) {
               <span><FileQuestion size={14} /><b>{test.total_marks}</b> marks</span>
             </div>
             <p className="mock-catalog-pass">{/^GATE 2025/i.test(test.title) ? '2025 General cutoff' : /unofficial/i.test(test.description || '') ? 'Practice benchmark' : 'Pass marks'}: <b>{test.passing_marks}</b></p>
-            <button className="btn btn-primary mock-catalog-start" disabled={busy} onClick={() => start(test)}><Play size={14} /> Start mock test <ArrowRight size={14} /></button>
+            {savedAttempts.find(saved => saved.mock_test_id === test.id) ? <div className="mt-3 space-y-2">
+              <button className="btn btn-primary w-full justify-center" disabled={busy} onClick={() => start(test, savedAttempts.find(saved => saved.mock_test_id === test.id).attempt_id)}><Play size={14} /> Resume test</button>
+              <button className="btn w-full justify-center" disabled={busy} onClick={() => setRestartTest(test)}>Start test again</button>
+            </div> : <button className="btn btn-primary mock-catalog-start" disabled={busy} onClick={() => start(test)}><Play size={14} /> Start mock test <ArrowRight size={14} /></button>}
           </article>)}
         </div>
         {!supabase && <p className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs text-amber-800">Connect Supabase to load tests and save attempts.</p>}
@@ -1267,6 +1338,7 @@ function SimulationsPage({ user, filters }) {
         </div>
       </div>
     </section>
+    {restartTest && <div className="mock-modal-backdrop"><section className="mock-modal" role="dialog" aria-modal="true" aria-labelledby="restart-test-title"><h3 id="restart-test-title">Start this test again?</h3><p>Your saved attempt will be closed. A new attempt starts with no answers and the full time allowance.</p><div><button autoFocus className="btn" disabled={busy} onClick={() => setRestartTest(null)}>Keep saved attempt</button><button className="btn btn-primary" disabled={busy} onClick={() => start(restartTest, null, true)}>Start again</button></div></section></div>}
   </>}{error && <p className="text-xs text-rose-700" role="alert">{error}</p>}</div>;
 }
 

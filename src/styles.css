@@ -318,3 +318,9 @@
 @media(max-width:1200px){.mock-branch-content .mock-catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:900px){.mock-branch-layout{grid-template-columns:minmax(0,1fr)}.mock-branch-sidebar{border-right:0;border-bottom:1px solid #e2e8f0;padding:16px}.mock-branch-sidebar nav{flex-direction:row;overflow-x:auto;padding:3px 2px 8px}.mock-branch-button{flex:0 0 auto;width:auto;max-width:240px}.mock-branch-sidebar>p{margin-bottom:9px}.mock-branch-sidebar .mock-branch-hint{margin-top:8px;margin-bottom:0}}
 @media(max-width:580px){.mock-branch-content .mock-catalog-grid{grid-template-columns:minmax(0,1fr)}}
+
+.mock-exit-hint{font-size:10px;text-align:center;color:#64748b;white-space:nowrap}
+
+.btn.mock-exit-button{background:#fef3c7;border-color:#d97706;color:#92400e;font-weight:700}
+.btn.mock-exit-button:hover:not(:disabled){background:#fde68a;border-color:#b45309}
+.btn.mock-exit-button:focus-visible{outline:3px solid #b45309;outline-offset:3px}
