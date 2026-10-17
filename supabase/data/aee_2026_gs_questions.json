@@ -1,0 +1,5122 @@
+[
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "sakala janula samme form",
+    "concept_id": "gs:sakala-janula-samme-form",
+    "question_text": "The 2011 Sakala Janula Samme was principally a:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Treaty ending the First World War"
+      },
+      {
+        "value": "B",
+        "text": "Naval battle against the Portuguese"
+      },
+      {
+        "value": "C",
+        "text": "Campaign for the partition of Bengal in 1905"
+      },
+      {
+        "value": "D",
+        "text": "Broad strike mobilisation in support of Telangana statehood"
+      }
+    ],
+    "explanation": "The mobilisation involved many social and occupational groups supporting the separate-state demand.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 1
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "cropping water demand adaptation",
+    "concept_id": "gs:cropping-water-demand-adaptation",
+    "question_text": "In a semi-arid plateau region, replacing a water-intensive crop with an appropriate millet can primarily improve:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Glacier storage in the same district"
+      },
+      {
+        "value": "B",
+        "text": "The need for higher continuous irrigation in every case"
+      },
+      {
+        "value": "C",
+        "text": "Dependence on permanent flooded cultivation"
+      },
+      {
+        "value": "D",
+        "text": "Adaptation to limited and variable water availability"
+      }
+    ],
+    "explanation": "Many millets tolerate relatively dry conditions, though crop suitability still depends on soil, management and local climate.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 2
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "coded language intersection",
+    "concept_id": "gs:coded-language-intersection",
+    "question_text": "In a code, 'nal tir' means 'clean water', 'tir mok' means 'water supply', and 'mok ven' means 'supply line'. What denotes 'clean'?",
+    "options": [
+      {
+        "value": "A",
+        "text": "tir"
+      },
+      {
+        "value": "B",
+        "text": "mok"
+      },
+      {
+        "value": "C",
+        "text": "nal"
+      },
+      {
+        "value": "D",
+        "text": "ven"
+      }
+    ],
+    "explanation": "The common word water is tir, and supply is mok. Therefore nal denotes clean.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 3
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "electric energy units",
+    "concept_id": "gs:electric-energy-units",
+    "question_text": "A 1.5 kW appliance operates 4 hours daily for 20 days. Energy consumption is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "300 kWh"
+      },
+      {
+        "value": "B",
+        "text": "6 kWh"
+      },
+      {
+        "value": "C",
+        "text": "30 kWh"
+      },
+      {
+        "value": "D",
+        "text": "120 kWh"
+      }
+    ],
+    "explanation": "Energy=power x time=1.5x4x20=120 kWh. The kWh is an energy unit, not a power unit.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 4
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "pressure cooker boiling",
+    "concept_id": "gs:pressure-cooker-boiling",
+    "question_text": "A pressure cooker cooks food faster mainly because increased pressure:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Lowers water's boiling temperature below room temperature"
+      },
+      {
+        "value": "B",
+        "text": "Eliminates heat transfer"
+      },
+      {
+        "value": "C",
+        "text": "Raises the boiling temperature of water"
+      },
+      {
+        "value": "D",
+        "text": "Changes water into an element"
+      }
+    ],
+    "explanation": "Higher pressure raises saturation temperature, permitting cooking above the normal atmospheric boiling temperature.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 5
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "cop30 venue",
+    "concept_id": "gs:cop30-venue",
+    "question_text": "Which city hosted the UN climate conference COP30 in November 2025?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Baku, Azerbaijan"
+      },
+      {
+        "value": "B",
+        "text": "Belem, Brazil"
+      },
+      {
+        "value": "C",
+        "text": "Dubai, UAE"
+      },
+      {
+        "value": "D",
+        "text": "Cali, Colombia"
+      }
+    ],
+    "explanation": "UNFCCC's COP30 page identifies Belem, Brazil as the conference venue. Baku hosted COP29.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://unfccc.int/cop30",
+    "correct_answer": "B",
+    "number": 6
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "carbon sequestration versus emission avoidance",
+    "concept_id": "gs:carbon-sequestration-versus-emission-avoidance",
+    "question_text": "Which action principally increases biological carbon storage rather than merely avoiding a combustion emission?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Restoring degraded native forest with long-term protection"
+      },
+      {
+        "value": "B",
+        "text": "Turning off an unused diesel generator for one hour"
+      },
+      {
+        "value": "C",
+        "text": "Improving an engine's fuel efficiency"
+      },
+      {
+        "value": "D",
+        "text": "Replacing a diesel trip with walking"
+      }
+    ],
+    "explanation": "Forest restoration can increase carbon held in biomass and soil, whereas the alternatives primarily avoid or reduce emissions.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 7
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "election commission jurisdiction",
+    "concept_id": "gs:election-commission-jurisdiction",
+    "question_text": "Which election is ordinarily supervised by the Election Commission of India rather than a State Election Commission?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Lok Sabha election"
+      },
+      {
+        "value": "B",
+        "text": "Gram Panchayat election"
+      },
+      {
+        "value": "C",
+        "text": "Municipal ward election"
+      },
+      {
+        "value": "D",
+        "text": "Panchayat Samiti election"
+      }
+    ],
+    "explanation": "ECI supervises parliamentary and state-legislature elections; constitutionally established State Election Commissions handle local-body elections.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 8
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "cabinet mission constitutional proposal",
+    "concept_id": "gs:cabinet-mission-constitutional-proposal",
+    "question_text": "The Cabinet Mission Plan of 1946 principally sought:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A constitutional arrangement for transfer of power with a proposed Union and provincial grouping"
+      },
+      {
+        "value": "B",
+        "text": "Introduction of the 1909 separate electorates for the first time"
+      },
+      {
+        "value": "C",
+        "text": "Immediate annexation of India to France"
+      },
+      {
+        "value": "D",
+        "text": "Replacement of all provinces by military districts"
+      }
+    ],
+    "explanation": "It proposed a constitution-making process and a limited Union with groupings, amid disagreement over interpretation and participation.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 9
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "laterite formation",
+    "concept_id": "gs:laterite-formation",
+    "question_text": "Lateritic profiles are associated especially with:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Fresh unweathered lava alone"
+      },
+      {
+        "value": "B",
+        "text": "Intense weathering and leaching under warm wet conditions"
+      },
+      {
+        "value": "C",
+        "text": "Permanent glacial deposition at every site"
+      },
+      {
+        "value": "D",
+        "text": "Marine coral growth in shallow seas"
+      }
+    ],
+    "explanation": "Strong leaching removes soluble materials and concentrates relatively insoluble iron and aluminium compounds.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 10
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "axiom indian astronaut",
+    "concept_id": "gs:axiom-indian-astronaut",
+    "question_text": "Who became the first Indian astronaut to board the International Space Station during Axiom-4 in 2025?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Shubhanshu Shukla"
+      },
+      {
+        "value": "B",
+        "text": "Rakesh Sharma"
+      },
+      {
+        "value": "C",
+        "text": "Sunita Williams"
+      },
+      {
+        "value": "D",
+        "text": "Kalpana Chawla"
+      }
+    ],
+    "explanation": "ISRO's FY2025-26 report records Group Captain Shubhanshu Shukla's ISS participation and microgravity experiments.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.isro.gov.in/media_isro/pdf/Annexure_Achievements_during_FY_2025_2026.pdf",
+    "correct_answer": "A",
+    "number": 11
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "ramappa lightweight roofing",
+    "concept_id": "gs:ramappa-lightweight-roofing",
+    "question_text": "Which feature of the Ramappa Temple illustrates deliberate reduction of roof weight?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A roof without any structural materials"
+      },
+      {
+        "value": "B",
+        "text": "Modern aluminium trusses installed in the thirteenth century"
+      },
+      {
+        "value": "C",
+        "text": "A roof made entirely of solid granite blocks of uniform density"
+      },
+      {
+        "value": "D",
+        "text": "Lightweight porous bricks in the vimana"
+      }
+    ],
+    "explanation": "UNESCO describes the temple's lightweight porous roofing bricks, often called floating bricks, as a notable construction feature.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 12
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "groundwater hard rock storage",
+    "concept_id": "gs:groundwater-hard-rock-storage",
+    "question_text": "In much of the Telangana hard-rock terrain, productive groundwater is principally stored and transmitted through:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A continuous underground ocean"
+      },
+      {
+        "value": "B",
+        "text": "Uniform open pore space in fresh massive granite"
+      },
+      {
+        "value": "C",
+        "text": "Only the interiors of intact quartz crystals"
+      },
+      {
+        "value": "D",
+        "text": "Weathered and fractured zones"
+      }
+    ],
+    "explanation": "Fresh crystalline rock has low primary porosity; weathering and fractures provide secondary storage and flow paths.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 13
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "permanent settlement incentive",
+    "concept_id": "gs:permanent-settlement-incentive",
+    "question_text": "Under the Permanent Settlement, the revenue demand was fixed with zamindars. A major structural consequence was:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A landlord intermediary with revenue obligations and enhanced property interests"
+      },
+      {
+        "value": "B",
+        "text": "Replacement of land taxation by universal income tax"
+      },
+      {
+        "value": "C",
+        "text": "Immediate ownership transfer to every cultivator without rent"
+      },
+      {
+        "value": "D",
+        "text": "Abolition of land revenue everywhere"
+      }
+    ],
+    "explanation": "The settlement institutionalized zamindari interests and fixed state demand, without guaranteeing cultivator welfare.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 14
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "maratha unesco serial property",
+    "concept_id": "gs:maratha-unesco-serial-property",
+    "question_text": "Which statement correctly describes the Maratha Military Landscapes of India inscribed by UNESCO in 2025?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A serial group of twelve fortifications, mainly in Maharashtra with one in Tamil Nadu"
+      },
+      {
+        "value": "B",
+        "text": "A marine reserve entirely in Gujarat"
+      },
+      {
+        "value": "C",
+        "text": "A single palace located only in Telangana"
+      },
+      {
+        "value": "D",
+        "text": "Twelve Buddhist monasteries entirely in Bihar"
+      }
+    ],
+    "explanation": "UNESCO describes twelve fortifications, mostly in Maharashtra, with Gingee in Tamil Nadu, forming a serial military landscape.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://whc.unesco.org/en/list/1739/",
+    "correct_answer": "A",
+    "number": 15
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "salar jung reform administration",
+    "concept_id": "gs:salar-jung-reform-administration",
+    "question_text": "Salar Jung I is most closely associated with which nineteenth-century Hyderabad development?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Administrative and revenue reforms"
+      },
+      {
+        "value": "B",
+        "text": "Founding the Indian National Congress in 1885"
+      },
+      {
+        "value": "C",
+        "text": "Leading the 1930 Dandi March"
+      },
+      {
+        "value": "D",
+        "text": "Drafting the 2014 Reorganisation Act"
+      }
+    ],
+    "explanation": "Salar Jung I's long tenure as Hyderabad's minister was marked by administrative, revenue and institutional reforms.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 16
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "national movement chronology",
+    "concept_id": "gs:national-movement-chronology",
+    "question_text": "Which chronological order is correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Dandi March, Champaran, Quit India, Non-Cooperation"
+      },
+      {
+        "value": "B",
+        "text": "Quit India, Dandi March, Non-Cooperation, Champaran"
+      },
+      {
+        "value": "C",
+        "text": "Champaran satyagraha, Non-Cooperation launch, Dandi March, Quit India resolution"
+      },
+      {
+        "value": "D",
+        "text": "Non-Cooperation, Quit India, Champaran, Dandi March"
+      }
+    ],
+    "explanation": "The milestones occurred in 1917, 1920, 1930 and 1942 respectively.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 17
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "semiconductor doping",
+    "concept_id": "gs:semiconductor-doping",
+    "question_text": "Adding a suitable pentavalent impurity to silicon ordinarily produces:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A perfect electrical insulator at every temperature"
+      },
+      {
+        "value": "B",
+        "text": "An n-type semiconductor with electrons as majority carriers"
+      },
+      {
+        "value": "C",
+        "text": "A material with no charge carriers"
+      },
+      {
+        "value": "D",
+        "text": "A p-type semiconductor with holes as majority carriers"
+      }
+    ],
+    "explanation": "A donor impurity contributes an extra electron, increasing electron concentration under ordinary doping conditions.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 18
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "poona pact change",
+    "concept_id": "gs:poona-pact-change",
+    "question_text": "The Poona Pact of 1932 replaced the proposed separate electorates for Depressed Classes with:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Universal nomination by the British monarch alone"
+      },
+      {
+        "value": "B",
+        "text": "A complete ban on their legislative representation"
+      },
+      {
+        "value": "C",
+        "text": "An independent sovereign territory"
+      },
+      {
+        "value": "D",
+        "text": "Reserved seats within joint electorates"
+      }
+    ],
+    "explanation": "The agreement retained enhanced representation through reserved seats while adopting joint electorates.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 19
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "monsoon western ghats rainshadow",
+    "concept_id": "gs:monsoon-western-ghats-rainshadow",
+    "question_text": "Why is the interior Deccan generally drier than the windward western coastal belt during the southwest monsoon?",
+    "options": [
+      {
+        "value": "A",
+        "text": "The Bay of Bengal blocks all winds at the coast"
+      },
+      {
+        "value": "B",
+        "text": "Orographic uplift removes moisture on the windward side, leaving a rain shadow inland"
+      },
+      {
+        "value": "C",
+        "text": "The Deccan receives no sunlight in summer"
+      },
+      {
+        "value": "D",
+        "text": "Every inland station lies above the snow line"
+      }
+    ],
+    "explanation": "Moist monsoon air rises over the Western Ghats; descending leeward air is relatively drier.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 20
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "constituent assembly sovereignty milestones",
+    "concept_id": "gs:constituent-assembly-sovereignty-milestones",
+    "question_text": "Which sequence is correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Adoption, commencement, first Assembly meeting"
+      },
+      {
+        "value": "B",
+        "text": "First Constituent Assembly meeting, Constitution adoption, Constitution commencement"
+      },
+      {
+        "value": "C",
+        "text": "Constitution commencement, first Assembly meeting, adoption"
+      },
+      {
+        "value": "D",
+        "text": "First Assembly meeting, commencement, adoption"
+      }
+    ],
+    "explanation": "The dates are 9 December 1946, 26 November 1949 and 26 January 1950 respectively.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 21
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "chakali ilamma agrarian resistance",
+    "concept_id": "gs:chakali-ilamma-agrarian-resistance",
+    "question_text": "Chakali Ilamma is remembered in Telangana history particularly for:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Resistance to landlord oppression in the agrarian struggle"
+      },
+      {
+        "value": "B",
+        "text": "Negotiating the Treaty of Versailles"
+      },
+      {
+        "value": "C",
+        "text": "Leading the Royal Indian Navy mutiny in Bombay"
+      },
+      {
+        "value": "D",
+        "text": "Founding the Asiatic Society"
+      }
+    ],
+    "explanation": "Her resistance became an important symbol of peasant and women's participation in Telangana's agrarian struggle.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 22
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "gandhian constructive programme",
+    "concept_id": "gs:gandhian-constructive-programme",
+    "question_text": "Which activity belongs most directly to Gandhi's constructive programme rather than to a single mass civil-disobedience action?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Promotion of khadi and removal of untouchability"
+      },
+      {
+        "value": "B",
+        "text": "Only withdrawal from one legislative session"
+      },
+      {
+        "value": "C",
+        "text": "The specific march from Sabarmati to Dandi alone"
+      },
+      {
+        "value": "D",
+        "text": "The Cabinet Mission's provincial-grouping scheme"
+      }
+    ],
+    "explanation": "Constructive work pursued social and economic regeneration alongside political mobilization, including khadi and anti-untouchability work.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 23
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "demographic dependency ratio",
+    "concept_id": "gs:demographic-dependency-ratio",
+    "question_text": "A falling share of dependent ages and rising working-age share can create a demographic dividend only if accompanied by:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Employment, health and skill opportunities"
+      },
+      {
+        "value": "B",
+        "text": "A ban on all urban migration"
+      },
+      {
+        "value": "C",
+        "text": "An automatic guarantee of prosperity without policy"
+      },
+      {
+        "value": "D",
+        "text": "A permanent end to investment needs"
+      }
+    ],
+    "explanation": "Age structure creates potential, but productive employment and human capital determine whether the potential is realized.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 24
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "pandemic adoption legal distinction",
+    "concept_id": "gs:pandemic-adoption-legal-distinction",
+    "question_text": "After the World Health Assembly adopted the Pandemic Agreement in May 2025, which inference was justified by the adoption announcement?",
+    "options": [
+      {
+        "value": "A",
+        "text": "WHO acquired authority to legislate domestic lockdowns"
+      },
+      {
+        "value": "B",
+        "text": "Further steps were required before entry into force"
+      },
+      {
+        "value": "C",
+        "text": "All future pathogen-sharing details had already been completed"
+      },
+      {
+        "value": "D",
+        "text": "Adoption alone immediately bound every country without ratification"
+      }
+    ],
+    "explanation": "WHO's announcement separated adoption from subsequent annex, signature and ratification steps. It also expressly protected national policy authority.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.who.int/news/item/20-05-2025-world-health-assembly-adopts-historic-pandemic-agreement-to-make-the-world-more-equitable-and-safer-from-future-pandemics",
+    "correct_answer": "B",
+    "number": 25
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "hyderabad operation constitutional outcome",
+    "concept_id": "gs:hyderabad-operation-constitutional-outcome",
+    "question_text": "The political consequence of the September 1948 military action in Hyderabad was:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Immediate linguistic merger with Andhra in 1948"
+      },
+      {
+        "value": "B",
+        "text": "Transfer of Hyderabad to French administration"
+      },
+      {
+        "value": "C",
+        "text": "Creation of Telangana as a separate state in 1948"
+      },
+      {
+        "value": "D",
+        "text": "Integration of Hyderabad State into the Indian Union"
+      }
+    ],
+    "explanation": "Integration occurred in 1948; linguistic reorganisation and separate Telangana statehood occurred later, so the milestones must be distinguished.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 26
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "mitigation preparedness distinction",
+    "concept_id": "gs:mitigation-preparedness-distinction",
+    "question_text": "Which is primarily a mitigation measure rather than an emergency response action?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Rescuing people from collapsed buildings"
+      },
+      {
+        "value": "B",
+        "text": "Strengthening vulnerable school buildings before an earthquake"
+      },
+      {
+        "value": "C",
+        "text": "Distributing immediate relief after a flood"
+      },
+      {
+        "value": "D",
+        "text": "Conducting search operations during a cyclone"
+      }
+    ],
+    "explanation": "Mitigation reduces underlying risk before an event; rescue and relief are response activities.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 27
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "anti defection decision authority",
+    "concept_id": "gs:anti-defection-decision-authority",
+    "question_text": "Under the Tenth Schedule, the initial decision on a legislator's disqualification on defection grounds is ordinarily made by:",
+    "options": [
+      {
+        "value": "A",
+        "text": "The presiding officer of the relevant House"
+      },
+      {
+        "value": "B",
+        "text": "The Comptroller and Auditor General"
+      },
+      {
+        "value": "C",
+        "text": "The Finance Commission"
+      },
+      {
+        "value": "D",
+        "text": "The district collector"
+      }
+    ],
+    "explanation": "The Speaker or Chairman decides initially, subject to the applicable scope of judicial review.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 28
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "capital versus revenue spending",
+    "concept_id": "gs:capital-versus-revenue-spending",
+    "question_text": "Which is ordinarily capital expenditure?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Construction of a new public hospital building"
+      },
+      {
+        "value": "B",
+        "text": "Monthly office stationery purchase"
+      },
+      {
+        "value": "C",
+        "text": "Payment of current-year salaries"
+      },
+      {
+        "value": "D",
+        "text": "Payment of routine electricity bills"
+      }
+    ],
+    "explanation": "Creating a durable public asset is capital expenditure, whereas routine operating payments are generally revenue expenditure.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 29
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "multidimensional deprivation",
+    "concept_id": "gs:multidimensional-deprivation",
+    "question_text": "Why can two households with the same income have different multidimensional deprivation levels?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Income mathematically fixes every health outcome"
+      },
+      {
+        "value": "B",
+        "text": "They may differ in health, education and living conditions"
+      },
+      {
+        "value": "C",
+        "text": "All deprivation indicators are identical to bank balances"
+      },
+      {
+        "value": "D",
+        "text": "School attendance cannot differ at the same income"
+      }
+    ],
+    "explanation": "Multidimensional measures capture non-income dimensions that need not move one-for-one with income.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 30
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "population density versus growth",
+    "concept_id": "gs:population-density-versus-growth",
+    "question_text": "District A has higher population density than District B. Which inference is necessarily valid?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A has more people per unit area, but not necessarily a faster growth rate"
+      },
+      {
+        "value": "B",
+        "text": "B must have negative migration"
+      },
+      {
+        "value": "C",
+        "text": "A must have a higher birth rate"
+      },
+      {
+        "value": "D",
+        "text": "A must have a larger total area"
+      }
+    ],
+    "explanation": "Density is population divided by area. It does not by itself determine growth rate, birth rate or migration.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 31
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "suravaram literary history",
+    "concept_id": "gs:suravaram-literary-history",
+    "question_text": "Suravaram Pratap Reddy's 'Andhrula Sanghika Charitra' is primarily a work of:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Astronomical instrumentation"
+      },
+      {
+        "value": "B",
+        "text": "Social history"
+      },
+      {
+        "value": "C",
+        "text": "Structural design"
+      },
+      {
+        "value": "D",
+        "text": "Criminal procedure"
+      }
+    ],
+    "explanation": "The work examines the social history of Telugu-speaking people, rather than serving as a technical or legal manual.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 32
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "vaccine antibiotics distinction",
+    "concept_id": "gs:vaccine-antibiotics-distinction",
+    "question_text": "Which statement is correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Vaccines stimulate immune protection; antibiotics target susceptible bacteria rather than viral replication directly"
+      },
+      {
+        "value": "B",
+        "text": "Vaccines function only as painkillers"
+      },
+      {
+        "value": "C",
+        "text": "Antibiotics cure every viral infection"
+      },
+      {
+        "value": "D",
+        "text": "All vaccines necessarily contain a disease-causing live organism"
+      }
+    ],
+    "explanation": "The mechanisms and targets differ. Vaccines may use several platforms, while antibiotics are not general antiviral treatments.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 33
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "reorganisation statutory distinction",
+    "concept_id": "gs:reorganisation-statutory-distinction",
+    "question_text": "Which statement correctly distinguishes the legislative basis of Telangana's formation from its effective formation date?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A municipal resolution alone created the state in 2009"
+      },
+      {
+        "value": "B",
+        "text": "The Andhra Pradesh Reorganisation Act, 2014 provided the legal basis; 2 June 2014 was the appointed day"
+      },
+      {
+        "value": "C",
+        "text": "The States Reorganisation Act, 1956 created separate Telangana on 2 June 2014"
+      },
+      {
+        "value": "D",
+        "text": "The Constitution ceased to apply on the appointed day"
+      }
+    ],
+    "explanation": "The 2014 parliamentary Act and the appointed day are distinct legal and chronological components of state formation.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 34
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "orbit microgravity misconception",
+    "concept_id": "gs:orbit-microgravity-misconception",
+    "question_text": "Astronauts in a low Earth orbit appear weightless primarily because:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Their masses become zero"
+      },
+      {
+        "value": "B",
+        "text": "They and the spacecraft are in continuous free fall together"
+      },
+      {
+        "value": "C",
+        "text": "The vacuum cancels gravitational force"
+      },
+      {
+        "value": "D",
+        "text": "Earth's gravity is exactly zero there"
+      }
+    ],
+    "explanation": "Gravity still acts strongly in low orbit. Shared free fall produces apparent weightlessness.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 35
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "finance commission versus gst council",
+    "concept_id": "gs:finance-commission-versus-gst-council",
+    "question_text": "Which institution recommends distribution of divisible Union tax proceeds between the Union and states?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Central Information Commission"
+      },
+      {
+        "value": "B",
+        "text": "Election Commission"
+      },
+      {
+        "value": "C",
+        "text": "Finance Commission"
+      },
+      {
+        "value": "D",
+        "text": "National Human Rights Commission"
+      }
+    ],
+    "explanation": "The Finance Commission's constitutional fiscal recommendations differ from the GST Council's indirect-tax coordination role.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 36
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "clock relative hands",
+    "concept_id": "gs:clock-relative-hands",
+    "question_text": "At 3:20, the smaller angle between the clock hands is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "40 degrees"
+      },
+      {
+        "value": "B",
+        "text": "30 degrees"
+      },
+      {
+        "value": "C",
+        "text": "10 degrees"
+      },
+      {
+        "value": "D",
+        "text": "20 degrees"
+      }
+    ],
+    "explanation": "Minute hand is at 120 degrees. Hour hand is at 90+10=100 degrees. Difference is 20 degrees.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 37
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "criminal law replacement match",
+    "concept_id": "gs:criminal-law-replacement-match",
+    "question_text": "Which pairing correctly matches a new criminal law implemented from 1 July 2024 with its primary field?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Bharatiya Nyaya Sanhita - election delimitation"
+      },
+      {
+        "value": "B",
+        "text": "Bharatiya Sakshya Adhiniyam - evidence"
+      },
+      {
+        "value": "C",
+        "text": "Bharatiya Sakshya Adhiniyam - land acquisition"
+      },
+      {
+        "value": "D",
+        "text": "Bharatiya Nagarik Suraksha Sanhita - income tax"
+      }
+    ],
+    "explanation": "The new laws address substantive criminal law, criminal procedure and evidence respectively; Sakshya Adhiniyam concerns evidence.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2090480&lang=2&reg=48",
+    "correct_answer": "B",
+    "number": 38
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "skills university institutional purpose",
+    "concept_id": "gs:skills-university-institutional-purpose",
+    "question_text": "Telangana's Young India Skills University, established in 2024, is distinguished chiefly by:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Replacement of all school education boards"
+      },
+      {
+        "value": "B",
+        "text": "Exclusive preparation for judicial examinations"
+      },
+      {
+        "value": "C",
+        "text": "Regulation of national monetary policy"
+      },
+      {
+        "value": "D",
+        "text": "Industry-linked skilling under a public-private partnership framework"
+      }
+    ],
+    "explanation": "The Telangana investment portal describes industry-led curricula, practical training and a PPP legal framework for YISU.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://invest.telangana.gov.in/why-telangana/",
+    "correct_answer": "D",
+    "number": 39
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "godavari tributary identification",
+    "concept_id": "gs:godavari-tributary-identification",
+    "question_text": "Which river is a tributary of the Godavari rather than the Krishna?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Bhima"
+      },
+      {
+        "value": "B",
+        "text": "Tungabhadra"
+      },
+      {
+        "value": "C",
+        "text": "Manjira"
+      },
+      {
+        "value": "D",
+        "text": "Musi"
+      }
+    ],
+    "explanation": "Manjira belongs to the Godavari system; Tungabhadra, Bhima and Musi belong to the Krishna system.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 40
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "ratio mixture replacement",
+    "concept_id": "gs:ratio-mixture-replacement",
+    "question_text": "A 20-litre solution is 30% salt by volume in an ideal mixing model. Four litres are removed and replaced with water. New salt percentage is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "26%"
+      },
+      {
+        "value": "B",
+        "text": "20%"
+      },
+      {
+        "value": "C",
+        "text": "28%"
+      },
+      {
+        "value": "D",
+        "text": "24%"
+      }
+    ],
+    "explanation": "Initial salt=6 litres. Removing 20% of homogeneous solution leaves 4.8 litres salt in a restored 20 litres, or 24%.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 41
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "wetland ecosystem services",
+    "concept_id": "gs:wetland-ecosystem-services",
+    "question_text": "Converting an urban wetland into filled construction land can reduce:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Flood-water storage, habitat and water-quality functions"
+      },
+      {
+        "value": "B",
+        "text": "Only the number of building permits"
+      },
+      {
+        "value": "C",
+        "text": "The need for any storm drainage forever"
+      },
+      {
+        "value": "D",
+        "text": "All evaporation across an entire state"
+      }
+    ],
+    "explanation": "Wetlands provide multiple functions whose loss can worsen flooding and ecological conditions beyond the filled plot.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 42
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "gdp intermediate double counting",
+    "concept_id": "gs:gdp-intermediate-double-counting",
+    "question_text": "To avoid double counting when measuring domestic output, national accounts primarily sum:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Every intermediate sale plus the final sale in full"
+      },
+      {
+        "value": "B",
+        "text": "Only imported raw-material costs"
+      },
+      {
+        "value": "C",
+        "text": "Value added across production stages"
+      },
+      {
+        "value": "D",
+        "text": "All transfers as current production"
+      }
+    ],
+    "explanation": "Value added subtracts intermediate consumption from output, preventing repeated inclusion of the same inputs.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 43
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "rythu investment support purpose",
+    "concept_id": "gs:rythu-investment-support-purpose",
+    "question_text": "According to Telangana's Rythu Bharosa portal, the scheme's principal agricultural purpose is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Timely working-capital assistance near the beginning of crop cycles"
+      },
+      {
+        "value": "B",
+        "text": "Replacement of all crop cultivation with industry"
+      },
+      {
+        "value": "C",
+        "text": "Payment exclusively for deep-sea fishing"
+      },
+      {
+        "value": "D",
+        "text": "Fixing the national policy repo rate"
+      }
+    ],
+    "explanation": "The scheme portal describes agricultural financial assistance and working capital. This question avoids disputed or changing eligibility and payment totals.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://rythubharosa.telangana.gov.in/",
+    "correct_answer": "A",
+    "number": 44
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "montagu reforms dyarchy",
+    "concept_id": "gs:montagu-reforms-dyarchy",
+    "question_text": "Under the Government of India Act, 1919, dyarchy in provinces divided subjects into:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Defence and foreign affairs only"
+      },
+      {
+        "value": "B",
+        "text": "Union and municipal categories only"
+      },
+      {
+        "value": "C",
+        "text": "Reserved and transferred categories"
+      },
+      {
+        "value": "D",
+        "text": "Judicial and electoral categories only"
+      }
+    ],
+    "explanation": "Provincial subjects were divided between reserved administration and transferred responsibilities under ministers.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 45
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "unccd2026 venue",
+    "concept_id": "gs:unccd2026-venue",
+    "question_text": "The UNCCD COP17 conference in 2026, highlighted by the UN under the theme of restoring land, was associated with which host city?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Geneva"
+      },
+      {
+        "value": "B",
+        "text": "Belem"
+      },
+      {
+        "value": "C",
+        "text": "Ulaanbaatar"
+      },
+      {
+        "value": "D",
+        "text": "Nairobi"
+      }
+    ],
+    "explanation": "The UN's desertification observance page names Ulaanbaatar for the August 2026 conference. It must not be confused with UNFCCC COP30.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.un.org/en/node/74111",
+    "correct_answer": "C",
+    "number": 46
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "data sufficiency positive integer",
+    "concept_id": "gs:data-sufficiency-positive-integer",
+    "question_text": "What is positive integer n? I: n is a prime below 10. II: n is even. Which is sufficient?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Neither even together"
+      },
+      {
+        "value": "B",
+        "text": "Statements I and II together, but neither alone"
+      },
+      {
+        "value": "C",
+        "text": "I alone, but not II"
+      },
+      {
+        "value": "D",
+        "text": "II alone, but not I"
+      }
+    ],
+    "explanation": "I allows 2,3,5,7; II allows many positive even integers. Their intersection is uniquely 2.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 47
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "musi urban basin",
+    "concept_id": "gs:musi-urban-basin",
+    "question_text": "Hyderabad's Musi River is part of which larger drainage basin?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Narmada"
+      },
+      {
+        "value": "B",
+        "text": "Godavari"
+      },
+      {
+        "value": "C",
+        "text": "Mahanadi"
+      },
+      {
+        "value": "D",
+        "text": "Krishna"
+      }
+    ],
+    "explanation": "The Musi joins the Krishna system. Urban flooding within its catchment therefore belongs to that basin context.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 48
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "kakatiya irrigation landscape",
+    "concept_id": "gs:kakatiya-irrigation-landscape",
+    "question_text": "Kakatiya tank systems are important in environmental history mainly because they:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Were constructed only for deep-sea navigation"
+      },
+      {
+        "value": "B",
+        "text": "Connected water storage, cultivation and settlement in a seasonal-rainfall region"
+      },
+      {
+        "value": "C",
+        "text": "Depended exclusively on year-round glacier melt"
+      },
+      {
+        "value": "D",
+        "text": "Eliminated every need for maintenance"
+      }
+    ],
+    "explanation": "Tanks and connected local water management supported agriculture and settlements under variable monsoon conditions.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 49
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "hard water soap",
+    "concept_id": "gs:hard-water-soap",
+    "question_text": "Hard water forms scum with soap mainly due to dissolved:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Only nitrogen gas"
+      },
+      {
+        "value": "B",
+        "text": "Only sodium chloride in every case"
+      },
+      {
+        "value": "C",
+        "text": "Only glucose"
+      },
+      {
+        "value": "D",
+        "text": "Calcium and magnesium ions"
+      }
+    ],
+    "explanation": "Calcium and magnesium form relatively insoluble soap salts, reducing effective lathering.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 50
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "hyderabad social reform education",
+    "concept_id": "gs:hyderabad-social-reform-education",
+    "question_text": "Why do libraries and vernacular associations figure prominently in accounts of cultural awakening in Telangana under the Nizam?",
+    "options": [
+      {
+        "value": "A",
+        "text": "They prohibited all local-language publication"
+      },
+      {
+        "value": "B",
+        "text": "They functioned solely as military arsenals"
+      },
+      {
+        "value": "C",
+        "text": "They replaced every court in Hyderabad"
+      },
+      {
+        "value": "D",
+        "text": "They expanded reading, public discussion and collective awareness"
+      }
+    ],
+    "explanation": "Libraries and language associations created spaces for learning and social awareness within the region's political constraints.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 51
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "andhra mahasabha evolution",
+    "concept_id": "gs:andhra-mahasabha-evolution",
+    "question_text": "In Telangana's twentieth-century political history, the Andhra Mahasabha is significant because it:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Was only a maritime trading company"
+      },
+      {
+        "value": "B",
+        "text": "Was the 2014 Parliament itself"
+      },
+      {
+        "value": "C",
+        "text": "Became a platform for cultural and socio-political mobilisation in Hyderabad State"
+      },
+      {
+        "value": "D",
+        "text": "Administered British India from London"
+      }
+    ],
+    "explanation": "Its activities connected cultural awakening with social and political concerns in the Hyderabad region.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 52
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "simon commission opposition",
+    "concept_id": "gs:simon-commission-opposition",
+    "question_text": "A principal reason for Indian opposition to the Simon Commission was:",
+    "options": [
+      {
+        "value": "A",
+        "text": "The absence of Indian members"
+      },
+      {
+        "value": "B",
+        "text": "Its composition entirely of Indian women"
+      },
+      {
+        "value": "C",
+        "text": "Its proposal to end colonial rule immediately without conditions"
+      },
+      {
+        "value": "D",
+        "text": "Its establishment after independence in 1950"
+      }
+    ],
+    "explanation": "The all-British statutory commission provoked widespread opposition, summarized in the slogan 'Simon Go Back'.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 53
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "federal concurrent law conflict",
+    "concept_id": "gs:federal-concurrent-law-conflict",
+    "question_text": "Where valid Union and state laws on a Concurrent List matter conflict, what is the general constitutional rule, subject to Article 254 exceptions?",
+    "options": [
+      {
+        "value": "A",
+        "text": "State law always prevails without exception"
+      },
+      {
+        "value": "B",
+        "text": "Union law prevails to the extent of repugnancy"
+      },
+      {
+        "value": "C",
+        "text": "The district magistrate alone chooses the applicable law"
+      },
+      {
+        "value": "D",
+        "text": "Both laws automatically cease to exist"
+      }
+    ],
+    "explanation": "Article 254 supplies the general Union-law priority and qualified exceptions for certain presidentially assented state laws.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 54
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "bonalu bathukamma distinction",
+    "concept_id": "gs:bonalu-bathukamma-distinction",
+    "question_text": "Which distinction between Bathukamma and Bonalu is correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Bonalu is celebrated only through Buddhist monastic debate"
+      },
+      {
+        "value": "B",
+        "text": "Bathukamma centres on floral arrangements; Bonalu includes food offerings to the goddess"
+      },
+      {
+        "value": "C",
+        "text": "Both are exclusively harvest dances of Punjab"
+      },
+      {
+        "value": "D",
+        "text": "Bathukamma is a colonial revenue tax; Bonalu is a land tenure"
+      }
+    ],
+    "explanation": "The festivals have distinctive ritual forms even though both occupy important places in Telangana's cultural life.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 55
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "ordinance temporary legislation",
+    "concept_id": "gs:ordinance-temporary-legislation",
+    "question_text": "An ordinance promulgated when the relevant legislature is not in session is best understood as:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A permanent constitutional amendment requiring no legislature"
+      },
+      {
+        "value": "B",
+        "text": "A substitute for every future election"
+      },
+      {
+        "value": "C",
+        "text": "Temporary executive legislation subject to constitutional conditions and legislative oversight"
+      },
+      {
+        "value": "D",
+        "text": "A judicial decree issued by the Governor"
+      }
+    ],
+    "explanation": "Ordinance power is conditioned and temporary, with approval and lapse rules on legislative reassembly.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 56
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "real nominal growth",
+    "concept_id": "gs:real-nominal-growth",
+    "question_text": "Nominal output rises 12% while the output price deflator rises 5%. Approximate exact real growth is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "17.00%"
+      },
+      {
+        "value": "B",
+        "text": "12.60%"
+      },
+      {
+        "value": "C",
+        "text": "7.00%"
+      },
+      {
+        "value": "D",
+        "text": "6.67%"
+      }
+    ],
+    "explanation": "Real growth=(1.12/1.05)-1=0.06667. Subtracting rates gives an approximation, not the exact ratio.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 57
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "nizam rule rural hierarchy",
+    "concept_id": "gs:nizam-rule-rural-hierarchy",
+    "question_text": "In discussions of Telangana's agrarian history, vetti refers primarily to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A uniform land-survey instrument"
+      },
+      {
+        "value": "B",
+        "text": "An elected urban council"
+      },
+      {
+        "value": "C",
+        "text": "Compulsory unpaid labour"
+      },
+      {
+        "value": "D",
+        "text": "A voluntary irrigation cooperative"
+      }
+    ],
+    "explanation": "Vetti was an exploitative labour practice challenged in struggles against rural oppression.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 58
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "peace prize country",
+    "concept_id": "gs:peace-prize-country",
+    "question_text": "The 2025 Nobel Peace Prize recognized Maria Corina Machado's work concerning democratic rights in which country?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Venezuela"
+      },
+      {
+        "value": "B",
+        "text": "Chile"
+      },
+      {
+        "value": "C",
+        "text": "Colombia"
+      },
+      {
+        "value": "D",
+        "text": "Peru"
+      }
+    ],
+    "explanation": "The Nobel announcement explicitly connects the award to democratic rights and peaceful democratic transition in Venezuela.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.nobelprize.org/prizes/peace/2025/summary/",
+    "correct_answer": "A",
+    "number": 59
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "gst input credit purpose",
+    "concept_id": "gs:gst-input-credit-purpose",
+    "question_text": "The principal economic purpose of input tax credit in a value-added tax system is to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Tax the same input repeatedly without adjustment"
+      },
+      {
+        "value": "B",
+        "text": "Reduce cascading by crediting eligible tax paid on inputs"
+      },
+      {
+        "value": "C",
+        "text": "Eliminate all compliance records"
+      },
+      {
+        "value": "D",
+        "text": "Replace every direct tax"
+      }
+    ],
+    "explanation": "Credit offsets eligible input tax against output liability, limiting tax-on-tax effects subject to statutory rules.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 60
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "constitutional equality protective policy",
+    "concept_id": "gs:constitutional-equality-protective-policy",
+    "question_text": "Reservations and targeted inclusion measures are most appropriately assessed in relation to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A rule that all differential treatment is automatically unconstitutional"
+      },
+      {
+        "value": "B",
+        "text": "Constitutional equality provisions and their permitted protective measures"
+      },
+      {
+        "value": "C",
+        "text": "An exclusive foreign-affairs power"
+      },
+      {
+        "value": "D",
+        "text": "The prohibition of every social classification"
+      }
+    ],
+    "explanation": "Constitutional equality includes provisions enabling specified protective and affirmative measures; legal conditions still govern their use.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 61
+  },
+  {
+    "subject": "Basic English",
+    "topic": "subject verb proximity trap",
+    "concept_id": "gs:subject-verb-proximity-trap",
+    "question_text": "Choose the grammatically correct sentence.",
+    "options": [
+      {
+        "value": "A",
+        "text": "The quality of the answers are improving."
+      },
+      {
+        "value": "B",
+        "text": "The quality of the answers have improving."
+      },
+      {
+        "value": "C",
+        "text": "The quality of the answers were improve."
+      },
+      {
+        "value": "D",
+        "text": "The quality of the answers is improving."
+      }
+    ],
+    "explanation": "The subject is singular 'quality', not the nearby plural 'answers', so the verb is 'is'.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Basic English",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 62
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "table percentage versus points",
+    "concept_id": "gs:table-percentage-versus-points",
+    "question_text": "A programme's success rate rises from 40% to 50%. Relative percentage increase in the success rate is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "20%"
+      },
+      {
+        "value": "B",
+        "text": "10%"
+      },
+      {
+        "value": "C",
+        "text": "50%"
+      },
+      {
+        "value": "D",
+        "text": "25%"
+      }
+    ],
+    "explanation": "The gain is 10 percentage points; relative increase is (50-40)/40=25%.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 63
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "komaram bheem slogan",
+    "concept_id": "gs:komaram-bheem-slogan",
+    "question_text": "The slogan 'Jal, Jangal, Zameen' associated with Komaram Bheem emphasizes:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Community rights over water, forests and land"
+      },
+      {
+        "value": "B",
+        "text": "Abolition of all village institutions"
+      },
+      {
+        "value": "C",
+        "text": "Only expansion of foreign trade"
+      },
+      {
+        "value": "D",
+        "text": "Replacement of agriculture by mining in every forest"
+      }
+    ],
+    "explanation": "The slogan expresses an interlinked claim to natural resources and land, particularly in tribal-rights struggles.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 64
+  },
+  {
+    "subject": "Basic English",
+    "topic": "parallel construction",
+    "concept_id": "gs:parallel-construction",
+    "question_text": "Choose the sentence with correct parallel structure.",
+    "options": [
+      {
+        "value": "A",
+        "text": "The course teaches students analysis, to designing and evaluate."
+      },
+      {
+        "value": "B",
+        "text": "The course teaches students to analyse, designing and evaluation."
+      },
+      {
+        "value": "C",
+        "text": "The course teaches students to analyse, design and evaluate."
+      },
+      {
+        "value": "D",
+        "text": "The course teaches students to analysis, design and evaluating."
+      }
+    ],
+    "explanation": "The coordinated verbs should use parallel forms: analyse, design and evaluate after the shared infinitive marker.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Basic English",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 65
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "contour watershed boundary geography",
+    "concept_id": "gs:contour-watershed-boundary-geography",
+    "question_text": "A watershed boundary generally follows:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Topographic divides separating drainage toward different outlets"
+      },
+      {
+        "value": "B",
+        "text": "Only administrative district lines"
+      },
+      {
+        "value": "C",
+        "text": "The centreline of every perennial river"
+      },
+      {
+        "value": "D",
+        "text": "Every contour of minimum elevation"
+      }
+    ],
+    "explanation": "Drainage divides separate surface runoff destinations and need not coincide with administrative boundaries.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 66
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "peninsular river drainage",
+    "concept_id": "gs:peninsular-river-drainage",
+    "question_text": "Which pair contains two major east-flowing peninsular rivers whose basins include Telangana?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Indus and Jhelum"
+      },
+      {
+        "value": "B",
+        "text": "Godavari and Krishna"
+      },
+      {
+        "value": "C",
+        "text": "Narmada and Tapi"
+      },
+      {
+        "value": "D",
+        "text": "Luni and Sabarmati"
+      }
+    ],
+    "explanation": "Godavari and Krishna drain eastward toward the Bay of Bengal and are central to Telangana's geography.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 67
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "repo monetary transmission",
+    "concept_id": "gs:repo-monetary-transmission",
+    "question_text": "Other things equal, a policy-rate increase intended to restrain demand generally works through:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Higher financing costs and moderated borrowing/spending"
+      },
+      {
+        "value": "B",
+        "text": "A compulsory fall in every tax rate"
+      },
+      {
+        "value": "C",
+        "text": "Direct abolition of all bank deposits"
+      },
+      {
+        "value": "D",
+        "text": "An automatic increase in every household's cash income"
+      }
+    ],
+    "explanation": "Monetary transmission can raise lending costs and cool interest-sensitive demand, with lags and imperfect pass-through.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 68
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "carbon monoxide mechanism",
+    "concept_id": "gs:carbon-monoxide-mechanism",
+    "question_text": "Carbon monoxide is dangerous chiefly because it:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Cannot enter the bloodstream"
+      },
+      {
+        "value": "B",
+        "text": "Is identical to carbon dioxide in blood chemistry"
+      },
+      {
+        "value": "C",
+        "text": "Is always visible as a green cloud"
+      },
+      {
+        "value": "D",
+        "text": "Binds strongly to haemoglobin and impairs oxygen transport"
+      }
+    ],
+    "explanation": "Carboxyhaemoglobin formation reduces effective oxygen transport; the gas can be hazardous without a visible warning.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 69
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "unemployment disguised productivity",
+    "concept_id": "gs:unemployment-disguised-productivity",
+    "question_text": "Several workers leave a farm without reducing its output. This is evidence consistent with:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Full use of every worker's marginal productivity"
+      },
+      {
+        "value": "B",
+        "text": "Disguised unemployment among some workers"
+      },
+      {
+        "value": "C",
+        "text": "A fall in the number of crops grown nationally"
+      },
+      {
+        "value": "D",
+        "text": "An inevitable increase in land area"
+      }
+    ],
+    "explanation": "When some labour has negligible marginal product, reducing labour need not reduce output; this is a classic disguised-unemployment setting.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 70
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "dpsp enforceability distinction",
+    "concept_id": "gs:dpsp-enforceability-distinction",
+    "question_text": "Which statement correctly distinguishes Directive Principles from Fundamental Rights?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Directive Principles apply only to foreign governments"
+      },
+      {
+        "value": "B",
+        "text": "Directive Principles guide governance but are not directly enforceable by courts in the same manner"
+      },
+      {
+        "value": "C",
+        "text": "Fundamental Rights can never be limited by law"
+      },
+      {
+        "value": "D",
+        "text": "Directive Principles are outside the Constitution"
+      }
+    ],
+    "explanation": "Part IV principles are fundamental to governance but are not judicially enforceable as such under Article 37.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 71
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "brics2025 accession",
+    "concept_id": "gs:brics2025-accession",
+    "question_text": "Which Southeast Asian country's full BRICS membership was formally announced by Brazil on 6 January 2025?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Malaysia"
+      },
+      {
+        "value": "B",
+        "text": "Thailand"
+      },
+      {
+        "value": "C",
+        "text": "Vietnam"
+      },
+      {
+        "value": "D",
+        "text": "Indonesia"
+      }
+    ],
+    "explanation": "The Brazilian BRICS presidency announcement identifies Indonesia as the new full member. Partner status and full membership are distinct.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://brics.br/en/news/brazil-announces-indonesia-as-full-member-of-brics",
+    "correct_answer": "D",
+    "number": 72
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "ocean conference cohosts",
+    "concept_id": "gs:ocean-conference-cohosts",
+    "question_text": "Which countries co-hosted the 2025 UN Ocean Conference held in Nice?",
+    "options": [
+      {
+        "value": "A",
+        "text": "France and Brazil"
+      },
+      {
+        "value": "B",
+        "text": "Portugal and Kenya"
+      },
+      {
+        "value": "C",
+        "text": "France and Costa Rica"
+      },
+      {
+        "value": "D",
+        "text": "India and Indonesia"
+      }
+    ],
+    "explanation": "The United Nations conference page identifies France and Costa Rica as co-hosts and Nice as the venue.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.un.org/en/node/222894",
+    "correct_answer": "C",
+    "number": 73
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "pmddky scope",
+    "concept_id": "gs:pmddky-scope",
+    "question_text": "The July 2025 Cabinet approval of PM Dhan-Dhaanya Krishi Yojana initially covered how many districts for the six-year period beginning 2025-26?",
+    "options": [
+      {
+        "value": "A",
+        "text": "100"
+      },
+      {
+        "value": "B",
+        "text": "750"
+      },
+      {
+        "value": "C",
+        "text": "250"
+      },
+      {
+        "value": "D",
+        "text": "50"
+      }
+    ],
+    "explanation": "PIB's Cabinet release specifies 100 districts and a six-year period beginning 2025-26, with convergence of agricultural schemes.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2145147&lang=2&reg=48",
+    "correct_answer": "A",
+    "number": 74
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "primary deficit",
+    "concept_id": "gs:primary-deficit",
+    "question_text": "If fiscal deficit is 50000 crore rupees and interest payments are 18000 crore, primary deficit is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "32000 crore rupees"
+      },
+      {
+        "value": "B",
+        "text": "50000 crore rupees"
+      },
+      {
+        "value": "C",
+        "text": "18000 crore rupees"
+      },
+      {
+        "value": "D",
+        "text": "68000 crore rupees"
+      }
+    ],
+    "explanation": "Primary deficit subtracts interest payments from fiscal deficit: 50000-18000=32000 crore.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 75
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "deccan black soil properties",
+    "concept_id": "gs:deccan-black-soil-properties",
+    "question_text": "Deep black soils commonly develop shrinkage cracks during dry weather because they contain:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Only coarse quartz sand without clay"
+      },
+      {
+        "value": "B",
+        "text": "Permanent ice lenses in tropical summers"
+      },
+      {
+        "value": "C",
+        "text": "Expansive clay minerals with strong wetting-drying volume changes"
+      },
+      {
+        "value": "D",
+        "text": "An impermeable metal layer"
+      }
+    ],
+    "explanation": "Shrink-swell clay behaviour explains both dry-season cracking and high moisture retention.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 76
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "ryotwari mahalwari distinction",
+    "concept_id": "gs:ryotwari-mahalwari-distinction",
+    "question_text": "Which pairing correctly identifies the principal settlement unit?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Both - exclusively urban municipalities"
+      },
+      {
+        "value": "B",
+        "text": "Ryotwari - princely ruler; Mahalwari - overseas company"
+      },
+      {
+        "value": "C",
+        "text": "Ryotwari - only port merchants; Mahalwari - factory workers"
+      },
+      {
+        "value": "D",
+        "text": "Ryotwari - individual cultivator; Mahalwari - village estate or mahal"
+      }
+    ],
+    "explanation": "These systems differed in the unit with which revenue settlement was made, although actual operation varied by region.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 77
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "jet stream winter rainfall",
+    "concept_id": "gs:jet-stream-winter-rainfall",
+    "question_text": "Winter precipitation over northwestern India is closely associated with:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A permanent absence of upper-air winds"
+      },
+      {
+        "value": "B",
+        "text": "The equatorial counter-current alone"
+      },
+      {
+        "value": "C",
+        "text": "Only the retreat of Antarctic sea ice"
+      },
+      {
+        "value": "D",
+        "text": "Western disturbances"
+      }
+    ],
+    "explanation": "Western disturbances are extratropical systems affecting winter weather, including Himalayan snow and northwestern rainfall.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 78
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "spadex demonstrated technology",
+    "concept_id": "gs:spadex-demonstrated-technology",
+    "question_text": "ISRO's successful SpaDeX docking on 16 January 2025 principally demonstrated which capability?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Landing a crew on the Moon"
+      },
+      {
+        "value": "B",
+        "text": "Navigation using underwater beacons"
+      },
+      {
+        "value": "C",
+        "text": "Rendezvous and docking of spacecraft in orbit"
+      },
+      {
+        "value": "D",
+        "text": "Sampling an asteroid surface"
+      }
+    ],
+    "explanation": "ISRO reported docking SDX-01 and SDX-02 on that date. The demonstrated capability was in-space docking, not planetary landing.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.isro.gov.in/spadex_docking.html",
+    "correct_answer": "C",
+    "number": 79
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "inflation distribution fixed income",
+    "concept_id": "gs:inflation-distribution-fixed-income",
+    "question_text": "Unexpected inflation most directly reduces the purchasing power of:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A fixed nominal income that does not adjust with prices"
+      },
+      {
+        "value": "B",
+        "text": "Every inflation-indexed payment by exactly the same percentage"
+      },
+      {
+        "value": "C",
+        "text": "Only foreign tourists' passports"
+      },
+      {
+        "value": "D",
+        "text": "A physical quantity of grain measured in kilograms"
+      }
+    ],
+    "explanation": "With nominal income unchanged, a rise in prices buys fewer goods and services.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 80
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "joint solar coronagraph observation 2026",
+    "concept_id": "gs:joint-solar-coronagraph-observation-2026",
+    "question_text": "An ISRO report in October 2026 described a joint coronagraph view of solar eruptions near their origin. Which mission pair was involved?",
+    "options": [
+      {
+        "value": "A",
+        "text": "India's Aditya-L1 and Europe's Proba-3"
+      },
+      {
+        "value": "B",
+        "text": "India's Chandrayaan-3 and NASA's Perseverance"
+      },
+      {
+        "value": "C",
+        "text": "ISRO's NavIC and Europe's Galileo"
+      },
+      {
+        "value": "D",
+        "text": "NASA's Juno and ISRO's Mars Orbiter"
+      }
+    ],
+    "explanation": "The ISRO report identifies observations by coronagraphs on Aditya-L1 and Proba-3. These solar observations differ from lunar, Martian and navigation missions.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.isro.gov.in/Coronagraphs_India_Aditya_L1_Europe_Proba_3.html",
+    "correct_answer": "A",
+    "number": 81
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "hazard vulnerability risk",
+    "concept_id": "gs:hazard-vulnerability-risk",
+    "question_text": "Two towns face the same flood depth, but one has weaker housing and fewer evacuation resources. Its greater expected loss chiefly reflects higher:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Magnitude of the same flood hazard"
+      },
+      {
+        "value": "B",
+        "text": "Vulnerability"
+      },
+      {
+        "value": "C",
+        "text": "Astronomical tide alone"
+      },
+      {
+        "value": "D",
+        "text": "Latitude"
+      }
+    ],
+    "explanation": "Risk depends on hazard, exposure and vulnerability. Equal hazard intensity can cause very different losses.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 82
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "no confidence collective responsibility",
+    "concept_id": "gs:no-confidence-collective-responsibility",
+    "question_text": "A Council of Ministers in a state must resign when it loses the confidence of which House?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Legislative Council alone"
+      },
+      {
+        "value": "B",
+        "text": "Rajya Sabha"
+      },
+      {
+        "value": "C",
+        "text": "Gram Sabha"
+      },
+      {
+        "value": "D",
+        "text": "Legislative Assembly"
+      }
+    ],
+    "explanation": "The state Council is collectively responsible to the Legislative Assembly, the directly elected lower House.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 83
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "bank credit productive inclusion",
+    "concept_id": "gs:bank-credit-productive-inclusion",
+    "question_text": "For a small enterprise, financial inclusion is most meaningful when formal access is accompanied by:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Exclusion from all digital and physical service channels"
+      },
+      {
+        "value": "B",
+        "text": "A bank account that can never be operated"
+      },
+      {
+        "value": "C",
+        "text": "Affordable usable services, consumer protection and financial capability"
+      },
+      {
+        "value": "D",
+        "text": "Compulsory borrowing regardless of repayment capacity"
+      }
+    ],
+    "explanation": "Opening an account is only an entry point; effective inclusion requires appropriate, safe and usable financial services.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 84
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "longitude time calculation",
+    "concept_id": "gs:longitude-time-calculation",
+    "question_text": "Two places differ by 7.5 degrees longitude. Their local solar times differ by:",
+    "options": [
+      {
+        "value": "A",
+        "text": "15 minutes"
+      },
+      {
+        "value": "B",
+        "text": "60 minutes"
+      },
+      {
+        "value": "C",
+        "text": "45 minutes"
+      },
+      {
+        "value": "D",
+        "text": "30 minutes"
+      }
+    ],
+    "explanation": "Earth rotates 360 degrees in 24 hours, or 4 minutes per degree. Thus 7.5 degrees corresponds to 30 minutes.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 85
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "hyderabad constitutional sequence",
+    "concept_id": "gs:hyderabad-constitutional-sequence",
+    "question_text": "Which sequence places these events in correct order: Hyderabad's integration into India, formation of Andhra Pradesh, formation of Telangana?",
+    "options": [
+      {
+        "value": "A",
+        "text": "1956, 1948, 2014"
+      },
+      {
+        "value": "B",
+        "text": "1948, 2014, 1956"
+      },
+      {
+        "value": "C",
+        "text": "2014, 1956, 1948"
+      },
+      {
+        "value": "D",
+        "text": "1948, 1956, 2014"
+      }
+    ],
+    "explanation": "Hyderabad integrated in 1948, Andhra Pradesh formed in 1956, and Telangana became a separate state in 2014.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 86
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "dna rna distinction",
+    "concept_id": "gs:dna-rna-distinction",
+    "question_text": "Which pairing correctly distinguishes typical DNA from RNA?",
+    "options": [
+      {
+        "value": "A",
+        "text": "DNA contains no sugar; RNA contains no bases"
+      },
+      {
+        "value": "B",
+        "text": "Both always have identical sugars and bases"
+      },
+      {
+        "value": "C",
+        "text": "RNA is always a double-stranded chromosome"
+      },
+      {
+        "value": "D",
+        "text": "DNA usually contains deoxyribose and thymine; RNA usually contains ribose and uracil"
+      }
+    ],
+    "explanation": "The sugar and one characteristic base differ; actual structures and roles are more varied than an absolute single/double-strand rule.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 87
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "pochampally technique",
+    "concept_id": "gs:pochampally-technique",
+    "question_text": "The characteristic patterned effect of Pochampally ikat is created chiefly by:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Painting every motif only after weaving"
+      },
+      {
+        "value": "B",
+        "text": "Resist-dyeing yarns before weaving"
+      },
+      {
+        "value": "C",
+        "text": "Using only undyed plastic sheets"
+      },
+      {
+        "value": "D",
+        "text": "Carving motifs into granite"
+      }
+    ],
+    "explanation": "Ikat patterns arise from planned resist-dyeing of yarns and their alignment during weaving.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 88
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "weighted class average",
+    "concept_id": "gs:weighted-class-average",
+    "question_text": "A class has 20 students averaging 60 marks and 30 students averaging 70 marks. Combined average is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "65"
+      },
+      {
+        "value": "B",
+        "text": "64"
+      },
+      {
+        "value": "C",
+        "text": "68"
+      },
+      {
+        "value": "D",
+        "text": "66"
+      }
+    ],
+    "explanation": "Total marks=20x60+30x70=3300. Divide by 50 students to obtain 66.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 89
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "cheriyal narrative art",
+    "concept_id": "gs:cheriyal-narrative-art",
+    "question_text": "Cheriyal painting is especially associated with:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Industrial blueprint reproduction"
+      },
+      {
+        "value": "B",
+        "text": "Narrative scrolls linked to oral storytelling"
+      },
+      {
+        "value": "C",
+        "text": "Only stone inscriptions in Latin"
+      },
+      {
+        "value": "D",
+        "text": "A form of European oil portraiture"
+      }
+    ],
+    "explanation": "Cheriyal scrolls organize painted episodes for narrative performance and storytelling.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 90
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "cop29 finance target distinction",
+    "concept_id": "gs:cop29-finance-target-distinction",
+    "question_text": "Which pair correctly distinguishes the COP29 finance outcomes for 2035: the developed-country-led annual goal and the wider all-actors scaling ambition?",
+    "options": [
+      {
+        "value": "A",
+        "text": "USD 300 billion and USD 1.3 trillion"
+      },
+      {
+        "value": "B",
+        "text": "USD 1.3 trillion and USD 300 billion"
+      },
+      {
+        "value": "C",
+        "text": "USD 100 billion and USD 300 billion"
+      },
+      {
+        "value": "D",
+        "text": "USD 30 billion and USD 100 billion"
+      }
+    ],
+    "explanation": "UNFCCC distinguishes the USD300 billion annual goal from efforts by all actors to scale finance to USD1.3 trillion annually by 2035.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://unfccc.int/news/cop29-un-climate-conference-agrees-to-triple-finance-to-developing-countries-protecting-lives-and",
+    "correct_answer": "A",
+    "number": 91
+  },
+  {
+    "subject": "Basic English",
+    "topic": "idiom contextual meaning",
+    "concept_id": "gs:idiom-contextual-meaning",
+    "question_text": "In 'The revised timetable is not set in stone', the phrase means that the timetable:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Is impossible to read"
+      },
+      {
+        "value": "B",
+        "text": "Can still be changed"
+      },
+      {
+        "value": "C",
+        "text": "Was carved on a monument"
+      },
+      {
+        "value": "D",
+        "text": "Has already been cancelled"
+      }
+    ],
+    "explanation": "The idiom 'set in stone' means fixed or unchangeable; negating it signals flexibility.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Basic English",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 92
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "local government schedules",
+    "concept_id": "gs:local-government-schedules",
+    "question_text": "Which pairing correctly links constitutional schedules with local-government subject lists?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Eleventh - Panchayats; Twelfth - Municipalities"
+      },
+      {
+        "value": "B",
+        "text": "Eleventh - Municipalities; Twelfth - Panchayats"
+      },
+      {
+        "value": "C",
+        "text": "Ninth - Municipalities; Tenth - Panchayats"
+      },
+      {
+        "value": "D",
+        "text": "Fifth - Municipalities; Sixth - all Panchayats"
+      }
+    ],
+    "explanation": "The 73rd and 74th Amendments introduced the Eleventh and Twelfth Schedule lists respectively.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 93
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "antibiotic resistance selection",
+    "concept_id": "gs:antibiotic-resistance-selection",
+    "question_text": "Stopping an antibiotic course or using antibiotics unnecessarily is a concern chiefly because inappropriate use can:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Select for resistant microbial populations"
+      },
+      {
+        "value": "B",
+        "text": "Convert every virus into a bacterium"
+      },
+      {
+        "value": "C",
+        "text": "Make all bacteria permanently harmless"
+      },
+      {
+        "value": "D",
+        "text": "Remove every environmental source of infection"
+      }
+    ],
+    "explanation": "Selection favours organisms that survive exposure, contributing to antimicrobial resistance; clinical treatment should follow appropriate guidance.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 94
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "fiscal revenue deficit distinction",
+    "concept_id": "gs:fiscal-revenue-deficit-distinction",
+    "question_text": "Revenue deficit equals:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Capital receipts minus capital expenditure"
+      },
+      {
+        "value": "B",
+        "text": "Revenue expenditure minus revenue receipts"
+      },
+      {
+        "value": "C",
+        "text": "Total expenditure minus all receipts including borrowing"
+      },
+      {
+        "value": "D",
+        "text": "Tax revenue minus non-tax revenue"
+      }
+    ],
+    "explanation": "Revenue deficit isolates the revenue account; fiscal deficit is a broader borrowing requirement concept.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 95
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "1857 annexation resentment",
+    "concept_id": "gs:1857-annexation-resentment",
+    "question_text": "Which policy intensified resentment among several princely ruling families before the revolt of 1857?",
+    "options": [
+      {
+        "value": "A",
+        "text": "The 1935 provincial autonomy provisions"
+      },
+      {
+        "value": "B",
+        "text": "The 1919 dyarchy scheme"
+      },
+      {
+        "value": "C",
+        "text": "Doctrine of Lapse annexations"
+      },
+      {
+        "value": "D",
+        "text": "The 1947 Mountbatten Plan"
+      }
+    ],
+    "explanation": "Annexations under the Doctrine of Lapse preceded 1857; the other measures belong to later periods.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 96
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "arithmetic sequence missing term",
+    "concept_id": "gs:arithmetic-sequence-missing-term",
+    "question_text": "A sequence has successive differences 3, 5, 7 and 9: 2, 5, 10, 17, 26. Next term is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "39"
+      },
+      {
+        "value": "B",
+        "text": "37"
+      },
+      {
+        "value": "C",
+        "text": "36"
+      },
+      {
+        "value": "D",
+        "text": "35"
+      }
+    ],
+    "explanation": "The next odd-number difference is 11. Hence 26+11=37.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 97
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "vernacular press restrictions",
+    "concept_id": "gs:vernacular-press-restrictions",
+    "question_text": "The Vernacular Press Act of 1878 particularly targeted:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Only official English parliamentary reports"
+      },
+      {
+        "value": "B",
+        "text": "All Sanskrit manuscripts from antiquity"
+      },
+      {
+        "value": "C",
+        "text": "Indian-language publications critical of colonial administration"
+      },
+      {
+        "value": "D",
+        "text": "Private letters sent outside India exclusively"
+      }
+    ],
+    "explanation": "It imposed discriminatory controls on vernacular newspapers and became a prominent issue in colonial civil-liberties debates.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 98
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "aditya halo milestone",
+    "concept_id": "gs:aditya-halo-milestone",
+    "question_text": "Aditya-L1's halo-orbit insertion on 6 January 2024 placed the observatory around:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A low orbit around Mars"
+      },
+      {
+        "value": "B",
+        "text": "The first Sun-Earth Lagrange point"
+      },
+      {
+        "value": "C",
+        "text": "The Moon's south pole"
+      },
+      {
+        "value": "D",
+        "text": "The centre of the asteroid belt"
+      }
+    ],
+    "explanation": "ISRO records insertion into a halo orbit around Sun-Earth L1, enabling sustained solar observations.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.isro.gov.in/media_isro/pdf/AdityaL1_second_Cycle_AO_01042026.pdf",
+    "correct_answer": "B",
+    "number": 99
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "un2026 paired observances",
+    "concept_id": "gs:un2026-paired-observances",
+    "question_text": "Which pair consists entirely of UN-designated international years for 2026?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Millets; Camelids"
+      },
+      {
+        "value": "B",
+        "text": "Cooperatives; Quantum Science and Technology"
+      },
+      {
+        "value": "C",
+        "text": "Woman Farmer; Rangelands and Pastoralists"
+      },
+      {
+        "value": "D",
+        "text": "Fruits and Vegetables; Sustainable Mountain Development"
+      }
+    ],
+    "explanation": "The UN observances list assigns both Woman Farmer and Rangelands and Pastoralists to 2026; the other pairs refer to earlier years.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.un.org/observances/international-years",
+    "correct_answer": "C",
+    "number": 100
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "renewable grid intermittency",
+    "concept_id": "gs:renewable-grid-intermittency",
+    "question_text": "A grid with a large share of solar generation particularly benefits from storage and flexible demand because:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Grid frequency is unrelated to supply-demand balance"
+      },
+      {
+        "value": "B",
+        "text": "Storage creates energy without input"
+      },
+      {
+        "value": "C",
+        "text": "Generation varies with daylight and weather"
+      },
+      {
+        "value": "D",
+        "text": "Solar panels generate constant power through every night"
+      }
+    ],
+    "explanation": "Flexibility helps balance variable generation against demand; storage shifts energy in time rather than creating it.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 101
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "perini historical setting",
+    "concept_id": "gs:perini-historical-setting",
+    "question_text": "Perini Sivatandavam is conventionally linked with which historical-cultural setting?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Kakatiya-era martial dance traditions"
+      },
+      {
+        "value": "B",
+        "text": "Victorian ballroom dance"
+      },
+      {
+        "value": "C",
+        "text": "Portuguese naval drill"
+      },
+      {
+        "value": "D",
+        "text": "Only Mughal miniature painting"
+      }
+    ],
+    "explanation": "Perini is associated with the Kakatiya cultural legacy and a vigorous martial dance idiom.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 102
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "reasonable accommodation disability",
+    "concept_id": "gs:reasonable-accommodation-disability",
+    "question_text": "A public examination provides an accessible format and reasonable adjustments for eligible disabled candidates. This most directly advances:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A property-tax exemption"
+      },
+      {
+        "value": "B",
+        "text": "Substantive equality and reasonable accommodation"
+      },
+      {
+        "value": "C",
+        "text": "Abolition of every academic standard"
+      },
+      {
+        "value": "D",
+        "text": "A constitutional ban on written examinations"
+      }
+    ],
+    "explanation": "Equal participation can require removal of barriers rather than identical treatment regardless of disability-related needs.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 103
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "mendel recessive cross",
+    "concept_id": "gs:mendel-recessive-cross",
+    "question_text": "In a simple Mendelian cross Aa x Aa, with complete dominance, the expected proportion showing the recessive phenotype is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "3/4"
+      },
+      {
+        "value": "B",
+        "text": "1"
+      },
+      {
+        "value": "C",
+        "text": "1/4"
+      },
+      {
+        "value": "D",
+        "text": "1/2"
+      }
+    ],
+    "explanation": "Genotypes occur as 1AA:2Aa:1aa. Only aa shows the recessive phenotype under the stated assumptions.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 104
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "food chain biomagnification",
+    "concept_id": "gs:food-chain-biomagnification",
+    "question_text": "A persistent fat-soluble pollutant tends to reach its highest concentration in:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Only the smallest producers"
+      },
+      {
+        "value": "B",
+        "text": "Long-lived predators at higher trophic levels"
+      },
+      {
+        "value": "C",
+        "text": "Rainwater before atmospheric contact in every case"
+      },
+      {
+        "value": "D",
+        "text": "Every organism at exactly the same concentration"
+      }
+    ],
+    "explanation": "Persistent pollutants can accumulate in organisms and become more concentrated through feeding relationships.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 105
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "cag accountability reporting",
+    "concept_id": "gs:cag-accountability-reporting",
+    "question_text": "The constitutional audit institution headed by the CAG primarily supports:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Conduct of all state elections"
+      },
+      {
+        "value": "B",
+        "text": "Appointment of every High Court judge"
+      },
+      {
+        "value": "C",
+        "text": "Direct day-to-day execution of every ministry's spending"
+      },
+      {
+        "value": "D",
+        "text": "Legislative financial accountability through independent audit"
+      }
+    ],
+    "explanation": "Audit reports support scrutiny of public finances; the CAG does not replace the executive as spending authority.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 106
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "direction vector displacement",
+    "concept_id": "gs:direction-vector-displacement",
+    "question_text": "A student walks 6 km east, 8 km north and then 6 km west. Position relative to the start is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "20 km north"
+      },
+      {
+        "value": "B",
+        "text": "8 km north"
+      },
+      {
+        "value": "C",
+        "text": "6 km west"
+      },
+      {
+        "value": "D",
+        "text": "8 km south"
+      }
+    ],
+    "explanation": "East and west displacements cancel, leaving only the 8 km northward displacement.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 107
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "cybersecurity phishing",
+    "concept_id": "gs:cybersecurity-phishing",
+    "question_text": "A message imitates a trusted portal and requests a password through an unfamiliar link. The safest immediate response is to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Forward the password to classmates for checking"
+      },
+      {
+        "value": "B",
+        "text": "Send the password because the logo is familiar"
+      },
+      {
+        "value": "C",
+        "text": "Avoid the link and verify through the independently accessed official service"
+      },
+      {
+        "value": "D",
+        "text": "Disable all account protections"
+      }
+    ],
+    "explanation": "Phishing exploits impersonation. Independent verification avoids relying on the suspicious message's link or appearance.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 108
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "telangana movement phases",
+    "concept_id": "gs:telangana-movement-phases",
+    "question_text": "Which sequence is chronologically correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "1969 agitation, 2001 TRS formation, 2009 statehood announcement, 2014 state formation"
+      },
+      {
+        "value": "B",
+        "text": "2009 announcement, 1969 agitation, 2001 TRS formation, 2014 formation"
+      },
+      {
+        "value": "C",
+        "text": "2014 formation, 2001 TRS formation, 1969 agitation, 2009 announcement"
+      },
+      {
+        "value": "D",
+        "text": "2001 TRS formation, 1969 agitation, 2014 state formation, 2009 announcement"
+      }
+    ],
+    "explanation": "These milestones occurred in 1969, 2001, December 2009 and June 2014 respectively.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 109
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "kaloji literary voice",
+    "concept_id": "gs:kaloji-literary-voice",
+    "question_text": "Which description best fits Kaloji Narayana Rao's literary and public contribution?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Chief architect of the 1935 Government of India Act"
+      },
+      {
+        "value": "B",
+        "text": "Poetry closely connected with people's lives and democratic concerns"
+      },
+      {
+        "value": "C",
+        "text": "Founder of the East India Company"
+      },
+      {
+        "value": "D",
+        "text": "Exclusive authorship of Sanskrit hydraulic treatises"
+      }
+    ],
+    "explanation": "Kaloji's writing and activism are associated with human experience, civil liberties and a strong Telangana cultural voice.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 110
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "gentlemens agreement safeguards",
+    "concept_id": "gs:gentlemens-agreement-safeguards",
+    "question_text": "The Gentlemen's Agreement associated with the 1956 merger was principally intended to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Provide safeguards for Telangana within the merged state"
+      },
+      {
+        "value": "B",
+        "text": "Abolish every regional development institution"
+      },
+      {
+        "value": "C",
+        "text": "Transfer Hyderabad to direct British rule"
+      },
+      {
+        "value": "D",
+        "text": "Partition Hyderabad into two foreign states"
+      }
+    ],
+    "explanation": "The agreement sought regional safeguards concerning matters such as employment, expenditure and administration during the merger.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 111
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "tax progressivity incidence",
+    "concept_id": "gs:tax-progressivity-incidence",
+    "question_text": "A tax is progressive in the income-tax sense when:",
+    "options": [
+      {
+        "value": "A",
+        "text": "It is collected only at railway stations"
+      },
+      {
+        "value": "B",
+        "text": "Every taxpayer pays an identical fixed sum"
+      },
+      {
+        "value": "C",
+        "text": "Its rate necessarily falls as income rises"
+      },
+      {
+        "value": "D",
+        "text": "Its average tax rate rises with taxable income"
+      }
+    ],
+    "explanation": "Progressivity concerns how the tax burden relative to income changes across income levels, not just collection method.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 112
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "ai training testing leakage",
+    "concept_id": "gs:ai-training-testing-leakage",
+    "question_text": "An educational prediction model is tested on examples that were also used to train it. The principal evaluation problem is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "It makes sample size irrelevant"
+      },
+      {
+        "value": "B",
+        "text": "Data leakage can overstate performance on unseen students or questions"
+      },
+      {
+        "value": "C",
+        "text": "It guarantees fair generalization"
+      },
+      {
+        "value": "D",
+        "text": "It proves the model understands every concept"
+      }
+    ],
+    "explanation": "A separate representative test set is needed to estimate generalization. Reusing training examples can inflate apparent accuracy.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 113
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "drain theory argument",
+    "concept_id": "gs:drain-theory-argument",
+    "question_text": "Dadabhai Naoroji's drain theory emphasized:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A natural shortage of rivers in India"
+      },
+      {
+        "value": "B",
+        "text": "Only losses caused by monsoon flooding"
+      },
+      {
+        "value": "C",
+        "text": "Unrequited transfer of economic resources from India to Britain"
+      },
+      {
+        "value": "D",
+        "text": "The absence of any colonial trade"
+      }
+    ],
+    "explanation": "The argument concerned economic transfers without equivalent domestic benefit, including certain home charges and remittances.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 114
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "tribal jatara community",
+    "concept_id": "gs:tribal-jatara-community",
+    "question_text": "The Sammakka-Saralamma Jatara at Medaram is especially associated with which tribal community?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Toda"
+      },
+      {
+        "value": "B",
+        "text": "Jarawa"
+      },
+      {
+        "value": "C",
+        "text": "Koya"
+      },
+      {
+        "value": "D",
+        "text": "Bhotia"
+      }
+    ],
+    "explanation": "The Medaram festival has a strong Koya tribal association while attracting a much wider gathering.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 115
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "lucknow pact significance",
+    "concept_id": "gs:lucknow-pact-significance",
+    "question_text": "The 1916 Lucknow Pact is notable for:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Congress-League agreement on constitutional demands"
+      },
+      {
+        "value": "B",
+        "text": "Launch of the 1942 Quit India movement"
+      },
+      {
+        "value": "C",
+        "text": "Creation of the Planning Commission"
+      },
+      {
+        "value": "D",
+        "text": "Adoption of the 1950 Constitution"
+      }
+    ],
+    "explanation": "The agreement marked cooperation between the Congress and Muslim League on reforms, with contested arrangements including separate electorates.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 116
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "article32 remedy writ",
+    "concept_id": "gs:article32-remedy-writ",
+    "question_text": "A person directly approaches the Supreme Court to enforce a fundamental right. The principal constitutional remedy is under:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Article 32"
+      },
+      {
+        "value": "B",
+        "text": "Article 360"
+      },
+      {
+        "value": "C",
+        "text": "Article 280"
+      },
+      {
+        "value": "D",
+        "text": "Article 148"
+      }
+    ],
+    "explanation": "Article 32 guarantees the right to constitutional remedies for enforcement of fundamental rights.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 117
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "heatwave public health adaptation",
+    "concept_id": "gs:heatwave-public-health-adaptation",
+    "question_text": "Which measure most directly protects outdoor workers during a heatwave?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Mandatory work at peak afternoon heat without breaks"
+      },
+      {
+        "value": "B",
+        "text": "Replacing all drinking water with strong stimulants"
+      },
+      {
+        "value": "C",
+        "text": "Rescheduled work, shaded breaks and access to safe drinking water"
+      },
+      {
+        "value": "D",
+        "text": "Closing every shaded rest area"
+      }
+    ],
+    "explanation": "Reducing heat exposure and supporting hydration are practical protective measures; implementation should follow local health guidance.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 118
+  },
+  {
+    "subject": "Basic English",
+    "topic": "conditional past perfect",
+    "concept_id": "gs:conditional-past-perfect",
+    "question_text": "Choose the correct completion: 'If she had checked the units, she ___ the error.'",
+    "options": [
+      {
+        "value": "A",
+        "text": "would have found"
+      },
+      {
+        "value": "B",
+        "text": "would finds"
+      },
+      {
+        "value": "C",
+        "text": "will find"
+      },
+      {
+        "value": "D",
+        "text": "has finding"
+      }
+    ],
+    "explanation": "The third conditional combines a past-perfect condition with 'would have' plus a past participle.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Basic English",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 119
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "telangana sector share employment",
+    "concept_id": "gs:telangana-sector-share-employment",
+    "question_text": "A sector contributes 60% of output but 30% of employment. Relative to the economy-wide average, its output per worker is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Four times the average"
+      },
+      {
+        "value": "B",
+        "text": "Equal to the average"
+      },
+      {
+        "value": "C",
+        "text": "Twice the average"
+      },
+      {
+        "value": "D",
+        "text": "Half the average"
+      }
+    ],
+    "explanation": "Relative productivity is output share/employment share=0.60/0.30=2, assuming comparable measures.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 120
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "un2025 quantum year",
+    "concept_id": "gs:un2025-quantum-year",
+    "question_text": "The UN's 2025 International Year of Quantum Science and Technology most directly sought attention to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Quantum science and its applications"
+      },
+      {
+        "value": "B",
+        "text": "An exclusive ban on semiconductor research"
+      },
+      {
+        "value": "C",
+        "text": "Only classical railway signalling"
+      },
+      {
+        "value": "D",
+        "text": "A new global currency"
+      }
+    ],
+    "explanation": "The UN list names 2025 as the International Year of Quantum Science and Technology, distinct from the 2026 observances.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.un.org/observances/international-years",
+    "correct_answer": "A",
+    "number": 121
+  },
+  {
+    "subject": "Basic English",
+    "topic": "restrictive evidence inference",
+    "concept_id": "gs:restrictive-evidence-inference",
+    "question_text": "Read: 'Only candidates who submitted the form were considered.' Which conclusion follows?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Submission was necessary for consideration, but did not guarantee it"
+      },
+      {
+        "value": "B",
+        "text": "Submission was prohibited for selected candidates"
+      },
+      {
+        "value": "C",
+        "text": "Every applicant who submitted was selected"
+      },
+      {
+        "value": "D",
+        "text": "Every eligible person was considered without a form"
+      }
+    ],
+    "explanation": "The statement sets a necessary condition. It does not say submission was sufficient for consideration or selection.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Basic English",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 122
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "earthquake primary secondary hazard",
+    "concept_id": "gs:earthquake-primary-secondary-hazard",
+    "question_text": "Which is a secondary hazard that an earthquake can trigger?",
+    "options": [
+      {
+        "value": "A",
+        "text": "The Earth's axial tilt"
+      },
+      {
+        "value": "B",
+        "text": "The existence of tectonic plates"
+      },
+      {
+        "value": "C",
+        "text": "Landslides on unstable slopes"
+      },
+      {
+        "value": "D",
+        "text": "The tectonic rupture itself only"
+      }
+    ],
+    "explanation": "Earthquake shaking can destabilize slopes, while fault rupture and shaking are primary processes.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 123
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "social audit accountability",
+    "concept_id": "gs:social-audit-accountability",
+    "question_text": "A social audit of a public employment programme primarily strengthens:",
+    "options": [
+      {
+        "value": "A",
+        "text": "The abolition of all financial audit"
+      },
+      {
+        "value": "B",
+        "text": "Secrecy of muster rolls from beneficiaries"
+      },
+      {
+        "value": "C",
+        "text": "Exclusive reliance on unverified contractor claims"
+      },
+      {
+        "value": "D",
+        "text": "Community verification of implementation and expenditure"
+      }
+    ],
+    "explanation": "Social audits bring records and beneficiary experience into public scrutiny; they complement rather than replace other audit mechanisms.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 124
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "train relative speed crossing",
+    "concept_id": "gs:train-relative-speed-crossing",
+    "question_text": "Two trains 120 m and 180 m long move in opposite directions at 36 and 54 km/h. Time to pass completely is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "30 seconds"
+      },
+      {
+        "value": "B",
+        "text": "6 seconds"
+      },
+      {
+        "value": "C",
+        "text": "20 seconds"
+      },
+      {
+        "value": "D",
+        "text": "12 seconds"
+      }
+    ],
+    "explanation": "Total distance=300 m; relative speed=90 km/h=25 m/s. Time=300/25=12 seconds.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 125
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "urban flood impervious cover",
+    "concept_id": "gs:urban-flood-impervious-cover",
+    "question_text": "Replacing permeable ground with connected paved surfaces tends to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Increase rapid runoff and shorten response time"
+      },
+      {
+        "value": "B",
+        "text": "Eliminate drainage bottlenecks"
+      },
+      {
+        "value": "C",
+        "text": "Guarantee zero runoff during intense storms"
+      },
+      {
+        "value": "D",
+        "text": "Increase infiltration everywhere"
+      }
+    ],
+    "explanation": "Impervious surfaces reduce infiltration and route water rapidly; drainage capacity and rainfall still govern actual flooding.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 126
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "syllogism set containment",
+    "concept_id": "gs:syllogism-set-containment",
+    "question_text": "All surveyors are engineers. No engineer is untrained. Which conclusion necessarily follows?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Every trained person is an engineer"
+      },
+      {
+        "value": "B",
+        "text": "Every engineer is a surveyor"
+      },
+      {
+        "value": "C",
+        "text": "No surveyor is untrained"
+      },
+      {
+        "value": "D",
+        "text": "Some untrained persons are surveyors"
+      }
+    ],
+    "explanation": "Surveyors are a subset of engineers, and engineers are excluded from the untrained set. Converse statements do not follow.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 127
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "nisar partners",
+    "concept_id": "gs:nisar-partners",
+    "question_text": "The NISAR mission launched on 30 July 2025 is a joint mission of which agencies?",
+    "options": [
+      {
+        "value": "A",
+        "text": "NASA and ISRO"
+      },
+      {
+        "value": "B",
+        "text": "NASA and CNSA"
+      },
+      {
+        "value": "C",
+        "text": "ESA and JAXA"
+      },
+      {
+        "value": "D",
+        "text": "ISRO and Roscosmos"
+      }
+    ],
+    "explanation": "ISRO's FY2025-26 achievements report identifies NISAR as a joint ISRO-NASA mission launched by GSLV-F16.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://www.isro.gov.in/media_isro/pdf/Annexure_Achievements_during_FY_2025_2026.pdf",
+    "correct_answer": "A",
+    "number": 128
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "qutb shahi architecture",
+    "concept_id": "gs:qutb-shahi-architecture",
+    "question_text": "The Qutb Shahi dynasty is historically associated most directly with:",
+    "options": [
+      {
+        "value": "A",
+        "text": "The construction of Sanchi under Ashoka"
+      },
+      {
+        "value": "B",
+        "text": "The Mughal capital at Fatehpur Sikri alone"
+      },
+      {
+        "value": "C",
+        "text": "The foundation of Calcutta by the British"
+      },
+      {
+        "value": "D",
+        "text": "Golconda and the development of Hyderabad"
+      }
+    ],
+    "explanation": "Golconda and Hyderabad are central to Qutb Shahi political and cultural history.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 129
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "remote sensing active passive",
+    "concept_id": "gs:remote-sensing-active-passive",
+    "question_text": "Which system is an active remote-sensing instrument?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A human eye observing daylight"
+      },
+      {
+        "value": "B",
+        "text": "Radar that transmits microwave pulses and records returns"
+      },
+      {
+        "value": "C",
+        "text": "A camera using only reflected sunlight"
+      },
+      {
+        "value": "D",
+        "text": "A passive thermal detector without a transmitted signal"
+      }
+    ],
+    "explanation": "Active systems supply their own illumination; radar transmits and measures backscatter.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 130
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "telangana plateau relief",
+    "concept_id": "gs:telangana-plateau-relief",
+    "question_text": "Which physical description best characterizes most of Telangana?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A continuous coastal delta below sea level"
+      },
+      {
+        "value": "B",
+        "text": "An interior peninsular plateau with varied uplands and river valleys"
+      },
+      {
+        "value": "C",
+        "text": "A coral atoll chain"
+      },
+      {
+        "value": "D",
+        "text": "An active Himalayan fold belt"
+      }
+    ],
+    "explanation": "Telangana lies on the Deccan Plateau rather than a coast, Himalayan belt or island chain.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 131
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "swadeshi political economy",
+    "concept_id": "gs:swadeshi-political-economy",
+    "question_text": "The Swadeshi movement following Bengal's 1905 partition combined boycott with:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Acceptance of permanent colonial economic dependence"
+      },
+      {
+        "value": "B",
+        "text": "Promotion of indigenous production and national education"
+      },
+      {
+        "value": "C",
+        "text": "Withdrawal from all public association"
+      },
+      {
+        "value": "D",
+        "text": "Exclusive support for imported British cloth"
+      }
+    ],
+    "explanation": "Swadeshi linked political protest to domestic enterprise, education and self-reliance.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 132
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "sri krishna committee role",
+    "concept_id": "gs:sri-krishna-committee-role",
+    "question_text": "The committee headed by Justice B.N. Srikrishna in 2010 was appointed primarily to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Set the nationwide policy repo rate"
+      },
+      {
+        "value": "B",
+        "text": "Examine issues relating to demands concerning Andhra Pradesh's statehood arrangements"
+      },
+      {
+        "value": "C",
+        "text": "Draft India's original Constitution in 1946"
+      },
+      {
+        "value": "D",
+        "text": "Determine the design flood of every Indian dam"
+      }
+    ],
+    "explanation": "The committee examined the Telangana and united-Andhra Pradesh questions and submitted a report with options.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 133
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "money bill rajya sabha power",
+    "concept_id": "gs:money-bill-rajya-sabha-power",
+    "question_text": "For a Money Bill validly passed by the Lok Sabha, the Rajya Sabha may:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Amend it with binding effect without Lok Sabha acceptance"
+      },
+      {
+        "value": "B",
+        "text": "Permanently veto it by a simple majority"
+      },
+      {
+        "value": "C",
+        "text": "Recommend amendments and return it within fourteen days"
+      },
+      {
+        "value": "D",
+        "text": "Retain it indefinitely"
+      }
+    ],
+    "explanation": "The Rajya Sabha's role is recommendatory and time-limited; the Lok Sabha may accept or reject its recommendations.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 134
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "inequality transitive logic",
+    "concept_id": "gs:inequality-transitive-logic",
+    "question_text": "Given P>Q, Q>=R and R>S, which relation must hold?",
+    "options": [
+      {
+        "value": "A",
+        "text": "P>S"
+      },
+      {
+        "value": "B",
+        "text": "P=R"
+      },
+      {
+        "value": "C",
+        "text": "S>P"
+      },
+      {
+        "value": "D",
+        "text": "Q<S"
+      }
+    ],
+    "explanation": "Transitivity gives P>Q>=R>S, so P>S necessarily.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 135
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "mulki rule regional rights",
+    "concept_id": "gs:mulki-rule-regional-rights",
+    "question_text": "Debates over Mulki rules in the former Hyderabad region primarily concerned:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Abolition of the Telugu language"
+      },
+      {
+        "value": "B",
+        "text": "Local status and eligibility for public employment"
+      },
+      {
+        "value": "C",
+        "text": "Ocean territorial boundaries"
+      },
+      {
+        "value": "D",
+        "text": "Exclusive ownership of all irrigation tanks by the Union"
+      }
+    ],
+    "explanation": "Mulki rules concerned domicile/local status and employment protection, making them central to regional-rights debates.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 136
+  },
+  {
+    "subject": "Indian Economy & Telangana Economy",
+    "topic": "irrigation externality economy",
+    "concept_id": "gs:irrigation-externality-economy",
+    "question_text": "Public investment in reliable irrigation can affect rural development through:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A necessary fall in all land values"
+      },
+      {
+        "value": "B",
+        "text": "Reduced production risk and potential productivity gains, subject to water and distribution constraints"
+      },
+      {
+        "value": "C",
+        "text": "No connection with farm income"
+      },
+      {
+        "value": "D",
+        "text": "A guaranteed elimination of every crop failure"
+      }
+    ],
+    "explanation": "Irrigation can improve reliability and productivity, but benefits depend on sustainable supply, access and complementary inputs.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Economy & Telangana Economy",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 137
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "successive percentage changes",
+    "concept_id": "gs:successive-percentage-changes",
+    "question_text": "A price increases by 20% and then decreases by 20%. Net change from the original price is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "4% decrease"
+      },
+      {
+        "value": "B",
+        "text": "8% decrease"
+      },
+      {
+        "value": "C",
+        "text": "4% increase"
+      },
+      {
+        "value": "D",
+        "text": "No change"
+      }
+    ],
+    "explanation": "The multiplier is 1.2x0.8=0.96, so the final price is 96% of the original.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 138
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "eutrophication mechanism",
+    "concept_id": "gs:eutrophication-mechanism",
+    "question_text": "Excess nutrient input into a lake can ultimately lower dissolved oxygen because:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Photosynthesis never occurs in lakes"
+      },
+      {
+        "value": "B",
+        "text": "Algal biomass decomposition consumes oxygen"
+      },
+      {
+        "value": "C",
+        "text": "Nitrogen and phosphorus directly replace all oxygen molecules by volume"
+      },
+      {
+        "value": "D",
+        "text": "All aquatic microbes stop respiring"
+      }
+    ],
+    "explanation": "Nutrients stimulate growth; subsequent respiration and decomposition can create oxygen depletion.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 139
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "article3 state formation process",
+    "concept_id": "gs:article3-state-formation-process",
+    "question_text": "Under Article 3, a bill proposing alteration of a state's area or boundaries requires the President's recommendation and reference to the affected state legislature. Is that legislature's consent constitutionally mandatory?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Yes; it has an absolute veto"
+      },
+      {
+        "value": "B",
+        "text": "No; its views are sought, but consent is not mandatory"
+      },
+      {
+        "value": "C",
+        "text": "No reference may ever be made"
+      },
+      {
+        "value": "D",
+        "text": "Yes; every member must agree unanimously"
+      }
+    ],
+    "explanation": "Article 3 provides for seeking the legislature's views within a specified period; Parliament is not bound by those views.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 140
+  },
+  {
+    "subject": "Indian Geography & Telangana Geography",
+    "topic": "himalayan peninsular rivers contrast",
+    "concept_id": "gs:himalayan-peninsular-rivers-contrast",
+    "question_text": "Which contrast is broadly correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Every peninsular river is glacier-fed"
+      },
+      {
+        "value": "B",
+        "text": "Himalayan rivers have no sediment"
+      },
+      {
+        "value": "C",
+        "text": "Many Himalayan rivers have snow/glacier and rainfall inputs, while peninsular flows are more monsoon-dependent"
+      },
+      {
+        "value": "D",
+        "text": "All Himalayan rivers dry completely every winter"
+      }
+    ],
+    "explanation": "Source regimes affect seasonality, although individual rivers and regulated flows differ.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Geography & Telangana Geography",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 141
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "work rates combined",
+    "concept_id": "gs:work-rates-combined",
+    "question_text": "A completes a task in 12 days and B in 18 days. Working together at constant independent rates, completion time is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "6 days"
+      },
+      {
+        "value": "B",
+        "text": "30 days"
+      },
+      {
+        "value": "C",
+        "text": "15 days"
+      },
+      {
+        "value": "D",
+        "text": "7.2 days"
+      }
+    ],
+    "explanation": "Combined rate=1/12+1/18=5/36 task/day. Time=36/5=7.2 days.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 142
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "seating unique middle",
+    "concept_id": "gs:seating-unique-middle",
+    "question_text": "Five students A, B, C, D and E sit in a row facing north. A is at the left end, E at the right end, B is immediately right of A, and D immediately left of E. Who is in the middle?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A"
+      },
+      {
+        "value": "B",
+        "text": "D"
+      },
+      {
+        "value": "C",
+        "text": "B"
+      },
+      {
+        "value": "D",
+        "text": "C"
+      }
+    ],
+    "explanation": "The fixed positions are A B _ D E. The only remaining student, C, occupies the middle.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 143
+  },
+  {
+    "subject": "Logical Reasoning & Analytical Ability",
+    "topic": "conditional bag probability",
+    "concept_id": "gs:conditional-bag-probability",
+    "question_text": "A bag holds 3 red and 2 blue balls. Two are drawn without replacement. Probability both are red is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "9/25"
+      },
+      {
+        "value": "B",
+        "text": "3/5"
+      },
+      {
+        "value": "C",
+        "text": "3/10"
+      },
+      {
+        "value": "D",
+        "text": "1/2"
+      }
+    ],
+    "explanation": "Probability=(3/5)(2/4)=6/20=3/10, accounting for the changed second-draw composition.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Logical Reasoning & Analytical Ability",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 144
+  },
+  {
+    "subject": "Environment & Disaster Management",
+    "topic": "invasive versus endemic",
+    "concept_id": "gs:invasive-versus-endemic",
+    "question_text": "Which statement distinguishes an invasive alien species from an endemic species?",
+    "options": [
+      {
+        "value": "A",
+        "text": "An invasive alien can spread harmfully outside its native range; an endemic is native to a restricted area"
+      },
+      {
+        "value": "B",
+        "text": "All alien species are necessarily invasive"
+      },
+      {
+        "value": "C",
+        "text": "Endemic means globally abundant in every habitat"
+      },
+      {
+        "value": "D",
+        "text": "Every endemic species was introduced from another continent"
+      }
+    ],
+    "explanation": "Origin, range and ecological impact are separate properties; not every non-native species becomes invasive.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environment & Disaster Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 145
+  },
+  {
+    "subject": "Telangana History, Culture & State Formation",
+    "topic": "pothana bhagavatam",
+    "concept_id": "gs:pothana-bhagavatam",
+    "question_text": "Which work is associated with Bammera Pothana?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Arthashastra"
+      },
+      {
+        "value": "B",
+        "text": "Rajatarangini"
+      },
+      {
+        "value": "C",
+        "text": "Amuktamalyada"
+      },
+      {
+        "value": "D",
+        "text": "Andhra Mahabhagavatamu"
+      }
+    ],
+    "explanation": "Pothana is celebrated for his Telugu rendering of the Bhagavata tradition. The distractors belong to different authors and contexts.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Telangana History, Culture & State Formation",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 146
+  },
+  {
+    "subject": "Indian Polity & Constitution",
+    "topic": "basic structure amendment limit",
+    "concept_id": "gs:basic-structure-amendment-limit",
+    "question_text": "The basic-structure doctrine chiefly limits:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Only the length of ordinary budget speeches"
+      },
+      {
+        "value": "B",
+        "text": "Parliament's constitutional-amendment power"
+      },
+      {
+        "value": "C",
+        "text": "Every possible judicial interpretation"
+      },
+      {
+        "value": "D",
+        "text": "The use of local languages in schools"
+      }
+    ],
+    "explanation": "Constitutional amendments may change many provisions but cannot destroy the Constitution's basic structure.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian Polity & Constitution",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 147
+  },
+  {
+    "subject": "General Science & Technology",
+    "topic": "ph dilution strong acid",
+    "concept_id": "gs:ph-dilution-strong-acid",
+    "question_text": "An ideal strong acid solution changes from pH 2 to pH 3 by dilution, ignoring activity effects. Hydrogen-ion concentration becomes:",
+    "options": [
+      {
+        "value": "A",
+        "text": "One tenth of the original"
+      },
+      {
+        "value": "B",
+        "text": "Ten times the original"
+      },
+      {
+        "value": "C",
+        "text": "One hundredth of the original"
+      },
+      {
+        "value": "D",
+        "text": "Unchanged"
+      }
+    ],
+    "explanation": "pH=-log10[H+]. An increase of one unit corresponds to a tenfold decrease in hydrogen-ion concentration.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "General Science & Technology",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 148
+  },
+  {
+    "subject": "Current Affairs",
+    "topic": "bhu bharati commencement",
+    "concept_id": "gs:bhu-bharati-commencement",
+    "question_text": "Under Telangana GO Ms No.36 dated 14 April 2025, the Bhu Bharati Act brought into force on that date principally concerns:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Record of rights in land"
+      },
+      {
+        "value": "B",
+        "text": "Civil aviation safety"
+      },
+      {
+        "value": "C",
+        "text": "Marine fishing licences"
+      },
+      {
+        "value": "D",
+        "text": "Inter-state currency issuance"
+      }
+    ],
+    "explanation": "The commencement order identifies the Telangana Bhu Bharati (Record of Rights in Land) Act, 2025.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Current Affairs",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "primary source checked 2026-10-17; recheck before publication",
+    "numerical_validation": "not applicable",
+    "source_url": "https://bhubharati.telangana.gov.in/assets/images/userManuals/G_O_Ms_No_36_Dated_14_04_2025.pdf",
+    "correct_answer": "A",
+    "number": 149
+  },
+  {
+    "subject": "Indian History & National Movement",
+    "topic": "social reform sati regulation",
+    "concept_id": "gs:social-reform-sati-regulation",
+    "question_text": "The 1829 regulation prohibiting sati in the Bengal Presidency is associated with which Governor-General?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Lord Mountbatten"
+      },
+      {
+        "value": "B",
+        "text": "William Bentinck"
+      },
+      {
+        "value": "C",
+        "text": "Lord Ripon"
+      },
+      {
+        "value": "D",
+        "text": "Lord Curzon"
+      }
+    ],
+    "explanation": "Bentinck issued the regulation amid sustained reform advocacy, including the work of Raja Rammohan Roy.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Indian History & National Movement",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 150
+  }
+]

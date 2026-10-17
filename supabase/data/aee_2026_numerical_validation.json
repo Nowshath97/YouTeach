@@ -1,0 +1,1023 @@
+{
+  "status": "arithmetic and structural checks passed; not an independent expert content sign-off",
+  "questions": 300,
+  "numerical_checks": 112,
+  "checks": [
+    {
+      "paper": "civil",
+      "question": 1,
+      "concept": "rotating liquid free surface rise",
+      "computed": [
+        0.2
+      ],
+      "answer": "0.20 m"
+    },
+    {
+      "paper": "civil",
+      "question": 2,
+      "concept": "well interference superposition",
+      "computed": [
+        2.0
+      ],
+      "answer": "2.0 m"
+    },
+    {
+      "paper": "civil",
+      "question": 6,
+      "concept": "filter backwash water fraction",
+      "computed": [
+        3.125
+      ],
+      "answer": "3.125%"
+    },
+    {
+      "paper": "civil",
+      "question": 8,
+      "concept": "exit gradient safety",
+      "computed": [
+        3.0
+      ],
+      "answer": "3.0"
+    },
+    {
+      "paper": "civil",
+      "question": 9,
+      "concept": "webster optimum cycle",
+      "computed": [
+        57.5
+      ],
+      "answer": "57.5 s"
+    },
+    {
+      "paper": "civil",
+      "question": 11,
+      "concept": "mixing river effluent concentration",
+      "computed": [
+        10.0
+      ],
+      "answer": "10 mg/L"
+    },
+    {
+      "paper": "civil",
+      "question": 13,
+      "concept": "bod first order exertion",
+      "computed": [
+        126.42411176571153
+      ],
+      "answer": "126.4 mg/L"
+    },
+    {
+      "paper": "civil",
+      "question": 15,
+      "concept": "edm atmospheric slope reduction",
+      "computed": [
+        1732.0681280769531
+      ],
+      "answer": "1732.07 m"
+    },
+    {
+      "paper": "civil",
+      "question": 17,
+      "concept": "stirrup spacing design",
+      "computed": [
+        249.9576923076923
+      ],
+      "answer": "250 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 18,
+      "concept": "three element strain rosette",
+      "computed": [
+        400
+      ],
+      "answer": "400 microstrain"
+    },
+    {
+      "paper": "civil",
+      "question": 21,
+      "concept": "discounted equipment replacement",
+      "computed": [
+        -1.4551915228366852e-11
+      ],
+      "answer": "0 rupees"
+    },
+    {
+      "paper": "civil",
+      "question": 23,
+      "concept": "vertical summit curve grade difference",
+      "computed": [
+        -0.025
+      ],
+      "answer": "-0.025"
+    },
+    {
+      "paper": "civil",
+      "question": 24,
+      "concept": "footing flexure cantilever",
+      "computed": [
+        56.25
+      ],
+      "answer": "56.25 kNm/m"
+    },
+    {
+      "paper": "civil",
+      "question": 25,
+      "concept": "flanged beam compression block check",
+      "computed": [
+        50.0,
+        215.54999999999998
+      ],
+      "answer": "xu=50 mm and M=215.55 kNm"
+    },
+    {
+      "paper": "civil",
+      "question": 26,
+      "concept": "liquidity index state",
+      "computed": [
+        0.6
+      ],
+      "answer": "0.60"
+    },
+    {
+      "paper": "civil",
+      "question": 28,
+      "concept": "area coordinate shoelace",
+      "computed": [
+        1000.0
+      ],
+      "answer": "1000 m^2"
+    },
+    {
+      "paper": "civil",
+      "question": 31,
+      "concept": "stiffness matrix condensation",
+      "computed": [
+        9.0
+      ],
+      "answer": "9 kN/mm"
+    },
+    {
+      "paper": "civil",
+      "question": 32,
+      "concept": "beam element assembly",
+      "computed": [
+        40.0,
+        20.0
+      ],
+      "answer": "40 and 20 kNm"
+    },
+    {
+      "paper": "civil",
+      "question": 33,
+      "concept": "ultimate stress block equilibrium",
+      "computed": [
+        193.33333333333334
+      ],
+      "answer": "193.3 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 35,
+      "concept": "horton integrated infiltration",
+      "computed": [
+        22.96997075145081
+      ],
+      "answer": "22.97 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 36,
+      "concept": "timber orthotropic movement",
+      "computed": [
+        188.0,
+        48.5
+      ],
+      "answer": "188 mm and 48.5 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 37,
+      "concept": "pavement axle equivalence",
+      "computed": [
+        5.0625
+      ],
+      "answer": "5.06 standard axles"
+    },
+    {
+      "paper": "civil",
+      "question": 40,
+      "concept": "drained triaxial cohesion intercept",
+      "computed": [
+        369.28203230275506
+      ],
+      "answer": "369.3 kPa"
+    },
+    {
+      "paper": "civil",
+      "question": 41,
+      "concept": "scs runoff initial abstraction",
+      "computed": [
+        35.55555555555556
+      ],
+      "answer": "35.56 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 44,
+      "concept": "manning roughness depth scaling",
+      "computed": [
+        1.515716566510398
+      ],
+      "answer": "2^(3/5)"
+    },
+    {
+      "paper": "civil",
+      "question": 46,
+      "concept": "thick cylinder inner hoop stress",
+      "computed": [
+        20.0
+      ],
+      "answer": "20 MPa"
+    },
+    {
+      "paper": "civil",
+      "question": 48,
+      "concept": "skempton pore pressure increments",
+      "computed": [
+        40.0,
+        40.0
+      ],
+      "answer": "40 kPa and 40 kPa"
+    },
+    {
+      "paper": "civil",
+      "question": 49,
+      "concept": "flexural lever arm",
+      "computed": [
+        262.2
+      ],
+      "answer": "262.2 kNm"
+    },
+    {
+      "paper": "civil",
+      "question": 50,
+      "concept": "queue arrival service finite period",
+      "computed": [
+        30.0
+      ],
+      "answer": "30 vehicles"
+    },
+    {
+      "paper": "civil",
+      "question": 51,
+      "concept": "three hinged arch thrust",
+      "computed": [
+        100.0
+      ],
+      "answer": "100 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 52,
+      "concept": "stokes terminal settling",
+      "computed": [
+        4
+      ],
+      "answer": "A factor of 4"
+    },
+    {
+      "paper": "civil",
+      "question": 53,
+      "concept": "seepage flow net discharge",
+      "computed": [
+        4e-05
+      ],
+      "answer": "4x10^-5 m^3/s/m"
+    },
+    {
+      "paper": "civil",
+      "question": 54,
+      "concept": "closed traverse angular correction",
+      "computed": [
+        -24.0
+      ],
+      "answer": "-24 seconds"
+    },
+    {
+      "paper": "civil",
+      "question": 55,
+      "concept": "pump series operating point",
+      "computed": [
+        0.31622776601683794
+      ],
+      "answer": "0.316 m^3/s"
+    },
+    {
+      "paper": "civil",
+      "question": 56,
+      "concept": "slope deflection end rotation",
+      "computed": [
+        2
+      ],
+      "answer": "2EI theta/L"
+    },
+    {
+      "paper": "civil",
+      "question": 57,
+      "concept": "sewer partial full velocity",
+      "computed": [
+        1
+      ],
+      "answer": "1"
+    },
+    {
+      "paper": "civil",
+      "question": 58,
+      "concept": "hydrostatic curved surface vertical force",
+      "computed": [
+        29.43
+      ],
+      "answer": "29.43 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 59,
+      "concept": "tacheometry inclined sight",
+      "computed": [
+        150.00000000000003
+      ],
+      "answer": "150 m"
+    },
+    {
+      "paper": "civil",
+      "question": 61,
+      "concept": "noise independent sources",
+      "computed": [
+        63.01029995663981
+      ],
+      "answer": "63 dB"
+    },
+    {
+      "paper": "civil",
+      "question": 62,
+      "concept": "raft net pressure compensation",
+      "computed": [
+        120
+      ],
+      "answer": "120 kPa"
+    },
+    {
+      "paper": "civil",
+      "question": 63,
+      "concept": "redundant flexibility cross term",
+      "computed": [
+        -2,
+        -1
+      ],
+      "answer": "-2 and -1 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 65,
+      "concept": "bearing pressure eccentric footing",
+      "computed": [
+        1.75
+      ],
+      "answer": "1.75"
+    },
+    {
+      "paper": "civil",
+      "question": 67,
+      "concept": "railway cant equilibrium supplied geometry",
+      "computed": [
+        100.0
+      ],
+      "answer": "100 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 68,
+      "concept": "overtaking relative travel",
+      "computed": [
+        250.0
+      ],
+      "answer": "250 m"
+    },
+    {
+      "paper": "civil",
+      "question": 69,
+      "concept": "compression index settlement",
+      "computed": [
+        150.51499783199057
+      ],
+      "answer": "150.5 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 72,
+      "concept": "two span continuity",
+      "computed": [
+        -0.125
+      ],
+      "answer": "-wL^2/8"
+    },
+    {
+      "paper": "civil",
+      "question": 74,
+      "concept": "sludge age solids balance",
+      "computed": [
+        20.0
+      ],
+      "answer": "20 days"
+    },
+    {
+      "paper": "civil",
+      "question": 75,
+      "concept": "gnss vertical datum",
+      "computed": [
+        95
+      ],
+      "answer": "95 m"
+    },
+    {
+      "paper": "civil",
+      "question": 76,
+      "concept": "absolute volume yield",
+      "computed": [
+        0.88
+      ],
+      "answer": "0.88 m^3"
+    },
+    {
+      "paper": "civil",
+      "question": 79,
+      "concept": "depreciation reducing balance",
+      "computed": [
+        102400.00000000003
+      ],
+      "answer": "102400 rupees"
+    },
+    {
+      "paper": "civil",
+      "question": 81,
+      "concept": "unsymmetrical section principal axes",
+      "computed": [
+        9.242640687119284,
+        0.7573593128807152
+      ],
+      "answer": "9.24 and 0.76"
+    },
+    {
+      "paper": "civil",
+      "question": 82,
+      "concept": "parallel pipe network split",
+      "computed": [
+        0.3
+      ],
+      "answer": "0.3 m^3/s"
+    },
+    {
+      "paper": "civil",
+      "question": 83,
+      "concept": "combined bending torsion equivalent torque",
+      "computed": [
+        50.0
+      ],
+      "answer": "50 kNm"
+    },
+    {
+      "paper": "civil",
+      "question": 85,
+      "concept": "reservoir mass curve storage",
+      "computed": [
+        4
+      ],
+      "answer": "4 volume units"
+    },
+    {
+      "paper": "civil",
+      "question": 86,
+      "concept": "gumbel design quantile",
+      "computed": [
+        126.07950116913484
+      ],
+      "answer": "126.08 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 88,
+      "concept": "parabolic tendon load balancing",
+      "computed": [
+        10.0
+      ],
+      "answer": "10 kN/m"
+    },
+    {
+      "paper": "civil",
+      "question": 90,
+      "concept": "propped cantilever compatibility",
+      "computed": [
+        0.375
+      ],
+      "answer": "3wL/8"
+    },
+    {
+      "paper": "civil",
+      "question": 92,
+      "concept": "bolt group direct eccentric shear",
+      "computed": [
+        25.0
+      ],
+      "answer": "25 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 93,
+      "concept": "pert project probability",
+      "computed": [
+        1.0
+      ],
+      "answer": "1.0"
+    },
+    {
+      "paper": "civil",
+      "question": 94,
+      "concept": "traffic shockwave sign",
+      "computed": [
+        -10.0
+      ],
+      "answer": "-10 km/h"
+    },
+    {
+      "paper": "civil",
+      "question": 95,
+      "concept": "prestress friction attenuation",
+      "computed": [
+        982.4769036935782
+      ],
+      "answer": "982.5 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 96,
+      "concept": "crashing cost slope bottleneck",
+      "computed": [
+        5000.0
+      ],
+      "answer": "5000 rupees/day"
+    },
+    {
+      "paper": "civil",
+      "question": 98,
+      "concept": "column design resistance given curve",
+      "computed": [
+        336.0
+      ],
+      "answer": "336 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 99,
+      "concept": "hydrograph recession reservoir",
+      "computed": [
+        216000
+      ],
+      "answer": "216000 m^3"
+    },
+    {
+      "paper": "civil",
+      "question": 100,
+      "concept": "composite bar load sharing",
+      "computed": [
+        60.0
+      ],
+      "answer": "60 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 102,
+      "concept": "sedimentation overflow capacity",
+      "computed": [
+        100
+      ],
+      "answer": "100%"
+    },
+    {
+      "paper": "civil",
+      "question": 105,
+      "concept": "prismoidal earthwork comparison",
+      "computed": [
+        560.0
+      ],
+      "answer": "560 m^3"
+    },
+    {
+      "paper": "civil",
+      "question": 107,
+      "concept": "turbine power efficiency",
+      "computed": [
+        1020.0
+      ],
+      "answer": "1020 kW"
+    },
+    {
+      "paper": "civil",
+      "question": 108,
+      "concept": "punching perimeter demand",
+      "computed": [
+        1.25
+      ],
+      "answer": "1.25 MPa"
+    },
+    {
+      "paper": "civil",
+      "question": 110,
+      "concept": "signal saturation green ratio",
+      "computed": [
+        600.0
+      ],
+      "answer": "600 vehicles/hour"
+    },
+    {
+      "paper": "civil",
+      "question": 111,
+      "concept": "water hammer sudden closure",
+      "computed": [
+        1.5
+      ],
+      "answer": "1.5 MPa"
+    },
+    {
+      "paper": "civil",
+      "question": 112,
+      "concept": "aggregate blending",
+      "computed": [
+        0.7000000000000001
+      ],
+      "answer": "0.70"
+    },
+    {
+      "paper": "civil",
+      "question": 113,
+      "concept": "rectangular weir differential error",
+      "computed": [
+        3.0
+      ],
+      "answer": "3% high"
+    },
+    {
+      "paper": "civil",
+      "question": 114,
+      "concept": "venturi differential fluid relation",
+      "computed": [
+        1.26
+      ],
+      "answer": "1.26 m"
+    },
+    {
+      "paper": "civil",
+      "question": 115,
+      "concept": "stepped axial elongation",
+      "computed": [
+        1.5
+      ],
+      "answer": "1.5 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 116,
+      "concept": "pile group efficiency resistance",
+      "computed": [
+        2400
+      ],
+      "answer": "2400 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 117,
+      "concept": "eccentric column stress superposition",
+      "computed": [
+        28,
+        4
+      ],
+      "answer": "28 MPa compression and 4 MPa tension"
+    },
+    {
+      "paper": "civil",
+      "question": 119,
+      "concept": "thin vessel combined stresses",
+      "computed": [
+        25.0
+      ],
+      "answer": "25 MPa"
+    },
+    {
+      "paper": "civil",
+      "question": 122,
+      "concept": "infinite slope dry stability",
+      "computed": [
+        1.5015999114836838
+      ],
+      "answer": "1.50"
+    },
+    {
+      "paper": "civil",
+      "question": 123,
+      "concept": "aggregate moisture correction",
+      "computed": [
+        30.000000000000004
+      ],
+      "answer": "30 kg"
+    },
+    {
+      "paper": "civil",
+      "question": 127,
+      "concept": "irrigation scheduling depletion",
+      "computed": [
+        60.0
+      ],
+      "answer": "60 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 128,
+      "concept": "plastic section modulus rectangle",
+      "computed": [
+        1.5
+      ],
+      "answer": "1.5"
+    },
+    {
+      "paper": "civil",
+      "question": 129,
+      "concept": "retention and advance cashflow",
+      "computed": [
+        8.5
+      ],
+      "answer": "8.5 lakh rupees"
+    },
+    {
+      "paper": "civil",
+      "question": 132,
+      "concept": "earned value schedule cost",
+      "computed": [
+        0.8888888888888888,
+        0.8
+      ],
+      "answer": "CPI=0.889 and SPI=0.80"
+    },
+    {
+      "paper": "civil",
+      "question": 133,
+      "concept": "hollow shaft stiffness material efficiency",
+      "computed": [
+        1.6666666666666667
+      ],
+      "answer": "5/3"
+    },
+    {
+      "paper": "civil",
+      "question": 134,
+      "concept": "moving load support reaction",
+      "computed": [
+        90.0
+      ],
+      "answer": "90 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 136,
+      "concept": "anchorage slip stress loss",
+      "computed": [
+        40.0
+      ],
+      "answer": "40 MPa"
+    },
+    {
+      "paper": "civil",
+      "question": 137,
+      "concept": "strain energy impact",
+      "computed": [
+        5.58257569495584
+      ],
+      "answer": "5.58 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 139,
+      "concept": "doubly reinforced additional couple",
+      "computed": [
+        571.4285714285714
+      ],
+      "answer": "571.4 mm^2"
+    },
+    {
+      "paper": "civil",
+      "question": 140,
+      "concept": "net section stagger given rule",
+      "computed": [
+        1610.0
+      ],
+      "answer": "1610 mm^2"
+    },
+    {
+      "paper": "civil",
+      "question": 141,
+      "concept": "npsh available suction",
+      "computed": [
+        5.0
+      ],
+      "answer": "5.0 m"
+    },
+    {
+      "paper": "civil",
+      "question": 143,
+      "concept": "fillet weld effective throat",
+      "computed": [
+        168.0
+      ],
+      "answer": "168 kN"
+    },
+    {
+      "paper": "civil",
+      "question": 144,
+      "concept": "truss virtual work displacement",
+      "computed": [
+        0.4
+      ],
+      "answer": "0.40 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 145,
+      "concept": "stadia distance uncertainty",
+      "computed": [
+        0.1414213562373095
+      ],
+      "answer": "0.141 m"
+    },
+    {
+      "paper": "civil",
+      "question": 149,
+      "concept": "double mass rainfall adjustment",
+      "computed": [
+        800.0
+      ],
+      "answer": "800 mm"
+    },
+    {
+      "paper": "civil",
+      "question": 150,
+      "concept": "column minimum eccentricity application",
+      "computed": [
+        28.0
+      ],
+      "answer": "28 mm"
+    },
+    {
+      "paper": "gs",
+      "question": 4,
+      "concept": "electric energy units",
+      "computed": [
+        120.0
+      ],
+      "answer": "120 kWh"
+    },
+    {
+      "paper": "gs",
+      "question": 37,
+      "concept": "clock relative hands",
+      "computed": [
+        20.0
+      ],
+      "answer": "20 degrees"
+    },
+    {
+      "paper": "gs",
+      "question": 41,
+      "concept": "ratio mixture replacement",
+      "computed": [
+        24.000000000000004
+      ],
+      "answer": "24%"
+    },
+    {
+      "paper": "gs",
+      "question": 57,
+      "concept": "real nominal growth",
+      "computed": [
+        6.666666666666665
+      ],
+      "answer": "6.67%"
+    },
+    {
+      "paper": "gs",
+      "question": 63,
+      "concept": "table percentage versus points",
+      "computed": [
+        25.0
+      ],
+      "answer": "25%"
+    },
+    {
+      "paper": "gs",
+      "question": 75,
+      "concept": "primary deficit",
+      "computed": [
+        32000
+      ],
+      "answer": "32000 crore rupees"
+    },
+    {
+      "paper": "gs",
+      "question": 85,
+      "concept": "longitude time calculation",
+      "computed": [
+        30.0
+      ],
+      "answer": "30 minutes"
+    },
+    {
+      "paper": "gs",
+      "question": 89,
+      "concept": "weighted class average",
+      "computed": [
+        66.0
+      ],
+      "answer": "66"
+    },
+    {
+      "paper": "gs",
+      "question": 97,
+      "concept": "arithmetic sequence missing term",
+      "computed": [
+        37
+      ],
+      "answer": "37"
+    },
+    {
+      "paper": "gs",
+      "question": 104,
+      "concept": "mendel recessive cross",
+      "computed": [
+        0.25
+      ],
+      "answer": "1/4"
+    },
+    {
+      "paper": "gs",
+      "question": 120,
+      "concept": "telangana sector share employment",
+      "computed": [
+        2.0
+      ],
+      "answer": "Twice the average"
+    },
+    {
+      "paper": "gs",
+      "question": 125,
+      "concept": "train relative speed crossing",
+      "computed": [
+        12.0
+      ],
+      "answer": "12 seconds"
+    },
+    {
+      "paper": "gs",
+      "question": 138,
+      "concept": "successive percentage changes",
+      "computed": [
+        -4.0000000000000036
+      ],
+      "answer": "4% decrease"
+    },
+    {
+      "paper": "gs",
+      "question": 142,
+      "concept": "work rates combined",
+      "computed": [
+        7.199999999999999
+      ],
+      "answer": "7.2 days"
+    },
+    {
+      "paper": "gs",
+      "question": 144,
+      "concept": "conditional bag probability",
+      "computed": [
+        0.3
+      ],
+      "answer": "3/10"
+    },
+    {
+      "paper": "gs",
+      "question": 148,
+      "concept": "ph dilution strong acid",
+      "computed": [
+        0.1
+      ],
+      "answer": "One tenth of the original"
+    }
+  ]
+}

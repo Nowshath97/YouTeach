@@ -1,0 +1,75 @@
+{
+  "status": "unpublished drafts; not cleared for publication",
+  "live_database_checked": false,
+  "checked_local_bank_questions": 292,
+  "applicable_2026_notification_verified": false,
+  "official_2026_negative_marking_verified": false,
+  "papers": {
+    "gs": {
+      "title": "TGPSC AEE 2026 - General Studies Full Length Mock 01",
+      "questions": 150,
+      "marks": 150,
+      "duration_minutes": 150,
+      "subjects": {
+        "Telangana History, Culture & State Formation": 25,
+        "Indian Geography & Telangana Geography": 15,
+        "Logical Reasoning & Analytical Ability": 15,
+        "General Science & Technology": 15,
+        "Current Affairs": 20,
+        "Environment & Disaster Management": 10,
+        "Indian Polity & Constitution": 15,
+        "Indian History & National Movement": 15,
+        "Indian Economy & Telangana Economy": 15,
+        "Basic English": 5
+      },
+      "difficulty_targets": {
+        "hard": 48,
+        "medium": 102
+      },
+      "styles": {
+        "conceptual/application": 73,
+        "analytical": 67,
+        "numerical": 10
+      },
+      "source_sha256": "ed386230e0a1109432aebcd691dfbf088c3e2970c22546b1f6d2bee6d3c163f0"
+    },
+    "civil": {
+      "title": "TGPSC AEE 2026 - Civil Engineering Full Length Mock 01",
+      "questions": 150,
+      "marks": 300,
+      "duration_minutes": 150,
+      "subjects": {
+        "Fluid Mechanics & Hydraulic Machines": 15,
+        "Hydrology & Irrigation Engineering": 12,
+        "Soil Mechanics & Foundation Engineering": 15,
+        "Strength of Materials": 15,
+        "Steel Structures & Prestressed Concrete": 12,
+        "Environmental Engineering": 12,
+        "RCC Design": 15,
+        "Transportation Engineering": 12,
+        "Surveying": 8,
+        "Building Materials & Construction": 10,
+        "Structural Analysis": 15,
+        "Estimation, Costing & Construction Management": 9
+      },
+      "difficulty_targets": {
+        "hard": 60,
+        "medium": 90
+      },
+      "styles": {
+        "numerical": 67,
+        "conceptual/application": 46,
+        "analytical": 22,
+        "design interpretation": 15
+      },
+      "source_sha256": "664a0f426ef294be8ed86cacde501f1ad610bce2b63fa156a3411349cf3af7d4"
+    }
+  },
+  "automated_arithmetic_checks_passed": 112,
+  "remaining": [
+    "Applicable 2026 notification/marking and complete syllabus verification",
+    "Independent content, difficulty and code review",
+    "Live database semantic/template novelty review",
+    "Publication decision"
+  ]
+}

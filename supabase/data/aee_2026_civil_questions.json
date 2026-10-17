@@ -1,0 +1,5102 @@
+[
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "rotating liquid free surface rise",
+    "concept_id": "civil:rotating-liquid-free-surface-rise",
+    "question_text": "An open cylindrical tank rotates as a forced vortex at 4 rad/s. Radius is 0.5 m. With g=10 m/s^2, free-surface elevation difference between centre and rim is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.20 m"
+      },
+      {
+        "value": "B",
+        "text": "0.10 m"
+      },
+      {
+        "value": "C",
+        "text": "0.40 m"
+      },
+      {
+        "value": "D",
+        "text": "0.80 m"
+      }
+    ],
+    "explanation": "Delta z=omega^2 R^2/(2g)=16x0.25/20=0.20 m.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 1
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "well interference superposition",
+    "concept_id": "civil:well-interference-superposition",
+    "question_text": "Two pumping wells in a linear confined-aquifer model separately cause drawdowns of 1.2 and 0.8 m at a point. With superposition valid, combined drawdown is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "2.0 m"
+      },
+      {
+        "value": "B",
+        "text": "0.4 m"
+      },
+      {
+        "value": "C",
+        "text": "1.0 m"
+      },
+      {
+        "value": "D",
+        "text": "0.96 m"
+      }
+    ],
+    "explanation": "For the stated linear model, drawdowns add. This would not justify arbitrary superposition of unconfined nonlinear responses.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 2
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "negative skin friction dragload",
+    "concept_id": "civil:negative-skin-friction-dragload",
+    "question_text": "Ground around a pile settles more than the pile after placing a new fill. What action can develop along the upper pile shaft?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Only upward shaft resistance"
+      },
+      {
+        "value": "B",
+        "text": "Zero interface shear in every case"
+      },
+      {
+        "value": "C",
+        "text": "Downward dragload due to negative skin friction"
+      },
+      {
+        "value": "D",
+        "text": "An automatic increase in usable head-load capacity"
+      }
+    ],
+    "explanation": "Relative downward soil movement produces downward interface shear, increasing pile axial force below the head.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 3
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "deflection shear contribution",
+    "concept_id": "civil:deflection-shear-contribution",
+    "question_text": "For a short deep beam, Euler-Bernoulli deflection is significantly below measured elastic deflection. Which omitted effect is most relevant?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Transverse shear deformation"
+      },
+      {
+        "value": "B",
+        "text": "Rigid-body translation alone"
+      },
+      {
+        "value": "C",
+        "text": "Negative elastic modulus"
+      },
+      {
+        "value": "D",
+        "text": "Removal of all bending stress"
+      }
+    ],
+    "explanation": "Deep beams can have significant shear deformation; bending-only beam theory may underestimate deflection.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 4
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "bearing bolt versus slip critical",
+    "concept_id": "civil:bearing-bolt-versus-slip-critical",
+    "question_text": "A connection must avoid slip at service load because alignment is critical. Which design approach directly addresses this?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Ignoring surface condition because bolts are high strength"
+      },
+      {
+        "value": "B",
+        "text": "A bearing connection checked only for ultimate bolt shear"
+      },
+      {
+        "value": "C",
+        "text": "An oversized hole with no preload"
+      },
+      {
+        "value": "D",
+        "text": "A qualified preloaded friction connection checked for slip resistance"
+      }
+    ],
+    "explanation": "Slip resistance depends on preload, interface friction and connection details. Ultimate bearing resistance alone permits initial slip.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 5
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "filter backwash water fraction",
+    "concept_id": "civil:filter-backwash-water-fraction",
+    "question_text": "A filter operates at 120 m^3/h for 24 h and then uses 90 m^3 for backwash. Backwash water as a percentage of gross filtered volume is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "7.5%"
+      },
+      {
+        "value": "B",
+        "text": "0.3125%"
+      },
+      {
+        "value": "C",
+        "text": "3.226%"
+      },
+      {
+        "value": "D",
+        "text": "3.125%"
+      }
+    ],
+    "explanation": "Gross filtered volume is 2880 m^3. The specified percentage is 90/2880x100=3.125%; using net production changes the denominator.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 6
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "beam column joint capacity",
+    "concept_id": "civil:beam-column-joint-capacity",
+    "question_text": "In a seismic moment frame, why is a strong-column weak-beam capacity hierarchy desirable?",
+    "options": [
+      {
+        "value": "A",
+        "text": "To ensure beams remain elastic in every earthquake"
+      },
+      {
+        "value": "B",
+        "text": "To eliminate the need for joint shear checks"
+      },
+      {
+        "value": "C",
+        "text": "To favour distributed beam hinging over a storey column mechanism"
+      },
+      {
+        "value": "D",
+        "text": "To force all columns to hinge simultaneously"
+      }
+    ],
+    "explanation": "Column mechanisms can cause storey collapse. The intended hierarchy promotes a more distributed ductile mechanism, with joint checks still required.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 7
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "exit gradient safety",
+    "concept_id": "civil:exit-gradient-safety",
+    "question_text": "A soil's critical gradient is 0.90 and a flow net predicts exit gradient 0.30. The gradient-based factor of safety is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "3.0"
+      },
+      {
+        "value": "B",
+        "text": "0.30"
+      },
+      {
+        "value": "C",
+        "text": "1.20"
+      },
+      {
+        "value": "D",
+        "text": "0.60"
+      }
+    ],
+    "explanation": "The ratio of critical to acting exit gradient is 0.90/0.30=3.0; separate erosion and filter requirements may also apply.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 8
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "webster optimum cycle",
+    "concept_id": "civil:webster-optimum-cycle",
+    "question_text": "Use Webster's C0=(1.5L+5)/(1-Y). Total lost time is 12 s and sum of critical flow ratios Y=0.60. Optimum cycle is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "92 s"
+      },
+      {
+        "value": "B",
+        "text": "35 s"
+      },
+      {
+        "value": "C",
+        "text": "23 s"
+      },
+      {
+        "value": "D",
+        "text": "57.5 s"
+      }
+    ],
+    "explanation": "C0=(18+5)/0.4=57.5 seconds under the supplied model.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 9
+  },
+  {
+    "subject": "Surveying",
+    "topic": "photogrammetry relief displacement",
+    "concept_id": "civil:photogrammetry-relief-displacement",
+    "question_text": "In a vertical aerial photograph, an elevated object's image lies radially away from the principal point compared with its ground projection. This is chiefly:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Relief displacement"
+      },
+      {
+        "value": "B",
+        "text": "Prism-constant error"
+      },
+      {
+        "value": "C",
+        "text": "Magnetic declination"
+      },
+      {
+        "value": "D",
+        "text": "Staff collimation error"
+      }
+    ],
+    "explanation": "Terrain height creates radial image displacement in central projection; its magnitude depends on radial distance, height and flying altitude.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Surveying",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 10
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "mixing river effluent concentration",
+    "concept_id": "civil:mixing-river-effluent-concentration",
+    "question_text": "A conservative pollutant is 2 mg/L in river flow 4 m^3/s and 42 mg/L in effluent flow 1 m^3/s. Complete-mix concentration is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "8.4 mg/L"
+      },
+      {
+        "value": "B",
+        "text": "22 mg/L"
+      },
+      {
+        "value": "C",
+        "text": "10 mg/L"
+      },
+      {
+        "value": "D",
+        "text": "40 mg/L"
+      }
+    ],
+    "explanation": "Use a mass balance: C=(4x2+1x42)/(4+1)=50/5=10 mg/L.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 11
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "boundary layer displacement thickness",
+    "concept_id": "civil:boundary-layer-displacement-thickness",
+    "question_text": "Displacement thickness represents:",
+    "options": [
+      {
+        "value": "A",
+        "text": "The physical height at which velocity is exactly zero"
+      },
+      {
+        "value": "B",
+        "text": "Thickness of a region with negative viscosity"
+      },
+      {
+        "value": "C",
+        "text": "Only the distance to the maximum shear point"
+      },
+      {
+        "value": "D",
+        "text": "Equivalent outward displacement of the inviscid stream due to boundary-layer mass-flow deficit"
+      }
+    ],
+    "explanation": "Integrating the velocity deficit yields the thickness of a uniform free-stream strip with the same lost mass flow.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 12
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "bod first order exertion",
+    "concept_id": "civil:bod-first-order-exertion",
+    "question_text": "Ultimate BOD is 200 mg/L and a natural-log deoxygenation constant is 0.20 per day. Five-day BOD is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "73.6 mg/L"
+      },
+      {
+        "value": "B",
+        "text": "200 mg/L"
+      },
+      {
+        "value": "C",
+        "text": "181.9 mg/L"
+      },
+      {
+        "value": "D",
+        "text": "126.4 mg/L"
+      }
+    ],
+    "explanation": "Exerted demand is L0(1-e^-kt)=200(1-e^-1)=126.4 mg/L. The remaining demand is 73.6 mg/L.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 13
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "masonry eccentricity joint opening",
+    "concept_id": "civil:masonry-eccentricity-joint-opening",
+    "question_text": "A rectangular unreinforced masonry pier carries a compressive resultant at eccentricity b/4 across width b. Under linear elastic stress analysis, what does the negative edge stress signify?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Both edge stresses are compressive"
+      },
+      {
+        "value": "B",
+        "text": "The masonry necessarily carries the computed tension safely"
+      },
+      {
+        "value": "C",
+        "text": "The load is within the middle third"
+      },
+      {
+        "value": "D",
+        "text": "The full-section no-tension assumption is invalid and contact must be reassessed"
+      }
+    ],
+    "explanation": "The kern limit is b/6. At b/4, a full-section linear stress diagram predicts tension, requiring a cracked or reduced contact analysis for no-tension masonry.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 14
+  },
+  {
+    "subject": "Surveying",
+    "topic": "edm atmospheric slope reduction",
+    "concept_id": "civil:edm-atmospheric-slope-reduction",
+    "question_text": "An EDM slope distance is 2000 m. Apply a +10 parts-per-million scale correction, then reduce using zenith angle 60 degrees. Neglect curvature. Horizontal distance is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "1000.01 m"
+      },
+      {
+        "value": "B",
+        "text": "2000.02 m"
+      },
+      {
+        "value": "C",
+        "text": "1732.07 m"
+      },
+      {
+        "value": "D",
+        "text": "1732.05 m"
+      }
+    ],
+    "explanation": "Corrected slope length is 2000(1+10x10^-6)=2000.02 m. Horizontal length is slope times sin60=1732.068 m.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Surveying",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 15
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "snap through stability limit",
+    "concept_id": "civil:snap-through-stability-limit",
+    "question_text": "A shallow elastic arch may lose equilibrium suddenly while material stresses remain below yield. Which analysis issue best explains this?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Geometric nonlinearity and a limit-point instability"
+      },
+      {
+        "value": "B",
+        "text": "Material melting at room temperature"
+      },
+      {
+        "value": "C",
+        "text": "Violation of vertical-force equilibrium in every stable state"
+      },
+      {
+        "value": "D",
+        "text": "A proof that elastic structures cannot buckle"
+      }
+    ],
+    "explanation": "Snap-through can occur at a limit point on a nonlinear equilibrium path, even without material yielding. Linear eigenvalue and strength checks alone may miss it.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 16
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "stirrup spacing design",
+    "concept_id": "civil:stirrup-spacing-design",
+    "question_text": "For vertical two-legged stirrups with total Asv=100 mm^2, fy=415 MPa and d=450 mm, use Vs=0.87fy Asv d/s. To resist 65 kN, calculated s is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "500 mm"
+      },
+      {
+        "value": "B",
+        "text": "250 mm"
+      },
+      {
+        "value": "C",
+        "text": "125 mm"
+      },
+      {
+        "value": "D",
+        "text": "350 mm"
+      }
+    ],
+    "explanation": "s=0.87x415x100x450/65000=249.96 mm, before applying separate detailing limits.",
+    "style": "design interpretation",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 17
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "three element strain rosette",
+    "concept_id": "civil:three-element-strain-rosette",
+    "question_text": "A 0-45-90 degree strain rosette reads 400, 300 and -200 microstrain respectively. What is engineering shear strain gamma_xy?",
+    "options": [
+      {
+        "value": "A",
+        "text": "600 microstrain"
+      },
+      {
+        "value": "B",
+        "text": "-400 microstrain"
+      },
+      {
+        "value": "C",
+        "text": "400 microstrain"
+      },
+      {
+        "value": "D",
+        "text": "100 microstrain"
+      }
+    ],
+    "explanation": "epsilon45=(epsilon_x+epsilon_y)/2+gamma_xy/2. Thus gamma=2(300)-(400-200)=400 microstrain.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 18
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "two way slab load path",
+    "concept_id": "civil:two-way-slab-load-path",
+    "question_text": "A slab panel is supported on all four sides and has long-to-short span ratio 1.3. What justifies two-way structural analysis?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Support conditions can be ignored once the ratio is known"
+      },
+      {
+        "value": "B",
+        "text": "Significant bending and load transfer can occur in both directions"
+      },
+      {
+        "value": "C",
+        "text": "The ratio makes torsion and corner conditions irrelevant"
+      },
+      {
+        "value": "D",
+        "text": "All slab loads must travel only along the long span"
+      }
+    ],
+    "explanation": "A near-square four-edge-supported slab develops two-way action. Edge restraint and corner conditions still influence design moments.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 19
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "muller breslau release",
+    "concept_id": "civil:muller-breslau-release",
+    "question_text": "To obtain the qualitative influence line for an internal bending moment at a beam section, which release is introduced?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Removal of the entire loaded span"
+      },
+      {
+        "value": "B",
+        "text": "An internal hinge with a unit relative rotation"
+      },
+      {
+        "value": "C",
+        "text": "A horizontal roller with unit translation"
+      },
+      {
+        "value": "D",
+        "text": "A vertical support with a unit settlement"
+      }
+    ],
+    "explanation": "The Muller-Breslau principle releases the restraint conjugate to the response. Bending moment is conjugate to relative rotation.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 20
+  },
+  {
+    "subject": "Estimation, Costing & Construction Management",
+    "topic": "discounted equipment replacement",
+    "concept_id": "civil:discounted-equipment-replacement",
+    "question_text": "An equipment option costs 100000 rupees now and returns 121000 rupees after two years, with no other cash flows. At 10% annual discount, net present value is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "10000 rupees"
+      },
+      {
+        "value": "B",
+        "text": "21000 rupees"
+      },
+      {
+        "value": "C",
+        "text": "0 rupees"
+      },
+      {
+        "value": "D",
+        "text": "-10000 rupees"
+      }
+    ],
+    "explanation": "Present value of receipt=121000/(1.1)^2=100000. Subtract the initial cost to obtain zero NPV.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Estimation, Costing & Construction Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 21
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "rail sleeper ballast load distribution",
+    "concept_id": "civil:rail-sleeper-ballast-load-distribution",
+    "question_text": "What is the principal structural benefit of ballast below sleepers?",
+    "options": [
+      {
+        "value": "A",
+        "text": "It carries loads solely by tension"
+      },
+      {
+        "value": "B",
+        "text": "It removes the need for all subgrade support"
+      },
+      {
+        "value": "C",
+        "text": "It must be impermeable in every track"
+      },
+      {
+        "value": "D",
+        "text": "It distributes loads and permits drainage and track adjustment"
+      }
+    ],
+    "explanation": "Ballast spreads sleeper loads to formation, supports alignment maintenance and provides drainage when clean and properly graded.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 22
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "vertical summit curve grade difference",
+    "concept_id": "civil:vertical-summit-curve-grade-difference",
+    "question_text": "Two road grades are +3% and -2%. A 200 m parabolic summit curve connects them. Rate of grade change per metre, expressed in percentage points per metre, is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.025"
+      },
+      {
+        "value": "B",
+        "text": "-0.25"
+      },
+      {
+        "value": "C",
+        "text": "-0.025"
+      },
+      {
+        "value": "D",
+        "text": "-0.005"
+      }
+    ],
+    "explanation": "The signed grade change is -2-3=-5 percentage points. Divide by 200 m to obtain -0.025 per metre.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 23
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "footing flexure cantilever",
+    "concept_id": "civil:footing-flexure-cantilever",
+    "question_text": "A square footing projects 0.75 m beyond a column face and has uniform net upward pressure 200 kPa. Moment at that face per metre width from the projection is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "112.5 kNm/m"
+      },
+      {
+        "value": "B",
+        "text": "56.25 kNm/m"
+      },
+      {
+        "value": "C",
+        "text": "28.125 kNm/m"
+      },
+      {
+        "value": "D",
+        "text": "75 kNm/m"
+      }
+    ],
+    "explanation": "Treat the projection as a cantilever strip: M=q l^2/2=200x0.75^2/2=56.25 kNm per metre.",
+    "style": "design interpretation",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 24
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "flanged beam compression block check",
+    "concept_id": "civil:flanged-beam-compression-block-check",
+    "question_text": "A T-beam has flange width 1000 mm and thickness 120 mm. Use C=0.36fck bf xu and lever arm d-0.42xu if xu lies within the flange. Given fck=25 MPa, d=500 mm and T=450 kN, which result is consistent?",
+    "options": [
+      {
+        "value": "A",
+        "text": "xu=120 mm and M=202.32 kNm"
+      },
+      {
+        "value": "B",
+        "text": "xu=150 mm and M=196.65 kNm"
+      },
+      {
+        "value": "C",
+        "text": "xu=50 mm and M=225 kNm"
+      },
+      {
+        "value": "D",
+        "text": "xu=50 mm and M=215.55 kNm"
+      }
+    ],
+    "explanation": "Force equilibrium gives xu=450000/(0.36x25x1000)=50 mm, within the flange. Moment=450x(0.500-0.42x0.050)=215.55 kNm.",
+    "style": "design interpretation",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 25
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "liquidity index state",
+    "concept_id": "civil:liquidity-index-state",
+    "question_text": "A clay has liquid limit 60%, plastic limit 25% and natural water content 46%. Liquidity index is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "1.31"
+      },
+      {
+        "value": "B",
+        "text": "0.40"
+      },
+      {
+        "value": "C",
+        "text": "0.35"
+      },
+      {
+        "value": "D",
+        "text": "0.60"
+      }
+    ],
+    "explanation": "LI=(w-PL)/(LL-PL)=(46-25)/(60-25)=21/35=0.60.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 26
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "crack control distribution",
+    "concept_id": "civil:crack-control-distribution",
+    "question_text": "Two service-load beam designs have equal total tension-steel area and comparable cover. Which arrangement generally improves flexural crack distribution?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Bundling all bars without checking bond"
+      },
+      {
+        "value": "B",
+        "text": "One very large bar at mid-width"
+      },
+      {
+        "value": "C",
+        "text": "More smaller bars at closer spacing"
+      },
+      {
+        "value": "D",
+        "text": "Removing secondary reinforcement"
+      }
+    ],
+    "explanation": "Distributed reinforcement increases the number of bond-transfer zones and generally produces more closely spaced, narrower cracks.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 27
+  },
+  {
+    "subject": "Surveying",
+    "topic": "area coordinate shoelace",
+    "concept_id": "civil:area-coordinate-shoelace",
+    "question_text": "A parcel has coordinates (0,0), (40,0), (40,30), (0,20) metres in boundary order. Its area is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "1400 m^2"
+      },
+      {
+        "value": "B",
+        "text": "1000 m^2"
+      },
+      {
+        "value": "C",
+        "text": "800 m^2"
+      },
+      {
+        "value": "D",
+        "text": "1200 m^2"
+      }
+    ],
+    "explanation": "The trapezoid's parallel sides are 30 and 20 m separated by 40 m. Area=0.5(30+20)40=1000 m^2.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Surveying",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 28
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "shear reinforcement yield cap given",
+    "concept_id": "civil:shear-reinforcement-yield-cap-given",
+    "question_text": "A design rule caps stirrup stress input at 415 MPa in Vs=0.87fy Asv d/s. If 500 MPa stirrups are supplied, what fy is used under that stated rule?",
+    "options": [
+      {
+        "value": "A",
+        "text": "500 MPa"
+      },
+      {
+        "value": "B",
+        "text": "1000 MPa"
+      },
+      {
+        "value": "C",
+        "text": "415 MPa"
+      },
+      {
+        "value": "D",
+        "text": "0.87x500 MPa"
+      }
+    ],
+    "explanation": "The explicitly stated cap governs the equation input. Supplying higher grade steel does not waive the design rule.",
+    "style": "design interpretation",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 29
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "mechanism counting collapse",
+    "concept_id": "civil:mechanism-counting-collapse",
+    "question_text": "A fixed-fixed single-span beam forms plastic hinges at both ends and at one interior section. Assuming no other instability, the resulting configuration is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A beam with unchanged fixed-end rotations"
+      },
+      {
+        "value": "B",
+        "text": "A collapse mechanism"
+      },
+      {
+        "value": "C",
+        "text": "An elastic statically determinate beam with no motion"
+      },
+      {
+        "value": "D",
+        "text": "A structure requiring four additional hinges"
+      }
+    ],
+    "explanation": "Three appropriately located hinges release the two redundancies and create a mechanism in a fixed-fixed beam.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 30
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "stiffness matrix condensation",
+    "concept_id": "civil:stiffness-matrix-condensation",
+    "question_text": "A two-degree system has stiffness matrix [[10,-2],[-2,4]] kN/mm. DOF 2 has zero applied force and is statically condensed. Effective stiffness at DOF 1 is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "11 kN/mm"
+      },
+      {
+        "value": "B",
+        "text": "6 kN/mm"
+      },
+      {
+        "value": "C",
+        "text": "9 kN/mm"
+      },
+      {
+        "value": "D",
+        "text": "10 kN/mm"
+      }
+    ],
+    "explanation": "Condensation gives K11-K12 K22^-1 K21=10-4/4=9 kN/mm.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 31
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "beam element assembly",
+    "concept_id": "civil:beam-element-assembly",
+    "question_text": "At a joint, two member rotational stiffnesses are 4EI/L and 2EI/L. An unbalanced 60 kNm joint moment is distributed with no other active members. Magnitudes distributed are:",
+    "options": [
+      {
+        "value": "A",
+        "text": "45 and 15 kNm"
+      },
+      {
+        "value": "B",
+        "text": "20 and 40 kNm"
+      },
+      {
+        "value": "C",
+        "text": "30 and 30 kNm"
+      },
+      {
+        "value": "D",
+        "text": "40 and 20 kNm"
+      }
+    ],
+    "explanation": "Distribution factors are 4/6 and 2/6, so the balancing moment magnitudes are 40 and 20 kNm.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 32
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "ultimate stress block equilibrium",
+    "concept_id": "civil:ultimate-stress-block-equilibrium",
+    "question_text": "For a rectangular section use C=0.36 fck b xu and T=0.87 fy As. With fck=25 MPa, b=300 mm, fy=500 MPa and As=1200 mm^2, xu is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "232 mm"
+      },
+      {
+        "value": "B",
+        "text": "193.3 mm"
+      },
+      {
+        "value": "C",
+        "text": "145 mm"
+      },
+      {
+        "value": "D",
+        "text": "160 mm"
+      }
+    ],
+    "explanation": "Equating C and T gives xu=(0.87x500x1200)/(0.36x25x300)=193.3 mm.",
+    "style": "design interpretation",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 33
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "unit hydrograph duration conversion",
+    "concept_id": "civil:unit-hydrograph-duration-conversion",
+    "question_text": "A 2-hour unit hydrograph is converted to a 4-hour unit hydrograph by adding a copy lagged by two hours. What final scaling is required?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Multiply summed ordinates by 2"
+      },
+      {
+        "value": "B",
+        "text": "No scaling because both are unit hydrographs"
+      },
+      {
+        "value": "C",
+        "text": "Divide summed ordinates by 2"
+      },
+      {
+        "value": "D",
+        "text": "Divide time coordinates by 2 only"
+      }
+    ],
+    "explanation": "Two 1-unit-depth pulses produce 2 units of effective rainfall over four hours. Divide the summed runoff ordinates by 2 for unit depth.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 34
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "horton integrated infiltration",
+    "concept_id": "civil:horton-integrated-infiltration",
+    "question_text": "Infiltration capacity is f=5+15 exp(-t) mm/h, t in hours. Rainfall exceeds capacity throughout two hours. Total infiltration is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "30 mm"
+      },
+      {
+        "value": "B",
+        "text": "22.97 mm"
+      },
+      {
+        "value": "C",
+        "text": "40 mm"
+      },
+      {
+        "value": "D",
+        "text": "17.97 mm"
+      }
+    ],
+    "explanation": "Integrate from 0 to 2: F=5(2)+15(1-e^-2)=22.97 mm.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 35
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "timber orthotropic movement",
+    "concept_id": "civil:timber-orthotropic-movement",
+    "question_text": "A board shrinks 6% tangentially and 3% radially between two moisture states. A tangential dimension starts at 200 mm and radial thickness at 50 mm. What are their final dimensions?",
+    "options": [
+      {
+        "value": "A",
+        "text": "194 mm and 48.5 mm"
+      },
+      {
+        "value": "B",
+        "text": "194 mm and 47 mm"
+      },
+      {
+        "value": "C",
+        "text": "188 mm and 47 mm"
+      },
+      {
+        "value": "D",
+        "text": "188 mm and 48.5 mm"
+      }
+    ],
+    "explanation": "Tangential contraction is 12 mm and radial contraction is 1.5 mm. Timber movement is direction dependent.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 36
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "pavement axle equivalence",
+    "concept_id": "civil:pavement-axle-equivalence",
+    "question_text": "For this estimate use a fourth-power axle-damage law and an 80 kN standard axle. A 120 kN axle represents approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "3.38 standard axles"
+      },
+      {
+        "value": "B",
+        "text": "2.25 standard axles"
+      },
+      {
+        "value": "C",
+        "text": "5.06 standard axles"
+      },
+      {
+        "value": "D",
+        "text": "1.50 standard axles"
+      }
+    ],
+    "explanation": "Equivalency=(120/80)^4=1.5^4=5.0625 under the specified empirical law.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 37
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "service deflection design check",
+    "concept_id": "civil:service-deflection-design-check",
+    "question_text": "A beam passes ultimate flexure and shear checks but develops excessive long-term sag. Which additional effects must be examined?",
+    "options": [
+      {
+        "value": "A",
+        "text": "The colour of coarse aggregate"
+      },
+      {
+        "value": "B",
+        "text": "Cracking, creep, shrinkage and sustained-load stiffness"
+      },
+      {
+        "value": "C",
+        "text": "Only the cube failure load"
+      },
+      {
+        "value": "D",
+        "text": "Only the short-term uncracked gross inertia"
+      }
+    ],
+    "explanation": "Ultimate resistance does not establish serviceability. Time effects and cracked stiffness govern long-term deflection.",
+    "style": "design interpretation",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 38
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "spillway routing peak lag",
+    "concept_id": "civil:spillway-routing-peak-lag",
+    "question_text": "A reservoir starts below its spillway crest and stores part of a flood. Why can its outflow peak be lower and later than inflow peak?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Mass conservation is violated during rising water"
+      },
+      {
+        "value": "B",
+        "text": "Storage change temporarily absorbs inflow exceeding outflow"
+      },
+      {
+        "value": "C",
+        "text": "The reservoir destroys water by pressure"
+      },
+      {
+        "value": "D",
+        "text": "Outflow must equal inflow at every instant"
+      }
+    ],
+    "explanation": "Continuity is dS/dt=I-O. Temporary storage attenuates and delays the outflow hydrograph.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 39
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "drained triaxial cohesion intercept",
+    "concept_id": "civil:drained-triaxial-cohesion-intercept",
+    "question_text": "In drained triaxial compression, phi'=30 degrees and c'=20 kPa. With sigma3'=100 kPa, failure sigma1' is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "369.3 kPa"
+      },
+      {
+        "value": "B",
+        "text": "230.9 kPa"
+      },
+      {
+        "value": "C",
+        "text": "169.3 kPa"
+      },
+      {
+        "value": "D",
+        "text": "300 kPa"
+      }
+    ],
+    "explanation": "sigma1'=sigma3' tan^2(45+phi'/2)+2c'tan(45+phi'/2)=300+40sqrt(3)=369.3 kPa.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 40
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "scs runoff initial abstraction",
+    "concept_id": "civil:scs-runoff-initial-abstraction",
+    "question_text": "Use Q=(P-0.2S)^2/(P+0.8S) when P>0.2S. For P=100 mm and S=100 mm, direct runoff is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "80 mm"
+      },
+      {
+        "value": "B",
+        "text": "64 mm"
+      },
+      {
+        "value": "C",
+        "text": "35.56 mm"
+      },
+      {
+        "value": "D",
+        "text": "44.44 mm"
+      }
+    ],
+    "explanation": "Initial abstraction is 20 mm. Q=80^2/180=35.56 mm under the supplied model.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 41
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "breakpoint chlorination curve",
+    "concept_id": "civil:breakpoint-chlorination-curve",
+    "question_text": "After ammonia-related combined chlorine demand is satisfied, additional chlorine leads to increasing free residual. This region is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Proof that no disinfectant is present"
+      },
+      {
+        "value": "B",
+        "text": "The initial chlorine-demand region only"
+      },
+      {
+        "value": "C",
+        "text": "Always below the combined-residual peak"
+      },
+      {
+        "value": "D",
+        "text": "Beyond the breakpoint"
+      }
+    ],
+    "explanation": "Beyond breakpoint, further dose mainly increases free available chlorine once the relevant demands are satisfied.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 42
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "liquefaction contractive response",
+    "concept_id": "civil:liquefaction-contractive-response",
+    "question_text": "Why can loose saturated sand lose effective strength during rapid cyclic shearing?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Rapid shearing always increases effective confinement"
+      },
+      {
+        "value": "B",
+        "text": "Water acquires a negative density"
+      },
+      {
+        "value": "C",
+        "text": "Its mineral grains must melt"
+      },
+      {
+        "value": "D",
+        "text": "Contractive tendency generates excess pore pressure when drainage is restricted"
+      }
+    ],
+    "explanation": "Restricted drainage prevents contraction; rising pore pressure reduces effective stress and can trigger liquefaction or cyclic mobility.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 43
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "manning roughness depth scaling",
+    "concept_id": "civil:manning-roughness-depth-scaling",
+    "question_text": "A wide channel carries constant unit discharge on a fixed slope. With Manning flow, doubling n changes normal depth by what factor?",
+    "options": [
+      {
+        "value": "A",
+        "text": "2^(1/2)"
+      },
+      {
+        "value": "B",
+        "text": "2^(5/3)"
+      },
+      {
+        "value": "C",
+        "text": "2^(3/5)"
+      },
+      {
+        "value": "D",
+        "text": "2"
+      }
+    ],
+    "explanation": "For a wide channel q=(1/n)y^(5/3)S^1/2, so y is proportional to n^(3/5).",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 44
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "critical control hump choking",
+    "concept_id": "civil:critical-control-hump-choking",
+    "question_text": "Subcritical flow approaches a smooth bed hump. If the available upstream specific energy minus hump height is below the minimum energy for the discharge, what follows?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Critical depth is independent of discharge"
+      },
+      {
+        "value": "B",
+        "text": "Depth on the hump can become arbitrarily small at unchanged discharge"
+      },
+      {
+        "value": "C",
+        "text": "The assumed upstream state cannot persist without adjustment or afflux"
+      },
+      {
+        "value": "D",
+        "text": "Energy is spontaneously generated over the hump"
+      }
+    ],
+    "explanation": "A discharge requires at least its critical specific energy. An excessive hump chokes the original state and causes upstream adjustment.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 45
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "thick cylinder inner hoop stress",
+    "concept_id": "civil:thick-cylinder-inner-hoop-stress",
+    "question_text": "A thick cylinder has inner radius 50 mm and outer radius 100 mm. Internal pressure is 12 MPa and external pressure zero. Lame theory gives inner hoop stress:",
+    "options": [
+      {
+        "value": "A",
+        "text": "20 MPa"
+      },
+      {
+        "value": "B",
+        "text": "24 MPa"
+      },
+      {
+        "value": "C",
+        "text": "12 MPa"
+      },
+      {
+        "value": "D",
+        "text": "16 MPa"
+      }
+    ],
+    "explanation": "Inner hoop stress is pi(ro^2+ri^2)/(ro^2-ri^2)=12(10000+2500)/7500=20 MPa.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 46
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "support spring force method",
+    "concept_id": "civil:support-spring-force-method",
+    "question_text": "A beam has a vertically elastic prop of stiffness k. In a force-method solution with prop force R, which compatibility condition is appropriate?",
+    "options": [
+      {
+        "value": "A",
+        "text": "The prop may move independently of its spring"
+      },
+      {
+        "value": "B",
+        "text": "Beam displacement must always be zero"
+      },
+      {
+        "value": "C",
+        "text": "The prop reaction must always be zero"
+      },
+      {
+        "value": "D",
+        "text": "Beam displacement at the prop must equal R/k with consistent signs"
+      }
+    ],
+    "explanation": "A spring prop deforms under reaction. Compatibility equates beam displacement to spring compression, unlike a rigid prop.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 47
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "skempton pore pressure increments",
+    "concept_id": "civil:skempton-pore-pressure-increments",
+    "question_text": "For a saturated triaxial specimen use delta_u=B[delta_sigma3+A(delta_sigma1-delta_sigma3)]. Given B=0.8, A=0.5, total major-stress increment 80 kPa and minor-stress increment 20 kPa, what are delta_u and delta_sigma1 effective?",
+    "options": [
+      {
+        "value": "A",
+        "text": "40 kPa and 40 kPa"
+      },
+      {
+        "value": "B",
+        "text": "20 kPa and 60 kPa"
+      },
+      {
+        "value": "C",
+        "text": "40 kPa and 80 kPa"
+      },
+      {
+        "value": "D",
+        "text": "50 kPa and 30 kPa"
+      }
+    ],
+    "explanation": "Pore-pressure increment=0.8[20+0.5(80-20)]=40 kPa. Effective major-stress increment=80-40=40 kPa.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 48
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "flexural lever arm",
+    "concept_id": "civil:flexural-lever-arm",
+    "question_text": "Use a rectangular concrete stress block with C=600 kN acting at 0.42xu from the compression face. If d=500 mm and xu=150 mm, moment resistance is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "300 kNm"
+      },
+      {
+        "value": "B",
+        "text": "337.8 kNm"
+      },
+      {
+        "value": "C",
+        "text": "262.2 kNm"
+      },
+      {
+        "value": "D",
+        "text": "210 kNm"
+      }
+    ],
+    "explanation": "The lever arm is d-0.42xu=437 mm. Moment is 600x0.437=262.2 kNm.",
+    "style": "design interpretation",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 49
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "queue arrival service finite period",
+    "concept_id": "civil:queue-arrival-service-finite-period",
+    "question_text": "An initially empty toll lane receives 600 vehicles/hour while serving 480 vehicles/hour for 15 minutes. Assuming deterministic uniform rates and continuous operation, queue at the end is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "120 vehicles"
+      },
+      {
+        "value": "B",
+        "text": "30 vehicles"
+      },
+      {
+        "value": "C",
+        "text": "20 vehicles"
+      },
+      {
+        "value": "D",
+        "text": "150 vehicles"
+      }
+    ],
+    "explanation": "Accumulation=(600-480)(15/60)=30 vehicles.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 50
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "three hinged arch thrust",
+    "concept_id": "civil:three-hinged-arch-thrust",
+    "question_text": "A three-hinged parabolic arch has span 20 m and rise 5 m under a full-span UDL 10 kN/m per horizontal metre. Horizontal thrust is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "50 kN"
+      },
+      {
+        "value": "B",
+        "text": "100 kN"
+      },
+      {
+        "value": "C",
+        "text": "200 kN"
+      },
+      {
+        "value": "D",
+        "text": "25 kN"
+      }
+    ],
+    "explanation": "At the crown, H=M_beam/rise=(wL^2/8)/f=500/5=100 kN.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 51
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "stokes terminal settling",
+    "concept_id": "civil:stokes-terminal-settling",
+    "question_text": "A small spherical particle settles in the Stokes regime. If its diameter doubles while fluid and particle density remain fixed, terminal velocity changes by:",
+    "options": [
+      {
+        "value": "A",
+        "text": "A factor of 2"
+      },
+      {
+        "value": "B",
+        "text": "A factor of 8"
+      },
+      {
+        "value": "C",
+        "text": "A factor of 4"
+      },
+      {
+        "value": "D",
+        "text": "A factor of 1/2"
+      }
+    ],
+    "explanation": "Stokes terminal speed is proportional to diameter squared, provided the doubled particle remains in the same low-Reynolds-number regime.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 52
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "seepage flow net discharge",
+    "concept_id": "civil:seepage-flow-net-discharge",
+    "question_text": "An isotropic soil beneath a floor has k=2x10^-5 m/s, head difference 6 m, four flow channels and twelve potential drops. Seepage per metre width is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "4x10^-5 m^3/s/m"
+      },
+      {
+        "value": "B",
+        "text": "9x10^-5 m^3/s/m"
+      },
+      {
+        "value": "C",
+        "text": "1.44x10^-3 m^3/s/m"
+      },
+      {
+        "value": "D",
+        "text": "1x10^-5 m^3/s/m"
+      }
+    ],
+    "explanation": "Flow-net discharge is kH Nf/Nd=2x10^-5x6x4/12=4x10^-5 per metre width.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 53
+  },
+  {
+    "subject": "Surveying",
+    "topic": "closed traverse angular correction",
+    "concept_id": "civil:closed-traverse-angular-correction",
+    "question_text": "A five-sided closed traverse has observed interior-angle sum 540 degrees 02 minutes. Equal corrections are applied. Correction per angle is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "-24 seconds"
+      },
+      {
+        "value": "B",
+        "text": "-2 minutes"
+      },
+      {
+        "value": "C",
+        "text": "+2 minutes"
+      },
+      {
+        "value": "D",
+        "text": "+24 seconds"
+      }
+    ],
+    "explanation": "Theoretical sum is (5-2)180=540 degrees. Misclosure is +120 seconds; each correction is -120/5=-24 seconds.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Surveying",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 54
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "pump series operating point",
+    "concept_id": "civil:pump-series-operating-point",
+    "question_text": "Two identical pumps operate in series. Each has head H=30-100Q^2 metres, and the system has H=20+200Q^2. Q is m^3/s. Operating discharge is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.500 m^3/s"
+      },
+      {
+        "value": "B",
+        "text": "0.224 m^3/s"
+      },
+      {
+        "value": "C",
+        "text": "0.316 m^3/s"
+      },
+      {
+        "value": "D",
+        "text": "0.447 m^3/s"
+      }
+    ],
+    "explanation": "Series head is 60-200Q^2. Equating to the system gives 40=400Q^2 and Q=sqrt(0.1).",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 55
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "slope deflection end rotation",
+    "concept_id": "civil:slope-deflection-end-rotation",
+    "question_text": "A prismatic member AB has no translation or loads, A fixed, and B rotated by theta. End moment M_AB is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "EI theta/L"
+      },
+      {
+        "value": "B",
+        "text": "0"
+      },
+      {
+        "value": "C",
+        "text": "2EI theta/L"
+      },
+      {
+        "value": "D",
+        "text": "4EI theta/L"
+      }
+    ],
+    "explanation": "Slope-deflection gives M_AB=(2EI/L)(2theta_A+theta_B)=2EI theta/L when theta_A=0.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 56
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "sewer partial full velocity",
+    "concept_id": "civil:sewer-partial-full-velocity",
+    "question_text": "A circular sewer flows exactly half full with the same slope and Manning n as when full. Half-full mean velocity divided by full-flow mean velocity is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "1"
+      },
+      {
+        "value": "B",
+        "text": "2^(2/3)"
+      },
+      {
+        "value": "C",
+        "text": "1/2"
+      },
+      {
+        "value": "D",
+        "text": "2"
+      }
+    ],
+    "explanation": "Both half-full and full circular sections have hydraulic radius D/4. Manning velocity is therefore the same at equal n and slope.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 57
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "hydrostatic curved surface vertical force",
+    "concept_id": "civil:hydrostatic-curved-surface-vertical-force",
+    "question_text": "Water lies above a submerged curved gate. The imaginary water volume vertically above the gate up to the free surface is 3 m^3. With gamma=9.81 kN/m^3, vertical hydrostatic force magnitude is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "58.86 kN"
+      },
+      {
+        "value": "B",
+        "text": "3 kN"
+      },
+      {
+        "value": "C",
+        "text": "29.43 kN"
+      },
+      {
+        "value": "D",
+        "text": "9.81 kN"
+      }
+    ],
+    "explanation": "The vertical component equals the weight of the appropriate imaginary water volume: gamma V=29.43 kN.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 58
+  },
+  {
+    "subject": "Surveying",
+    "topic": "tacheometry inclined sight",
+    "concept_id": "civil:tacheometry-inclined-sight",
+    "question_text": "A vertical staff intercept is 2 m, instrument multiplying constant 100, additive constant zero, and sight inclination 30 degrees. Horizontal distance is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "200 m"
+      },
+      {
+        "value": "B",
+        "text": "150 m"
+      },
+      {
+        "value": "C",
+        "text": "173.2 m"
+      },
+      {
+        "value": "D",
+        "text": "100 m"
+      }
+    ],
+    "explanation": "For a vertical staff D=Ks cos^2(theta)=100x2x0.75=150 m.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Surveying",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 59
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "solid waste wet dry calorific effect",
+    "concept_id": "civil:solid-waste-wet-dry-calorific-effect",
+    "question_text": "Mixed municipal waste has high moisture content. What is its most direct disadvantage for thermal energy recovery?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Water contributes the same combustion heat as plastic"
+      },
+      {
+        "value": "B",
+        "text": "More energy is consumed evaporating water, reducing net useful heat"
+      },
+      {
+        "value": "C",
+        "text": "Moisture always increases net calorific value"
+      },
+      {
+        "value": "D",
+        "text": "Moisture guarantees complete pathogen destruction before treatment"
+      }
+    ],
+    "explanation": "Water must be heated and evaporated. This consumes energy that otherwise could be recovered from combustible solids.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 60
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "noise independent sources",
+    "concept_id": "civil:noise-independent-sources",
+    "question_text": "Two independent equal noise sources each produce 60 dB at a receiver. Together they produce approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "66 dB"
+      },
+      {
+        "value": "B",
+        "text": "63 dB"
+      },
+      {
+        "value": "C",
+        "text": "120 dB"
+      },
+      {
+        "value": "D",
+        "text": "60 dB"
+      }
+    ],
+    "explanation": "Add intensities rather than decibels. Equal independent levels add 10log10(2)=3.01 dB.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 61
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "raft net pressure compensation",
+    "concept_id": "civil:raft-net-pressure-compensation",
+    "question_text": "A raft applies gross pressure 180 kPa at depth 3 m in soil with total unit weight 20 kN/m^3. Ignoring groundwater changes, net foundation pressure is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "180 kPa"
+      },
+      {
+        "value": "B",
+        "text": "240 kPa"
+      },
+      {
+        "value": "C",
+        "text": "120 kPa"
+      },
+      {
+        "value": "D",
+        "text": "60 kPa"
+      }
+    ],
+    "explanation": "Excavated overburden was 3x20=60 kPa. Net increase is 180-60=120 kPa.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 62
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "redundant flexibility cross term",
+    "concept_id": "civil:redundant-flexibility-cross-term",
+    "question_text": "A force-method system has flexibility matrix [[2,1],[1,3]] mm/kN and load displacements [5,5] mm. For fR+delta=0, redundants are:",
+    "options": [
+      {
+        "value": "A",
+        "text": "2 and 1 kN"
+      },
+      {
+        "value": "B",
+        "text": "-2.5 and -1.67 kN"
+      },
+      {
+        "value": "C",
+        "text": "-2 and -1 kN"
+      },
+      {
+        "value": "D",
+        "text": "-1 and -2 kN"
+      }
+    ],
+    "explanation": "Solving 2R1+R2=-5 and R1+3R2=-5 gives R1=-2 and R2=-1 kN.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 63
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "anchorage versus lap distinction",
+    "concept_id": "civil:anchorage-versus-lap-distinction",
+    "question_text": "A bar has adequate calculated development length but is lapped where many bars are stressed highly. Why is checking development length alone insufficient?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Development length automatically validates every splice arrangement"
+      },
+      {
+        "value": "B",
+        "text": "A tension lap is independent of bar stress"
+      },
+      {
+        "value": "C",
+        "text": "Lap joints eliminate bond stresses"
+      },
+      {
+        "value": "D",
+        "text": "Lap location, proportion lapped, confinement and applicable splice rules require separate checks"
+      }
+    ],
+    "explanation": "Anchorage and splicing are related but not identical checks. Concentrated splices can impair force transfer and ductility.",
+    "style": "design interpretation",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 64
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "bearing pressure eccentric footing",
+    "concept_id": "civil:bearing-pressure-eccentric-footing",
+    "question_text": "A 2 m wide strip footing carries vertical load at eccentricity 0.25 m across width. Under a linear full-contact distribution, qmax/qaverage is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "2.5"
+      },
+      {
+        "value": "B",
+        "text": "0.75"
+      },
+      {
+        "value": "C",
+        "text": "1.25"
+      },
+      {
+        "value": "D",
+        "text": "1.75"
+      }
+    ],
+    "explanation": "qmax/qaverage=1+6e/B=1+6x0.25/2=1.75. Since e<B/6, full compression is possible.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 65
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "elastic shortening sequential tendons",
+    "concept_id": "civil:elastic-shortening-sequential-tendons",
+    "question_text": "Several post-tensioning tendons are stressed sequentially. Which tendon can lose stress through concrete shortening caused by later tendons?",
+    "options": [
+      {
+        "value": "A",
+        "text": "An earlier anchored tendon"
+      },
+      {
+        "value": "B",
+        "text": "No tendon under any sequence"
+      },
+      {
+        "value": "C",
+        "text": "Only an unbonded tendon before jacking starts"
+      },
+      {
+        "value": "D",
+        "text": "Only the tendon stressed last"
+      }
+    ],
+    "explanation": "Later stressing further compresses the concrete and shortens previously anchored tendons; sequencing affects the loss.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 66
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "railway cant equilibrium supplied geometry",
+    "concept_id": "civil:railway-cant-equilibrium-supplied-geometry",
+    "question_text": "Use equilibrium cant e=Gv^2/(gR). For effective gauge G=1.5 m, v=20 m/s, R=600 m and g=10 m/s^2, e is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "200 mm"
+      },
+      {
+        "value": "B",
+        "text": "50 mm"
+      },
+      {
+        "value": "C",
+        "text": "100 mm"
+      },
+      {
+        "value": "D",
+        "text": "150 mm"
+      }
+    ],
+    "explanation": "e=1.5x400/(10x600)=0.10 m=100 mm. No cant-deficiency allowance is included.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 67
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "overtaking relative travel",
+    "concept_id": "civil:overtaking-relative-travel",
+    "question_text": "A faster vehicle at 90 km/h must gain 100 m relative to a slower one at 54 km/h. At constant speeds, the faster vehicle travels how far during this gain?",
+    "options": [
+      {
+        "value": "A",
+        "text": "100 m"
+      },
+      {
+        "value": "B",
+        "text": "150 m"
+      },
+      {
+        "value": "C",
+        "text": "400 m"
+      },
+      {
+        "value": "D",
+        "text": "250 m"
+      }
+    ],
+    "explanation": "Relative speed is 10 m/s, so time is 10 s. The faster vehicle travels 25x10=250 m.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 68
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "compression index settlement",
+    "concept_id": "civil:compression-index-settlement",
+    "question_text": "A normally consolidated clay layer is 3 m thick, e0=0.8, Cc=0.3. Effective stress increases from 100 to 200 kPa. Primary settlement is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "301 mm"
+      },
+      {
+        "value": "B",
+        "text": "75.3 mm"
+      },
+      {
+        "value": "C",
+        "text": "500 mm"
+      },
+      {
+        "value": "D",
+        "text": "150.5 mm"
+      }
+    ],
+    "explanation": "S=H Cc/(1+e0) log10(200/100)=3x0.3/1.8x0.30103=0.1505 m.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 69
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "fluoride treatment selectivity",
+    "concept_id": "civil:fluoride-treatment-selectivity",
+    "question_text": "A groundwater source exceeds the specified fluoride limit but has low turbidity. Which approach addresses the principal dissolved contaminant?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Coarse bar screening alone"
+      },
+      {
+        "value": "B",
+        "text": "Plain sedimentation alone"
+      },
+      {
+        "value": "C",
+        "text": "Adding sand without a treatment mechanism"
+      },
+      {
+        "value": "D",
+        "text": "A validated defluoridation process"
+      }
+    ],
+    "explanation": "Dissolved fluoride is not removed reliably by screening or plain settling. A suitable adsorption, chemical or membrane process is required.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 70
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "earth pressure water separated",
+    "concept_id": "civil:earth-pressure-water-separated",
+    "question_text": "A retaining-wall analysis uses submerged soil unit weight below the water table. What additional lateral action must normally be included?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Hydrostatic water pressure"
+      },
+      {
+        "value": "B",
+        "text": "No water pressure because buoyant weight includes it all"
+      },
+      {
+        "value": "C",
+        "text": "The full saturated weight again as pore pressure"
+      },
+      {
+        "value": "D",
+        "text": "Only atmospheric pressure on both sides"
+      }
+    ],
+    "explanation": "Submerged weight calculates effective earth pressure. Total lateral pressure also includes pore-water pressure unless drainage conditions justify otherwise.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 71
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "two span continuity",
+    "concept_id": "civil:two-span-continuity",
+    "question_text": "A prismatic beam has two equal spans L, outer simple supports and a continuous middle support. Both spans carry UDL w. The middle-support moment is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "-wL^2/16"
+      },
+      {
+        "value": "B",
+        "text": "-wL^2/12"
+      },
+      {
+        "value": "C",
+        "text": "-wL^2/8"
+      },
+      {
+        "value": "D",
+        "text": "0"
+      }
+    ],
+    "explanation": "The three-moment equation with zero outer moments gives 4LM_B=-wL^3/2, hence M_B=-wL^2/8.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 72
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "local plate slenderness",
+    "concept_id": "civil:local-plate-slenderness",
+    "question_text": "An I-section has a highly slender compression flange but adequate overall lateral restraint. What limit state may still govern?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Lateral restraint guarantees no local buckling"
+      },
+      {
+        "value": "B",
+        "text": "No stability limit state remains"
+      },
+      {
+        "value": "C",
+        "text": "Local flange buckling"
+      },
+      {
+        "value": "D",
+        "text": "Tensile rupture of the compression flange only"
+      }
+    ],
+    "explanation": "Lateral restraint addresses global movement, while a slender plate element can buckle locally between its supports.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 73
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "sludge age solids balance",
+    "concept_id": "civil:sludge-age-solids-balance",
+    "question_text": "An activated-sludge plant holds 3000 kg solids in its system. Daily solids leave as 140 kg in waste and 10 kg in effluent. Solids-retention time is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "21.43 days"
+      },
+      {
+        "value": "B",
+        "text": "15 days"
+      },
+      {
+        "value": "C",
+        "text": "30 days"
+      },
+      {
+        "value": "D",
+        "text": "20 days"
+      }
+    ],
+    "explanation": "SRT=system solids/(waste plus effluent solids per day)=3000/150=20 days.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 74
+  },
+  {
+    "subject": "Surveying",
+    "topic": "gnss vertical datum",
+    "concept_id": "civil:gnss-vertical-datum",
+    "question_text": "A GNSS solution gives ellipsoidal height h=120 m. Geoid undulation N=25 m, with h=H+N. Orthometric height is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "95 m"
+      },
+      {
+        "value": "B",
+        "text": "145 m"
+      },
+      {
+        "value": "C",
+        "text": "120 m"
+      },
+      {
+        "value": "D",
+        "text": "25 m"
+      }
+    ],
+    "explanation": "H=h-N=120-25=95 m. Ellipsoidal and orthometric heights refer to different surfaces.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Surveying",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 75
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "absolute volume yield",
+    "concept_id": "civil:absolute-volume-yield",
+    "question_text": "A concrete batch contains cement 300 kg (specific gravity 3), water 180 kg and aggregate 1560 kg (specific gravity 2.6). Neglect air. What volume does it yield?",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.88 m^3"
+      },
+      {
+        "value": "B",
+        "text": "0.78 m^3"
+      },
+      {
+        "value": "C",
+        "text": "1.00 m^3"
+      },
+      {
+        "value": "D",
+        "text": "1.08 m^3"
+      }
+    ],
+    "explanation": "Absolute volumes are 0.100, 0.180 and 0.600 m^3. Their sum is 0.880 m^3.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 76
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "geotextile filter compatibility",
+    "concept_id": "civil:geotextile-filter-compatibility",
+    "question_text": "A geotextile separates fine soil from a gravel drain. Which paired requirement is essential?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Provide tensile strength alone without permeability checks"
+      },
+      {
+        "value": "B",
+        "text": "Retain soil while allowing adequate water flow"
+      },
+      {
+        "value": "C",
+        "text": "Have the largest possible openings regardless of soil"
+      },
+      {
+        "value": "D",
+        "text": "Block all water and retain only gravel"
+      }
+    ],
+    "explanation": "A filter must limit soil loss without clogging or imposing excessive hydraulic resistance; opening size and permeability both matter.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 77
+  },
+  {
+    "subject": "Estimation, Costing & Construction Management",
+    "topic": "measurement concealed work",
+    "concept_id": "civil:measurement-concealed-work",
+    "question_text": "Why should reinforcement and other concealed work be recorded before concrete placement?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Photographs automatically replace every contractual record"
+      },
+      {
+        "value": "B",
+        "text": "Later measurement may be impossible without destructive access"
+      },
+      {
+        "value": "C",
+        "text": "Concealment makes dimensions irrelevant"
+      },
+      {
+        "value": "D",
+        "text": "The bill must always ignore hidden quantities"
+      }
+    ],
+    "explanation": "Contemporaneous measurement and inspection preserve verifiable quantity and quality records before access is lost.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Estimation, Costing & Construction Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 78
+  },
+  {
+    "subject": "Estimation, Costing & Construction Management",
+    "topic": "depreciation reducing balance",
+    "concept_id": "civil:depreciation-reducing-balance",
+    "question_text": "An asset costs 200000 rupees and depreciates at 20% annually on reducing balance. Book value after three complete years is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "80000 rupees"
+      },
+      {
+        "value": "B",
+        "text": "128000 rupees"
+      },
+      {
+        "value": "C",
+        "text": "160000 rupees"
+      },
+      {
+        "value": "D",
+        "text": "102400 rupees"
+      }
+    ],
+    "explanation": "Book value=P(1-r)^3=200000(0.8)^3=102400 rupees; this is not straight-line depreciation.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Estimation, Costing & Construction Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 79
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "energy theorem restrictions",
+    "concept_id": "civil:energy-theorem-restrictions",
+    "question_text": "Which requirement is essential when using the standard linear unit-load method for displacement by superposition?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A statically determinate structure only"
+      },
+      {
+        "value": "B",
+        "text": "Zero shear in every member"
+      },
+      {
+        "value": "C",
+        "text": "Identical member areas throughout"
+      },
+      {
+        "value": "D",
+        "text": "Linear elastic response and compatible boundary conditions"
+      }
+    ],
+    "explanation": "Unit-load superposition relies on linear elastic behaviour; it also works for indeterminate structures when internal actions are correctly obtained.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 80
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "unsymmetrical section principal axes",
+    "concept_id": "civil:unsymmetrical-section-principal-axes",
+    "question_text": "A section has Ix=8, Iy=2 and Ixy=3, all in the same fourth-power units. The two principal second moments are:",
+    "options": [
+      {
+        "value": "A",
+        "text": "6 and 4"
+      },
+      {
+        "value": "B",
+        "text": "11 and -1"
+      },
+      {
+        "value": "C",
+        "text": "8 and 2"
+      },
+      {
+        "value": "D",
+        "text": "9.24 and 0.76"
+      }
+    ],
+    "explanation": "Principal values are (8+2)/2 plus or minus sqrt(((8-2)/2)^2+3^2)=5 plus or minus sqrt(18).",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 81
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "parallel pipe network split",
+    "concept_id": "civil:parallel-pipe-network-split",
+    "question_text": "Two parallel pipes between identical nodes obey h=RQ^2 with R1=4R2. If total flow is 0.9 m^3/s, flow in pipe 1 is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.45 m^3/s"
+      },
+      {
+        "value": "B",
+        "text": "0.18 m^3/s"
+      },
+      {
+        "value": "C",
+        "text": "0.6 m^3/s"
+      },
+      {
+        "value": "D",
+        "text": "0.3 m^3/s"
+      }
+    ],
+    "explanation": "Equal head loss gives 4Q1^2=Q2^2, so Q2=2Q1. Continuity then gives Q1=0.3.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 82
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "combined bending torsion equivalent torque",
+    "concept_id": "civil:combined-bending-torsion-equivalent-torque",
+    "question_text": "A solid circular shaft carries bending moment 30 kNm and torque 40 kNm. The equivalent torque for the maximum-shear-stress criterion is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "35 kNm"
+      },
+      {
+        "value": "B",
+        "text": "70 kNm"
+      },
+      {
+        "value": "C",
+        "text": "10 kNm"
+      },
+      {
+        "value": "D",
+        "text": "50 kNm"
+      }
+    ],
+    "explanation": "For the same diameter, equivalent torque is sqrt(M^2+T^2)=50 kNm.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 83
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "lime mortar carbonation",
+    "concept_id": "civil:lime-mortar-carbonation",
+    "question_text": "A lime mortar hardens slowly inside a thick, poorly ventilated wall. For a predominantly non-hydraulic lime, which limitation best explains this?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Restricted carbon dioxide access limits carbonation"
+      },
+      {
+        "value": "B",
+        "text": "Carbonation requires continuous boiling"
+      },
+      {
+        "value": "C",
+        "text": "Calcium carbonate cannot form at room temperature"
+      },
+      {
+        "value": "D",
+        "text": "Nitrogen must be absorbed to form silicates"
+      }
+    ],
+    "explanation": "Air lime gains strength mainly by carbonation. Diffusion of carbon dioxide into a thick wet joint can limit the reaction.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 84
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "reservoir mass curve storage",
+    "concept_id": "civil:reservoir-mass-curve-storage",
+    "question_text": "Over three equal periods, inflows are 2, 8 and 2 volume units; demand is 4 per period. Starting at a full reservoir and allowing cyclic operation, minimum storage is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "6 volume units"
+      },
+      {
+        "value": "B",
+        "text": "4 volume units"
+      },
+      {
+        "value": "C",
+        "text": "8 volume units"
+      },
+      {
+        "value": "D",
+        "text": "2 volume units"
+      }
+    ],
+    "explanation": "The two consecutive deficit periods across the cycle boundary each need 2 units, so maximum cumulative deficit is 4.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 85
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "gumbel design quantile",
+    "concept_id": "civil:gumbel-design-quantile",
+    "question_text": "Annual maximum rainfall has mean 100 mm and standard deviation 20 mm. For a Gumbel estimate, use reduced variate yT=2.25, reduced-variate mean 0.577 and standard deviation 1.283. Estimated design rainfall is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "145 mm"
+      },
+      {
+        "value": "B",
+        "text": "133.46 mm"
+      },
+      {
+        "value": "C",
+        "text": "113.04 mm"
+      },
+      {
+        "value": "D",
+        "text": "126.08 mm"
+      }
+    ],
+    "explanation": "Use frequency factor K=(2.25-0.577)/1.283=1.304. The quantile is mean plus K times standard deviation, approximately 126.08 mm.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 86
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "hardy cross correction sign",
+    "concept_id": "civil:hardy-cross-correction-sign",
+    "question_text": "A pipe-loop trial satisfies continuity but not the signed head-loss sum. In Hardy Cross balancing, the loop correction primarily enforces:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Zero friction in all pipes"
+      },
+      {
+        "value": "B",
+        "text": "Identical discharge in every pipe"
+      },
+      {
+        "value": "C",
+        "text": "Energy compatibility around the loop"
+      },
+      {
+        "value": "D",
+        "text": "A new source of mass at every node"
+      }
+    ],
+    "explanation": "Initial assumed flows satisfy continuity; iterative loop corrections reduce the algebraic head-loss imbalance.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 87
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "parabolic tendon load balancing",
+    "concept_id": "civil:parabolic-tendon-load-balancing",
+    "question_text": "A simply supported 12 m prestressed beam has a parabolic tendon with zero end eccentricity and 150 mm midspan eccentricity. Effective force is 1200 kN. Using wbal=8Pe/L^2, upward equivalent load is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "10 kN/m"
+      },
+      {
+        "value": "B",
+        "text": "15 kN/m"
+      },
+      {
+        "value": "C",
+        "text": "20 kN/m"
+      },
+      {
+        "value": "D",
+        "text": "5 kN/m"
+      }
+    ],
+    "explanation": "The equivalent uniform load is 8x1200x0.15/12^2=10 kN/m. This balances an equal downward uniform load in the idealized model.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 88
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "alkali silica mitigation",
+    "concept_id": "civil:alkali-silica-mitigation",
+    "question_text": "Reactive siliceous aggregate must be used in concrete exposed to moisture. Which combination most directly reduces alkali-silica reaction risk?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Control available alkalis and use a demonstrated effective supplementary binder"
+      },
+      {
+        "value": "B",
+        "text": "Keep alkalis unchanged and merely increase slump"
+      },
+      {
+        "value": "C",
+        "text": "Increase alkalis and use more reactive fines"
+      },
+      {
+        "value": "D",
+        "text": "Replace curing with early drying alone"
+      }
+    ],
+    "explanation": "ASR requires reactive silica, alkalis and moisture. Alkali control and proven supplementary binders address the reaction rather than cosmetic symptoms.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 89
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "propped cantilever compatibility",
+    "concept_id": "civil:propped-cantilever-compatibility",
+    "question_text": "A prismatic cantilever of length L carries a full-span UDL w and is propped vertically at its free end. The upward prop reaction is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "5wL/8"
+      },
+      {
+        "value": "B",
+        "text": "wL/8"
+      },
+      {
+        "value": "C",
+        "text": "wL/2"
+      },
+      {
+        "value": "D",
+        "text": "3wL/8"
+      }
+    ],
+    "explanation": "Set free-end deflection wL^4/(8EI)-RL^3/(3EI) to zero. This gives R=3wL/8.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 90
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "overconsolidated recompression path",
+    "concept_id": "civil:overconsolidated-recompression-path",
+    "question_text": "A clay has present effective stress 100 kPa and preconsolidation stress 250 kPa. A load raises it to 180 kPa. Which index governs the idealized stress path?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Plasticity index as a compression slope"
+      },
+      {
+        "value": "B",
+        "text": "Virgin compression index alone"
+      },
+      {
+        "value": "C",
+        "text": "Coefficient of uniformity"
+      },
+      {
+        "value": "D",
+        "text": "Recompression index"
+      }
+    ],
+    "explanation": "Final stress remains below preconsolidation stress, so the idealized settlement follows the recompression branch.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 91
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "bolt group direct eccentric shear",
+    "concept_id": "civil:bolt-group-direct-eccentric-shear",
+    "question_text": "Two bolts lie 100 mm above and below a group centroid. A 20 kN horizontal force acts 150 mm above it. Under elastic in-plane distribution, maximum bolt-force magnitude is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "25 kN"
+      },
+      {
+        "value": "B",
+        "text": "20 kN"
+      },
+      {
+        "value": "C",
+        "text": "15 kN"
+      },
+      {
+        "value": "D",
+        "text": "35 kN"
+      }
+    ],
+    "explanation": "Direct shear is 10 kN each. Moment is 3000 kNmm; secondary shear is Mr/sum(r^2)=15 kN, adding at one bolt to 25 kN.",
+    "style": "design interpretation",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 92
+  },
+  {
+    "subject": "Estimation, Costing & Construction Management",
+    "topic": "pert project probability",
+    "concept_id": "civil:pert-project-probability",
+    "question_text": "For a chosen critical path, independent activity variances sum to 9 days^2 and expected duration is 20 days. Using a normal approximation, completion within 23 days corresponds to z:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.333"
+      },
+      {
+        "value": "B",
+        "text": "3.0"
+      },
+      {
+        "value": "C",
+        "text": "1.0"
+      },
+      {
+        "value": "D",
+        "text": "9.0"
+      }
+    ],
+    "explanation": "Path standard deviation is sqrt(9)=3 days. Standardized time is (23-20)/3=1.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Estimation, Costing & Construction Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 93
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "traffic shockwave sign",
+    "concept_id": "civil:traffic-shockwave-sign",
+    "question_text": "Upstream traffic has q=1800 veh/h, k=30 veh/km; downstream congested traffic has q=1200 veh/h, k=90 veh/km. Shockwave speed is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "10 km/h"
+      },
+      {
+        "value": "B",
+        "text": "30 km/h"
+      },
+      {
+        "value": "C",
+        "text": "-10 km/h"
+      },
+      {
+        "value": "D",
+        "text": "-30 km/h"
+      }
+    ],
+    "explanation": "w=(q2-q1)/(k2-k1)=-600/60=-10 km/h, indicating upstream propagation.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 94
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "prestress friction attenuation",
+    "concept_id": "civil:prestress-friction-attenuation",
+    "question_text": "A tendon has jacking force 1200 kN and total friction exponent (mu theta+kx)=0.20. Using P=P0 exp[-(mu theta+kx)], force at the section is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "960 kN"
+      },
+      {
+        "value": "B",
+        "text": "982.5 kN"
+      },
+      {
+        "value": "C",
+        "text": "240 kN"
+      },
+      {
+        "value": "D",
+        "text": "1465.7 kN"
+      }
+    ],
+    "explanation": "P=1200e^-0.2=982.48 kN. The exponential accounts for curvature and wobble losses.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 95
+  },
+  {
+    "subject": "Estimation, Costing & Construction Management",
+    "topic": "crashing cost slope bottleneck",
+    "concept_id": "civil:crashing-cost-slope-bottleneck",
+    "question_text": "A critical activity can reduce from 8 to 5 days by increasing direct cost from 40000 to 55000 rupees. With a linear tradeoff, cost slope is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "3000 rupees/day"
+      },
+      {
+        "value": "B",
+        "text": "15000 rupees/day"
+      },
+      {
+        "value": "C",
+        "text": "1875 rupees/day"
+      },
+      {
+        "value": "D",
+        "text": "5000 rupees/day"
+      }
+    ],
+    "explanation": "Slope=(55000-40000)/(8-5)=5000 rupees per day. Network criticality must still be checked before crashing.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Estimation, Costing & Construction Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 96
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "composite beam shear connectors",
+    "concept_id": "civil:composite-beam-shear-connectors",
+    "question_text": "A steel beam supports a concrete slab through effective shear connectors. Their principal structural function is to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Remove all vertical shear from the beam"
+      },
+      {
+        "value": "B",
+        "text": "Replace every slab reinforcement bar"
+      },
+      {
+        "value": "C",
+        "text": "Prevent concrete creep completely"
+      },
+      {
+        "value": "D",
+        "text": "Transfer longitudinal interface shear enabling composite action"
+      }
+    ],
+    "explanation": "Bending creates different axial resultants in steel and concrete. Connectors transfer interface shear and limit slip so the components act together.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 97
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "column design resistance given curve",
+    "concept_id": "civil:column-design-resistance-given-curve",
+    "question_text": "A steel strut has effective area 2400 mm^2 and a design compressive stress, already including buckling reduction, of 140 MPa. Design axial resistance is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "336 kN"
+      },
+      {
+        "value": "B",
+        "text": "168 kN"
+      },
+      {
+        "value": "C",
+        "text": "420 kN"
+      },
+      {
+        "value": "D",
+        "text": "600 kN"
+      }
+    ],
+    "explanation": "Resistance is effective area times the supplied design stress: 2400x140=336000 N. Do not apply an additional buckling reduction twice.",
+    "style": "design interpretation",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 98
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "hydrograph recession reservoir",
+    "concept_id": "civil:hydrograph-recession-reservoir",
+    "question_text": "A linear reservoir has Q(t)=Q0 exp(-t/K), with Q0=20 m^3/s and K=3 h. Total recession outflow from t=0 to infinity is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "216000 m^3"
+      },
+      {
+        "value": "B",
+        "text": "60000 m^3"
+      },
+      {
+        "value": "C",
+        "text": "72000 m^3"
+      },
+      {
+        "value": "D",
+        "text": "432000 m^3"
+      }
+    ],
+    "explanation": "The integral is Q0K. Convert K to 10800 seconds: volume=20x10800=216000 m^3.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 99
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "composite bar load sharing",
+    "concept_id": "civil:composite-bar-load-sharing",
+    "question_text": "Bonded steel and aluminium bars have equal length and equal area. Their moduli are 200 and 70 GPa. Under total axial tension 81 kN, what force is carried by steel?",
+    "options": [
+      {
+        "value": "A",
+        "text": "60 kN"
+      },
+      {
+        "value": "B",
+        "text": "21 kN"
+      },
+      {
+        "value": "C",
+        "text": "70 kN"
+      },
+      {
+        "value": "D",
+        "text": "40.5 kN"
+      }
+    ],
+    "explanation": "Compatibility gives equal strain; forces divide as EA. Steel carries 81(200/270)=60 kN.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 100
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "shotcrete rebound",
+    "concept_id": "civil:shotcrete-rebound",
+    "question_text": "A contractor returns shotcrete rebound directly to the fresh feed without requalification. Why is this technically unsound?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Impact guarantees increased cement content"
+      },
+      {
+        "value": "B",
+        "text": "Rebound is always chemically inert cement"
+      },
+      {
+        "value": "C",
+        "text": "Rebound has exactly the original water-binder ratio"
+      },
+      {
+        "value": "D",
+        "text": "Rebound composition and grading differ from the specified fresh mixture"
+      }
+    ],
+    "explanation": "Rebound disproportionately contains coarse particles and altered paste content. Reusing it uncontrolled changes the qualified mix.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 101
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "sedimentation overflow capacity",
+    "concept_id": "civil:sedimentation-overflow-capacity",
+    "question_text": "An ideal clarifier has surface area 500 m^2 and flow 10000 m^3/day. A discrete particle settles at 25 m/day. Ideal removal fraction is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "20%"
+      },
+      {
+        "value": "B",
+        "text": "50%"
+      },
+      {
+        "value": "C",
+        "text": "100%"
+      },
+      {
+        "value": "D",
+        "text": "80%"
+      }
+    ],
+    "explanation": "Surface overflow rate is Q/A=20 m/day. A particle settling faster than that is fully removed in the ideal discrete-settling model.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 102
+  },
+  {
+    "subject": "Surveying",
+    "topic": "total station prism constant",
+    "concept_id": "civil:total-station-prism-constant",
+    "question_text": "A survey uses a reflector with a different prism constant but retains the previous instrument setting. Which error is introduced primarily?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A change in the true ground elevation"
+      },
+      {
+        "value": "B",
+        "text": "Only a random angular error"
+      },
+      {
+        "value": "C",
+        "text": "A compulsory 180-degree bearing reversal"
+      },
+      {
+        "value": "D",
+        "text": "An additive distance bias"
+      }
+    ],
+    "explanation": "Prism-constant mismatch produces an offset in EDM distances. It is not corrected by merely averaging face-left and face-right angles.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Surveying",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 103
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "influence line indeterminate sign",
+    "concept_id": "civil:influence-line-indeterminate-sign",
+    "question_text": "An influence line for a reaction of a continuous beam has positive and negative regions. To maximize that reaction under a movable UDL of unrestricted placement, load should cover:",
+    "options": [
+      {
+        "value": "A",
+        "text": "The full beam regardless of sign"
+      },
+      {
+        "value": "B",
+        "text": "Only the positive regions"
+      },
+      {
+        "value": "C",
+        "text": "Only the negative regions"
+      },
+      {
+        "value": "D",
+        "text": "Only the point of maximum ordinate"
+      }
+    ],
+    "explanation": "A UDL response equals intensity times loaded influence-line area. Negative areas reduce a positive maximum.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 104
+  },
+  {
+    "subject": "Estimation, Costing & Construction Management",
+    "topic": "prismoidal earthwork comparison",
+    "concept_id": "civil:prismoidal-earthwork-comparison",
+    "question_text": "End areas of a 30 m earthwork segment are 10 and 30 m^2; mid-area is 18 m^2. Prismoidal volume is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "600 m^3"
+      },
+      {
+        "value": "B",
+        "text": "720 m^3"
+      },
+      {
+        "value": "C",
+        "text": "540 m^3"
+      },
+      {
+        "value": "D",
+        "text": "560 m^3"
+      }
+    ],
+    "explanation": "V=L(A1+4Am+A2)/6=30(10+72+30)/6=560 m^3.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Estimation, Costing & Construction Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 105
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "canal fall energy management",
+    "concept_id": "civil:canal-fall-energy-management",
+    "question_text": "A canal fall is needed where terrain drops faster than the designed canal bed slope. Why provide a stilling arrangement below the drop?",
+    "options": [
+      {
+        "value": "A",
+        "text": "To eliminate gravity from canal flow"
+      },
+      {
+        "value": "B",
+        "text": "To replace all upstream regulation"
+      },
+      {
+        "value": "C",
+        "text": "To increase uncontrolled supercritical erosion"
+      },
+      {
+        "value": "D",
+        "text": "To dissipate excess energy and limit downstream scour"
+      }
+    ],
+    "explanation": "Dropping water releases potential energy. A designed dissipator manages high velocities and hydraulic-jump action before the downstream reach.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 106
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "turbine power efficiency",
+    "concept_id": "civil:turbine-power-efficiency",
+    "question_text": "A turbine takes 4 m^3/s under net head 30 m with overall efficiency 0.85. With water density 1000 kg/m^3 and g=10 m/s^2, output power is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "1200 kW"
+      },
+      {
+        "value": "B",
+        "text": "1020 kW"
+      },
+      {
+        "value": "C",
+        "text": "510 kW"
+      },
+      {
+        "value": "D",
+        "text": "1412 kW"
+      }
+    ],
+    "explanation": "Output=rho gQH eta=1000x10x4x30x0.85=1.02 MW.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 107
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "punching perimeter demand",
+    "concept_id": "civil:punching-perimeter-demand",
+    "question_text": "A central 400 mm square column supports a flat slab with d=200 mm. For this calculation use perimeter at d/2 from faces and net punching force 600 kN. Nominal punching stress is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.625 MPa"
+      },
+      {
+        "value": "B",
+        "text": "1.875 MPa"
+      },
+      {
+        "value": "C",
+        "text": "1.25 MPa"
+      },
+      {
+        "value": "D",
+        "text": "2.5 MPa"
+      }
+    ],
+    "explanation": "Critical perimeter is 4(400+200)=2400 mm; stress=600000/(2400x200)=1.25 MPa.",
+    "style": "design interpretation",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 108
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "cement heat selection",
+    "concept_id": "civil:cement-heat-selection",
+    "question_text": "Two cements give similar 28-day strength. One releases heat much more rapidly. Which placement most strongly favours the slower heat-release cement?",
+    "options": [
+      {
+        "value": "A",
+        "text": "A thick restrained raft vulnerable to thermal cracking"
+      },
+      {
+        "value": "B",
+        "text": "A thin unrestrained laboratory tile requiring early handling"
+      },
+      {
+        "value": "C",
+        "text": "A small repair needing rapid early strength"
+      },
+      {
+        "value": "D",
+        "text": "A precast unit requiring immediate demoulding"
+      }
+    ],
+    "explanation": "In massive restrained concrete, temperature gradients and subsequent contraction create cracking risk. Slower heat release reduces the thermal peak.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 109
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "signal saturation green ratio",
+    "concept_id": "civil:signal-saturation-green-ratio",
+    "question_text": "A signal approach has saturation flow 1800 vehicles/hour and effective green 30 s in a 90 s cycle. Its ideal capacity is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "600 vehicles/hour"
+      },
+      {
+        "value": "B",
+        "text": "5400 vehicles/hour"
+      },
+      {
+        "value": "C",
+        "text": "900 vehicles/hour"
+      },
+      {
+        "value": "D",
+        "text": "1800 vehicles/hour"
+      }
+    ],
+    "explanation": "Capacity=s(g/C)=1800(30/90)=600 vehicles/hour, before other adjustments.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 110
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "water hammer sudden closure",
+    "concept_id": "civil:water-hammer-sudden-closure",
+    "question_text": "A pipe carries water at 1.5 m/s. Sudden complete closure produces a wave speed of 1000 m/s. With density 1000 kg/m^3, pressure rise from Joukowsky's relation is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.15 MPa"
+      },
+      {
+        "value": "B",
+        "text": "0.75 MPa"
+      },
+      {
+        "value": "C",
+        "text": "15 MPa"
+      },
+      {
+        "value": "D",
+        "text": "1.5 MPa"
+      }
+    ],
+    "explanation": "Delta p=rho a delta V=1000x1000x1.5=1.5x10^6 Pa.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 111
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "aggregate blending",
+    "concept_id": "civil:aggregate-blending",
+    "question_text": "Two aggregate fractions have fineness moduli 2.4 and 6.4. What mass fraction of the coarser fraction gives a blended fineness modulus 5.2?",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.70"
+      },
+      {
+        "value": "B",
+        "text": "0.80"
+      },
+      {
+        "value": "C",
+        "text": "0.30"
+      },
+      {
+        "value": "D",
+        "text": "0.50"
+      }
+    ],
+    "explanation": "Using the weighted average, 2.4(1-x)+6.4x=5.2, giving x=0.70.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 112
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "rectangular weir differential error",
+    "concept_id": "civil:rectangular-weir-differential-error",
+    "question_text": "For a sharp-crested rectangular weir Q=K H^(3/2), K known, a small 2% overestimate in measured head produces approximately what discharge error?",
+    "options": [
+      {
+        "value": "A",
+        "text": "1.33% high"
+      },
+      {
+        "value": "B",
+        "text": "3% high"
+      },
+      {
+        "value": "C",
+        "text": "4% high"
+      },
+      {
+        "value": "D",
+        "text": "2% high"
+      }
+    ],
+    "explanation": "Logarithmic differentiation gives dQ/Q=(3/2)dH/H, so the error is approximately 3%.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 113
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "venturi differential fluid relation",
+    "concept_id": "civil:venturi-differential-fluid-relation",
+    "question_text": "A differential manometer across a water pipe uses mercury of relative density 13.6. A 0.10 m interface difference corresponds to water piezometric-head difference:",
+    "options": [
+      {
+        "value": "A",
+        "text": "1.36 m"
+      },
+      {
+        "value": "B",
+        "text": "1.26 m"
+      },
+      {
+        "value": "C",
+        "text": "0.126 m"
+      },
+      {
+        "value": "D",
+        "text": "0.10 m"
+      }
+    ],
+    "explanation": "For the same flowing liquid in both limbs, head difference=x(Sm/Sw-1)=0.1(13.6-1)=1.26 m.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 114
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "stepped axial elongation",
+    "concept_id": "civil:stepped-axial-elongation",
+    "question_text": "An axial bar has two series segments, each 1 m long, areas 500 and 1000 mm^2, and E=200 GPa. Under 100 kN tension, total extension is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.75 mm"
+      },
+      {
+        "value": "B",
+        "text": "3.0 mm"
+      },
+      {
+        "value": "C",
+        "text": "1.5 mm"
+      },
+      {
+        "value": "D",
+        "text": "1.0 mm"
+      }
+    ],
+    "explanation": "Sum PL/AE for both segments: 1.0+0.5=1.5 mm. Series segments carry the same axial force.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 115
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "pile group efficiency resistance",
+    "concept_id": "civil:pile-group-efficiency-resistance",
+    "question_text": "Nine piles each have isolated axial capacity 400 kN. A group model gives efficiency 0.75 and block capacity 2400 kN. Governing group capacity under these checks is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "2700 kN"
+      },
+      {
+        "value": "B",
+        "text": "3600 kN"
+      },
+      {
+        "value": "C",
+        "text": "1800 kN"
+      },
+      {
+        "value": "D",
+        "text": "2400 kN"
+      }
+    ],
+    "explanation": "Efficiency-adjusted sum is 0.75x9x400=2700 kN. Compare with block capacity and take the smaller, 2400 kN.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 116
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "eccentric column stress superposition",
+    "concept_id": "civil:eccentric-column-stress-superposition",
+    "question_text": "A short column has axial compression producing 12 MPa uniform stress and bending producing edge stresses of plus/minus 16 MPa. Which edge stress pair results?",
+    "options": [
+      {
+        "value": "A",
+        "text": "16 MPa compression and 12 MPa tension"
+      },
+      {
+        "value": "B",
+        "text": "28 and 4 MPa both compression"
+      },
+      {
+        "value": "C",
+        "text": "12 MPa compression at both edges"
+      },
+      {
+        "value": "D",
+        "text": "28 MPa compression and 4 MPa tension"
+      }
+    ],
+    "explanation": "Superpose uniform compression and bending: 12+16=28 compression; 12-16=-4 indicates tension.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 117
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "canal lined seepage waterlogging",
+    "concept_id": "civil:canal-lined-seepage-waterlogging",
+    "question_text": "A canal command develops a rising water table owing partly to canal seepage. Which intervention directly reduces this recharge source?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Maintaining continuous excess ponding"
+      },
+      {
+        "value": "B",
+        "text": "Blocking all field drains"
+      },
+      {
+        "value": "C",
+        "text": "Increasing canal wetted perimeter without treatment"
+      },
+      {
+        "value": "D",
+        "text": "Canal lining combined with suitable drainage assessment"
+      }
+    ],
+    "explanation": "Lining can reduce canal seepage, while drainage must address accumulated groundwater. It is not a universal substitute for drainage.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 118
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "thin vessel combined stresses",
+    "concept_id": "civil:thin-vessel-combined-stresses",
+    "question_text": "A closed thin cylindrical vessel has internal pressure 2 MPa, diameter 1000 mm and wall thickness 10 mm. Ignoring radial stress, maximum in-plane shear stress in the wall is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "75 MPa"
+      },
+      {
+        "value": "B",
+        "text": "100 MPa"
+      },
+      {
+        "value": "C",
+        "text": "50 MPa"
+      },
+      {
+        "value": "D",
+        "text": "25 MPa"
+      }
+    ],
+    "explanation": "Hoop and longitudinal stresses are 100 and 50 MPa. Maximum in-plane shear is half their difference, 25 MPa.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 119
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "pelton speed hydraulic efficiency",
+    "concept_id": "civil:pelton-speed-hydraulic-efficiency",
+    "question_text": "For an ideal Pelton bucket with negligible friction and nearly complete jet reversal, maximum runner power occurs approximately when bucket speed is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Twice the jet speed"
+      },
+      {
+        "value": "B",
+        "text": "Half the jet speed"
+      },
+      {
+        "value": "C",
+        "text": "Equal to the jet speed"
+      },
+      {
+        "value": "D",
+        "text": "Zero"
+      }
+    ],
+    "explanation": "Power varies as u(V-u) for ideal reversal. Its maximum occurs at u=V/2.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 120
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "bitumen temperature susceptibility",
+    "concept_id": "civil:bitumen-temperature-susceptibility",
+    "question_text": "Two binders have equal penetration at 25 C but different softening points. Which inference is justified?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Equal penetration guarantees identical behaviour at every temperature"
+      },
+      {
+        "value": "B",
+        "text": "Both binders must have equal viscosity at 60 C"
+      },
+      {
+        "value": "C",
+        "text": "Softening point measures aggregate hardness"
+      },
+      {
+        "value": "D",
+        "text": "One penetration result alone cannot establish identical temperature susceptibility"
+      }
+    ],
+    "explanation": "Penetration compares consistency at one condition; temperature-dependent behaviour needs additional characterization.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 121
+  },
+  {
+    "subject": "Soil Mechanics & Foundation Engineering",
+    "topic": "infinite slope dry stability",
+    "concept_id": "civil:infinite-slope-dry-stability",
+    "question_text": "A dry cohesionless infinite slope has angle 25 degrees and friction angle 35 degrees. Its idealized factor of safety is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "1.40"
+      },
+      {
+        "value": "B",
+        "text": "2.00"
+      },
+      {
+        "value": "C",
+        "text": "1.50"
+      },
+      {
+        "value": "D",
+        "text": "0.67"
+      }
+    ],
+    "explanation": "For the stated conditions FS=tan(phi)/tan(beta)=tan35/tan25=1.50.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Soil Mechanics & Foundation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 122
+  },
+  {
+    "subject": "Building Materials & Construction",
+    "topic": "aggregate moisture correction",
+    "concept_id": "civil:aggregate-moisture-correction",
+    "question_text": "An aggregate has 2% absorption and 5% total moisture, both on oven-dry mass. For 1000 kg oven-dry aggregate, how much free water enters a concrete batch?",
+    "options": [
+      {
+        "value": "A",
+        "text": "50 kg"
+      },
+      {
+        "value": "B",
+        "text": "20 kg"
+      },
+      {
+        "value": "C",
+        "text": "30 kg"
+      },
+      {
+        "value": "D",
+        "text": "70 kg"
+      }
+    ],
+    "explanation": "Absorbed water is 20 kg; total water is 50 kg. Only the difference, 30 kg, contributes to mixing water.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Building Materials & Construction",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 123
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "weld eccentric out of plane",
+    "concept_id": "civil:weld-eccentric-out-of-plane",
+    "question_text": "An end plate is connected by welds and loaded with an eccentric force that tends to peel the plate. Why is a direct shear-only weld check incomplete?",
+    "options": [
+      {
+        "value": "A",
+        "text": "The weld group also transfers moment and associated normal or secondary stresses"
+      },
+      {
+        "value": "B",
+        "text": "Every weld automatically cancels eccentricity"
+      },
+      {
+        "value": "C",
+        "text": "Weld length alone fixes the force direction"
+      },
+      {
+        "value": "D",
+        "text": "Eccentric loading reduces all stresses to zero"
+      }
+    ],
+    "explanation": "Equilibrium requires both force and moment transfer. Out-of-plane eccentricity can create weld tension or bending effects.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 124
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "runway wind rose crosswind",
+    "concept_id": "civil:runway-wind-rose-crosswind",
+    "question_text": "Runway orientation is selected using a wind rose primarily to:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Maximize wind coverage while meeting a chosen crosswind limit"
+      },
+      {
+        "value": "B",
+        "text": "Eliminate every need for runway drainage"
+      },
+      {
+        "value": "C",
+        "text": "Maximize the number of tailwind landings"
+      },
+      {
+        "value": "D",
+        "text": "Make latitude irrelevant to aircraft performance"
+      }
+    ],
+    "explanation": "Wind coverage measures usability under allowable crosswinds. The selected direction seeks high coverage, not simply the most frequent single wind.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 125
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "oxygen sag competing rates",
+    "concept_id": "civil:oxygen-sag-competing-rates",
+    "question_text": "At the critical point of a classical Streeter-Phelps oxygen-deficit curve, what relation holds?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Dissolved oxygen must equal saturation"
+      },
+      {
+        "value": "B",
+        "text": "Reaeration is impossible"
+      },
+      {
+        "value": "C",
+        "text": "Instantaneous deoxygenation and reaeration rates are equal"
+      },
+      {
+        "value": "D",
+        "text": "BOD is necessarily zero"
+      }
+    ],
+    "explanation": "At maximum deficit the time derivative is zero, so deoxygenation equals reaeration. Oxygen need not be zero or saturated.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 126
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "irrigation scheduling depletion",
+    "concept_id": "civil:irrigation-scheduling-depletion",
+    "question_text": "Root-zone depth is 0.8 m. Volumetric water contents at field capacity and wilting point are 0.30 and 0.15. If 50% available-water depletion is allowed, net irrigation depth is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "30 mm"
+      },
+      {
+        "value": "B",
+        "text": "120 mm"
+      },
+      {
+        "value": "C",
+        "text": "240 mm"
+      },
+      {
+        "value": "D",
+        "text": "60 mm"
+      }
+    ],
+    "explanation": "Total available water=(0.30-0.15)0.8=0.12 m. Allowed depletion is half, 0.06 m or 60 mm.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 127
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "plastic section modulus rectangle",
+    "concept_id": "civil:plastic-section-modulus-rectangle",
+    "question_text": "A homogeneous rectangular section reaches fully plastic bending with equal tensile and compressive yield stresses. What is its shape factor?",
+    "options": [
+      {
+        "value": "A",
+        "text": "2.0"
+      },
+      {
+        "value": "B",
+        "text": "1.0"
+      },
+      {
+        "value": "C",
+        "text": "1.25"
+      },
+      {
+        "value": "D",
+        "text": "1.5"
+      }
+    ],
+    "explanation": "The elastic modulus is bd^2/6 and plastic modulus bd^2/4. Their ratio is 1.5.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 128
+  },
+  {
+    "subject": "Estimation, Costing & Construction Management",
+    "topic": "retention and advance cashflow",
+    "concept_id": "civil:retention-and-advance-cashflow",
+    "question_text": "A bill for executed work is 10 lakh rupees. Retention is 5% of gross bill and recovery of an earlier advance is 1 lakh. Ignoring tax, net payment is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "8.5 lakh rupees"
+      },
+      {
+        "value": "B",
+        "text": "9 lakh rupees"
+      },
+      {
+        "value": "C",
+        "text": "9.5 lakh rupees"
+      },
+      {
+        "value": "D",
+        "text": "8 lakh rupees"
+      }
+    ],
+    "explanation": "Retention is 0.5 lakh; net=10-0.5-1=8.5 lakh. Advance recovery and retention are separate deductions.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Estimation, Costing & Construction Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 129
+  },
+  {
+    "subject": "Estimation, Costing & Construction Management",
+    "topic": "resource smoothing versus levelling",
+    "concept_id": "civil:resource-smoothing-versus-levelling",
+    "question_text": "A schedule can move noncritical work within available float without delaying completion. This is most precisely:",
+    "options": [
+      {
+        "value": "A",
+        "text": "An inevitable extension of the critical path"
+      },
+      {
+        "value": "B",
+        "text": "Resource smoothing within the time constraint"
+      },
+      {
+        "value": "C",
+        "text": "Replacement of precedence relationships"
+      },
+      {
+        "value": "D",
+        "text": "A guarantee that all resource limits are satisfied"
+      }
+    ],
+    "explanation": "Smoothing uses float to improve resource demand while maintaining the completion target. It need not solve every hard resource limit.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Estimation, Costing & Construction Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 130
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "durability cover design reasoning",
+    "concept_id": "civil:durability-cover-design-reasoning",
+    "question_text": "A designer meets a minimum cover value but ignores exposure-dependent maximum water-binder ratio and minimum binder requirements. Which conclusion is sound?",
+    "options": [
+      {
+        "value": "A",
+        "text": "All concrete grades have identical durability"
+      },
+      {
+        "value": "B",
+        "text": "Exposure matters only after reinforcement corrodes"
+      },
+      {
+        "value": "C",
+        "text": "Cover compliance alone does not establish durability compliance"
+      },
+      {
+        "value": "D",
+        "text": "Cover makes concrete permeability irrelevant"
+      }
+    ],
+    "explanation": "Durability depends jointly on exposure, cover, concrete quality and construction. A single compliant dimension cannot replace the other checks.",
+    "style": "design interpretation",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "C",
+    "number": 131
+  },
+  {
+    "subject": "Estimation, Costing & Construction Management",
+    "topic": "earned value schedule cost",
+    "concept_id": "civil:earned-value-schedule-cost",
+    "question_text": "A project has planned value 100, earned value 80 and actual cost 90, all lakh rupees. Which pair is correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "CPI=0.80 and SPI=0.889"
+      },
+      {
+        "value": "B",
+        "text": "CPI=0.889 and SPI=0.80"
+      },
+      {
+        "value": "C",
+        "text": "CPI=1.125 and SPI=1.25"
+      },
+      {
+        "value": "D",
+        "text": "CPI=1.25 and SPI=1.125"
+      }
+    ],
+    "explanation": "CPI=EV/AC=80/90 and SPI=EV/PV=80/100. Both below one indicate adverse cost and schedule performance.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Estimation, Costing & Construction Management",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 132
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "hollow shaft stiffness material efficiency",
+    "concept_id": "civil:hollow-shaft-stiffness-material-efficiency",
+    "question_text": "A circular tube and a solid shaft have equal material area. The tube outer diameter is twice its inner diameter. What is J_tube/J_solid?",
+    "options": [
+      {
+        "value": "A",
+        "text": "1"
+      },
+      {
+        "value": "B",
+        "text": "4/3"
+      },
+      {
+        "value": "C",
+        "text": "3/5"
+      },
+      {
+        "value": "D",
+        "text": "5/3"
+      }
+    ],
+    "explanation": "Equal area gives ds^2=Do^2-Di^2. Hence J ratio=(Do^2+Di^2)/(Do^2-Di^2)=(4+1)/(4-1)=5/3.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 133
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "moving load support reaction",
+    "concept_id": "civil:moving-load-support-reaction",
+    "question_text": "Two axle loads, 60 and 40 kN, are 2 m apart on an 8 m simply supported beam. The largest possible left reaction, allowing an axle at the support, is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "75 kN"
+      },
+      {
+        "value": "B",
+        "text": "85 kN"
+      },
+      {
+        "value": "C",
+        "text": "100 kN"
+      },
+      {
+        "value": "D",
+        "text": "90 kN"
+      }
+    ],
+    "explanation": "Place 60 kN at the left support and 40 kN 2 m inside. RA=60+40(6/8)=90 kN; reversing axles gives 85 kN.",
+    "style": "analytical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 134
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "sway restraint interpretation",
+    "concept_id": "civil:sway-restraint-interpretation",
+    "question_text": "A portal frame is geometrically symmetric with equal columns but carries an asymmetric horizontal load. Which statement is justified?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Axial forces alone can always resist the load"
+      },
+      {
+        "value": "B",
+        "text": "Every beam end moment is zero"
+      },
+      {
+        "value": "C",
+        "text": "Symmetric geometry alone prohibits sway"
+      },
+      {
+        "value": "D",
+        "text": "A sway degree of freedom generally remains necessary"
+      }
+    ],
+    "explanation": "Loading as well as geometry determines sway. A lateral load generally excites frame translation.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 135
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "anchorage slip stress loss",
+    "concept_id": "civil:anchorage-slip-stress-loss",
+    "question_text": "A straight 20 m tendon undergoes anchorage slip 4 mm. With Ep=200 GPa and uniform slip-induced strain reduction, stress loss is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "4 MPa"
+      },
+      {
+        "value": "B",
+        "text": "80 MPa"
+      },
+      {
+        "value": "C",
+        "text": "20 MPa"
+      },
+      {
+        "value": "D",
+        "text": "40 MPa"
+      }
+    ],
+    "explanation": "Loss=Ep delta/L=200000x4/20000=40 MPa. Uniform loss is the stated idealization.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 136
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "strain energy impact",
+    "concept_id": "civil:strain-energy-impact",
+    "question_text": "A 1 kN weight falls 20 mm before stretching a vertical elastic bar whose static extension under that weight is 2 mm. Neglect bar mass. Maximum force is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "10 kN"
+      },
+      {
+        "value": "B",
+        "text": "3.32 kN"
+      },
+      {
+        "value": "C",
+        "text": "2 kN"
+      },
+      {
+        "value": "D",
+        "text": "5.58 kN"
+      }
+    ],
+    "explanation": "Energy balance gives P/W=1+sqrt(1+2h/delta_static)=1+sqrt(21)=5.58.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 137
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "transition jerk design",
+    "concept_id": "civil:transition-jerk-design",
+    "question_text": "A vehicle enters a circular curve through a transition where curvature grows linearly with distance. At constant speed, lateral acceleration through the transition is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "Constant from the first transition point"
+      },
+      {
+        "value": "B",
+        "text": "Linear in distance, giving constant rate of change with time"
+      },
+      {
+        "value": "C",
+        "text": "Inverse to distance"
+      },
+      {
+        "value": "D",
+        "text": "Zero until the circular arc begins"
+      }
+    ],
+    "explanation": "Lateral acceleration is v^2 times curvature. Linear curvature and constant speed produce a constant time rate of lateral acceleration.",
+    "style": "analytical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 138
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "doubly reinforced additional couple",
+    "concept_id": "civil:doubly-reinforced-additional-couple",
+    "question_text": "A doubly reinforced beam needs an additional moment of 80 kNm beyond its concrete-limited component. If compression steel design stress is 350 MPa and the steel couple arm is 400 mm, required compression-steel area is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "228.6 mm^2"
+      },
+      {
+        "value": "B",
+        "text": "800 mm^2"
+      },
+      {
+        "value": "C",
+        "text": "1142.9 mm^2"
+      },
+      {
+        "value": "D",
+        "text": "571.4 mm^2"
+      }
+    ],
+    "explanation": "Additional compression force is 80x10^6/400=200000 N. Area=200000/350=571.4 mm^2.",
+    "style": "design interpretation",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 139
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "net section stagger given rule",
+    "concept_id": "civil:net-section-stagger-given-rule",
+    "question_text": "For a 200 mm wide, 10 mm thick plate, a candidate zigzag path crosses two 22 mm holes with stagger s=40 mm and gauge g=80 mm. Use bn=b-sum(dh)+s^2/(4g). Its net area is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "1510 mm^2"
+      },
+      {
+        "value": "B",
+        "text": "1560 mm^2"
+      },
+      {
+        "value": "C",
+        "text": "1610 mm^2"
+      },
+      {
+        "value": "D",
+        "text": "1780 mm^2"
+      }
+    ],
+    "explanation": "bn=200-44+1600/320=161 mm; area=161x10=1610 mm^2. Other possible paths must still be compared.",
+    "style": "design interpretation",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 140
+  },
+  {
+    "subject": "Fluid Mechanics & Hydraulic Machines",
+    "topic": "npsh available suction",
+    "concept_id": "civil:npsh-available-suction",
+    "question_text": "An open suction tank has atmospheric head 10.3 m, vapour head 0.3 m, pump centre 4 m above water and suction loss 1 m. NPSH available is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "14.0 m"
+      },
+      {
+        "value": "B",
+        "text": "5.0 m"
+      },
+      {
+        "value": "C",
+        "text": "9.0 m"
+      },
+      {
+        "value": "D",
+        "text": "6.0 m"
+      }
+    ],
+    "explanation": "NPSHa=10.3-0.3-4-1=5.0 m relative to the pump suction reference.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Fluid Mechanics & Hydraulic Machines",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 141
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "shear centre channel",
+    "concept_id": "civil:shear-centre-channel",
+    "question_text": "A transverse load acts through the centroid of an open channel section. Why may the beam still twist?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Every centroidal load necessarily creates an axial force"
+      },
+      {
+        "value": "B",
+        "text": "The centroid generally differs from the shear centre"
+      },
+      {
+        "value": "C",
+        "text": "The shear centre must lie on every flange edge"
+      },
+      {
+        "value": "D",
+        "text": "Open sections have zero torsional rigidity"
+      }
+    ],
+    "explanation": "Bending without twist requires the transverse force to pass through the shear centre, which need not coincide with the centroid.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "B",
+    "number": 142
+  },
+  {
+    "subject": "Steel Structures & Prestressed Concrete",
+    "topic": "fillet weld effective throat",
+    "concept_id": "civil:fillet-weld-effective-throat",
+    "question_text": "Two 200 mm effective-length fillet welds have size 6 mm. Taking throat 0.7s and allowable shear 100 MPa, total direct-load capacity is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "84 kN"
+      },
+      {
+        "value": "B",
+        "text": "240 kN"
+      },
+      {
+        "value": "C",
+        "text": "336 kN"
+      },
+      {
+        "value": "D",
+        "text": "168 kN"
+      }
+    ],
+    "explanation": "Throat area=2x200x0.7x6=1680 mm^2. Capacity=1680x100=168000 N.",
+    "style": "design interpretation",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Steel Structures & Prestressed Concrete",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "D",
+    "number": 143
+  },
+  {
+    "subject": "Structural Analysis",
+    "topic": "truss virtual work displacement",
+    "concept_id": "civil:truss-virtual-work-displacement",
+    "question_text": "For two truss members, N=[30,-20] kN under real loading, n=[0.5,-0.25] under a unit load, and L/AE=0.02 mm/kN for each. Displacement in the unit-load direction is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.40 mm"
+      },
+      {
+        "value": "B",
+        "text": "0.10 mm"
+      },
+      {
+        "value": "C",
+        "text": "0.20 mm"
+      },
+      {
+        "value": "D",
+        "text": "0.80 mm"
+      }
+    ],
+    "explanation": "Virtual work gives sum(N n L/AE)=(15+5)(0.02)=0.40 mm; compression signs must be retained.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Structural Analysis",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 144
+  },
+  {
+    "subject": "Surveying",
+    "topic": "stadia distance uncertainty",
+    "concept_id": "civil:stadia-distance-uncertainty",
+    "question_text": "For horizontal tacheometry D=Ks with K=100 exact, independent upper and lower staff readings each have standard error 1 mm. Standard error of D is approximately:",
+    "options": [
+      {
+        "value": "A",
+        "text": "0.141 m"
+      },
+      {
+        "value": "B",
+        "text": "0.200 m"
+      },
+      {
+        "value": "C",
+        "text": "0.100 m"
+      },
+      {
+        "value": "D",
+        "text": "0.071 m"
+      }
+    ],
+    "explanation": "Intercept standard error=sqrt(1^2+1^2) mm. Multiplying by 100 gives 141.4 mm or 0.141 m.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Surveying",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "A",
+    "number": 145
+  },
+  {
+    "subject": "Transportation Engineering",
+    "topic": "bituminous fatigue versus rutting",
+    "concept_id": "civil:bituminous-fatigue-versus-rutting",
+    "question_text": "A flexible pavement has bottom-up repeated-load cracking but little permanent wheel-path depression. Which distress mechanism is most consistent?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Fatigue from repeated tensile strain"
+      },
+      {
+        "value": "B",
+        "text": "Pure thermal expansion without stress"
+      },
+      {
+        "value": "C",
+        "text": "Loss of road camber alone"
+      },
+      {
+        "value": "D",
+        "text": "Rutting as the only mechanism"
+      }
+    ],
+    "explanation": "Bottom-up fatigue is linked to repeated tensile strain near the bituminous-layer bottom; rutting is permanent deformation.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Transportation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "A",
+    "number": 146
+  },
+  {
+    "subject": "Environmental Engineering",
+    "topic": "anaerobic digestion energy recovery",
+    "concept_id": "civil:anaerobic-digestion-energy-recovery",
+    "question_text": "Why is uncontrolled air entry undesirable in a methane-producing anaerobic digester?",
+    "options": [
+      {
+        "value": "A",
+        "text": "It converts every gas molecule to nitrogen"
+      },
+      {
+        "value": "B",
+        "text": "It necessarily doubles methane yield"
+      },
+      {
+        "value": "C",
+        "text": "Methanogens require high dissolved oxygen"
+      },
+      {
+        "value": "D",
+        "text": "It disrupts anaerobic operation and can create a flammable gas mixture"
+      }
+    ],
+    "explanation": "Methanogenesis requires anaerobic conditions; mixing air with biogas can introduce combustion hazards as well as process disturbance.",
+    "style": "conceptual/application",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Environmental Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 147
+  },
+  {
+    "subject": "Strength of Materials",
+    "topic": "torsion noncircular warping",
+    "concept_id": "civil:torsion-noncircular-warping",
+    "question_text": "A solid rectangular shaft twists elastically. Which circular-shaft assumption fails?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Torque must satisfy equilibrium"
+      },
+      {
+        "value": "B",
+        "text": "Stress remains proportional to torque in linear elasticity"
+      },
+      {
+        "value": "C",
+        "text": "Shear modulus affects twist"
+      },
+      {
+        "value": "D",
+        "text": "Cross-sections remain plane without warping"
+      }
+    ],
+    "explanation": "Noncircular sections generally warp. The circular formula tau=Tr/J cannot be transferred unchanged to rectangles.",
+    "style": "conceptual/application",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Strength of Materials",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "not applicable",
+    "correct_answer": "D",
+    "number": 148
+  },
+  {
+    "subject": "Hydrology & Irrigation Engineering",
+    "topic": "double mass rainfall adjustment",
+    "concept_id": "civil:double-mass-rainfall-adjustment",
+    "question_text": "A double-mass curve changes slope from 1.20 in the reliable period to 0.90 in the inconsistent period. To adjust an inconsistent recorded annual total of 600 mm to the reliable regime, use:",
+    "options": [
+      {
+        "value": "A",
+        "text": "675 mm"
+      },
+      {
+        "value": "B",
+        "text": "600 mm"
+      },
+      {
+        "value": "C",
+        "text": "800 mm"
+      },
+      {
+        "value": "D",
+        "text": "450 mm"
+      }
+    ],
+    "explanation": "Correction factor is reliable slope/inconsistent slope=1.20/0.90. Adjusted rainfall=600x4/3=800 mm.",
+    "style": "numerical",
+    "difficulty_target": "medium",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "Hydrology & Irrigation Engineering",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "C",
+    "number": 149
+  },
+  {
+    "subject": "RCC Design",
+    "topic": "column minimum eccentricity application",
+    "concept_id": "civil:column-minimum-eccentricity-application",
+    "question_text": "For this problem adopt e_min=L/500+D/30, but not less than 20 mm. A column has unsupported length 4000 mm and depth 600 mm. Required minimum eccentricity is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "8 mm"
+      },
+      {
+        "value": "B",
+        "text": "28 mm"
+      },
+      {
+        "value": "C",
+        "text": "20 mm"
+      },
+      {
+        "value": "D",
+        "text": "48 mm"
+      }
+    ],
+    "explanation": "L/500=8 and D/30=20, summing to 28 mm, which exceeds the 20 mm floor.",
+    "style": "numerical",
+    "difficulty_target": "hard",
+    "difficulty_validation": "pending independent review; not calibrated",
+    "syllabus_unit": "RCC Design",
+    "reference_pattern": "Original application/numerical item; reference-paper style, not copied",
+    "source_verification": "editorial derivation; independent subject review required",
+    "numerical_validation": "independent Python arithmetic passed; model assumptions require subject review",
+    "correct_answer": "B",
+    "number": 150
+  }
+]
