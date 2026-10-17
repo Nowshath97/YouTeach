@@ -1,3 +1,4 @@
+import { ALL_BRANCHES, DEFAULT_BRANCH, getBranchOptions, getMockBranch, matchesMockBranch } from './mockBranches.mjs';
 import MockAttemptHistory, { AttemptScorecard } from './MockAttemptHistory';
 import React, { useEffect, useState } from 'react';
 import { Activity, ArrowLeft, ArrowRight, Atom, Bell, BookOpen, Briefcase, Building2, CalendarDays, Calculator, Check, CheckCircle2, ChevronDown, ChevronRight, Clock3, Cpu, CircuitBoard, Droplets, ExternalLink, Factory, FileQuestion, Flame, FlaskConical, GraduationCap, Grid2X2, Layers, LayoutDashboard, List, LogOut, MapPin, MessageCircle, Play, Ruler, Search, Send, Settings, SlidersHorizontal, Sparkles, Target, Thermometer, ThumbsUp, TrendingUp, UserRound, Wrench, Zap } from 'lucide-react';
@@ -1110,6 +1111,12 @@ function TutorialsPage({ user }) {
 
 function SimulationsPage({ user, filters }) {
   const [tests, setTests] = useState([]);
+  const [mockSubjects, setMockSubjects] = useState([]);
+  const [mockBranches, setMockBranches] = useState([]);
+  const [selectedBranch, setSelectedBranch] = useState(() => {
+    try { return localStorage.getItem('jobforsure.mocks.branch') || DEFAULT_BRANCH; }
+    catch { return DEFAULT_BRANCH; }
+  });
   const [testSearch, setTestSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All tests');
   const [attempt, setAttempt] = useState(null);
@@ -1126,12 +1133,23 @@ function SimulationsPage({ user, filters }) {
     async function loadTests() {
       setLoading(true);
       if (!supabase) { setLoading(false); return; }
-      let query = supabase.from('mock_tests').select('id,title,description,exam_type,duration_minutes,total_marks,passing_marks').eq('is_published', true);
+      let query = supabase.from('mock_tests').select('id,title,description,exam_type,subject_id,duration_minutes,total_marks,passing_marks').eq('is_published', true);
       if (filters.subjectId) query = query.eq('subject_id', filters.subjectId);
       if (filters.examType) query = query.in('exam_type', [filters.examType.toUpperCase(), 'OTHER']);
-      const { data, error: queryError } = await query.order('created_at', { ascending: false });
+      const [testResult, subjectResult, branchResult] = await Promise.all([
+        query.order('created_at', { ascending: false }),
+        supabase.from('subjects').select('id,name,branch_id'),
+        supabase.from('engineering_branches').select('id,name').order('name'),
+      ]);
       if (!active) return;
-      if (queryError) setError(queryError.message); else setTests((data || []).filter(test => !isLinkedPaperMock(test)));
+      const queryError = testResult.error || subjectResult.error || branchResult.error;
+      if (queryError) { setTests([]); setError(queryError.message); }
+      else {
+        setError('');
+        setTests((testResult.data || []).filter(test => !isLinkedPaperMock(test)));
+        setMockSubjects(subjectResult.data || []);
+        setMockBranches(branchResult.data || []);
+      }
       setLoading(false);
     }
     loadTests();
@@ -1166,9 +1184,18 @@ function SimulationsPage({ user, filters }) {
   }
   const clock = `${String(Math.floor(remaining / 60)).padStart(2, '0')}:${String(remaining % 60).padStart(2, '0')}`;
   const getCategory = test => /^GATE/i.test(test.title) ? 'GATE' : /ssc\s*cgl/i.test(test.title) ? 'SSC CGL' : /tgpsc|tspsc/i.test(test.title) ? 'TGPSC AEE' : test.title.toLowerCase().includes('junior engineer') ? 'SSC JE' : String(test.exam_type || 'Other');
-  const categories = ['All tests', ...new Set(tests.map(getCategory))];
-  const visibleTests = tests.filter(test => {
-    const matchesCategory = selectedCategory === 'All tests' || getCategory(test) === selectedCategory;
+  const branchOptions = getBranchOptions(tests, mockSubjects, mockBranches);
+  const activeBranch = branchOptions.includes(selectedBranch) ? selectedBranch : DEFAULT_BRANCH;
+  const branchTests = tests.filter(test => matchesMockBranch(test, activeBranch, mockSubjects, mockBranches));
+  const categories = ['All tests', ...new Set(branchTests.map(getCategory))];
+  const activeCategory = categories.includes(selectedCategory) ? selectedCategory : 'All tests';
+  function chooseBranch(branch) {
+    setSelectedBranch(branch);
+    setSelectedCategory('All tests');
+    try { localStorage.setItem('jobforsure.mocks.branch', branch); } catch { /* Browsing still works without storage. */ }
+  }
+  const visibleTests = branchTests.filter(test => {
+    const matchesCategory = activeCategory === 'All tests' || getCategory(test) === activeCategory;
     const query = testSearch.trim().toLowerCase();
     const matchesSearch = !query || `${test.title} ${test.description || ''} ${getCategory(test)}`.toLowerCase().includes(query);
     return matchesCategory && matchesSearch;
@@ -1179,11 +1206,23 @@ function SimulationsPage({ user, filters }) {
     <section className="overflow-hidden rounded-2xl border border-indigo-100 bg-white shadow-sm">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 px-5 py-4">
         <div className="flex items-center gap-3"><div className="rounded-xl bg-indigo-50 p-2.5 text-indigo-600"><GraduationCap size={22} /></div><div><h2 className="text-base font-extrabold text-slate-900">Find your next mock test</h2><p className="mt-0.5 text-xs text-slate-500">Timed practice with instant scores and section insights.</p></div></div>
-        <div className="flex items-center gap-2"><span className="rounded-full bg-indigo-50 px-3 py-1.5 text-xs font-bold text-indigo-700">{tests.length} available {tests.length === 1 ? 'test' : 'tests'}</span><button className="btn" aria-expanded={historyOpen} aria-controls="mock-attempt-history" onClick={() => setHistoryOpen(value => !value)}>{historyOpen ? 'Hide attempts' : 'View attempts'}</button></div>
+        <div className="flex items-center gap-2"><span className="rounded-full bg-indigo-50 px-3 py-1.5 text-xs font-bold text-indigo-700">{branchTests.length} available {branchTests.length === 1 ? 'test' : 'tests'}</span><button className="btn" aria-expanded={historyOpen} aria-controls="mock-attempt-history" onClick={() => setHistoryOpen(value => !value)}>{historyOpen ? 'Hide attempts' : 'View attempts'}</button></div>
       </div>
 
       <MockAttemptHistory open={historyOpen} supabase={supabase} user={user} refresh={historyRefresh} onSelect={row => { setResult(row); window.scrollTo({ top: 0, behavior: 'smooth' }); }} />
 
+      <div className="mock-branch-layout">
+        <aside className="mock-branch-sidebar" aria-label="Mock test branches">
+          <h3>Choose your branch</h3>
+          <p>Find exams in your domain.</p>
+          <nav aria-label="Filter mock tests by branch">
+            {branchOptions.map(branch => <button key={branch} type="button" aria-pressed={activeBranch === branch} onClick={() => chooseBranch(branch)} className={`mock-branch-button ${activeBranch === branch ? 'mock-branch-button-active' : ''}`}>
+              <span>{branch}</span><span className="mock-branch-count">{tests.filter(test => matchesMockBranch(test, branch, mockSubjects, mockBranches)).length}</span>
+            </button>)}
+          </nav>
+          <p className="mock-branch-hint">Branch sections also include common general studies and aptitude exams.</p>
+        </aside>
+        <div className="mock-branch-content">
       <div className="border-b border-slate-100 p-4 sm:p-6">
         <label className="flex h-11 max-w-2xl items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-3.5 text-slate-400 focus-within:border-indigo-400 focus-within:bg-white focus-within:ring-2 focus-within:ring-indigo-100">
           <Search size={17} />
@@ -1191,28 +1230,28 @@ function SimulationsPage({ user, filters }) {
           <SlidersHorizontal size={16} />
         </label>
         <div className="mt-4 flex flex-wrap gap-2" role="tablist" aria-label="Filter tests by exam">
-          {categories.map(category => <button key={category} type="button" role="tab" aria-selected={selectedCategory === category} onClick={() => setSelectedCategory(category)} className={`rounded-full border px-4 py-2 text-xs font-bold transition ${selectedCategory === category ? 'border-indigo-600 bg-indigo-600 text-white shadow-sm' : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-200 hover:text-indigo-700'}`}>{category}</button>)}
+          {categories.map(category => <button key={category} type="button" role="tab" aria-selected={activeCategory === category} onClick={() => setSelectedCategory(category)} className={`rounded-full border px-4 py-2 text-xs font-bold transition ${activeCategory === category ? 'border-indigo-600 bg-indigo-600 text-white shadow-sm' : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-200 hover:text-indigo-700'}`}>{category}</button>)}
         </div>
       </div>
 
       <div className="bg-slate-50/70 p-4 sm:p-6">
         <div className="mb-4 flex items-center justify-between gap-3">
           <div>
-            <h3 className="text-base font-extrabold text-slate-900">{selectedCategory === 'All tests' ? 'Explore mock tests' : `${selectedCategory} mock tests`}</h3>
+            <h3 className="text-base font-extrabold text-slate-900">{activeCategory === 'All tests' ? (activeBranch === ALL_BRANCHES ? 'Explore mock tests' : `${activeBranch} mocks`) : `${activeCategory} mock tests`}</h3>
             <p className="mt-1 text-xs text-slate-500">{loading ? 'Finding available tests...' : `${visibleTests.length} ${visibleTests.length === 1 ? 'test' : 'tests'} to practice`}</p>
           </div>
           <span className="hidden items-center gap-1.5 text-xs font-semibold text-slate-500 sm:flex"><FileQuestion size={15} /> Exam-style practice</span>
         </div>
         {loading && <div className="rounded-xl border border-slate-200 bg-white p-6 text-sm text-slate-500">Loading available tests...</div>}
         {!loading && !tests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-12 text-center"><GraduationCap size={26} className="mx-auto text-indigo-400" /><h4 className="mt-3 text-sm font-bold text-slate-800">No mock tests available yet</h4><p className="mt-1 text-xs text-slate-500">Published tests will appear here when they are ready.</p></div>}
-        {!loading && tests.length > 0 && !visibleTests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-10 text-center"><p className="text-sm font-bold text-slate-800">No matching tests</p><p className="mt-1 text-xs text-slate-500">Try another exam category or search term.</p></div>}
+        {!loading && tests.length > 0 && !visibleTests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-10 text-center"><p className="text-sm font-bold text-slate-800">No matching tests</p><p className="mt-1 text-xs text-slate-500">Try another exam category or search term, or choose a different branch.</p></div>}
         <div className="mock-catalog-grid">
           {visibleTests.map(test => <article key={test.id} className="mock-catalog-card">
             <div className="mock-catalog-top">
               <div className="mock-catalog-icon"><GraduationCap size={21} /></div>
               <span className="mock-catalog-available">Available</span>
             </div>
-            <div className="mock-catalog-category">{getCategory(test)}</div>
+            <div className="mock-catalog-category">{getCategory(test)}</div><p className="mock-catalog-branch">{getMockBranch(test, mockSubjects, mockBranches)}</p>
             <h4 title={test.title}>{test.title}</h4>
             <p className="mock-catalog-description">{test.description || 'Timed exam practice with instant scoring after submission.'}</p>
             <div className="mock-catalog-details">
@@ -1224,6 +1263,8 @@ function SimulationsPage({ user, filters }) {
           </article>)}
         </div>
         {!supabase && <p className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs text-amber-800">Connect Supabase to load tests and save attempts.</p>}
+      </div>
+        </div>
       </div>
     </section>
   </>}{error && <p className="text-xs text-rose-700" role="alert">{error}</p>}</div>;
