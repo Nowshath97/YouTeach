@@ -1,0 +1,2102 @@
+[
+  {
+    "number": 1,
+    "source_status": "transcribed",
+    "question_text": "Which of the following statements cannot be used to describe free flow speed (uf) of a traffic stream?",
+    "options": [
+      "uf is the speed when flow is negligible",
+      "uf is the speed at which flow is maximum and density is optimum",
+      "uf is affected by geometry of the road",
+      "uf is the speed when density is negligible"
+    ],
+    "correct_answer": "B",
+    "rationale": "Free-flow speed is approached at negligible density; maximum flow occurs at a lower speed.",
+    "pdf_page": 3
+  },
+  {
+    "number": 2,
+    "source_status": "adapted",
+    "question_text": "For a prismatic fixed-ended beam of length L and rigidity EI, one support settles by delta relative to the other without end rotation. What is the magnitude of the settlement-induced moment at the far end?",
+    "options": [
+      "4EI delta/L²",
+      "6EI delta/L",
+      "6EI delta/L²",
+      "4EI delta/L"
+    ],
+    "correct_answer": "C",
+    "rationale": "Slope-deflection gives an end-moment magnitude of 6EI delta/L² at each end. Direction in the scan is replaced by an unambiguous magnitude question.",
+    "pdf_page": 3
+  },
+  {
+    "number": 3,
+    "source_status": "transcribed",
+    "question_text": "For sand beds, Darcy's law would be valid if the Reynolds number defined by R = u d50/nu is less than:",
+    "options": [
+      "0.2",
+      "1000",
+      "10",
+      "1"
+    ],
+    "correct_answer": "D",
+    "rationale": "Darcy flow in sand is conventionally taken as laminar for a grain-based Reynolds number below approximately one.",
+    "pdf_page": 3
+  },
+  {
+    "number": 4,
+    "source_status": "transcribed",
+    "question_text": "Which method of quarrying is suitable for costly, soft and stratified rocks?",
+    "options": [
+      "Excavating",
+      "Heating",
+      "Blasting",
+      "Wedging"
+    ],
+    "correct_answer": "D",
+    "rationale": "Wedging separates stratified stone with less damage than blasting.",
+    "pdf_page": 3
+  },
+  {
+    "number": 5,
+    "source_status": "adapted",
+    "question_text": "A rectangular beam is prestressed by a straight tendon carrying force P at eccentricity e below the centroid. A sagging live-load moment M acts at the section. Taking compression as positive, what is the resultant stress at the bottom fibre, where A is area and Z is section modulus?",
+    "options": [
+      "P/A - Pe/Z - M/Z",
+      "P/A - Pe/Z + M/Z",
+      "P/A + Pe/Z - M/Z",
+      "P/A + Pe/Z + M/Z"
+    ],
+    "correct_answer": "C",
+    "rationale": "Direct prestress and downward eccentricity compress the bottom; sagging live-load bending tensions it. The source matching question is replaced by its stress-superposition relation.",
+    "pdf_page": 3
+  },
+  {
+    "number": 6,
+    "source_status": "transcribed",
+    "question_text": "If the Froude number of a hydraulic jump is 5.5, it can be classified as:",
+    "options": [
+      "An oscillating jump",
+      "A steady jump",
+      "A strong jump",
+      "A weak jump"
+    ],
+    "correct_answer": "B",
+    "rationale": "A Froude number between about 4.5 and 9 produces a steady or stable jump.",
+    "pdf_page": 3
+  },
+  {
+    "number": 7,
+    "source_status": "transcribed",
+    "question_text": "The estimated value of the property at the end of its life period, without being dismantled, is called:",
+    "options": [
+      "Salvage value",
+      "Book value",
+      "Scrap value",
+      "Market value"
+    ],
+    "correct_answer": "A",
+    "rationale": "Salvage value is the estimated remaining value without dismantling; scrap value refers to dismantled materials.",
+    "pdf_page": 3
+  },
+  {
+    "number": 8,
+    "source_status": "adapted",
+    "question_text": "Which statements are correct for a plane stress isotropic material problem?\nA. Three independent stress components can be nonzero at a point.\nB. Six independent stress components can be nonzero at a point.\nC. Three principal stresses can be nonzero at a point.\nD. Two principal stresses can be nonzero at a point.",
+    "options": [
+      "A and C only",
+      "A and D only",
+      "D only",
+      "B and D only"
+    ],
+    "correct_answer": "B",
+    "rationale": "There are three potentially nonzero independent in-plane components and two potentially nonzero principal stresses; the out-of-plane principal stress is zero. The phrase nonzero is added to avoid counting the zero third principal stress.",
+    "pdf_page": 4
+  },
+  {
+    "number": 9,
+    "source_status": "transcribed",
+    "question_text": "A beam is designed using M20 concrete and Fe415 tension reinforcement. If the diameter of the main steel is 12 mm, what is the minimum development length Ld in mm at the support section?",
+    "options": [
+      "300",
+      "470",
+      "564",
+      "260"
+    ],
+    "correct_answer": "C",
+    "rationale": "Using design steel stress 0.87fy and deformed-bar bond stress 1.2 x 1.6 = 1.92 N/mm², Ld = 12 x 0.87 x 415/(4 x 1.92) = 564 mm approximately.",
+    "pdf_page": 4
+  },
+  {
+    "number": 10,
+    "source_status": "adapted",
+    "question_text": "The field capacity of a soil is 20% and its dry bulk density is 1.6 g/cm^3. Before irrigation, a wet sample weighs 150 g and after oven drying weighs 136 g. Determine the depth of water required to irrigate the soil to a depth of 0.9 m.",
+    "options": [
+      "90 mm",
+      "180 mm",
+      "140 mm",
+      "210 mm"
+    ],
+    "correct_answer": "C",
+    "rationale": "Current gravimetric water content = 14/136 = 0.10294. Required water depth = (0.20 - 0.10294) x 1.6 x 900 = 139.8 mm. The source density wording is clarified.",
+    "pdf_page": 4
+  },
+  {
+    "number": 11,
+    "source_status": "transcribed",
+    "question_text": "Le-Chatelier's apparatus is used to measure the unsoundness of cement caused by the presence of:",
+    "options": [
+      "Unburnt lime (CaO)",
+      "Unburnt lime (CaO) and unburnt magnesia (MgO) both",
+      "Calcium sulphate (CaSO4)",
+      "Unburnt magnesia (MgO)"
+    ],
+    "correct_answer": "A",
+    "rationale": "Le-Chatelier expansion primarily detects unsoundness due to free lime; the autoclave test also detects magnesia effects.",
+    "pdf_page": 4
+  },
+  {
+    "number": 12,
+    "source_status": "transcribed",
+    "question_text": "The specific gravity of particles of sand is 2.64 and their porosity is 45% in the loose state. The critical hydraulic gradient will be:",
+    "options": [
+      "0.66",
+      "0.947",
+      "0.901",
+      "0.747"
+    ],
+    "correct_answer": "C",
+    "rationale": "ic = (Gs - 1)(1 - n) = 1.64 x 0.55 = 0.902, closest to 0.901.",
+    "pdf_page": 4
+  },
+  {
+    "number": 13,
+    "source_status": "transcribed",
+    "question_text": "Match the derivatives of deflection y for a prismatic beam.\nA. Shear force; B. Loading intensity; C. Bending moment; D. Slope\ni. d²y/dx²; ii. d³y/dx³; iii. d⁴y/dx⁴; iv. dy/dx",
+    "options": [
+      "A-iv, B-i, C-ii, D-iii",
+      "A-ii, B-iii, C-i, D-iv",
+      "A-ii, B-i, C-iv, D-iii",
+      "A-ii, B-i, C-iii, D-iv"
+    ],
+    "correct_answer": "B",
+    "rationale": "For constant EI, moment is proportional to y'', shear to y''', loading to y'''', and slope is y'. Signs depend on convention.",
+    "pdf_page": 4
+  },
+  {
+    "number": 14,
+    "source_status": "transcribed",
+    "question_text": "The actual velocity of water flowing in a medium is 0.30 m/s. The porosity is 0.40. Darcy's velocity is:",
+    "options": [
+      "0.12 m/s",
+      "1.2 m/s",
+      "0.133 m/s",
+      "0.075 m/s"
+    ],
+    "correct_answer": "A",
+    "rationale": "Darcy velocity equals porosity times seepage velocity: 0.40 x 0.30 = 0.12 m/s.",
+    "pdf_page": 4
+  },
+  {
+    "number": 15,
+    "source_status": "transcribed",
+    "question_text": "A steady incompressible flow is given by u = 2x² + y² and v = -4xy. What is the convective acceleration along x at (1, 2)?",
+    "options": [
+      "+24 units",
+      "-8 units",
+      "-24 units",
+      "+8 units"
+    ],
+    "correct_answer": "B",
+    "rationale": "ax = u du/dx + v du/dy = 6 x 4 + (-8) x 4 = -8.",
+    "pdf_page": 5
+  },
+  {
+    "number": 16,
+    "source_status": "transcribed",
+    "question_text": "Match the stone with its use.\nA. Granite; B. Limestone; C. Marble; D. Slate\ni. Ornamental work; ii. Bridges; iii. Production of cement; iv. Flooring",
+    "options": [
+      "A-iii, B-ii, C-i, D-iv",
+      "A-ii, B-iv, C-i, D-iii",
+      "A-iii, B-iv, C-i, D-ii",
+      "A-ii, B-iii, C-i, D-iv"
+    ],
+    "correct_answer": "D",
+    "rationale": "Granite is used in bridges, limestone in cement, marble for ornamental work, and slate for flooring.",
+    "pdf_page": 5
+  },
+  {
+    "number": 17,
+    "source_status": "transcribed",
+    "question_text": "The maximum number of vehicles observed in any five-minute period during the peak hour is 150. If the total peak-hour flow is 1200 vehicles, the five-minute peak-hour factor, rounded to two decimal places, is:",
+    "options": [
+      "0.67",
+      "0.45",
+      "0.52",
+      "0.78"
+    ],
+    "correct_answer": "A",
+    "rationale": "PHF = 1200/(12 x 150) = 0.6667.",
+    "pdf_page": 5
+  },
+  {
+    "number": 18,
+    "source_status": "adapted",
+    "question_text": "In a Froude-similar model experiment with a weir, let k be the model-to-prototype length ratio (k < 1). The model flow rate is what fraction of the prototype flow rate?",
+    "options": [
+      "k^(5/2)",
+      "k^(3/2)",
+      "1",
+      "k²"
+    ],
+    "correct_answer": "A",
+    "rationale": "Under Froude similarity, Q scales with L^(5/2), taking k as the model-to-prototype length ratio as in the printed choices.",
+    "pdf_page": 5
+  },
+  {
+    "number": 19,
+    "source_status": "adapted",
+    "question_text": "For a linear elastic structure under equal unit point loads, Maxwell's reciprocal deflection theorem states that:",
+    "options": [
+      "The displacement at B due to a load at A equals that at A due to the corresponding load at B",
+      "Every joint has the same displacement",
+      "Bending moments are equal at all sections",
+      "Rotations are zero at every loaded joint"
+    ],
+    "correct_answer": "A",
+    "rationale": "Reciprocal flexibility coefficients are equal: delta_AB = delta_BA. Equal unit loads and corresponding directions are made explicit to remove ambiguity in the scan.",
+    "pdf_page": 5
+  },
+  {
+    "number": 20,
+    "source_status": "transcribed",
+    "question_text": "The type of surveying in which the curvature of the earth is considered is called:",
+    "options": [
+      "Preliminary surveying",
+      "Plane surveying",
+      "Geodetic surveying",
+      "Topographical surveying"
+    ],
+    "correct_answer": "C",
+    "rationale": "Geodetic surveying accounts for earth curvature.",
+    "pdf_page": 5
+  },
+  {
+    "number": 21,
+    "source_status": "transcribed",
+    "question_text": "The initial depth of a hydraulic jump in a rectangular channel is 0.2 m and the sequent depth ratio is 10. The length of the jump is about:",
+    "options": [
+      "4 m",
+      "20 m",
+      "12 m",
+      "6 m"
+    ],
+    "correct_answer": "C",
+    "rationale": "The sequent depth is 2 m. Using the approximate jump length 6y2 gives 12 m.",
+    "pdf_page": 5
+  },
+  {
+    "number": 22,
+    "source_status": "transcribed",
+    "question_text": "Which of the following pairs is NOT correctly matched?",
+    "options": [
+      "PERT - Probabilistic approach",
+      "CPM - Float concept",
+      "PERT - Three-time estimate",
+      "PERT - Activity-oriented network model"
+    ],
+    "correct_answer": "D",
+    "rationale": "PERT is conventionally event-oriented; CPM is activity-oriented.",
+    "pdf_page": 6
+  },
+  {
+    "number": 23,
+    "source_status": "transcribed",
+    "question_text": "In a Lacey regime channel, discharge is 100 m³/s and the silt factor is 1.1. The regime longitudinal slope is about:",
+    "options": [
+      "1/5100",
+      "1/4100",
+      "1/7100",
+      "1/6140"
+    ],
+    "correct_answer": "D",
+    "rationale": "Lacey slope S = f^(5/3)/(3340 Q^(1/6)); with f = 1.1 and Q = 100, S = 1/6138.92, closest to 1/6140.",
+    "pdf_page": 6
+  },
+  {
+    "number": 24,
+    "source_status": "transcribed",
+    "question_text": "Calculate the area in m² by Simpson's rule. Perpendicular offsets at 20 m intervals from a survey line to an irregular boundary are 2.35, 6.50, 5.40, 6.65, 7.85, 6.20, 2.35, 6.50, 5.65 m.",
+    "options": [
+      "800",
+      "950",
+      "900",
+      "850"
+    ],
+    "correct_answer": "B",
+    "rationale": "Simpson's rule gives (20/3)[2.35 + 5.65 + 4(6.50 + 6.65 + 6.20 + 6.50) + 2(5.40 + 7.85 + 2.35)] = 950.67 m², closest to 950 (option B).",
+    "pdf_page": 6
+  },
+  {
+    "number": 25,
+    "source_status": "adapted",
+    "question_text": "In a continuous beam A-B-C-D, A and D are fixed and B and C are intermediate supports. AB = 2 m with rigidity EI, BC = 6 m with rigidity 2EI, and CD = 4 m with rigidity EI. What is the distribution factor of member CB at joint C, taking the far ends as fixed during distribution?",
+    "options": [
+      "0.50",
+      "0.62",
+      "0.40",
+      "0.57"
+    ],
+    "correct_answer": "D",
+    "rationale": "K_CB = 4(2EI)/6 and K_CD = 4EI/4. DF_CB = (4/3)/(4/3 + 1) = 4/7 = 0.571. The source diagram is described in words.",
+    "pdf_page": 6
+  },
+  {
+    "number": 26,
+    "source_status": "transcribed",
+    "question_text": "Convert the whole circle bearing 211°54' to quadrantal bearing.",
+    "options": [
+      "S 31°54' W",
+      "N 31°54' W",
+      "N 31°54' E",
+      "S 31°54' E"
+    ],
+    "correct_answer": "A",
+    "rationale": "For bearings between 180° and 270°, the quadrantal bearing is S(theta - 180°)W.",
+    "pdf_page": 6
+  },
+  {
+    "number": 27,
+    "source_status": "transcribed",
+    "question_text": "The 3-hour unit hydrograph of a basin is a triangle with base period 20 hours and peak ordinate 300 m³/s. The basin area is:",
+    "options": [
+      "540 km²",
+      "6000 km²",
+      "300 km²",
+      "1080 km²"
+    ],
+    "correct_answer": "D",
+    "rationale": "Runoff volume = 0.5 x 20 x 3600 x 300 = 10.8 million m³. Dividing by 0.01 m of runoff gives 1080 km².",
+    "pdf_page": 6
+  },
+  {
+    "number": 28,
+    "source_status": "transcribed",
+    "question_text": "Consider the statements about cement.\nA. Vinsol resin or vegetable fats, oils and fatty acids are ground with ordinary cement to obtain air-entraining cement.\nB. Extra rapid-hardening cement is prepared by adding 2% calcium chloride.\nIdentify the correct statement.",
+    "options": [
+      "B is true and A is false",
+      "Both A and B are true",
+      "Both A and B are false",
+      "B is false and A is true"
+    ],
+    "correct_answer": "B",
+    "rationale": "The statements describe conventional manufacture of air-entraining and extra rapid-hardening cements.",
+    "pdf_page": 6
+  },
+  {
+    "number": 29,
+    "source_status": "transcribed",
+    "question_text": "For a highway, v = 100 - (5/6)k, with v in km/h and k in veh/km. Which statements are correct?\nA. Free-flow speed is 100 km/h and jam density 120 veh/km.\nB. Maximum flow is 3000 veh/h and critical density 60 veh/km.\nC. Maximum flow is 6000 veh/h and critical density 120 km/h.\nD. Free-flow speed is 120 km/h and jam density 100 veh/km.",
+    "options": [
+      "A and C only",
+      "A and B only",
+      "D and C only",
+      "B and D only"
+    ],
+    "correct_answer": "B",
+    "rationale": "For Greenshields flow, k_j = 120, k_c = 60 and q_max = 100 x 120/4 = 3000.",
+    "pdf_page": 6
+  },
+  {
+    "number": 30,
+    "source_status": "adapted",
+    "question_text": "In analysis of an indeterminate structure, which equations are normally solved for the primary unknowns in the force method and the displacement method, respectively?",
+    "options": [
+      "Compatibility equations and joint equilibrium equations",
+      "Joint equilibrium equations and compatibility equations",
+      "Only global equilibrium in both methods",
+      "Only material strength equations in both methods"
+    ],
+    "correct_answer": "A",
+    "rationale": "The force method solves compatibility for redundants; the displacement method solves joint equilibrium for displacements. This clarifies overlapping statements in the source.",
+    "pdf_page": 7
+  },
+  {
+    "number": 31,
+    "source_status": "transcribed",
+    "question_text": "A fluid jet of cross-sectional area A and velocity V strikes a flat plate moving in the same direction with velocity u. The fluid mass striking the plate per second is:",
+    "options": [
+      "rho A V",
+      "rho A u",
+      "rho A(u - V)",
+      "rho A(V - u)"
+    ],
+    "correct_answer": "D",
+    "rationale": "The intercepted mass rate is density times area times relative speed V - u.",
+    "pdf_page": 7
+  },
+  {
+    "number": 32,
+    "source_status": "adapted",
+    "question_text": "In the long and short wall method, let L be the centre-to-centre distance of a long wall and b its uniform breadth. What is its out-to-out length?",
+    "options": [
+      "L + 2b",
+      "L + b/2",
+      "L - b",
+      "L + b"
+    ],
+    "correct_answer": "D",
+    "rationale": "Adding half the wall breadth at each end gives L + b. The original verbal choices include equivalent descriptions, so distinct algebraic options are used.",
+    "pdf_page": 7
+  },
+  {
+    "number": 33,
+    "source_status": "transcribed",
+    "question_text": "At a rated capacity of 44 m³/s, a centrifugal pump develops a head of 36 m at 1450 rpm. The specific speed of the pump is:",
+    "options": [
+      "65.44",
+      "100.44",
+      "1654.44",
+      "654.44"
+    ],
+    "correct_answer": "D",
+    "rationale": "Ns = N sqrt(Q)/H^(3/4) = 1450 sqrt(44)/36^0.75 = 654.44.",
+    "pdf_page": 7
+  },
+  {
+    "number": 34,
+    "source_status": "transcribed",
+    "question_text": "Calculate the coefficient of permeability in m/s if the coefficients of consolidation and volume change are 4.8 mm²/min and 1.02 x 10^-3 m²/kN.",
+    "options": [
+      "4.8 x 10^-8",
+      "4.8 x 10^-10",
+      "8.0 x 10^-10",
+      "8.0 x 10^-9"
+    ],
+    "correct_answer": "C",
+    "rationale": "k = cv mv gamma_w = (4.8 x 10^-6/60) x 1.02 x 10^-3 x 9.81 = 8.0 x 10^-10 m/s.",
+    "pdf_page": 7
+  },
+  {
+    "number": 35,
+    "source_status": "transcribed",
+    "question_text": "The resistance of stones against grinding action under traffic is measured by:",
+    "options": [
+      "Abrasion test",
+      "Crushing strength test",
+      "Hardness test",
+      "Attrition test"
+    ],
+    "correct_answer": "A",
+    "rationale": "Abrasion testing evaluates resistance to surface wear from rubbing or grinding.",
+    "pdf_page": 7
+  },
+  {
+    "number": 36,
+    "source_status": "transcribed",
+    "question_text": "A circular dug well in fine sand yields 15 L/s under a depression head of 4 m. Assuming specific capacity per unit area as 0.8 per hour, the bottom diameter of the dug well is:",
+    "options": [
+      "2.65 m",
+      "3.5 m",
+      "1.7 m",
+      "4.64 m"
+    ],
+    "correct_answer": "D",
+    "rationale": "Q = 54 m³/h; area = Q/(0.8 x 4) = 16.875 m², giving d = sqrt(4A/pi) = 4.64 m.",
+    "pdf_page": 7
+  },
+  {
+    "number": 37,
+    "source_status": "transcribed",
+    "question_text": "A 3 m steel pipe of outer diameter 150 mm and inner diameter 125 mm is fixed at both ends at 20°C. Its temperature falls uniformly to -15°C. Neglect gravity. For alpha = 10 x 10^-6/°C and E = 200 GPa, the force on the fixed joint is:",
+    "options": [
+      "120.31 pi kN",
+      "130.31 pi kN",
+      "125.31 pi kN",
+      "110.31 pi kN"
+    ],
+    "correct_answer": "A",
+    "rationale": "Thermal tensile stress = E alpha deltaT = 70 MPa; area = pi(150² - 125²)/4 = 1718.75pi mm², so force = 120.3125pi kN.",
+    "pdf_page": 7
+  },
+  {
+    "number": 38,
+    "source_status": "transcribed",
+    "question_text": "A hydraulic jump occurs when there is a break in grade from a:",
+    "options": [
+      "Mild slope to steep slope",
+      "Mild slope to milder slope",
+      "Steep slope to steeper slope",
+      "Steep slope to mild slope"
+    ],
+    "correct_answer": "D",
+    "rationale": "A steep-to-mild transition can force supercritical flow to become subcritical through a hydraulic jump.",
+    "pdf_page": 8
+  },
+  {
+    "number": 39,
+    "source_status": "adapted",
+    "question_text": "Neglecting axial deformation, match the number of unknown joint rotations in the continuous beams.\nA. One-span fixed-fixed beam\nB. Two-span beam with a pin at one end and rollers at the other supports\nC. Five-span beam fixed at one end and rollers at all other supports",
+    "options": [
+      "A = 0, B = 3, C = 5",
+      "A = 2, B = 3, C = 6",
+      "A = 0, B = 2, C = 4",
+      "A = 1, B = 2, C = 5"
+    ],
+    "correct_answer": "A",
+    "rationale": "Fixed ends have prescribed zero rotation. All three supports in B have unknown rotations; the five roller supports in C do also. The ambiguous space-frame matching entry is omitted, keeping the beam kinematic-indeterminacy concept.",
+    "pdf_page": 8
+  },
+  {
+    "number": 40,
+    "source_status": "transcribed",
+    "question_text": "A cube-rate estimate is _____ compared with a plinth-area estimate.",
+    "options": [
+      "Equally accurate",
+      "Similar",
+      "More accurate",
+      "Less accurate"
+    ],
+    "correct_answer": "C",
+    "rationale": "A cube-rate estimate includes building height as well as floor area.",
+    "pdf_page": 8
+  },
+  {
+    "number": 41,
+    "source_status": "transcribed",
+    "question_text": "An 8 m thick compacted fill initially has void ratio 1.2. After a wide embankment is constructed, the average void ratio reduces to 0.8. Estimate the compression of the fill in metres.",
+    "options": [
+      "2.5",
+      "2.45",
+      "1.35",
+      "1.45"
+    ],
+    "correct_answer": "D",
+    "rationale": "Settlement = H(e0 - e1)/(1 + e0) = 8 x 0.4/2.2 = 1.455 m.",
+    "pdf_page": 8
+  },
+  {
+    "number": 42,
+    "source_status": "adapted",
+    "question_text": "A uniform circular bar of length L, shear modulus G and polar second moment J carries a constant torque T in linear elastic torsion. What is its strain energy?",
+    "options": [
+      "T²L/(2GJ)",
+      "T²L/(GJ)",
+      "TL/(2GJ)",
+      "T²L/(2GJ²)"
+    ],
+    "correct_answer": "A",
+    "rationale": "U = integral T²/(2GJ) dx = T²L/(2GJ). The printed integral options are replaced by equivalent unambiguous closed forms.",
+    "pdf_page": 8
+  },
+  {
+    "number": 43,
+    "source_status": "transcribed",
+    "question_text": "A vehicle has a wheelbase of 6 m. What is the off-tracking in metres on a curved path with mean radius 60 m?",
+    "options": [
+      "0.50",
+      "0.30",
+      "0.60",
+      "0.15"
+    ],
+    "correct_answer": "B",
+    "rationale": "Off-tracking is approximately l²/(2R) = 36/120 = 0.30 m.",
+    "pdf_page": 8
+  },
+  {
+    "number": 44,
+    "source_status": "transcribed",
+    "question_text": "Arrange the steps in cement production chronologically.\nA. Blending materials in correct proportions\nB. Grinding clinker and gypsum\nC. Crushing and grinding raw materials\nD. Burning the prepared mix in a kiln",
+    "options": [
+      "A, D, B, C",
+      "A, C, D, B",
+      "A, B, C, D",
+      "C, A, D, B"
+    ],
+    "correct_answer": "D",
+    "rationale": "Raw materials are crushed, proportioned and blended, burned to clinker, then ground with gypsum.",
+    "pdf_page": 8
+  },
+  {
+    "number": 45,
+    "source_status": "transcribed",
+    "question_text": "Lacey's silt factor is adjusted to equal 1 for silt in an alluvium region. What is the median alluvium size?",
+    "options": [
+      "0.28 mm",
+      "2.8 mm",
+      "3.2 mm",
+      "0.32 mm"
+    ],
+    "correct_answer": "D",
+    "rationale": "f = 1.76 sqrt(d_mm), so d = (1/1.76)² = 0.323 mm.",
+    "pdf_page": 9
+  },
+  {
+    "number": 46,
+    "source_status": "transcribed",
+    "question_text": "In Muskingum channel routing, C0 = -0.3 and C1 = 0.6. What is C2?",
+    "options": [
+      "0.3",
+      "-0.5",
+      "0.4",
+      "0.7"
+    ],
+    "correct_answer": "D",
+    "rationale": "The routing coefficients sum to one, giving C2 = 1 - (-0.3) - 0.6 = 0.7.",
+    "pdf_page": 9
+  },
+  {
+    "number": 47,
+    "source_status": "transcribed",
+    "question_text": "Admixtures used to produce high-strength concrete and reduce the water-cement ratio are called:",
+    "options": [
+      "Air-entraining admixtures",
+      "Superplasticizers",
+      "Accelerators",
+      "Retarders"
+    ],
+    "correct_answer": "B",
+    "rationale": "Superplasticizers provide substantial water reduction while retaining workability.",
+    "pdf_page": 9
+  },
+  {
+    "number": 48,
+    "source_status": "transcribed",
+    "question_text": "A road is designed for 100 km/h on a horizontal curve with superelevation 7% and side-friction coefficient 0.15. The minimum radius in metres for safe movement is:",
+    "options": [
+      "144.8",
+      "357.9",
+      "178.9",
+      "202.1"
+    ],
+    "correct_answer": "B",
+    "rationale": "R = V²/[127(e + f)] = 10000/[127 x 0.22] = 357.9 m.",
+    "pdf_page": 9
+  },
+  {
+    "number": 49,
+    "source_status": "adapted",
+    "question_text": "At Hyderabad, a one-day rainfall depth of 300 mm has a return period of 80 years. Assuming independent annual maxima, what is the probability of this depth being equalled or exceeded at least once in 80 years?",
+    "options": [
+      "0.314",
+      "0.0125",
+      "0.634",
+      "0.341"
+    ],
+    "correct_answer": "C",
+    "rationale": "P = 1 - (1 - 1/80)^80 = 0.6344. The scan's choices do not contain this value; option C is corrected for practice.",
+    "pdf_page": 9
+  },
+  {
+    "number": 50,
+    "source_status": "transcribed",
+    "question_text": "A theodolite is at P and a vertical staff is at Q. The depression angle to the 3.5 m staff mark is 7°15'. Horizontal distance PQ is 2500 m, instrument height is 1.5 m, and RL(P) is 980.450 m. Including curvature and refraction corrections, determine RL(Q).",
+    "options": [
+      "660.830 m",
+      "975.450 m",
+      "660.410 m",
+      "976.950 m"
+    ],
+    "correct_answer": "A",
+    "rationale": "RL(Q) = 980.450 + 1.5 - 2500 tan(7°15') - 3.5 + 0.0673(2.5)² = 660.83 m approximately.",
+    "pdf_page": 9
+  },
+  {
+    "number": 51,
+    "source_status": "transcribed",
+    "question_text": "Cavitation in fluid flow occurs when:",
+    "options": [
+      "The total energy suddenly increases",
+      "The velocity head reduces to zero",
+      "The pressure of flow decreases to a value close to its vapour pressure",
+      "The total energy suddenly decreases"
+    ],
+    "correct_answer": "C",
+    "rationale": "Vapour cavities form when local absolute pressure falls to the liquid's vapour pressure.",
+    "pdf_page": 9
+  },
+  {
+    "number": 52,
+    "source_status": "adapted",
+    "question_text": "Which statement defines isotropy of a material at a point?",
+    "options": [
+      "Properties are identical at every point but may differ with direction",
+      "Properties at the point are identical in all directions",
+      "Only two directions have equal properties",
+      "Properties must vary with every direction"
+    ],
+    "correct_answer": "B",
+    "rationale": "Isotropy concerns direction at a point; homogeneity concerns position. The source options conflate these ideas.",
+    "pdf_page": 9
+  },
+  {
+    "number": 53,
+    "source_status": "transcribed",
+    "question_text": "In steady pipe flow, density, velocity and area at one section are 3 kg/m³, 8 m/s and 0.5 m². What is the velocity at another section with area 1 m² and density 4 kg/m³?",
+    "options": [
+      "2 m/s",
+      "1 m/s",
+      "4 m/s",
+      "3 m/s"
+    ],
+    "correct_answer": "D",
+    "rationale": "Mass continuity gives v2 = 3 x 8 x 0.5/(4 x 1) = 3 m/s.",
+    "pdf_page": 10
+  },
+  {
+    "number": 54,
+    "source_status": "transcribed",
+    "question_text": "In which type of contract are measurements of executed items NOT required to be kept for item-wise payment?",
+    "options": [
+      "Percentage-rate contract",
+      "Lump-sum contract",
+      "Cost-plus contract",
+      "Item-rate contract"
+    ],
+    "correct_answer": "B",
+    "rationale": "A lump-sum contract pays an agreed total for the defined scope rather than remeasuring each item for payment.",
+    "pdf_page": 10
+  },
+  {
+    "number": 55,
+    "source_status": "transcribed",
+    "question_text": "The average rolling-friction coefficient of a road is fr and its uphill grade is +G%. If the grade is doubled, what is the percentage reduction in braking distance, with other parameters unchanged?",
+    "options": [
+      "[2fr/(fr + 0.01G)] x 100",
+      "[0.02G/(fr + 0.01G)] x 100",
+      "[fr/(fr + 0.02G)] x 100",
+      "[0.01G/(fr + 0.02G)] x 100"
+    ],
+    "correct_answer": "D",
+    "rationale": "Braking distance is proportional to 1/(fr + grade). Reduction relative to the original is 1 - (fr + 0.01G)/(fr + 0.02G).",
+    "pdf_page": 10
+  },
+  {
+    "number": 56,
+    "source_status": "transcribed",
+    "question_text": "Total float can be expressed as:\nA. Latest start time - earliest start time\nB. Latest finish time - earliest finish time\nIdentify the correct statement.",
+    "options": [
+      "B is true and A is false",
+      "Both A and B are true",
+      "Both A and B are false",
+      "B is false and A is true"
+    ],
+    "correct_answer": "B",
+    "rationale": "For a fixed activity duration, total float equals LS - ES = LF - EF.",
+    "pdf_page": 10
+  },
+  {
+    "number": 57,
+    "source_status": "transcribed",
+    "question_text": "A 1.25 m soil layer has porosity 0.35 and specific gravity 2.65. It is subjected to an upward seepage head of 1.85 m. What depth of coarse sand above the layer gives factor of safety 2 against piping? Sand has the same porosity and specific gravity; head loss in sand is negligible.",
+    "options": [
+      "1.25 m",
+      "4.4 m",
+      "2.2 m",
+      "2.7 m"
+    ],
+    "correct_answer": "C",
+    "rationale": "ic = (2.65 - 1)(1 - 0.35) = 1.0725. From 2 = ic(1.25 + H)/1.85, H = 2.20 m.",
+    "pdf_page": 10
+  },
+  {
+    "number": 58,
+    "source_status": "transcribed",
+    "question_text": "For a horizontal venturimeter:\nA. Main-pipe velocity is greater and pressure lower than at the throat.\nB. Main-pipe velocity is lower and pressure greater than at the throat.\nC. Pressure difference (main pipe minus throat) is positive.\nD. That pressure difference is negative.\nWhich statements are NOT correct?",
+    "options": [
+      "A and D only",
+      "C and D only",
+      "B and D only",
+      "A and B only"
+    ],
+    "correct_answer": "A",
+    "rationale": "Continuity makes throat velocity larger; Bernoulli makes throat pressure lower. A and D are false.",
+    "pdf_page": 10
+  },
+  {
+    "number": 59,
+    "source_status": "transcribed",
+    "question_text": "A water tank is supported by a ring foundation with outer diameter 8 m and radial thickness 1 m. It carries uniform pressure 200 kN/m². The vertical stress 4 m below the foundation centre is:",
+    "options": [
+      "15.8 kN/m²",
+      "51.4 kN/m²",
+      "10 kN/m²",
+      "31.7 kN/m²"
+    ],
+    "correct_answer": "D",
+    "rationale": "Subtract stresses from uniformly loaded disks of radii 4 and 3 m: q[(1 + (3/4)²)^(-3/2) - (1 + (4/4)²)^(-3/2)] = 31.69 kPa.",
+    "pdf_page": 10
+  },
+  {
+    "number": 60,
+    "source_status": "transcribed",
+    "question_text": "Consider the statements.\nA. Efflorescence is a white powder appearing on brick surfaces.\nB. It is caused by chalk in brick earth.\nC. Moderate efflorescence covers up to 50% of the brick area.\nD. Moderate efflorescence covers less than 10% of the brick area.\nWhich are correct?",
+    "options": [
+      "A and B",
+      "B and C",
+      "B and D",
+      "A and C"
+    ],
+    "correct_answer": "D",
+    "rationale": "Soluble salts cause efflorescence. Moderate coverage is above slight coverage and up to 50%; less than 10% is slight.",
+    "pdf_page": 11
+  },
+  {
+    "number": 61,
+    "source_status": "transcribed",
+    "question_text": "The scour depth according to Lacey's formula in a river represents depth below the:",
+    "options": [
+      "Maximum flood level in the river",
+      "Maximum depth of scour in the channel",
+      "Level 1.2 m above flood level",
+      "Bed level of the river"
+    ],
+    "correct_answer": "A",
+    "rationale": "Lacey's normal scour depth is measured below the high-flood water level.",
+    "pdf_page": 11
+  },
+  {
+    "number": 62,
+    "source_status": "transcribed",
+    "question_text": "A Pitot tube is an instrument for measuring:",
+    "options": [
+      "Pressure of flow",
+      "Total energy",
+      "Velocity of flow",
+      "Discharge of fluid"
+    ],
+    "correct_answer": "C",
+    "rationale": "A Pitot arrangement obtains local velocity from stagnation and static pressure difference.",
+    "pdf_page": 11
+  },
+  {
+    "number": 63,
+    "source_status": "adapted",
+    "question_text": "For plane stress with principal stresses sigma1 and sigma2, match the Mohr-circle quantities.\nA. Centre coordinate; B. Diameter; C. Radius; D. Vertical coordinate\ni. (sigma1 - sigma2)/2; ii. Shear stress; iii. (sigma1 + sigma2)/2; iv. sigma1 - sigma2",
+    "options": [
+      "A-iii, B-iv, C-ii, D-i",
+      "A-iv, B-i, C-iii, D-ii",
+      "A-iii, B-iv, C-i, D-ii",
+      "A-iv, B-iii, C-i, D-ii"
+    ],
+    "correct_answer": "C",
+    "rationale": "The centre is the average principal stress and radius is half their difference. Principal stresses are specified because the printed wording says only normal stresses.",
+    "pdf_page": 11
+  },
+  {
+    "number": 64,
+    "source_status": "transcribed",
+    "question_text": "If highway formation has a uniform gradient and the ground also has a longitudinal slope, earthwork cannot be calculated by:",
+    "options": [
+      "Mid-section formula",
+      "Central line method",
+      "Prismoidal formula",
+      "Trapezoidal formula"
+    ],
+    "correct_answer": "B",
+    "rationale": "The centre-line method is for quantities in walls and similar building work, rather than highway cross-section earthwork volumes.",
+    "pdf_page": 11
+  },
+  {
+    "number": 65,
+    "source_status": "transcribed",
+    "question_text": "If duty is 1500 hectares per cumec and the base period is 150 days, the crop delta is:",
+    "options": [
+      "86.4 cm",
+      "0.864 mm",
+      "86.4 mm",
+      "864 cm"
+    ],
+    "correct_answer": "A",
+    "rationale": "Delta = 8.64B/D = 8.64 x 150/1500 = 0.864 m = 86.4 cm.",
+    "pdf_page": 11
+  },
+  {
+    "number": 66,
+    "source_status": "adapted",
+    "question_text": "Match cantilever loadings with the shapes of their shear-force diagrams over the loaded region.\nA. A point force\nB. An applied couple only\nC. Uniformly distributed load\nD. Linearly varying distributed load\ni. Parabolic; ii. Rectangular constant nonzero shear; iii. Zero shear; iv. Linear",
+    "options": [
+      "A-i, B-ii, C-iv, D-iii",
+      "A-i, B-iii, C-iv, D-ii",
+      "A-ii, B-iii, C-iv, D-i",
+      "A-ii, B-iii, C-i, D-iv"
+    ],
+    "correct_answer": "C",
+    "rationale": "dV/dx = -w: a point force produces a jump and constant shear, a pure couple produces no shear, UDL gives linear shear, and triangular loading gives parabolic shear. Diagram information is expressed in words.",
+    "pdf_page": 11
+  },
+  {
+    "number": 67,
+    "source_status": "transcribed",
+    "question_text": "The momentum correction factor is used to correct for:",
+    "options": [
+      "Change in pressure",
+      "Nonuniform distribution of velocities at inlet and outlet sections",
+      "Change in total energy",
+      "Change in mass rate of flow"
+    ],
+    "correct_answer": "B",
+    "rationale": "The factor beta accounts for nonuniform velocity when replacing the momentum-flux integral with a mean-velocity expression.",
+    "pdf_page": 11
+  },
+  {
+    "number": 68,
+    "source_status": "transcribed",
+    "question_text": "Match the concrete terms.\nA. Honeycombing; B. Bleeding; C. Thermal shrinkage; D. Segregation\ni. Water rises to the fresh-concrete surface\nii. Separation of constituent materials due to gravity\niii. Hollow spaces and cavities in concrete\niv. Volume reduction due to temperature variation",
+    "options": [
+      "A-i, B-iv, C-ii, D-iii",
+      "A-ii, B-i, C-iv, D-iii",
+      "A-iii, B-i, C-iv, D-ii",
+      "A-iii, B-iv, C-i, D-ii"
+    ],
+    "correct_answer": "C",
+    "rationale": "Honeycombing leaves voids; bleeding brings water up; cooling causes thermal shrinkage; segregation separates components.",
+    "pdf_page": 12
+  },
+  {
+    "number": 69,
+    "source_status": "transcribed",
+    "question_text": "In a 1:50 water model of a stilling basin, the energy dissipation rate is 0.5 kW. The corresponding prototype dissipation rate for the same fluid is:",
+    "options": [
+      "1.25 MW",
+      "441.94 MW",
+      "321.5 MW",
+      "62.5 MW"
+    ],
+    "correct_answer": "B",
+    "rationale": "Under Froude similarity, power scales as L^(7/2). Thus 0.5 x 50^3.5 kW = 441.94 MW.",
+    "pdf_page": 12
+  },
+  {
+    "number": 70,
+    "source_status": "transcribed",
+    "question_text": "For beam moment M, modulus E and second moment I, elastic beam theory gives the radius of curvature as:",
+    "options": [
+      "M/(EI)",
+      "EI",
+      "1/(EI)",
+      "EI/M"
+    ],
+    "correct_answer": "D",
+    "rationale": "M/I = E/R, hence R = EI/M.",
+    "pdf_page": 12
+  },
+  {
+    "number": 71,
+    "source_status": "transcribed",
+    "question_text": "A vertical cut is made in saturated clay with c = 30 kN/m², phi = 0° and gamma = 20 kN/m³. What is the theoretical unsupported depth before side collapse?",
+    "options": [
+      "1.4 m",
+      "6 m",
+      "2.8 m",
+      "12 m"
+    ],
+    "correct_answer": "B",
+    "rationale": "For ideal undrained cohesive soil, Hc = 4c/gamma = 120/20 = 6 m.",
+    "pdf_page": 12
+  },
+  {
+    "number": 72,
+    "source_status": "transcribed",
+    "question_text": "Compressive strength of concrete mainly depends upon:",
+    "options": [
+      "Grading of aggregate",
+      "Quantity of aggregate",
+      "Water-cement ratio",
+      "Quantity of cement"
+    ],
+    "correct_answer": "C",
+    "rationale": "For comparable materials and adequate compaction and curing, water-cement ratio strongly controls concrete strength.",
+    "pdf_page": 12
+  },
+  {
+    "number": 73,
+    "source_status": "adapted",
+    "question_text": "Which pairing of structural analysis method and primary unknown is incorrect?",
+    "options": [
+      "Castigliano's theorem - displacement from an energy derivative",
+      "Flexibility method - redundant forces",
+      "Stiffness method - redundant forces as primary unknowns",
+      "Displacement method - joint translations and rotations"
+    ],
+    "correct_answer": "C",
+    "rationale": "The stiffness method uses joint displacements as primary unknowns. This replaces ambiguous terminology in the printed matching question.",
+    "pdf_page": 12
+  },
+  {
+    "number": 74,
+    "source_status": "transcribed",
+    "question_text": "In PERT analysis, the frequency distribution of an individual activity duration is conventionally taken as a:",
+    "options": [
+      "Normal distribution",
+      "Beta distribution",
+      "Log-normal distribution",
+      "Gamma distribution"
+    ],
+    "correct_answer": "B",
+    "rationale": "Classical PERT models uncertain individual activity durations using a beta distribution.",
+    "pdf_page": 12
+  },
+  {
+    "number": 75,
+    "source_status": "transcribed",
+    "question_text": "dy/dx is negative for the following gradually varied flow profiles:",
+    "options": [
+      "M1, S2, A2",
+      "A3, A2, M2",
+      "M2, A2, H2",
+      "M2, A2, S3"
+    ],
+    "correct_answer": "C",
+    "rationale": "Using dy/dx = (S0 - Sf)/(1 - Fr²), M2, A2 and H2 profiles have negative depth gradients.",
+    "pdf_page": 13
+  },
+  {
+    "number": 76,
+    "source_status": "adapted",
+    "question_text": "In steel limit-state design, which statement about block-shear resistance of a bolted tension connection is correct?",
+    "options": [
+      "Only net shear area is needed",
+      "Only gross tension area is needed",
+      "Both shear and tension failure paths, with relevant gross and net areas, must be considered",
+      "Bolt diameter alone determines the plate resistance"
+    ],
+    "correct_answer": "C",
+    "rationale": "Block-shear resistance combines shear yielding or rupture with tension rupture or yielding. This replaces the code-table recall question without assuming an unverified edition-specific value.",
+    "pdf_page": 13
+  },
+  {
+    "number": 77,
+    "source_status": "transcribed",
+    "question_text": "The average spacing between vehicles in a traffic stream is 20 m. The density is:",
+    "options": [
+      "120 veh/km",
+      "80 veh/km",
+      "50 veh/km",
+      "20 veh/km"
+    ],
+    "correct_answer": "C",
+    "rationale": "Density is the reciprocal of spacing: 1000/20 = 50 veh/km.",
+    "pdf_page": 13
+  },
+  {
+    "number": 78,
+    "source_status": "transcribed",
+    "question_text": "Convective precipitation is caused by:",
+    "options": [
+      "Rising moist air due to surface heating",
+      "Air passing over mountains and cooling",
+      "Cool air wedging under and lifting warm air",
+      "A frontal mechanism"
+    ],
+    "correct_answer": "A",
+    "rationale": "Surface heating causes buoyant moist air to rise, expand, cool and condense.",
+    "pdf_page": 13
+  },
+  {
+    "number": 79,
+    "source_status": "transcribed",
+    "question_text": "The correct decreasing order of concrete void sizes is:",
+    "options": [
+      "Entrapped > entrained > capillary > gel",
+      "Entrapped > entrained > gel > capillary",
+      "Capillary > entrapped > entrained > gel",
+      "Entrained > entrapped > capillary > gel"
+    ],
+    "correct_answer": "A",
+    "rationale": "Entrapped air voids are largest, followed by intentionally entrained bubbles, capillary pores, and gel pores.",
+    "pdf_page": 13
+  },
+  {
+    "number": 80,
+    "source_status": "adapted",
+    "question_text": "A two-dimensional jet strikes a smooth fixed plate. It splits into opposite streams of equal speed, with discharge ratio 3:1. Neglect losses. What is the angle between the incoming jet and the normal to the plate?",
+    "options": [
+      "45°",
+      "30°",
+      "60°",
+      "75°"
+    ],
+    "correct_answer": "B",
+    "rationale": "Tangential momentum gives sin(theta) = (Q1 - Q2)/(Q1 + Q2) = 1/2, so theta = 30°. The angle reference and assumptions are clarified.",
+    "pdf_page": 13
+  },
+  {
+    "number": 81,
+    "source_status": "transcribed",
+    "question_text": "The Saint-Venant equations for unsteady open-channel flow are the:",
+    "options": [
+      "Continuity and momentum equations",
+      "Energy and continuity equations",
+      "Momentum and energy equations",
+      "Momentum equation in two different forms"
+    ],
+    "correct_answer": "A",
+    "rationale": "The one-dimensional Saint-Venant system consists of conservation of mass and momentum.",
+    "pdf_page": 13
+  },
+  {
+    "number": 82,
+    "source_status": "adapted",
+    "question_text": "Representative Poisson ratios are: magnesium alloy 0.35, cast iron 0.25, aluminium alloy 0.33 and nickel 0.31. What is their increasing order?",
+    "options": [
+      "Nickel, cast iron, magnesium alloy, aluminium alloy",
+      "Magnesium alloy, aluminium alloy, cast iron, nickel",
+      "Cast iron, nickel, aluminium alloy, magnesium alloy",
+      "Aluminium alloy, magnesium alloy, cast iron, nickel"
+    ],
+    "correct_answer": "C",
+    "rationale": "Ordering the specified values gives 0.25 < 0.31 < 0.33 < 0.35. Values are supplied because alloy-dependent ranges can overlap.",
+    "pdf_page": 13
+  },
+  {
+    "number": 83,
+    "source_status": "transcribed",
+    "question_text": "Premature stiffening of cement paste due to conversion of hemihydrate or anhydrite to gypsum can be eliminated by:",
+    "options": [
+      "Reducing C3A content of cement",
+      "Adding accelerating admixtures",
+      "Continuous mixing or reworking",
+      "Reducing gypsum content"
+    ],
+    "correct_answer": "C",
+    "rationale": "False set caused by gypsum recrystallization can be relieved by remixing without adding water.",
+    "pdf_page": 14
+  },
+  {
+    "number": 84,
+    "source_status": "adapted",
+    "question_text": "A hill road has a gradient of 7% and encounters a horizontal curve of radius 100 m. Use grade compensation = min[(30 + R)/R, 75/R] percent. What is the compensated gradient?",
+    "options": [
+      "5.5%",
+      "6.0%",
+      "5.7%",
+      "6.25%"
+    ],
+    "correct_answer": "D",
+    "rationale": "Compensation = min(1.30, 0.75) = 0.75%; compensated gradient = 7 - 0.75 = 6.25%. The design expression is supplied explicitly.",
+    "pdf_page": 14
+  },
+  {
+    "number": 85,
+    "source_status": "adapted",
+    "question_text": "Which arrangement describes a siphon aqueduct?",
+    "options": [
+      "The canal passes below the drain under pressure",
+      "The canal crosses over a drain flowing freely with its HFL below the canal bed",
+      "The canal and drain meet at the same level",
+      "The canal crosses over the drain, but the drain HFL is above the canal bed and the drain is carried below under pressure"
+    ],
+    "correct_answer": "D",
+    "rationale": "A siphon aqueduct carries the canal above a drain that must flow through pressure barrels. The source level-only choices overlap, so the hydraulic arrangements are stated distinctly.",
+    "pdf_page": 14
+  },
+  {
+    "number": 86,
+    "source_status": "transcribed",
+    "question_text": "For a plane strain problem, the number of potentially nonzero independent stress components is:",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "correct_answer": "C",
+    "rationale": "sigma_x, sigma_y, tau_xy and the constrained out-of-plane normal stress sigma_z can be nonzero.",
+    "pdf_page": 14
+  },
+  {
+    "number": 87,
+    "source_status": "transcribed",
+    "question_text": "A plan has scale 1 cm = 100 m. A surveyor measures a distance as 333 m but later finds he used a scale of 1 cm = 25 m. Find the true distance.",
+    "options": [
+      "666 m",
+      "999 m",
+      "1665 m",
+      "1332 m"
+    ],
+    "correct_answer": "D",
+    "rationale": "True distance = 333 x 100/25 = 1332 m.",
+    "pdf_page": 14
+  },
+  {
+    "number": 88,
+    "source_status": "adapted",
+    "question_text": "A long pipe discharges into a large reservoir. Immediately upstream of the submerged outlet, the hydraulic grade line meets the reservoir free surface. Relative to that surface, where is the pipe energy grade line, assuming exit-loss coefficient one?",
+    "options": [
+      "At the liquid surface",
+      "v²/(2g) below it",
+      "v²/(4g) below it",
+      "v²/(2g) above it"
+    ],
+    "correct_answer": "D",
+    "rationale": "EGL is HGL plus velocity head v²/(2g); that head is lost as the jet mixes in the reservoir. The location is clarified.",
+    "pdf_page": 14
+  },
+  {
+    "number": 89,
+    "source_status": "transcribed",
+    "question_text": "A plate-load test gives settlement 15 mm for a 400 mm wide plate. For a 1.2 m footing, how much greater is the predicted settlement on clay than on sand?",
+    "options": [
+      "74.4 mm",
+      "12.4 mm",
+      "15.6 mm",
+      "45.6 mm"
+    ],
+    "correct_answer": "C",
+    "rationale": "Clay: Sf = Sp(Bf/Bp) = 45 mm. Sand: Sf = Sp[Bf(Bp + 0.3)/(Bp(Bf + 0.3))]² = 29.4 mm. Difference = 15.6 mm.",
+    "pdf_page": 14
+  },
+  {
+    "number": 90,
+    "source_status": "adapted",
+    "question_text": "If the governing target-mean-strength expression for a concrete mix is ft = fck + 1.65s, what target mean strength results for fck = 30 MPa and standard deviation s = 5 MPa?",
+    "options": [
+      "35.25 MPa",
+      "36.25 MPa",
+      "33.25 MPa",
+      "38.25 MPa"
+    ],
+    "correct_answer": "D",
+    "rationale": "30 + 1.65 x 5 = 38.25 MPa. The governing expression is supplied rather than presenting a potentially incomplete code requirement.",
+    "pdf_page": 14
+  },
+  {
+    "number": 91,
+    "source_status": "transcribed",
+    "question_text": "Consider these statements from IS 456:2000.\nA. The assumed standard deviation for M15 concrete is 4.0 N/mm^2.\nB. A minimum of 2 samples should be tested for 15 m^3 of concrete.\nC. The basic span-to-effective-depth ratio for a cantilever up to 10 m span is 7.\nD. Design bond stress for M35 concrete, plain bars in tension under the limit-state method, is 1.5 N/mm^2.\nWhich are incorrect?",
+    "options": [
+      "A and B only",
+      "B and D only",
+      "A and D only",
+      "B and C only"
+    ],
+    "correct_answer": "C",
+    "rationale": "The assumed standard deviation for M15 is 3.5 MPa; 6-15 m? requires two samples; basic cantilever ratio is 7; M35 plain-bar tension bond stress is 1.7 MPa. A and D are incorrect.",
+    "pdf_page": 15
+  },
+  {
+    "number": 92,
+    "source_status": "transcribed",
+    "question_text": "A linear speed-density relationship has free-flow speed 100 km/h and jam density 120 veh/km. The maximum flow and its corresponding speed are:",
+    "options": [
+      "6000 veh/h and 100 km/h",
+      "6000 veh/h and 50 km/h",
+      "3000 veh/h and 100 km/h",
+      "3000 veh/h and 50 km/h"
+    ],
+    "correct_answer": "D",
+    "rationale": "For Greenshields flow, qmax = uf kj/4 = 3000 veh/h and speed at capacity is uf/2 = 50 km/h.",
+    "pdf_page": 15
+  },
+  {
+    "number": 93,
+    "source_status": "transcribed",
+    "question_text": "For a beam element with bending moment M, modulus E and second moment I, the flexural rigidity is:",
+    "options": [
+      "M/(EI)",
+      "EI/M",
+      "1/(EI)",
+      "EI"
+    ],
+    "correct_answer": "D",
+    "rationale": "Flexural rigidity is the product EI.",
+    "pdf_page": 15
+  },
+  {
+    "number": 94,
+    "source_status": "transcribed",
+    "question_text": "Boundary-layer separation is promoted when the pressure gradient in the flow direction is:",
+    "options": [
+      "Negative",
+      "Constant",
+      "Zero",
+      "Positive"
+    ],
+    "correct_answer": "D",
+    "rationale": "An adverse pressure gradient, dp/dx > 0, decelerates the boundary layer and can cause separation.",
+    "pdf_page": 15
+  },
+  {
+    "number": 95,
+    "source_status": "adapted",
+    "question_text": "A differential U-tube manometer connects oil and water pipes at the same elevation. The mercury interfaces in both limbs are also at the same lower elevation. Oil specific gravity S1 is less than water specific gravity S2. Which is correct?",
+    "options": [
+      "The pipe pressures are equal",
+      "There is insufficient information to compare pressures",
+      "Water-pipe pressure is higher",
+      "Oil-pipe pressure is higher"
+    ],
+    "correct_answer": "D",
+    "rationale": "At the equal-height mercury interfaces, p_oil + rho_oil gh = p_water + rho_water gh. Thus p_oil > p_water. The scanned diagram is described in words.",
+    "pdf_page": 15
+  },
+  {
+    "number": 96,
+    "source_status": "transcribed",
+    "question_text": "A tube well irrigates 20 hectares of rice. During pumping, the water level is 120.2 m and the highest land level is 129 m. Duty is 800 ha/cumec and pump efficiency is 60%. The input power is:",
+    "options": [
+      "4.32 kW",
+      "3.59 kW",
+      "4.56 kW",
+      "4.82 kW"
+    ],
+    "correct_answer": "B",
+    "rationale": "Q = 20/800 = 0.025 m³/s and H = 8.8 m. Input power = 9.81QH/0.60 = 3.597 kW, approximately 3.59 kW.",
+    "pdf_page": 15
+  },
+  {
+    "number": 97,
+    "source_status": "transcribed",
+    "question_text": "Arrange preparation of brick earth chronologically.\nA. Unsoiling; B. Cleaning; C. Digging; D. Blending; E. Weathering; F. Tempering",
+    "options": [
+      "A, B, C, D, E, F",
+      "A, C, B, D, E, F",
+      "A, F, B, E, D, C",
+      "A, C, B, E, D, F"
+    ],
+    "correct_answer": "D",
+    "rationale": "The conventional sequence is unsoiling, digging, cleaning, weathering, blending and tempering.",
+    "pdf_page": 16
+  },
+  {
+    "number": 98,
+    "source_status": "transcribed",
+    "question_text": "Consider:\nA. Running speed is higher than journey speed.\nB. Journey speed includes delays.\nC. Journey speed is the average while the vehicle is in motion.\nD. Running speed is overall travel speed.\nWhich are correct?",
+    "options": [
+      "C and D only",
+      "A and D only",
+      "A and B only",
+      "B and C only"
+    ],
+    "correct_answer": "C",
+    "rationale": "Running speed excludes stopped delays; journey speed includes them. For a trip with delays, running speed is higher.",
+    "pdf_page": 16
+  },
+  {
+    "number": 99,
+    "source_status": "transcribed",
+    "question_text": "A survey delineating natural features such as hills, rivers and forests and man-made features such as towns, buildings, roads, transmission lines and canals is a:",
+    "options": [
+      "Land survey",
+      "Topographic survey",
+      "Geological survey",
+      "Engineering survey"
+    ],
+    "correct_answer": "B",
+    "rationale": "Topographic surveys map both natural and constructed surface features.",
+    "pdf_page": 16
+  },
+  {
+    "number": 100,
+    "source_status": "transcribed",
+    "question_text": "Give the decreasing order of the number of potentially nonzero independent stress components.\nA. Axially loaded member\nB. Plane strain\nC. Plane stress\nD. General three-dimensional stress at a point",
+    "options": [
+      "D, B, C, A",
+      "C, D, B, A",
+      "B, D, C, A",
+      "D, C, B, A"
+    ],
+    "correct_answer": "A",
+    "rationale": "The respective numbers are 6, 4, 3 and 1.",
+    "pdf_page": 16
+  },
+  {
+    "number": 101,
+    "source_status": "adapted",
+    "question_text": "A 300 mm wide, 6 mm thick steel tension plate has two 22 mm diameter bolt holes on its critical straight section, perpendicular to the force. Neglect stagger and shear lag. What is its net area?",
+    "options": [
+      "1536 mm²",
+      "1473.24 mm²",
+      "1481.14 mm²",
+      "1503.43 mm²"
+    ],
+    "correct_answer": "A",
+    "rationale": "An = (300 - 2 x 22) x 6 = 1536 mm². The source staggered bolt diagram is replaced with a specified straight net section covering the same net-area concept.",
+    "pdf_page": 16
+  },
+  {
+    "number": 102,
+    "source_status": "adapted",
+    "question_text": "Match the surveying operation or instrument with its principal function.\nA. Tacheometry; B. Contouring; C. Levelling; D. Theodolite; E. Compass\ni. Bearing; ii. Indirect distance and elevation measurement; iii. Horizontal and vertical angles; iv. Elevation difference; v. Lines of equal elevation",
+    "options": [
+      "A-i, B-iv, C-v, D-ii, E-iii",
+      "A-ii, B-v, C-iv, D-iii, E-i",
+      "A-iii, B-i, C-ii, D-v, E-iv",
+      "A-ii, B-iii, C-i, D-iv, E-v"
+    ],
+    "correct_answer": "B",
+    "rationale": "The printed right-hand descriptions do not produce a valid full matching. They are corrected to the actual functions of these surveying methods.",
+    "pdf_page": 16
+  },
+  {
+    "number": 103,
+    "source_status": "transcribed",
+    "question_text": "Match the road sign to its shape.\nA. Cautionary; B. Indication; C. Yield; D. Prohibitory; E. Stop\ni. Downward equilateral triangle; ii. Octagon; iii. Upward equilateral triangle; iv. Rectangle; v. Circle",
+    "options": [
+      "A-i, B-ii, C-iii, D-iv, E-v",
+      "A-v, B-iv, C-ii, D-i, E-iii",
+      "A-ii, B-i, C-v, D-iii, E-iv",
+      "A-iii, B-iv, C-i, D-v, E-ii"
+    ],
+    "correct_answer": "D",
+    "rationale": "Conventional warning signs are triangular, information signs rectangular, yield signs inverted triangles, prohibitory signs circular and stop signs octagonal.",
+    "pdf_page": 17
+  },
+  {
+    "number": 104,
+    "source_status": "transcribed",
+    "question_text": "Dry sand fails in a triaxial test at major and minor principal stresses 900 and 250 kN/m². In direct shear at normal stress 100 kN/m², the failure shear stress is:",
+    "options": [
+      "68.5 kN/m²",
+      "575 kN/m²",
+      "550 kN/m²",
+      "650 kN/m²"
+    ],
+    "correct_answer": "A",
+    "rationale": "sin(phi) = (900 - 250)/(900 + 250) = 650/1150. Then tau = 100 tan(phi) = 68.5 kN/m².",
+    "pdf_page": 17
+  },
+  {
+    "number": 105,
+    "source_status": "transcribed",
+    "question_text": "Corrosion of reinforcement in concrete can be caused by ingress of:",
+    "options": [
+      "Sulphates and chlorides",
+      "Carbon dioxide and alkalis",
+      "Alkalis and sulphates",
+      "Chlorides and carbon dioxide"
+    ],
+    "correct_answer": "D",
+    "rationale": "Chlorides damage passivity and carbonation by CO2 reduces alkalinity around steel.",
+    "pdf_page": 17
+  },
+  {
+    "number": 106,
+    "source_status": "transcribed",
+    "question_text": "Calculate critical depth for discharge 8 m³/s in a rectangular channel 4 m wide. Take g = 10 m/s².",
+    "options": [
+      "(0.5)^(1/3) m",
+      "(0.4)^(1/3) m",
+      "(0.2)^(1/3) m",
+      "(0.8)^(1/3) m"
+    ],
+    "correct_answer": "B",
+    "rationale": "yc = (q²/g)^(1/3) with q = 8/4 = 2 m²/s, giving (0.4)^(1/3) m.",
+    "pdf_page": 17
+  },
+  {
+    "number": 107,
+    "source_status": "transcribed",
+    "question_text": "A 50 cm x 50 cm precast pile is driven into clay of unconfined compressive strength 220 kN/m², adhesion factor 0.6. What pile length carries safe load 450 kN with factor of safety 2.5?",
+    "options": [
+      "6.647 m",
+      "10.23 m",
+      "2 m",
+      "3.3 m"
+    ],
+    "correct_answer": "A",
+    "rationale": "cu = 110 kPa; ultimate capacity = 9cu Ap + alpha cu perimeter L. Thus 1125 = 247.5 + 132L, giving L = 6.647 m.",
+    "pdf_page": 17
+  },
+  {
+    "number": 108,
+    "source_status": "transcribed",
+    "question_text": "What is the anchorage length of a diameter-d Fe415 bar in an M30 concrete column in compression? Assume steel stress sigma_s = 0.75fy.",
+    "options": [
+      "41.50d",
+      "51.87d",
+      "32.42d",
+      "25.94d"
+    ],
+    "correct_answer": "D",
+    "rationale": "Plain-bar tension bond stress for M30 is 1.5 MPa. Applying 1.6 for deformed bars and 1.25 for compression gives 3 MPa. Ld/d = (0.75 x 415)/(4 x 3) = 25.94.",
+    "pdf_page": 17
+  },
+  {
+    "number": 109,
+    "source_status": "transcribed",
+    "question_text": "What weight of water, in kN per m³, must be added to saturate soil with specific gravity 2.7, water content 20% and void ratio 0.72?",
+    "options": [
+      "1.025",
+      "0.51",
+      "9.81",
+      "10.025"
+    ],
+    "correct_answer": "A",
+    "rationale": "Additional water per bulk volume = gamma_w(e - wGs)/(1 + e) = 9.81(0.72 - 0.54)/1.72 = 1.027 kN/m³, closest to 1.025.",
+    "pdf_page": 17
+  },
+  {
+    "number": 110,
+    "source_status": "transcribed",
+    "question_text": "A point load of 500 kN acts on a thick saturated clay layer. Using Boussinesq elastic analysis, estimate vertical stress at depth 3 m and radial distance 2 m from the load.",
+    "options": [
+      "6.7 kPa",
+      "2.3 kPa",
+      "5.5 kPa",
+      "10.58 kPa"
+    ],
+    "correct_answer": "D",
+    "rationale": "sigma_z = [3Q/(2pi z²)]/[1 + (r/z)²]^(5/2) = 10.58 kPa.",
+    "pdf_page": 17
+  },
+  {
+    "number": 111,
+    "source_status": "adapted",
+    "question_text": "Which statements about concrete durability are correct?\nA. Chlorides can destroy the passive film around embedded steel.\nB. Small quantities of sugar can retard setting.\nC. Properly entrained air improves resistance to freezing and thawing.\nD. Carbonation always increases the protective alkalinity around steel.",
+    "options": [
+      "A and B only",
+      "B and C only",
+      "A, B and C only",
+      "A and D only"
+    ],
+    "correct_answer": "C",
+    "rationale": "Chlorides promote corrosion, sugar may retard setting, and entrained air protects against freeze-thaw damage. Carbonation reduces alkalinity. The scan's water chloride unit is ambiguous and is not used as a limit.",
+    "pdf_page": 17
+  },
+  {
+    "number": 112,
+    "source_status": "adapted",
+    "question_text": "A simply supported beam of span 4 m has a plastic moment capacity Mp and carries a central point load of 60 kN. Neglect shear failure. What Mp is required at plastic collapse?",
+    "options": [
+      "53.33 kN m",
+      "36.92 kN m",
+      "60 kN m",
+      "63.33 kN m"
+    ],
+    "correct_answer": "C",
+    "rationale": "A third hinge at midspan forms a mechanism; Mp = WL/4 = 60 kN m. This replaces the scanned unequal-height portal mechanism with a directly specified plastic-collapse question.",
+    "pdf_page": 18
+  },
+  {
+    "number": 113,
+    "source_status": "transcribed",
+    "question_text": "The extra widening for a three-lane national highway on a curve of radius 900 m, with wheelbase 6 m and design speed 100 km/h, is:",
+    "options": [
+      "0.41 m",
+      "0.61 m",
+      "0.51 m",
+      "0.31 m"
+    ],
+    "correct_answer": "A",
+    "rationale": "We = nl²/(2R) + V/(9.5 sqrt(R)) = 3 x 36/1800 + 100/(9.5 x 30) = 0.411 m.",
+    "pdf_page": 18
+  },
+  {
+    "number": 114,
+    "source_status": "transcribed",
+    "question_text": "A 24-hour rainfall of 50 cm at a hilly station has return period 50 years. Assuming independent years, what is the probability that it is equalled or exceeded in each of three succeeding years?",
+    "options": [
+      "8 x 10^-4",
+      "8 x 10^-6",
+      "6 x 10^-6",
+      "4 x 10^-6"
+    ],
+    "correct_answer": "B",
+    "rationale": "Annual exceedance probability is 1/50. All three years: (1/50)³ = 8 x 10^-6.",
+    "pdf_page": 18
+  },
+  {
+    "number": 115,
+    "source_status": "transcribed",
+    "question_text": "For a three-dimensional problem, the stress components together form a tensor of order:",
+    "options": [
+      "0",
+      "3",
+      "2",
+      "1"
+    ],
+    "correct_answer": "C",
+    "rationale": "Cauchy stress is a second-order tensor.",
+    "pdf_page": 18
+  },
+  {
+    "number": 116,
+    "source_status": "transcribed",
+    "question_text": "Observed whole-circle bearings are:\nPQ 45°15', QP 225°15'\nQR 107°15', RQ 286°15'\nRS 202°30', SR 21°30'\nST 320°45', TS 141°45'\nWhich stations are most likely affected by local attraction?",
+    "options": [
+      "Only R",
+      "Q and R",
+      "R and S",
+      "Only S"
+    ],
+    "correct_answer": "C",
+    "rationale": "Taking P and Q as unaffected since PQ and QP differ by 180°, station R has a -1° error. Using RS gives a -2° error at S. The discrepancies are consistent with R and S being affected.",
+    "pdf_page": 18
+  },
+  {
+    "number": 117,
+    "source_status": "adapted",
+    "question_text": "For a broad-gauge transition, actual cant is 120 mm, cant deficiency is 85 mm and speed is 100 km/h. Use L = max(0.008CaV, 0.008CdV, 0.72Ca), with cants in mm and L in metres. What transition length is required?",
+    "options": [
+      "96.0 m",
+      "89.4 m",
+      "87.6 m",
+      "62.04 m"
+    ],
+    "correct_answer": "A",
+    "rationale": "The three criteria give 96, 68 and 86.4 m. The maximum is 96 m. The formula is supplied and the missing correct printed option is repaired.",
+    "pdf_page": 18
+  },
+  {
+    "number": 118,
+    "source_status": "transcribed",
+    "question_text": "The approximate nominal mix proportion for M20 concrete is:",
+    "options": [
+      "1 : 1.5 : 3",
+      "1 : 4 : 8",
+      "1 : 1.5 : 2",
+      "1 : 2 : 4"
+    ],
+    "correct_answer": "A",
+    "rationale": "The conventional approximate nominal cement:sand:coarse aggregate proportion for M20 is 1:1.5:3.",
+    "pdf_page": 18
+  },
+  {
+    "number": 119,
+    "source_status": "transcribed",
+    "question_text": "In gradually varied flow with positive dy/dx, the specific-energy gradient dE/dx is:",
+    "options": [
+      "S0 - Sf",
+      "S0(1 - F²)",
+      "S0 - Sf - dy/dx",
+      "Sf - S0"
+    ],
+    "correct_answer": "A",
+    "rationale": "The energy equation gives dE/dx = S0 - Sf, where E is measured relative to the bed.",
+    "pdf_page": 18
+  },
+  {
+    "number": 120,
+    "source_status": "adapted",
+    "question_text": "A retaining wall 8 m high has a smooth vertical back and retains horizontal clay backfill with c' = 15 kPa, phi' = 15° and gamma = 18 kN/m³. Assume dry tension cracks develop to their full theoretical depth. What is the total active thrust per metre of wall, approximately?",
+    "options": [
+      "23 kN/m",
+      "20 kN/m",
+      "46 kN/m",
+      "180 kN/m"
+    ],
+    "correct_answer": "D",
+    "rationale": "Ka = tan²(45° - 7.5°) = 0.5888; zc = 2c/(gamma sqrt(Ka)) = 2.172 m. Pa = 0.5 Ka gamma(8 - zc)² = 180.0 kN/m. The printed options and thrust units are corrected.",
+    "pdf_page": 18
+  },
+  {
+    "number": 121,
+    "source_status": "transcribed",
+    "question_text": "Match the contract terms.\nA. Earnest money deposit; B. Security deposit; C. Arbitration; D. Tender\ni. Dispute settlement by a third person's decision\nii. Written offer to execute specified works\niii. Deposit safeguarding the owner against improper contractual performance\niv. Guarantee to keep an offer open for consideration",
+    "options": [
+      "A-iv, B-iii, C-i, D-ii",
+      "A-ii, B-i, C-iv, D-iii",
+      "A-i, B-ii, C-iv, D-iii",
+      "A-iii, B-iv, C-i, D-ii"
+    ],
+    "correct_answer": "A",
+    "rationale": "Earnest money backs a bid, security backs performance, arbitration settles disputes, and a tender is a formal offer.",
+    "pdf_page": 19
+  },
+  {
+    "number": 122,
+    "source_status": "adapted",
+    "question_text": "Which statement correctly describes a diurnal magnetic variation in compass surveying?",
+    "options": [
+      "A change in magnetic declination over a day",
+      "A change in the length of a steel tape due to temperature",
+      "A permanent change in the survey station coordinates",
+      "A change in the earth's radius at the station"
+    ],
+    "correct_answer": "A",
+    "rationale": "Diurnal variation is the daily variation of magnetic declination. The source's absolute seasonal and geographic generalizations are replaced by the definition.",
+    "pdf_page": 19
+  },
+  {
+    "number": 123,
+    "source_status": "transcribed",
+    "question_text": "An instantaneous unit hydrograph is a hydrograph of:",
+    "options": [
+      "Unit duration and indefinitely small rainfall excess",
+      "Instant runoff from a unit area of catchment",
+      "Infinitely small duration and unit rainfall excess",
+      "Instant duration and infinite rainfall excess"
+    ],
+    "correct_answer": "C",
+    "rationale": "An IUH is the response to a unit effective rainfall depth applied over an infinitesimal duration.",
+    "pdf_page": 19
+  },
+  {
+    "number": 124,
+    "source_status": "adapted",
+    "question_text": "Order these plane structures by increasing static indeterminacy, neglecting axial-force redundancies in the continuous beams.\nA. Two-span beam, pin at one end and rollers at the other supports\nB. Two-span beam, fixed at one end and rollers at the other supports\nC. Fixed-fixed beam with two internal hinges\nD. One-bay one-storey frame, both bases fixed, with no internal hinge",
+    "options": [
+      "C, A, D, B",
+      "C, A, B, D",
+      "C, B, D, A",
+      "C, D, B, A"
+    ],
+    "correct_answer": "B",
+    "rationale": "The conventional flexural redundancy counts are 0, 1, 2 and 3 respectively for C, A, B and D. Assumptions on axial redundancies are made explicit.",
+    "pdf_page": 19
+  },
+  {
+    "number": 125,
+    "source_status": "adapted",
+    "question_text": "A plane portal frame has a horizontal 5 m beam connecting the tops of two columns of heights 10 m and 6 m. Both bases are fixed. Neglect axial deformations, retain sidesway and do not introduce a joint at an intermediate point load. What is its kinematic indeterminacy?",
+    "options": [
+      "2",
+      "4",
+      "1",
+      "3"
+    ],
+    "correct_answer": "D",
+    "rationale": "There are two top-joint rotations and one common lateral translation, giving three degrees of freedom. The source geometry and modelling assumptions are stated in words.",
+    "pdf_page": 19
+  },
+  {
+    "number": 126,
+    "source_status": "transcribed",
+    "question_text": "An isogonic line is a line of:",
+    "options": [
+      "Positive declination",
+      "Negative declination",
+      "Same declination",
+      "Zero declination"
+    ],
+    "correct_answer": "C",
+    "rationale": "An isogonic line joins points of equal magnetic declination; zero declination defines an agonic line.",
+    "pdf_page": 19
+  },
+  {
+    "number": 127,
+    "source_status": "adapted",
+    "question_text": "For a weir floor, use Khosla's exit-gradient formula Ge = H/[pi d sqrt(lambda)], with lambda = [1 + sqrt(1 + (b/d)²)]/2. If H = 2.4 m and floor length b = 21.45 m, which listed downstream cutoff depth most nearly gives Ge = 1/5?",
+    "options": [
+      "2.56 m",
+      "0.64 m",
+      "1.28 m",
+      "0.9 m"
+    ],
+    "correct_answer": "C",
+    "rationale": "Substituting d = 1.28 m gives Ge approximately 0.200. The design equation is supplied to make the idealization explicit.",
+    "pdf_page": 19
+  },
+  {
+    "number": 128,
+    "source_status": "transcribed",
+    "question_text": "For a pure shear state of positive shear stress tau_xy, what is the maximum principal stress?",
+    "options": [
+      "tau_xy/2",
+      "tau_xy",
+      "sqrt(tau_xy)",
+      "2tau_xy"
+    ],
+    "correct_answer": "B",
+    "rationale": "The in-plane principal stresses are +tau_xy and -tau_xy.",
+    "pdf_page": 20
+  },
+  {
+    "number": 129,
+    "source_status": "adapted",
+    "question_text": "A confined aquifer of thickness 5 m discharges 20 L/s through a well of radius 0.3 m. Drawdown is 2 m and radius of influence 300 m. Under steady radial Darcy flow, what is the coefficient of permeability in m/s?",
+    "options": [
+      "0.0001 ln(1000)/pi",
+      "0.001 ln(1000)/pi",
+      "0.011 ln(1000)/pi",
+      "0.101 ln(1000)/pi"
+    ],
+    "correct_answer": "B",
+    "rationale": "k = Q ln(R/r)/(2pi b s) = 0.02 ln(1000)/(2pi x 5 x 2) = 0.001 ln(1000)/pi. Parentheses are clarified from the scan.",
+    "pdf_page": 20
+  },
+  {
+    "number": 130,
+    "source_status": "transcribed",
+    "question_text": "A triangular channel section is hydraulically efficient when its vertex angle is:",
+    "options": [
+      "90°",
+      "75°",
+      "30°",
+      "120°"
+    ],
+    "correct_answer": "A",
+    "rationale": "The most efficient symmetric triangular section has side slopes 1H:1V, giving a 90° vertex angle.",
+    "pdf_page": 20
+  },
+  {
+    "number": 131,
+    "source_status": "transcribed",
+    "question_text": "Consider:\nA. Cumulative errors are more important than compensating errors.\nB. All cumulative errors are equally important.\nC. Repeated measurements make accidental errors more likely to disappear from the mean.\nD. Temperature variation produces a compensating error.\nWhich statements are correct?",
+    "options": [
+      "A and B",
+      "B and D",
+      "A and C",
+      "B and C"
+    ],
+    "correct_answer": "C",
+    "rationale": "Systematic errors accumulate, whereas random effects tend to reduce in a mean. Temperature errors require systematic correction.",
+    "pdf_page": 20
+  },
+  {
+    "number": 132,
+    "source_status": "transcribed",
+    "question_text": "A line measured with a nominal 25 m chain is found to be 300 m. What is its true length if the chain is 15 cm too long?",
+    "options": [
+      "300.2 m",
+      "298.2 m",
+      "251.5 m",
+      "301.8 m"
+    ],
+    "correct_answer": "D",
+    "rationale": "True length = measured length x actual chain length/nominal length = 300 x 25.15/25 = 301.8 m.",
+    "pdf_page": 20
+  },
+  {
+    "number": 133,
+    "source_status": "transcribed",
+    "question_text": "Match construction work with fresh-concrete requirements.\nA. Road; B. Mass concrete; C. Heavily reinforced RCC section; D. RCC with congested reinforcement\ni. High workability and semi-fluid consistency\nii. Very low workability and very dry consistency\niii. Low workability and dry consistency\niv. Medium workability and plastic consistency",
+    "options": [
+      "A-iii, B-ii, C-i, D-iv",
+      "A-ii, B-iv, C-i, D-iii",
+      "A-iii, B-iv, C-i, D-ii",
+      "A-ii, B-iii, C-iv, D-i"
+    ],
+    "correct_answer": "D",
+    "rationale": "The conventional progression is very low workability for mechanically compacted roads, low for mass concrete, medium for reinforced work and high for congested reinforcement.",
+    "pdf_page": 20
+  },
+  {
+    "number": 134,
+    "source_status": "transcribed",
+    "question_text": "A level is 1.350 m above a station of RL 102.365 m. It reads -3.735 m on an inverted staff held at the bottom of a bridge deck. What is the RL of the deck bottom?",
+    "options": [
+      "104.75 m",
+      "116.72 m",
+      "107.45 m",
+      "99.98 m"
+    ],
+    "correct_answer": "C",
+    "rationale": "Height of instrument = 103.715 m. RL = HI - (-3.735) = 107.450 m.",
+    "pdf_page": 20
+  },
+  {
+    "number": 135,
+    "source_status": "adapted",
+    "question_text": "For a bridge abutment restrained sufficiently to prevent the lateral movement required to mobilize active conditions, which lateral earth pressure should be considered?",
+    "options": [
+      "Active earth pressure",
+      "At-rest earth pressure",
+      "Zero earth pressure",
+      "Passive earth pressure on the retained backfill"
+    ],
+    "correct_answer": "B",
+    "rationale": "A restrained abutment does not undergo the displacement needed for active pressure. The restraint assumption is added because the original generic abutment question is ambiguous.",
+    "pdf_page": 21
+  },
+  {
+    "number": 136,
+    "source_status": "transcribed",
+    "question_text": "For a catchment, the S-curve due to rainfall intensity 1 cm/h is Q = 3 - (2 + t)t^-2, with t in hours and Q in m³/s. At t = 1 hour, the instantaneous unit hydrograph ordinate is:",
+    "options": [
+      "5 m³/s",
+      "50 m³/s",
+      "3 m³/s",
+      "500 m³/s"
+    ],
+    "correct_answer": "A",
+    "rationale": "For the specified unit rainfall intensity, the IUH ordinate is dQ/dt = t^-2 + 4t^-3, which equals 5 at t = 1.",
+    "pdf_page": 21
+  },
+  {
+    "number": 137,
+    "source_status": "transcribed",
+    "question_text": "The inner dimensions of a room are 6 m x 5 m with wall thickness 35 cm. Its total centre-line length is:",
+    "options": [
+      "21.2 m",
+      "25.0 m",
+      "36.0 m",
+      "23.4 m"
+    ],
+    "correct_answer": "D",
+    "rationale": "Centre-line dimensions are 6.35 and 5.35 m. Perimeter = 2(6.35 + 5.35) = 23.4 m.",
+    "pdf_page": 21
+  },
+  {
+    "number": 138,
+    "source_status": "transcribed",
+    "question_text": "A rectangular channel 2 m wide carries 10 m³/s at depth 2 m. Calculate its specific energy.",
+    "options": [
+      "1.8 m",
+      "4.6 m",
+      "2.3 m",
+      "3.0 m"
+    ],
+    "correct_answer": "C",
+    "rationale": "Velocity = 10/(2 x 2) = 2.5 m/s. E = 2 + 2.5²/(2 x 9.81) = 2.319 m, approximately 2.3 m.",
+    "pdf_page": 21
+  },
+  {
+    "number": 139,
+    "source_status": "transcribed",
+    "question_text": "A road has design speed 72 km/h, driver reaction time 2 s and pavement friction coefficient 0.30. The required stopping distance for two-lane two-way traffic is:",
+    "options": [
+      "40.0 m",
+      "43.30 m",
+      "106.67 m",
+      "96.6 m"
+    ],
+    "correct_answer": "C",
+    "rationale": "Lag distance = 20 x 2 = 40 m; braking distance using g = 10 m/s² is 20²/(2 x 10 x 0.30) = 66.67 m. Total = 106.67 m.",
+    "pdf_page": 21
+  },
+  {
+    "number": 140,
+    "source_status": "transcribed",
+    "question_text": "The centre of buoyancy of a submerged body:",
+    "options": [
+      "Coincides with the body's centre of gravity",
+      "Is always above the centroid of displaced liquid",
+      "Is always below the body's centre of gravity",
+      "Coincides with the centroid of displaced fluid volume"
+    ],
+    "correct_answer": "D",
+    "rationale": "The buoyant force acts through the centroid of the displaced fluid volume.",
+    "pdf_page": 21
+  },
+  {
+    "number": 141,
+    "source_status": "adapted",
+    "question_text": "Which chaining error is normally systematic and cumulative rather than random?",
+    "options": [
+      "Reading to the nearest graduation with errors of either sign",
+      "A consistently incorrect tape length",
+      "Small accidental variations in observer estimation",
+      "Unbiased rounding of repeated readings"
+    ],
+    "correct_answer": "B",
+    "rationale": "A tape whose actual length differs consistently from its nominal length biases every measured segment. The source mixes overlapping mistake/blunder terminology, so a definite error-classification question is used.",
+    "pdf_page": 21
+  },
+  {
+    "number": 142,
+    "source_status": "adapted",
+    "question_text": "Which statement defines a homogeneous elastic material?",
+    "options": [
+      "Its elastic properties are identical at all spatial points, although they may depend on direction",
+      "Its modulus must be equal in all directions at a point",
+      "Its modulus must change from point to point",
+      "It has no shear modulus"
+    ],
+    "correct_answer": "A",
+    "rationale": "Homogeneity concerns invariance with position; it does not require isotropy. The printed tensor-direction options are replaced by a precise definition.",
+    "pdf_page": 21
+  },
+  {
+    "number": 143,
+    "source_status": "adapted",
+    "question_text": "A staff reading is 4.935 m while the staff top is displaced horizontally by 0.20 m from the vertical through its foot. What is the corrected vertical staff reading?",
+    "options": [
+      "4.735 m",
+      "4.931 m",
+      "4.939 m",
+      "5.135 m"
+    ],
+    "correct_answer": "B",
+    "rationale": "The vertical projection is sqrt(4.935² - 0.20²) = 4.93095 m. The source asks for error but offers corrected readings, so the requested quantity is clarified.",
+    "pdf_page": 21
+  },
+  {
+    "number": 144,
+    "source_status": "transcribed",
+    "question_text": "Sand in the bed of a 20 m deep pond has saturated unit weight 20 kN/m³. Water unit weight is 10 kN/m³. What is effective stress 4 m below the pond bed?",
+    "options": [
+      "20 kN/m²",
+      "80 kN/m²",
+      "60 kN/m²",
+      "40 kN/m²"
+    ],
+    "correct_answer": "D",
+    "rationale": "Effective stress is submerged soil weight: (20 - 10) x 4 = 40 kPa. The overlying water adds equal total and pore pressures.",
+    "pdf_page": 22
+  },
+  {
+    "number": 145,
+    "source_status": "transcribed",
+    "question_text": "Consider:\nA. Low-heat cement is produced by reducing tricalcium aluminate and increasing dicalcium silicate.\nB. Rapid-hardening cement is produced by decreasing tricalcium silicate.\nIdentify the correct statement.",
+    "options": [
+      "B is true and A is false",
+      "Both A and B are true",
+      "Both A and B are false",
+      "B is false and A is true"
+    ],
+    "correct_answer": "D",
+    "rationale": "Low-heat cement uses lower C3A and greater C2S. Rapid-hardening cement generally has higher C3S and finer grinding.",
+    "pdf_page": 22
+  },
+  {
+    "number": 146,
+    "source_status": "adapted",
+    "question_text": "An oven-dry soil sample has volume 250 cm³ and mass 430 g. Specific gravity of solids is 2.70. What water content, by dry mass, will just saturate the sample?",
+    "options": [
+      "29.8%",
+      "73.1%",
+      "21.1%",
+      "26.9%"
+    ],
+    "correct_answer": "C",
+    "rationale": "Solid volume = 430/2.70 = 159.259 cm³, so void volume = 90.741 cm³. Water content at saturation = 90.741/430 x 100 = 21.10%. The missing correct option is supplied.",
+    "pdf_page": 22
+  },
+  {
+    "number": 147,
+    "source_status": "transcribed",
+    "question_text": "A catchment has phi-index 0.4 cm/h. Rainfall of 2.4 cm occurs uniformly over an 8-hour storm. What is the direct-runoff depth?",
+    "options": [
+      "0.8 cm",
+      "2.8 cm",
+      "2 cm",
+      "0"
+    ],
+    "correct_answer": "D",
+    "rationale": "Rainfall intensity is 2.4/8 = 0.3 cm/h, below the phi-index, so there is no rainfall excess.",
+    "pdf_page": 22
+  },
+  {
+    "number": 148,
+    "source_status": "adapted",
+    "question_text": "Arrange the historical stages of Indian railway organization chronologically.\nA. Integration and regrouping\nB. Modified guarantee system\nC. Old guarantee system\nD. State construction and ownership\nE. Nationalization",
+    "options": [
+      "A, C, B, D, E",
+      "D, E, A, B, C",
+      "C, D, B, E, A",
+      "E, D, B, A, C"
+    ],
+    "correct_answer": "C",
+    "rationale": "The conventional sequence is old guarantee, state construction, modified guarantee, nationalization, then post-independence integration and regrouping. Indian railways are specified because the printed stem omits the subject.",
+    "pdf_page": 22
+  },
+  {
+    "number": 149,
+    "source_status": "transcribed",
+    "question_text": "The hydraulic radius of a hydraulically efficient triangular channel is, for water depth y:",
+    "options": [
+      "2 sqrt(2)y",
+      "y",
+      "y/2",
+      "y/[2 sqrt(2)]"
+    ],
+    "correct_answer": "D",
+    "rationale": "For optimal side slope 1H:1V, area = y² and wetted perimeter = 2sqrt(2)y. Thus R = y/[2sqrt(2)].",
+    "pdf_page": 22
+  },
+  {
+    "number": 150,
+    "source_status": "adapted",
+    "question_text": "An ideal column of length L and constant rigidity EI is fixed at the bottom. At the top, an axial guide allows vertical movement but prevents lateral displacement and rotation. What is the Euler critical load?",
+    "options": [
+      "pi²EI/L²",
+      "4pi²EI/L²",
+      "2.046pi²EI/L²",
+      "pi²EI/(4L²)"
+    ],
+    "correct_answer": "B",
+    "rationale": "Both ends restrain lateral displacement and rotation, so effective length is L/2 and Pcr = 4pi²EI/L². The top-guide restraints in the source diagram are made explicit.",
+    "pdf_page": 22
+  }
+]

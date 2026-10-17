@@ -1,0 +1,3001 @@
+[
+  {
+    "code": "ME",
+    "branch": "Mechanical Engineering",
+    "branch_code": "ME",
+    "title": "GATE 2025 Mechanical Engineering",
+    "paper_url": "https://gate2025.iitr.ac.in/doc/2025/2025_QP/ME.pdf",
+    "key_url": "https://gate2025.iitr.ac.in/doc/2025/2025_Key/ME_Keys.pdf",
+    "paper_sha256": "8ebeee660dfd0d312e30a1b91cfc9052cbdbb89ff474d329425e77b2e13e200f",
+    "key_sha256": "b434d7c27aef0c6e40f89973ed22cd4e299fab26b5a48f7eaa1fc35df075d3bc",
+    "questions": [
+      {
+        "number": 1,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 1
+      },
+      {
+        "number": 2,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 2
+      },
+      {
+        "number": 3,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 3
+      },
+      {
+        "number": 4,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 4
+      },
+      {
+        "number": 5,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 5
+      },
+      {
+        "number": 6,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 6
+      },
+      {
+        "number": 7,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 7
+      },
+      {
+        "number": 8,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 8
+      },
+      {
+        "number": 9,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 9
+      },
+      {
+        "number": 10,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 9
+      },
+      {
+        "number": 11,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 10
+      },
+      {
+        "number": 12,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 10
+      },
+      {
+        "number": 13,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 11
+      },
+      {
+        "number": 14,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 11
+      },
+      {
+        "number": 15,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 12
+      },
+      {
+        "number": 16,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 13
+      },
+      {
+        "number": 17,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 14
+      },
+      {
+        "number": 18,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 15
+      },
+      {
+        "number": 19,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 15
+      },
+      {
+        "number": 20,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 16
+      },
+      {
+        "number": 21,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 16
+      },
+      {
+        "number": 22,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 17
+      },
+      {
+        "number": 23,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 17
+      },
+      {
+        "number": 24,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 18
+      },
+      {
+        "number": 25,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 18
+      },
+      {
+        "number": 26,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 19
+      },
+      {
+        "number": 27,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 20
+      },
+      {
+        "number": 28,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 21
+      },
+      {
+        "number": 29,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 22
+      },
+      {
+        "number": 30,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 22
+      },
+      {
+        "number": 31,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              1.61,
+              1.65
+            ]
+          ]
+        },
+        "pdf_page": 23
+      },
+      {
+        "number": 32,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              5.5,
+              5.9
+            ]
+          ]
+        },
+        "pdf_page": 23
+      },
+      {
+        "number": 33,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              9.92,
+              9.98
+            ]
+          ]
+        },
+        "pdf_page": 23
+      },
+      {
+        "number": 34,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              189.8,
+              190.0
+            ]
+          ]
+        },
+        "pdf_page": 24
+      },
+      {
+        "number": 35,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.7,
+              0.72
+            ]
+          ]
+        },
+        "pdf_page": 24
+      },
+      {
+        "number": 36,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 25
+      },
+      {
+        "number": 37,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 25
+      },
+      {
+        "number": 38,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 26
+      },
+      {
+        "number": 39,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 27
+      },
+      {
+        "number": 40,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 28
+      },
+      {
+        "number": 41,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 29
+      },
+      {
+        "number": 42,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 30
+      },
+      {
+        "number": 43,
+        "session": 3,
+        "response_type": "MCQ",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 31
+      },
+      {
+        "number": 44,
+        "session": 3,
+        "response_type": "MSQ",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "C"
+          ]
+        },
+        "pdf_page": 31
+      },
+      {
+        "number": 45,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              -0.1,
+              0.1
+            ]
+          ]
+        },
+        "pdf_page": 32
+      },
+      {
+        "number": 46,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.9,
+              1.1
+            ]
+          ]
+        },
+        "pdf_page": 32
+      },
+      {
+        "number": 47,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.45,
+              0.55
+            ]
+          ]
+        },
+        "pdf_page": 32
+      },
+      {
+        "number": 48,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              308.0,
+              310.0
+            ]
+          ]
+        },
+        "pdf_page": 33
+      },
+      {
+        "number": 49,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              80.0,
+              83.0
+            ]
+          ]
+        },
+        "pdf_page": 34
+      },
+      {
+        "number": 50,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              2.9,
+              3.1
+            ]
+          ]
+        },
+        "pdf_page": 34
+      },
+      {
+        "number": 51,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              6.5,
+              6.8
+            ]
+          ]
+        },
+        "pdf_page": 35
+      },
+      {
+        "number": 52,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              98.5,
+              101.5
+            ]
+          ]
+        },
+        "pdf_page": 35
+      },
+      {
+        "number": 53,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              1197.0,
+              1203.0
+            ]
+          ]
+        },
+        "pdf_page": 36
+      },
+      {
+        "number": 54,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              99.0,
+              101.0
+            ]
+          ]
+        },
+        "pdf_page": 36
+      },
+      {
+        "number": 55,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.95,
+              1.1
+            ]
+          ]
+        },
+        "pdf_page": 36
+      },
+      {
+        "number": 56,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              -0.29,
+              -0.25
+            ],
+            [
+              0.25,
+              0.29
+            ]
+          ]
+        },
+        "pdf_page": 37
+      },
+      {
+        "number": 57,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        "pdf_page": 37
+      },
+      {
+        "number": 58,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              1.0,
+              1.1
+            ]
+          ]
+        },
+        "pdf_page": 38
+      },
+      {
+        "number": 59,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              25.0,
+              25.0
+            ]
+          ]
+        },
+        "pdf_page": 38
+      },
+      {
+        "number": 60,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              61.0,
+              63.0
+            ]
+          ]
+        },
+        "pdf_page": 39
+      },
+      {
+        "number": 61,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              12.0,
+              14.2
+            ],
+            [
+              18.0,
+              28.4
+            ],
+            [
+              32.0,
+              34.2
+            ]
+          ]
+        },
+        "pdf_page": 39
+      },
+      {
+        "number": 62,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.83,
+              0.87
+            ]
+          ]
+        },
+        "pdf_page": 40
+      },
+      {
+        "number": 63,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              2.65,
+              2.95
+            ]
+          ]
+        },
+        "pdf_page": 40
+      },
+      {
+        "number": 64,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              26000.0,
+              26100.0
+            ]
+          ]
+        },
+        "pdf_page": 40
+      },
+      {
+        "number": 65,
+        "session": 3,
+        "response_type": "NAT",
+        "section": "ME",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              2.0,
+              2.0
+            ]
+          ]
+        },
+        "pdf_page": 41
+      }
+    ]
+  },
+  {
+    "code": "EE",
+    "branch": "Electrical Engineering",
+    "branch_code": "EE",
+    "title": "GATE 2025 Electrical Engineering",
+    "paper_url": "https://gate2025.iitr.ac.in/doc/2025/2025_QP/EE.pdf",
+    "key_url": "https://gate2025.iitr.ac.in/doc/2025/2025_Key/EE_Keys.pdf",
+    "paper_sha256": "65d25e29697cd43628fa16f8da0f165bb708e49a2dfa48f8ba58804045fd7989",
+    "key_sha256": "c1c1e0e1cff77344827809b3838893095116e3b120f0df17faa679ac89a2aedc",
+    "questions": [
+      {
+        "number": 1,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 1
+      },
+      {
+        "number": 2,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 2
+      },
+      {
+        "number": 3,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 3
+      },
+      {
+        "number": 4,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 4
+      },
+      {
+        "number": 5,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 5
+      },
+      {
+        "number": 6,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 6
+      },
+      {
+        "number": 7,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 7
+      },
+      {
+        "number": 8,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 8
+      },
+      {
+        "number": 9,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 9
+      },
+      {
+        "number": 10,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 10
+      },
+      {
+        "number": 11,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 11
+      },
+      {
+        "number": 12,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 11
+      },
+      {
+        "number": 13,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 12
+      },
+      {
+        "number": 14,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 12
+      },
+      {
+        "number": 15,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 13
+      },
+      {
+        "number": 16,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 14
+      },
+      {
+        "number": 17,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 15
+      },
+      {
+        "number": 18,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 16
+      },
+      {
+        "number": 19,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 17
+      },
+      {
+        "number": 20,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 17
+      },
+      {
+        "number": 21,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 18
+      },
+      {
+        "number": 22,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 18
+      },
+      {
+        "number": 23,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 19
+      },
+      {
+        "number": 24,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 19
+      },
+      {
+        "number": 25,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 20
+      },
+      {
+        "number": 26,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 21
+      },
+      {
+        "number": 27,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 22
+      },
+      {
+        "number": 28,
+        "session": 4,
+        "response_type": "MSQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "C"
+          ]
+        },
+        "pdf_page": 22
+      },
+      {
+        "number": 29,
+        "session": 4,
+        "response_type": "MSQ",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "C"
+          ]
+        },
+        "pdf_page": 23
+      },
+      {
+        "number": 30,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              7.0,
+              7.0
+            ]
+          ]
+        },
+        "pdf_page": 23
+      },
+      {
+        "number": 31,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              5.0,
+              5.0
+            ]
+          ]
+        },
+        "pdf_page": 24
+      },
+      {
+        "number": 32,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.975,
+              0.985
+            ]
+          ]
+        },
+        "pdf_page": 24
+      },
+      {
+        "number": 33,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.38,
+              0.4
+            ]
+          ]
+        },
+        "pdf_page": 24
+      },
+      {
+        "number": 34,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              90.0,
+              90.0
+            ]
+          ]
+        },
+        "pdf_page": 25
+      },
+      {
+        "number": 35,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              66.25,
+              66.75
+            ]
+          ]
+        },
+        "pdf_page": 25
+      },
+      {
+        "number": 36,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 26
+      },
+      {
+        "number": 37,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 27
+      },
+      {
+        "number": 38,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 28
+      },
+      {
+        "number": 39,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 29
+      },
+      {
+        "number": 40,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 30
+      },
+      {
+        "number": 41,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 30
+      },
+      {
+        "number": 42,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 31
+      },
+      {
+        "number": 43,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 32
+      },
+      {
+        "number": 44,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 33
+      },
+      {
+        "number": 45,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 33
+      },
+      {
+        "number": 46,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 34
+      },
+      {
+        "number": 47,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 35
+      },
+      {
+        "number": 48,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 36
+      },
+      {
+        "number": 49,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 37
+      },
+      {
+        "number": 50,
+        "session": 4,
+        "response_type": "MCQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 38
+      },
+      {
+        "number": 51,
+        "session": 4,
+        "response_type": "MSQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "B",
+            "D"
+          ]
+        },
+        "pdf_page": 39
+      },
+      {
+        "number": 52,
+        "session": 4,
+        "response_type": "MSQ",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "D"
+          ]
+        },
+        "pdf_page": 39
+      },
+      {
+        "number": 53,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "pdf_page": 40
+      },
+      {
+        "number": 54,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              2.0,
+              2.0
+            ]
+          ]
+        },
+        "pdf_page": 40
+      },
+      {
+        "number": 55,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        "pdf_page": 40
+      },
+      {
+        "number": 56,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              2.0,
+              2.0
+            ]
+          ]
+        },
+        "pdf_page": 41
+      },
+      {
+        "number": 57,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              4.0,
+              4.2
+            ]
+          ]
+        },
+        "pdf_page": 41
+      },
+      {
+        "number": 58,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              78.0,
+              81.0
+            ]
+          ]
+        },
+        "pdf_page": 42
+      },
+      {
+        "number": 59,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              -2.0,
+              -1.94
+            ],
+            [
+              1.94,
+              2.0
+            ]
+          ]
+        },
+        "pdf_page": 42
+      },
+      {
+        "number": 60,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              1.7,
+              1.9
+            ]
+          ]
+        },
+        "pdf_page": 43
+      },
+      {
+        "number": 61,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              200.0,
+              200.0
+            ]
+          ]
+        },
+        "pdf_page": 43
+      },
+      {
+        "number": 62,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              3.0,
+              3.0
+            ]
+          ]
+        },
+        "pdf_page": 44
+      },
+      {
+        "number": 63,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              8.5,
+              10.0
+            ]
+          ]
+        },
+        "pdf_page": 44
+      },
+      {
+        "number": 64,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              216.0,
+              216.0
+            ]
+          ]
+        },
+        "pdf_page": 44
+      },
+      {
+        "number": 65,
+        "session": 4,
+        "response_type": "NAT",
+        "section": "EE",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.1,
+              0.1
+            ]
+          ]
+        },
+        "pdf_page": 45
+      }
+    ]
+  },
+  {
+    "code": "CE1",
+    "branch": "Civil Engineering",
+    "branch_code": "CE",
+    "title": "GATE 2025 Civil Engineering - Session 1",
+    "paper_url": "https://gate2025.iitr.ac.in/doc/2025/2025_QP/CE1.pdf",
+    "key_url": "https://gate2025.iitr.ac.in/doc/2025/2025_Key/CE1_Keys.pdf",
+    "paper_sha256": "eb47c60f87ae0d625fba900cdfefc68f6008de33685fb59ec52854d1a6ed268e",
+    "key_sha256": "2aaf91e7c238fcf0ba9af180c26402473a81be116a409e510007ca1b9939053a",
+    "questions": [
+      {
+        "number": 1,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 1
+      },
+      {
+        "number": 2,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 1
+      },
+      {
+        "number": 3,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 2
+      },
+      {
+        "number": 4,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 2
+      },
+      {
+        "number": 5,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 3
+      },
+      {
+        "number": 6,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 4
+      },
+      {
+        "number": 7,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 5
+      },
+      {
+        "number": 8,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 6
+      },
+      {
+        "number": 9,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 7
+      },
+      {
+        "number": 10,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "GA",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 8
+      },
+      {
+        "number": 11,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 9
+      },
+      {
+        "number": 12,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 9
+      },
+      {
+        "number": 13,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 10
+      },
+      {
+        "number": 14,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 11
+      },
+      {
+        "number": 15,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 11
+      },
+      {
+        "number": 16,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 12
+      },
+      {
+        "number": 17,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 13
+      },
+      {
+        "number": 18,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 14
+      },
+      {
+        "number": 19,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 15
+      },
+      {
+        "number": 20,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 16
+      },
+      {
+        "number": 21,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 16
+      },
+      {
+        "number": 22,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 17
+      },
+      {
+        "number": 23,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 18
+      },
+      {
+        "number": 24,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 18
+      },
+      {
+        "number": 25,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 19
+      },
+      {
+        "number": 26,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 19
+      },
+      {
+        "number": 27,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "D"
+          ]
+        },
+        "pdf_page": 20
+      },
+      {
+        "number": 28,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 20
+      },
+      {
+        "number": 29,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "B",
+            "C"
+          ]
+        },
+        "pdf_page": 21
+      },
+      {
+        "number": 30,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "pdf_page": 21
+      },
+      {
+        "number": 31,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "B"
+          ]
+        },
+        "pdf_page": 22
+      },
+      {
+        "number": 32,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "C"
+          ]
+        },
+        "pdf_page": 23
+      },
+      {
+        "number": 33,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              3.74,
+              3.76
+            ]
+          ]
+        },
+        "pdf_page": 23
+      },
+      {
+        "number": 34,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              476.0,
+              500.0
+            ]
+          ]
+        },
+        "pdf_page": 23
+      },
+      {
+        "number": 35,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 1,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              48.0,
+              51.0
+            ]
+          ]
+        },
+        "pdf_page": 24
+      },
+      {
+        "number": 36,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 25
+      },
+      {
+        "number": 37,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "C"
+          ]
+        },
+        "pdf_page": 26
+      },
+      {
+        "number": 38,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "B"
+          ]
+        },
+        "pdf_page": 27
+      },
+      {
+        "number": 39,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 28
+      },
+      {
+        "number": 40,
+        "session": 7,
+        "response_type": "MCQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MCQ",
+          "answers": [
+            "A"
+          ]
+        },
+        "pdf_page": 29
+      },
+      {
+        "number": 41,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "D"
+          ]
+        },
+        "pdf_page": 30
+      },
+      {
+        "number": 42,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "B",
+            "D"
+          ]
+        },
+        "pdf_page": 31
+      },
+      {
+        "number": 43,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "B",
+            "D"
+          ]
+        },
+        "pdf_page": 31
+      },
+      {
+        "number": 44,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "C",
+            "D"
+          ]
+        },
+        "pdf_page": 32
+      },
+      {
+        "number": 45,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "B"
+          ]
+        },
+        "pdf_page": 32
+      },
+      {
+        "number": 46,
+        "session": 7,
+        "response_type": "MSQ",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "MSQ",
+          "answers": [
+            "A",
+            "B"
+          ]
+        },
+        "pdf_page": 33
+      },
+      {
+        "number": 47,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              5.7,
+              5.9
+            ]
+          ]
+        },
+        "pdf_page": 33
+      },
+      {
+        "number": 48,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              2.9,
+              3.1
+            ]
+          ]
+        },
+        "pdf_page": 33
+      },
+      {
+        "number": 49,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              2.4,
+              2.8
+            ]
+          ]
+        },
+        "pdf_page": 34
+      },
+      {
+        "number": 50,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              3.0,
+              3.0
+            ]
+          ]
+        },
+        "pdf_page": 34
+      },
+      {
+        "number": 51,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              14.0,
+              14.0
+            ]
+          ]
+        },
+        "pdf_page": 35
+      },
+      {
+        "number": 52,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              125.0,
+              127.0
+            ]
+          ]
+        },
+        "pdf_page": 35
+      },
+      {
+        "number": 53,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              1.8,
+              1.82
+            ]
+          ]
+        },
+        "pdf_page": 36
+      },
+      {
+        "number": 54,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              21.0,
+              24.0
+            ]
+          ]
+        },
+        "pdf_page": 37
+      },
+      {
+        "number": 55,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.96,
+              0.98
+            ]
+          ]
+        },
+        "pdf_page": 38
+      },
+      {
+        "number": 56,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              4.62,
+              4.7
+            ]
+          ]
+        },
+        "pdf_page": 39
+      },
+      {
+        "number": 57,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              23.3,
+              23.7
+            ]
+          ]
+        },
+        "pdf_page": 39
+      },
+      {
+        "number": 58,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              15.0,
+              16.0
+            ]
+          ]
+        },
+        "pdf_page": 40
+      },
+      {
+        "number": 59,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              8.44,
+              8.56
+            ]
+          ]
+        },
+        "pdf_page": 40
+      },
+      {
+        "number": 60,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              69.0,
+              75.0
+            ]
+          ]
+        },
+        "pdf_page": 41
+      },
+      {
+        "number": 61,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              120.0,
+              180.0
+            ]
+          ]
+        },
+        "pdf_page": 41
+      },
+      {
+        "number": 62,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              0.45,
+              0.51
+            ]
+          ]
+        },
+        "pdf_page": 41
+      },
+      {
+        "number": 63,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              61.0,
+              63.0
+            ]
+          ]
+        },
+        "pdf_page": 42
+      },
+      {
+        "number": 64,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              150.47,
+              150.48
+            ]
+          ]
+        },
+        "pdf_page": 42
+      },
+      {
+        "number": 65,
+        "session": 7,
+        "response_type": "NAT",
+        "section": "CE-1",
+        "marks": 2,
+        "key": {
+          "kind": "NAT",
+          "ranges": [
+            [
+              4.22,
+              4.56
+            ]
+          ]
+        },
+        "pdf_page": 43
+      }
+    ]
+  }
+]
