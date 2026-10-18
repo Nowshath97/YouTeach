@@ -1,3 +1,4 @@
+import AdminMockStatistics from './AdminMockStatistics';
 import MemberChat from './MemberChat';
 import { PASSWORD_REQUIREMENTS, isValidNewPassword } from './passwordRules.mjs';
 import { isExistingSignupAccount } from './signupResult.mjs';
@@ -1144,6 +1145,8 @@ function TutorialsPage({ user }) {
 
 function SimulationsPage({ user, filters }) {
   const [tests, setTests] = useState([]);
+  const [popularity, setPopularity] = useState({});
+
   const [mockSubjects, setMockSubjects] = useState([]);
   const [mockBranches, setMockBranches] = useState([]);
   const [selectedBranch, setSelectedBranch] = useState(() => {
@@ -1161,8 +1164,24 @@ function SimulationsPage({ user, filters }) {
   const deadline = useRef(0);
   const attemptRef = useRef(null);
   const saveQueue = useRef(Promise.resolve());
+  const canQuitTestingMocks = user?.email?.toLowerCase() === 'testnaushad@gmail.com';
+  const closeTestingAttempts = React.useCallback(() => {
+    attemptRef.current = null;
+    setAttempt(null); setAnswers({}); setExamState({}); setSaveStatus('');
+    setSavedAttempts([]); setResult(null); setReviewAttempt(null);
+    setHistoryOpen(false); setRestartTest(null); setError('');
+    setHistoryRefresh(value => value + 1);
+    window.scrollTo(0, 0);
+  }, []);
   const [result, setResult] = useState(null);
   const [historyRefresh, setHistoryRefresh] = useState(0);
+  useEffect(() => {
+    let active = true;
+    if (supabase) supabase.rpc('mock_popularity').then(({data, error}) => {
+      if (active && !error) setPopularity(Object.fromEntries((data || []).map(row => [row.mock_test_id, row])));
+    }).catch(() => {});
+    return () => { active = false; };
+  }, [historyRefresh]);
   const [historyOpen, setHistoryOpen] = useState(false);
   const [reviewAttempt, setReviewAttempt] = useState(null);
   function openReview(row) { setHistoryOpen(false); setReviewAttempt(row); window.scrollTo(0, 0); }
@@ -1243,6 +1262,45 @@ function SimulationsPage({ user, filters }) {
     return () => clearTimeout(timer);
   }, [attempt, answers, examState, busy]);
   useEffect(() => () => { attemptRef.current = null; }, []);
+  useEffect(() => {
+    if (!canQuitTestingMocks || !supabase) return;
+    let active = true, running = false;
+    const key = `jobforsure:testing-mocks-quit:${user.id}`;
+    const sync = event => { if (event.key === key) closeTestingAttempts(); };
+    // Also detect cleanup from another browser/device, where storage events do not reach.
+    const check = async () => {
+      const captured = attemptRef.current;
+      if (!captured || running) return;
+      running = true;
+      try {
+        const { data, error: checkError } = await supabase.rpc('get_saved_mock_attempts');
+        if (active && !checkError && attemptRef.current?.attempt_id === captured.attempt_id
+          && !(data || []).some(item => item.attempt_id === captured.attempt_id)) closeTestingAttempts();
+      } catch { /* Keep the current exam on transient connection errors. */ }
+      finally { running = false; }
+    };
+    window.addEventListener('storage', sync);
+    const interval = setInterval(check, 5000);
+    return () => { active = false; clearInterval(interval); window.removeEventListener('storage', sync); };
+  }, [canQuitTestingMocks, user?.id, closeTestingAttempts]);
+  async function quitTestingAttempts() {
+    if (!canQuitTestingMocks || busy) return;
+    setBusy(true); setError('');
+    const captured = attemptRef.current;
+    // Invalidate queued autosaves before deleting their attempt rows.
+    attemptRef.current = null;
+    try {
+      await saveQueue.current.catch(() => {});
+      const { error: quitError } = await supabase.rpc('quit_testing_mock_attempts');
+      if (quitError) throw new Error(quitError.message);
+      closeTestingAttempts();
+      try { localStorage.setItem(`jobforsure:testing-mocks-quit:${user.id}`, `${Date.now()}-${Math.random()}`); }
+      catch { /* Other instances still detect the deletion through polling. */ }
+    } catch (e) {
+      attemptRef.current = captured;
+      setError('Could not quit testing attempts. ' + e.message);
+    } finally { setBusy(false); }
+  }
   async function start(test, savedId = null, restart = false) {
     if (!user) { setError('Sign in before starting a simulation.'); return; }
     setBusy(true); setError(''); setResult(null);
@@ -1305,7 +1363,7 @@ function SimulationsPage({ user, filters }) {
     return matchesCategory && matchesSearch;
   });
   if (reviewAttempt) return <div className="space-y-4"><h2 className="text-xl font-bold">{reviewAttempt.title}</h2><MockTestReview supabase={supabase} attemptId={reviewAttempt.attempt_id} onClose={() => { setReviewAttempt(null); setResult(null); setHistoryOpen(false); window.scrollTo(0, 0); }} onBack={() => { setResult(reviewAttempt); setReviewAttempt(null); window.scrollTo(0, 0); }} /></div>;
-  return <div className="space-y-4">{attempt ? <MockExam key={attempt.session_token} attempt={attempt} onPause={pauseAttempt} onStateChange={setExamState} saveStatus={saveStatus} answers={answers} setAnswers={setAnswers} clock={clock} busy={busy} onSubmit={submitAttempt} error={error} /> : <>
+  return <div className="space-y-4">{attempt ? <MockExam key={attempt.session_token} attempt={attempt} onPause={pauseAttempt} onQuit={canQuitTestingMocks ? quitTestingAttempts : undefined} onStateChange={setExamState} saveStatus={saveStatus} answers={answers} setAnswers={setAnswers} clock={clock} busy={busy} onSubmit={submitAttempt} error={error} /> : <>
     {result && <AttemptScorecard result={result} supabase={supabase} onReview={openReview} onClose={() => setResult(null)} />}
 
     <section className="overflow-hidden rounded-2xl border border-indigo-100 bg-white shadow-sm">
@@ -1358,6 +1416,10 @@ function SimulationsPage({ user, filters }) {
             </div>
             <div className="mock-catalog-category">{getCategory(test)}</div><p className="mock-catalog-branch">{getMockBranch(test, mockSubjects, mockBranches)}</p>
             <h4 title={test.title}>{test.title}</h4>
+            {Number(popularity[test.id]?.learners) > 0 && <p className="mt-2 text-xs font-semibold text-indigo-700" title="Share of unique learners who have started any published mock. Repeat attempts, administrators and the testing account are excluded. Percentages across mocks can exceed 100% because learners may attempt several mocks.">
+              {Number(popularity[test.id].learners) >= 10 && Number(popularity[test.id].learner_percentage) >= 20 ? 'Popular ? ' : ''}
+              {Number(popularity[test.id].learners).toLocaleString()} learners ? {popularity[test.id].learner_percentage}% of mock learners
+            </p>}
             <p className="mock-catalog-description">{test.description || 'Timed exam practice with instant scoring after submission.'}</p>
             <div className="mock-catalog-details">
               <span><Clock3 size={14} /><b>{test.duration_minutes}</b> min</span>
@@ -1388,6 +1450,23 @@ export default function App() {
   const [user, setUser] = useState(null);
   const [authLoading, setAuthLoading] = useState(Boolean(supabase));
   const [authError, setAuthError] = useState('');
+  const [roleState, setRoleState] = useState({userId: null, role: 'student'});
+  const isAdmin = roleState.userId === user?.id && roleState.role === 'admin';
+  useEffect(() => {
+    let active = true;
+    setRoleState({userId: null, role: 'student'});
+    const loadRole = async () => {
+      if (!supabase || !user?.id) return;
+      try {
+        const {data, error} = await supabase.rpc('get_my_app_role');
+        if (active) setRoleState({userId: user.id, role: error ? 'student' : data});
+      } catch { if (active) setRoleState({userId: user.id, role: 'student'}); }
+    };
+    loadRole();
+    window.addEventListener('focus', loadRole);
+    return () => { active = false; window.removeEventListener('focus', loadRole); };
+  }, [user?.id]);
+
   const [focusPreferredSubject, setFocusPreferredSubject] = useState(false);
   const [practiceFilters, setPracticeFilters] = useState({ subjectId: null, examType: '' });
   useEffect(() => {
@@ -1439,7 +1518,8 @@ export default function App() {
   const needsOnboarding = !Array.isArray(preferences?.exams) || preferences.exams.length === 0 || (Boolean(preferences.preferredBranch) && !preferences.preferredSubject);
   if (needsOnboarding) return <Onboarding user={user} setUser={setUser} />;
 
-  const content = page === 'Practice' ? <PracticePage user={user} setPage={setPage} setPracticeFilters={setPracticeFilters} focusPreferredSubject={focusPreferredSubject} />
+  const content = page === 'Admin Statistics' ? (isAdmin ? <AdminMockStatistics key={user.id} /> : <p role="alert">Administrator access required.</p>)
+    : page === 'Practice' ? <PracticePage user={user} setPage={setPage} setPracticeFilters={setPracticeFilters} focusPreferredSubject={focusPreferredSubject} />
     : page === 'Notifications' ? <NotificationsPage user={user} setPage={setPage} />
     : page === 'Tutorials' ? <TutorialsPage user={user} />
       : page === 'Mock Tests' ? <SimulationsPage user={user} filters={practiceFilters} />
@@ -1448,5 +1528,5 @@ export default function App() {
           : page === 'Profile' ? <SocialWall user={user} ownProfile onPreferences={() => setPage('Study Preferences')} />
           : page === 'Study Preferences' ? <ProfilePage user={user} setUser={setUser} />
             : <Dashboard user={user} setPage={setPage} onPracticePreferred={openPreferredPractice} preferences={preferences} />;
-  return <div className="min-h-screen bg-[#F8FAFC] text-slate-900"><header className="sticky top-0 z-20 border-b border-slate-200 bg-white"><div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3"><button className="flex items-center gap-2 text-left" onClick={() => setPage('Dashboard')}><span className="grid h-9 w-9 place-items-center rounded-lg bg-indigo-600 font-black text-white">J.</span><span className="text-lg font-extrabold">JobFor<span className="text-indigo-600">Sure</span></span></button><AuthPanel user={user} onLogout={() => setUser(null)} setPage={setPage} /></div><nav className="mx-auto flex max-w-7xl gap-1 overflow-x-auto px-3 pb-2">{pages.map(([name, Icon]) => <button key={name} onClick={() => setPage(name)} className={`nav-item ${page === name ? 'nav-active' : ''}`}><Icon size={15} />{name}</button>)}</nav></header><main className="mx-auto max-w-7xl px-4 py-6 sm:px-5">{content}</main></div>;
+  return <div className="min-h-screen bg-[#F8FAFC] text-slate-900"><header className="sticky top-0 z-20 border-b border-slate-200 bg-white"><div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3"><button className="flex items-center gap-2 text-left" onClick={() => setPage('Dashboard')}><span className="grid h-9 w-9 place-items-center rounded-lg bg-indigo-600 font-black text-white">J.</span><span className="text-lg font-extrabold">JobFor<span className="text-indigo-600">Sure</span></span></button><AuthPanel user={user} onLogout={() => setUser(null)} setPage={setPage} /></div><nav className="mx-auto flex max-w-7xl gap-1 overflow-x-auto px-3 pb-2">{[...pages, ...(isAdmin ? [['Admin Statistics', Activity]] : [])].map(([name, Icon]) => <button key={name} onClick={() => setPage(name)} className={`nav-item ${page === name ? 'nav-active' : ''}`}><Icon size={15} />{name}</button>)}</nav></header><main className="mx-auto max-w-7xl px-4 py-6 sm:px-5">{content}</main></div>;
 }

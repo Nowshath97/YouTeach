@@ -1,0 +1,151 @@
+question,section,topic,correct_option,correct_text,difficulty_target,format
+1,Current Affairs & International Relations,WTO accession stages,3,1 and 3 only,high,statements
+2,Current Affairs & International Relations,COP29 finance architecture,3,1 and 3 only,high,statements
+3,Current Affairs & International Relations,NISAR radar attribution,3,"P-4, Q-1, R-2, S-3",moderate,matching
+4,Current Affairs & International Relations,SpaDeX operational sequence,1,Q-P-R,moderate,chronology
+5,Current Affairs & International Relations,Axiom-4 prime and backup,2,Shubhanshu Shukla; Prasanth Balakrishnan Nair,moderate,application
+6,Current Affairs & International Relations,WHO adoption versus entry into force,3,2 and 3 only,high,statements
+7,Current Affairs & International Relations,BBNJ jurisdiction,2,2 and 3 only,moderate,statements
+8,Current Affairs & International Relations,UNESCO serial heritage geography,3,Gingee in Tamil Nadu,moderate,application
+9,Current Affairs & International Relations,CBAM policy mechanism,4,Emissions embodied in production of the covered goods,moderate,application
+10,Current Affairs & International Relations,BRICS full versus partner status,4,Indonesia,moderate,application
+11,Current Affairs & International Relations,UN observance year matching,4,"P-3, Q-1, R-2, S-4",moderate,matching
+12,Current Affairs & International Relations,Baku-Belem institutional distinction,3,UNFCCC process; COP29 in Azerbaijan and COP30 in Brazil,high,application
+13,Current Affairs & International Relations,Nobel recognition 2025,3,Venezuela,moderate,application
+14,Current Affairs & International Relations,Paris 2024 Indian medal record,1,"P-3, Q-4, R-1, S-2",high,matching
+15,Current Affairs & International Relations,Women reservation enactment mechanism,4,2 and 3 only,high,statements
+16,General Science & Technology,Mendel test cross inference,1,The tall parent is likely Tt; a 1:1 phenotype ratio is expected,high,numerical
+17,General Science & Technology,Energy tariff calculation,2,Rs 540,moderate,numerical
+18,General Science & Technology,Buffer dilution interpretation,1,3,moderate,application
+19,General Science & Technology,Doping charge neutrality,2,2 and 3 only,high,statements
+20,General Science & Technology,Vaccine and passive immunity,1,"P-3, Q-1, R-4, S-2",moderate,matching
+21,General Science & Technology,Antibiotic selection experiment,4,Exposure favoured survival and reproduction of resistant variants,moderate,application
+22,General Science & Technology,Radar resolution versus coverage,4,Finer detail is possible; revisit frequency remains undetermined,high,application
+23,General Science & Technology,Phishing verification route,4,Open a known bookmark or type the official address and check account notices there,moderate,application
+24,General Science & Technology,Machine learning leakage scenario,2,Student-specific information leaked across training and test sets,high,application
+25,General Science & Technology,Pressure and boiling comparison,2,Lower atmospheric pressure reduces the saturation temperature,moderate,application
+26,General Science & Technology,Carbon monoxide versus oxygen partial pressure,3,CO occupies haemoglobin binding sites and alters oxygen carriage despite dissolved oxygen being present,high,application
+27,General Science & Technology,Orbital motion conditions,2,2 and 3 only,moderate,statements
+28,Environment & Disaster Management,Risk distinction flood comparison,4,Its vulnerability may be lower even when hazard intensity and exposed population are equal,high,application
+29,Environment & Disaster Management,Disaster intervention phases,2,"P-3, Q-4, R-1, S-2",moderate,matching
+30,Environment & Disaster Management,Lake oxygen daily cycle,1,"Daytime photosynthesis adds oxygen, while night-time respiration and decomposition can deplete it",high,application
+31,Environment & Disaster Management,Pollutant property and food web,1,1 and 2 only,moderate,statements
+32,Environment & Disaster Management,Ozone chemistry causal distinction,1,"1, 2 and 3",high,statements
+33,Environment & Disaster Management,Mitigation adaptation co-benefits,2,"Primarily heat adaptation, with possible additional carbon and air-quality benefits",moderate,application
+34,Environment & Disaster Management,Invasive species evidence,3,"Non-native status is established, but invasive status is not demonstrated",moderate,application
+35,Environment & Disaster Management,Urban runoff intervention tradeoff,3,"A lower and later peak, without necessarily reducing total runoff volume",high,application
+36,Environment & Disaster Management,Carbon stock versus avoided emissions,1,Restoring biomass in degraded native woodland; reducing diesel fuel use,moderate,application
+37,Environment & Disaster Management,Forecast uncertainty and evacuation,4,Mistaking a predicted centreline for a certain track and impact boundary,moderate,application
+38,Economy & Development of India and Telangana,Real growth exact calculation,2,10%,high,numerical
+39,Economy & Development of India and Telangana,Value added three stages,3,Rs 500,moderate,numerical
+40,Economy & Development of India and Telangana,Budget deficits combined,3,300 and 150,high,numerical
+41,Economy & Development of India and Telangana,Revenue deficit component,3,Rs 70 crore,moderate,numerical
+42,Economy & Development of India and Telangana,Progressivity average versus marginal,4,Progressive: average rates rise from 10% to 15%,high,numerical
+43,Economy & Development of India and Telangana,Real wage purchasing power,3,3.57% decrease,moderate,numerical
+44,Economy & Development of India and Telangana,Labour force unemployment denominator,2,9.09%,moderate,numerical
+45,Economy & Development of India and Telangana,Multidimensional poverty interpretation,3,Their multidimensional deprivation can differ despite equal measured income,high,application
+46,Economy & Development of India and Telangana,Sector productivity shares,1,4,moderate,numerical
+47,Economy & Development of India and Telangana,Public expenditure classification,1,1 and 3 only,high,statements
+48,Economy & Development of India and Telangana,GST credit calculation,3,Rs 7000,moderate,numerical
+49,Economy & Development of India and Telangana,Irrigation complementarity,2,Infrastructure access must be complemented by reliable distribution and last-mile delivery,moderate,application
+50,Economy & Development of India and Telangana,Self-help group credit assessment,4,Reducing information and monitoring problems through group processes,moderate,application
+51,Economy & Development of India and Telangana,Base effect inference,1,"Inflation slows from 20% to 5%, although the price level continues to rise",high,application
+52,Economy & Development of India and Telangana,Social audit versus financial audit,3,Community verification combines records with lived implementation evidence,moderate,application
+53,Geography of India and Telangana,River tributary classification,3,"P-1, Q-2, R-3, S-4",moderate,matching
+54,Geography of India and Telangana,Rainfall rainfall-shadow inference,4,"Moist-air ascent and condensation windward, followed by relatively dry leeward descent",high,application
+55,Geography of India and Telangana,Black soil management,2,Shrink-swell clay; difficult tillage outside a suitable moisture range,moderate,application
+56,Geography of India and Telangana,Hard-rock aquifer heterogeneity,2,They intersect different fracture connectivity and weathered-zone storage,high,application
+57,Geography of India and Telangana,Population density inference,4,B is denser although A has more people,moderate,numerical
+58,Geography of India and Telangana,Demographic dividend dependency,3,50 dependants per 100 working-age people,high,numerical
+59,Geography of India and Telangana,Demographic opportunity conditions,4,The age structure creates potential that is not automatically realised,moderate,application
+60,Geography of India and Telangana,Watershed and aquifer boundaries,4,1 and 2 only,moderate,statements
+61,Geography of India and Telangana,Longitude local time direction,4,11:30 a.m.,high,numerical
+62,Geography of India and Telangana,Coriolis and pressure gradient,3,1 and 2 only,moderate,statements
+63,Geography of India and Telangana,River regime comparison,1,"The first may have a more sustained non-monsoon flow, though local conditions still matter",moderate,application
+64,Geography of India and Telangana,Laterisation and soil fertility,2,2 and 3 only,high,statements
+65,Geography of India and Telangana,Urbanisation versus urban growth,3,"Urban population grows, but its population share falls from 25% to 24%",moderate,numerical
+66,Geography of India and Telangana,Cropping intensity calculation,2,150%,moderate,numerical
+67,Geography of India and Telangana,Sex ratio subgroup aggregation,4,1033,high,numerical
+68,Modern Indian History & National Movement,Land settlement liability,4,"P-2, Q-3, R-1",high,matching
+69,Modern Indian History & National Movement,Drain of wealth inference,3,Unrequited external transfer in the drain-of-wealth argument,moderate,application
+70,Modern Indian History & National Movement,Swadeshi methods distinction,4,1 and 2 only,high,statements
+71,Modern Indian History & National Movement,Constitutional reform chronology,3,P-Q-R-S,moderate,chronology
+72,Modern Indian History & National Movement,Dyarchy responsibility distinction,1,2 and 3 only,high,statements
+73,Modern Indian History & National Movement,Gandhian mobilisation order,2,P-Q-R-S,moderate,chronology
+74,Modern Indian History & National Movement,Poona Pact institutional mechanism,3,Reserved seats in joint electorates replaced the proposed separate electorates for Depressed Classes,high,application
+75,Modern Indian History & National Movement,1935 Act implemented versus proposed,4,2 and 3 only,moderate,statements
+76,Modern Indian History & National Movement,Cabinet Mission Union subjects,1,"Defence, foreign affairs and communications",high,application
+77,Modern Indian History & National Movement,Constituent Assembly constitutional stages,3,P-Q-R-S,moderate,chronology
+78,Modern Indian History & National Movement,Civil disobedience pact distinction,4,Congress agreed to suspend civil disobedience and participate in the Second Round Table Conference,moderate,application
+79,Modern Indian History & National Movement,Colonial press discrimination,4,Its controls targeted vernacular publications while English-language newspapers were outside that particular Act,moderate,application
+80,"Indian Constitution, Governance & Public Policy",ECI appointment and removal safeguards,2,"1, 3 and 4 only",high,statements
+81,"Indian Constitution, Governance & Public Policy",Article 3 procedural distinction,1,2 and 3 only,high,statements
+82,"Indian Constitution, Governance & Public Policy",Writ remedy institutions,2,"P-3, Q-4, R-1, S-2",moderate,matching
+83,"Indian Constitution, Governance & Public Policy",Money Bill time and recommendation,1,Accept or reject any or all recommendations,high,application
+84,"Indian Constitution, Governance & Public Policy",Constitutional amendment basic structure,1,Procedural passage does not exempt the amendment from basic-structure review,moderate,application
+85,"Indian Constitution, Governance & Public Policy",Concurrent conflict exception,3,1 and 3 only,high,statements
+86,"Indian Constitution, Governance & Public Policy",Local self government schedules,3,"P-3, Q-4, R-1, S-2",moderate,matching
+87,"Indian Constitution, Governance & Public Policy",Dissolved Panchayat election exception,2,The short-remainder election exception applies when fewer than six months remain,high,application
+88,"Indian Constitution, Governance & Public Policy",Finance Commission versus GST Council,2,Finance Commission for the former; GST Council for the latter,moderate,application
+89,"Indian Constitution, Governance & Public Policy",Anti-defection merger threshold,1,60,high,numerical
+90,"Indian Constitution, Governance & Public Policy",Ordinance duration reassembly,1,The later of the two dates,moderate,application
+91,"Indian Constitution, Governance & Public Policy",DPSP enforceability nuance,3,1 and 3 only,moderate,statements
+92,"Indian Constitution, Governance & Public Policy",CAG audit and PAC scrutiny,2,"The CAG reports through the constitutional route, and legislative committees scrutinise findings",high,application
+93,"Indian Constitution, Governance & Public Policy",Policy output versus outcome,4,"The figure measures an output, not sufficient evidence of the intended employment outcome",moderate,application
+94,"Indian Constitution, Governance & Public Policy",Impact evaluation comparison,4,Random assignment to eligible treatment and comparison groups with outcome follow-up,high,application
+95,Social Inclusion & Rights,Reasonable accommodation versus preference,2,Remove disability-related barriers to equal participation,moderate,application
+96,Social Inclusion & Rights,Equality indirect discrimination,4,An apparently uniform process can create unequal practical access,high,application
+97,Social Inclusion & Rights,Gender indicators interpretation,2,1 and 2 only,moderate,statements
+98,Social Inclusion & Rights,Forest rights individual community distinction,2,1 and 2 only,high,statements
+99,Social Inclusion & Rights,PESA geographic scope,3,PESA specifically extends Panchayat provisions to Fifth Schedule areas with modifications,moderate,application
+100,Social Inclusion & Rights,Intersectional exclusion,1,"Gender, disability and location can interact to compound exclusion",high,application
+101,Social Inclusion & Rights,Public facility caste discrimination,1,Equality and the abolition of untouchability,moderate,application
+102,Social Inclusion & Rights,Targeting exclusion versus inclusion error,3,Exclusion error and inclusion error,high,application
+103,"Telangana Society, Culture, Heritage & Literature",Craft technique discrimination,4,"P-3, Q-1, R-4, S-2",moderate,matching
+104,"Telangana Society, Culture, Heritage & Literature",Festival ritual distinction,1,Exchange the labels: the floral arrangement is Bathukamma and the food offering is associated with Bonalu,high,application
+105,"Telangana Society, Culture, Heritage & Literature",Literary author attribution,4,"P-3, Q-4, R-1, S-2",moderate,matching
+106,"Telangana Society, Culture, Heritage & Literature",Oggu narrative tradition,3,Oggu Katha,moderate,application
+107,"Telangana Society, Culture, Heritage & Literature",Ramappa construction technology,2,1 and 2 only,high,statements
+108,"Telangana Society, Culture, Heritage & Literature",Perini revival attribution,2,Perini Sivatandavam; Nataraja Ramakrishna,moderate,application
+109,"Telangana Society, Culture, Heritage & Literature",Cultural continuity evidence,1,The object alone may not convey its relationship to performed storytelling and community memory,high,application
+110,"Telangana Society, Culture, Heritage & Literature",Medaram community association,4,A specific tribal association can coexist with broad participation,moderate,application
+111,"Telangana Society, Culture, Heritage & Literature",Deccan composite culture,2,1 and 3 only,high,statements
+112,"Telangana Society, Culture, Heritage & Literature",Literature as social history evidence,1,"They can reveal lived experience and social criticism, while requiring contextual interpretation",moderate,application
+113,"Telangana History, Movement & State Formation",Hyderabad transition sequence,2,P-Q-R-S,high,chronology
+114,"Telangana History, Movement & State Formation",1948 administration distinction,3,1 only,moderate,statements
+115,"Telangana History, Movement & State Formation",Safeguards versus separate state,1,"Regional safeguards within a merged state, rather than immediate separate statehood",high,application
+116,"Telangana History, Movement & State Formation",Mulki versus revenue safeguard,3,Mulki domicile and employment protections,moderate,application
+117,"Telangana History, Movement & State Formation",Movement safeguard chronology,1,P-Q-R-S,high,chronology
+118,"Telangana History, Movement & State Formation",Article 371D policy objective,3,1 and 2 only,high,statements
+119,"Telangana History, Movement & State Formation",GO610 corrective purpose,1,Appointments and allotments inconsistent with local-cadre safeguards in Telangana zones,moderate,application
+120,"Telangana History, Movement & State Formation",2011 mobilisation forms,2,"P-2, Q-3, R-1",high,matching
+121,"Telangana History, Movement & State Formation",Srikrishna advisory versus legislative,1,The committee examined arrangements and options; Parliament later enacted the reorganisation law,moderate,application
+122,"Telangana History, Movement & State Formation",Formation legal dates distinction,3,1 and 2 only,high,statements
+123,"Telangana History, Movement & State Formation",Agrarian oppression labour versus rent,1,Vetti,moderate,application
+124,"Telangana History, Movement & State Formation",Cultural mobilisation mechanism,2,"They created spaces for reading, discussion and collective awareness",high,application
+125,"Telangana History, Movement & State Formation",Regional claims multi-dimensional,4,"Regional mobilisation can combine material distribution, recognition and political voice",moderate,application
+126,Telangana State Policies,Mission programme distinctions,4,"P-3, Q-2, R-4, S-1",moderate,matching
+127,Telangana State Policies,Tank restoration outcome attribution,3,"Assess rainfall, geology and use alongside storage; a single year's level does not isolate programme impact",high,application
+128,Telangana State Policies,Drinking water service outcome,1,Reliability and quality of water actually received by households,moderate,application
+129,Telangana State Policies,Industrial approval facilitation limits,4,It can reduce coordination costs without implying exemption from every substantive legal standard,high,application
+130,Telangana State Policies,Plantation survival versus count,4,Survival and growth after appropriate seasonal intervals,moderate,application
+131,"Logical Reasoning, Analytical Ability & Data Interpretation",Conditional probability selection,2,1/2,high,numerical
+132,"Logical Reasoning, Analytical Ability & Data Interpretation",Weighted average change,4,76,moderate,numerical
+133,"Logical Reasoning, Analytical Ability & Data Interpretation",Work leak combined rates,1,9 hours,high,numerical
+134,"Logical Reasoning, Analytical Ability & Data Interpretation",Syllogism existential limitation,1,No planner is careless,moderate,application
+135,"Logical Reasoning, Analytical Ability & Data Interpretation",Ranking overlap,1,30,high,numerical
+136,"Logical Reasoning, Analytical Ability & Data Interpretation",Data table weighted success,2,66%,moderate,numerical
+137,"Logical Reasoning, Analytical Ability & Data Interpretation",Data sufficiency inequalities,1,"Both together are sufficient, but neither alone is sufficient",high,application
+138,"Logical Reasoning, Analytical Ability & Data Interpretation",Direction displacement distance,4,13 km,moderate,numerical
+139,"Logical Reasoning, Analytical Ability & Data Interpretation",Seating constrained order,2,Q,high,application
+140,"Logical Reasoning, Analytical Ability & Data Interpretation",Percentage base reversal,2,25%,moderate,numerical
+141,"Logical Reasoning, Analytical Ability & Data Interpretation",Sampling selection inference,2,90% of all students who enrolled were satisfied,high,application
+142,"Logical Reasoning, Analytical Ability & Data Interpretation",Number series second differences,1,69,moderate,numerical
+143,Basic English,Agreement intervening plural,2,is,moderate,application
+144,Basic English,Antonym matching contextual,1,"P-2, Q-1, R-4, S-3",high,matching
+145,Basic English,Third conditional verb form,4,would have detected,moderate,application
+146,Basic English,Necessary condition reading,4,Timeliness was necessary but not necessarily sufficient for review,high,application
+147,Basic English,Parallel verbs,4,"The survey requires collecting samples, recording observations and checking instruments.",moderate,application
+148,Basic English,Idiom qualification,1,Does not give unrestricted freedom to act,moderate,application
+149,Basic English,Passage causation inference,3,Both changes occurred; their separate effects on ridership remain unidentified,high,application
+150,Basic English,Reported speech tense,2,She said that she had completed the survey.,moderate,application

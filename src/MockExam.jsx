@@ -3,7 +3,7 @@ import QuestionText from './QuestionText';
 import OfficialPaperQuestion, { getOfficialPaper } from './OfficialPaperQuestion';
 import { ArrowLeft, ArrowRight, Clock3, Flag } from 'lucide-react';
 
-export default function MockExam({ attempt, answers, setAnswers, clock, busy, onSubmit, onPause, onStateChange, saveStatus, error }) {
+export default function MockExam({ attempt, answers, setAnswers, clock, busy, onSubmit, onPause, onQuit, onStateChange, saveStatus, error }) {
   const [index, setIndex] = useState(() => Math.max(0, Math.min(attempt.questions.length - 1, Number(attempt.exam_state?.index) || 0)));
   const [paletteOpen, setPaletteOpen] = useState(false);
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function MockExam({ attempt, answers, setAnswers, clock, busy, on
   const review = () => { setMarked(previous => new Set([...previous, question.id])); if (index < questions.length - 1) go(index + 1); };
   if (!question) return <p role="alert">This test has no questions.</p>;
   return <section className={`mock-exam ${paletteOpen ? 'mock-palette-open' : ''}`}>
-    <header className="mock-header"><div><span className="mock-kicker">JOBFORSURE</span><h2>{attempt.test_title}</h2></div><button className="btn mock-palette-toggle" aria-expanded={paletteOpen} aria-controls="mock-sidebar" onClick={() => setPaletteOpen(value => !value)}>{paletteOpen ? 'Close palette' : 'Questions'}</button><div className="mock-header-controls"><button className="btn mock-exit-button justify-center text-xs" disabled={busy} title="Save your progress, pause the timer and return to Mock Tests" onClick={onPause}><ArrowLeft size={14} />{busy ? 'Saving...' : 'Save & exit'}</button><div className="mock-timer"><Clock3 size={19} /><div><span>Time left</span><strong role="timer" aria-label={`Time remaining ${clock}`}>{clock}</strong></div></div></div></header>
+    <header className="mock-header"><div><span className="mock-kicker">JOBFORSURE</span><h2>{attempt.test_title}</h2></div><button className="btn mock-palette-toggle" aria-expanded={paletteOpen} aria-controls="mock-sidebar" onClick={() => setPaletteOpen(value => !value)}>{paletteOpen ? 'Close palette' : 'Questions'}</button><div className="mock-header-controls">{onQuit && <button type="button" className="btn mock-exit-button justify-center text-xs" disabled={busy} title="Discard all active mock attempts for this testing account and return to Mock Tests" onClick={onQuit}>Quit</button>}<button className="btn mock-exit-button justify-center text-xs" disabled={busy} title="Save your progress, pause the timer and return to Mock Tests" onClick={onPause}><ArrowLeft size={14} />{busy ? 'Saving...' : 'Save & exit'}</button><div className="mock-timer"><Clock3 size={19} /><div><span>Time left</span><strong role="timer" aria-label={`Time remaining ${clock}`}>{clock}</strong></div></div></div></header>
     {error && <p className="mock-error" role="alert">{error}</p>}
     <div className="mock-layout"><main className="mock-main">
       {!sequentialPaper && <div className="mock-sections"><b>Sections</b><div role="tablist" aria-label="Exam sections">{sections.map(section => <button key={section} role="tab" aria-selected={section === activeSection} onClick={() => go(questions.findIndex(item => sectionOf(item) === section))}>{section}</button>)}</div></div>}

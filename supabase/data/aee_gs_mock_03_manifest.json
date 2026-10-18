@@ -1,0 +1,64 @@
+{
+  "title": "TGPSC AEE 2026 - General Studies Full Length Mock 03",
+  "questions": 150,
+  "language": "English",
+  "duration_minutes": 150,
+  "total_marks": 150,
+  "is_published": false,
+  "practice_scoring": {
+    "correct": 1,
+    "wrong": 0,
+    "unanswered": 0
+  },
+  "section_counts": {
+    "Current Affairs & International Relations": 15,
+    "General Science & Technology": 12,
+    "Environment & Disaster Management": 10,
+    "Economy & Development of India and Telangana": 15,
+    "Geography of India and Telangana": 15,
+    "Modern Indian History & National Movement": 12,
+    "Indian Constitution, Governance & Public Policy": 15,
+    "Social Inclusion & Rights": 8,
+    "Telangana Society, Culture, Heritage & Literature": 10,
+    "Telangana History, Movement & State Formation": 13,
+    "Telangana State Policies": 5,
+    "Logical Reasoning, Analytical Ability & Data Interpretation": 12,
+    "Basic English": 8
+  },
+  "format_counts": {
+    "direct": 107,
+    "statements": 9,
+    "application": 10,
+    "matching": 9,
+    "chronology": 3,
+    "sequence": 1,
+    "logic": 9,
+    "numerical": 1,
+    "di": 1
+  },
+  "difficulty_counts": {
+    "moderate": 122,
+    "hard": 28
+  },
+  "answer_counts": {
+    "1": 38,
+    "2": 38,
+    "3": 37,
+    "4": 37
+  },
+  "planning_seconds": 7450,
+  "syllabus_reference": "https://websitenew.tspsc.gov.in/preview/DIRECTRECRUITMENTNOTI/12-2022-AEES-NOTIFN20220916120651.pdf",
+  "syllabus_status": "Historical notification 12/2022 baseline; latest recruitment-specific scheme not certified",
+  "current_affairs_window": "Selected 2024-2025 events; not a comprehensive latest-12-month digest",
+  "reference_papers": "Previously supplied examination papers informed style; no new corpus frequency analysis claimed",
+  "difficulty_deviation": "Accessible moderate/hard bank; the optional 15/75/45/15 target is not forced onto predominantly core-knowledge items",
+  "format_deviation": "Direct knowledge emphasis; actual counts reported instead of claiming the suggested format quotas",
+  "economy_numericals": 0,
+  "independent_review_status": "pending",
+  "psychometric_status": "No pilot data; no calibration claimed",
+  "duplicate_check": {
+    "exact_matches": [],
+    "near_text_candidates": [],
+    "scope": "Available local question JSON only; live database and semantic originality not certified"
+  }
+}

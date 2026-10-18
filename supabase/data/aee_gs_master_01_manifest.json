@@ -1,0 +1,56 @@
+{
+  "title": "TGPSC AEE 2026 - General Studies Full Length Mock 02",
+  "version": "1.0.0",
+  "as_of_date": "2026-10-18",
+  "language": "English",
+  "questions": 150,
+  "duration_minutes": 150,
+  "total_marks": 150,
+  "is_published": false,
+  "syllabus_reference": {
+    "notification": "12/2022",
+    "url": "https://websitenew.tspsc.gov.in/preview/DIRECTRECRUITMENTNOTI/12-2022-AEES-NOTIFN20220916120651.pdf",
+    "status": "historical official AEE baseline; latest recruitment-specific changes not certified"
+  },
+  "scoring": {
+    "correct": 1,
+    "wrong": 0,
+    "unanswered": 0,
+    "status": "practice configuration; not an official penalty claim"
+  },
+  "section_counts": {
+    "Current Affairs & International Relations": 15,
+    "General Science & Technology": 12,
+    "Environment & Disaster Management": 10,
+    "Economy & Development of India and Telangana": 15,
+    "Geography of India and Telangana": 15,
+    "Modern Indian History & National Movement": 12,
+    "Indian Constitution, Governance & Public Policy": 15,
+    "Social Inclusion & Rights": 8,
+    "Telangana Society, Culture, Heritage & Literature": 10,
+    "Telangana History, Movement & State Formation": 13,
+    "Telangana State Policies": 5,
+    "Logical Reasoning, Analytical Ability & Data Interpretation": 12,
+    "Basic English": 8
+  },
+  "difficulty_counts": {
+    "high": 66,
+    "moderate": 84
+  },
+  "format_counts": {
+    "statements": 27,
+    "matching": 14,
+    "chronology": 6,
+    "application": 77,
+    "numerical": 26
+  },
+  "answer_counts": {
+    "1": 38,
+    "2": 38,
+    "3": 37,
+    "4": 37
+  },
+  "psychometric_status": "No pilot response data: difficulty, discrimination, reliability and distractor functioning are not estimated.",
+  "publication_status": "Unpublished pending independent subject review and pilot validation",
+  "source_sha256": "d6d71496d14e9ab950e18515b12061bebe4ea69d08b1e47994157fc24843d4b3"
+}
