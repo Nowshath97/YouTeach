@@ -13,15 +13,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Treaty ending the First World War"
+        "text": "Mass rally mobilisation centred on a single Hyderabad march for Telangana statehood"
       },
       {
         "value": "B",
-        "text": "Naval battle against the Portuguese"
+        "text": "Transport blockade mobilisation centred on stopping rail services for Telangana statehood"
       },
       {
         "value": "C",
-        "text": "Campaign for the partition of Bengal in 1905"
+        "text": "Administrative non-cooperation confined to government offices for Telangana statehood"
       },
       {
         "value": "D",
@@ -29,7 +29,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       }
     ],
     "correct_answer": "D",
-    "explanation": "The mobilisation involved many social and occupational groups supporting the separate-state demand."
+    "explanation": "Sakala Janula Samme was a sustained, broad strike for Telangana statehood involving multiple occupational and social groups. A single rally, rail blockade or administrative non-cooperation campaign describes a narrower protest form rather than the mobilisation as a whole."
   },
   {
     "display_order": 2,
@@ -37,15 +37,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Glacier storage in the same district"
+        "text": "Greater dependence on standing water throughout crop growth"
       },
       {
         "value": "B",
-        "text": "The need for higher continuous irrigation in every case"
+        "text": "Higher sensitivity to short dry spells during the growing season"
       },
       {
         "value": "C",
-        "text": "Dependence on permanent flooded cultivation"
+        "text": "Greater dependence on continuous canal releases through the crop cycle"
       },
       {
         "value": "D",
@@ -109,11 +109,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Lowers water's boiling temperature below room temperature"
+        "text": "Lowers the boiling temperature and increases evaporation at the same temperature"
       },
       {
         "value": "B",
-        "text": "Eliminates heat transfer"
+        "text": "Raises the boiling temperature by lowering external pressure on the liquid"
       },
       {
         "value": "C",
@@ -121,7 +121,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Changes water into an element"
+        "text": "Leaves the boiling temperature unchanged but reduces the food's specific heat"
       }
     ],
     "correct_answer": "C",
@@ -209,15 +209,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Introduction of the 1909 separate electorates for the first time"
+        "text": "A strong unitary centre with provinces lacking residual powers"
       },
       {
         "value": "C",
-        "text": "Immediate annexation of India to France"
+        "text": "Two immediately sovereign states with no common Union institutions"
       },
       {
         "value": "D",
-        "text": "Replacement of all provinces by military districts"
+        "text": "A federation of provinces excluding princely states from the constitution-making process"
       }
     ],
     "correct_answer": "A",
@@ -229,7 +229,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Fresh unweathered lava alone"
+        "text": "Weak leaching under cool dry conditions"
       },
       {
         "value": "B",
@@ -237,11 +237,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Permanent glacial deposition at every site"
+        "text": "Salt accumulation under intense evaporation in arid conditions"
       },
       {
         "value": "D",
-        "text": "Marine coral growth in shallow seas"
+        "text": "Deposition of carbonate-rich sediments under shallow marine conditions"
       }
     ],
     "correct_answer": "B",
@@ -277,15 +277,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A roof without any structural materials"
+        "text": "Dense dressed-stone slabs in the vimana"
       },
       {
         "value": "B",
-        "text": "Modern aluminium trusses installed in the thirteenth century"
+        "text": "Solid fired bricks with a high bulk density in the vimana"
       },
       {
         "value": "C",
-        "text": "A roof made entirely of solid granite blocks of uniform density"
+        "text": "Massive stone corbelling supporting a dense masonry superstructure"
       },
       {
         "value": "D",
@@ -301,15 +301,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A continuous underground ocean"
+        "text": "Primary intergranular pores distributed evenly through unweathered granite"
       },
       {
         "value": "B",
-        "text": "Uniform open pore space in fresh massive granite"
+        "text": "Unfractured rock interiors below the weathering zone"
       },
       {
         "value": "C",
-        "text": "Only the interiors of intact quartz crystals"
+        "text": "Connected pore spaces formed mainly between intact feldspar crystals"
       },
       {
         "value": "D",
@@ -329,15 +329,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Replacement of land taxation by universal income tax"
+        "text": "A direct state-cultivator settlement with periodically revised state demand"
       },
       {
         "value": "C",
-        "text": "Immediate ownership transfer to every cultivator without rent"
+        "text": "A village-body settlement with collective liability for assessed revenue"
       },
       {
         "value": "D",
-        "text": "Abolition of land revenue everywhere"
+        "text": "A landlord settlement with state demand revised annually with market prices"
       }
     ],
     "correct_answer": "A",
@@ -353,15 +353,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "A marine reserve entirely in Gujarat"
+        "text": "A serial group of twelve fortifications, all located within Maharashtra"
       },
       {
         "value": "C",
-        "text": "A single palace located only in Telangana"
+        "text": "A serial group of twelve fortifications, mainly in Maharashtra with one in Karnataka"
       },
       {
         "value": "D",
-        "text": "Twelve Buddhist monasteries entirely in Bihar"
+        "text": "A serial group of twelve fortifications, mainly in Maharashtra with one in Telangana"
       }
     ],
     "correct_answer": "A",
@@ -377,15 +377,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Founding the Indian National Congress in 1885"
+        "text": "Creation of an elected legislature with a responsible ministry"
       },
       {
         "value": "C",
-        "text": "Leading the 1930 Dandi March"
+        "text": "Abolition of the jagirdari system throughout Hyderabad State"
       },
       {
         "value": "D",
-        "text": "Drafting the 2014 Reorganisation Act"
+        "text": "Introduction of universal adult franchise in Hyderabad State"
       }
     ],
     "correct_answer": "A",
@@ -421,7 +421,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A perfect electrical insulator at every temperature"
+        "text": "A p-type semiconductor with electrons as majority carriers"
       },
       {
         "value": "B",
@@ -429,11 +429,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "A material with no charge carriers"
+        "text": "An n-type semiconductor with holes as majority carriers"
       },
       {
         "value": "D",
-        "text": "A p-type semiconductor with holes as majority carriers"
+        "text": "An intrinsic semiconductor with equal electron and hole concentrations"
       }
     ],
     "correct_answer": "B",
@@ -445,15 +445,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Universal nomination by the British monarch alone"
+        "text": "Reserved seats within separate electorates"
       },
       {
         "value": "B",
-        "text": "A complete ban on their legislative representation"
+        "text": "Unreserved seats within joint electorates"
       },
       {
         "value": "C",
-        "text": "An independent sovereign territory"
+        "text": "Reserved seats filled solely by nomination"
       },
       {
         "value": "D",
@@ -469,7 +469,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "The Bay of Bengal blocks all winds at the coast"
+        "text": "Monsoon winds lose moisture by crossing the interior plateau before reaching the western coast"
       },
       {
         "value": "B",
@@ -477,11 +477,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "The Deccan receives no sunlight in summer"
+        "text": "Leeward ascent produces cooling while windward descent suppresses condensation"
       },
       {
         "value": "D",
-        "text": "Every inland station lies above the snow line"
+        "text": "The inland pressure gradient prevents moisture-bearing air from crossing the Ghats"
       }
     ],
     "correct_answer": "B",
@@ -521,15 +521,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Negotiating the Treaty of Versailles"
+        "text": "Leadership of the Mulki student agitation over public employment"
       },
       {
         "value": "C",
-        "text": "Leading the Royal Indian Navy mutiny in Bombay"
+        "text": "Organisation of the library movement for vernacular education"
       },
       {
         "value": "D",
-        "text": "Founding the Asiatic Society"
+        "text": "Negotiation of regional safeguards during the linguistic merger"
       }
     ],
     "correct_answer": "A",
@@ -569,15 +569,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "A ban on all urban migration"
+        "text": "A rising working-age share accompanied by persistent unemployment"
       },
       {
         "value": "C",
-        "text": "An automatic guarantee of prosperity without policy"
+        "text": "A rising working-age share accompanied by declining workforce skills"
       },
       {
         "value": "D",
-        "text": "A permanent end to investment needs"
+        "text": "A rising working-age share accompanied by worsening worker health"
       }
     ],
     "correct_answer": "A",
@@ -613,15 +613,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Immediate linguistic merger with Andhra in 1948"
+        "text": "Continuation as a sovereign state under an Indian defence treaty"
       },
       {
         "value": "B",
-        "text": "Transfer of Hyderabad to French administration"
+        "text": "Accession to India with the Nizam retaining independent defence powers"
       },
       {
         "value": "C",
-        "text": "Creation of Telangana as a separate state in 1948"
+        "text": "Conversion of Hyderabad city into a separately administered Union Territory"
       },
       {
         "value": "D",
@@ -665,15 +665,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "The Comptroller and Auditor General"
+        "text": "The Governor or President acting on the Election Commission's opinion"
       },
       {
         "value": "C",
-        "text": "The Finance Commission"
+        "text": "The Election Commission acting on a petition from the party whip"
       },
       {
         "value": "D",
-        "text": "The district collector"
+        "text": "A High Court acting as the first-instance statutory tribunal"
       }
     ],
     "correct_answer": "A",
@@ -709,7 +709,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Income mathematically fixes every health outcome"
+        "text": "Their deprivation must be identical once income is adjusted for household size"
       },
       {
         "value": "B",
@@ -717,11 +717,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "All deprivation indicators are identical to bank balances"
+        "text": "Their deprivation can differ only if their current bank balances differ"
       },
       {
         "value": "D",
-        "text": "School attendance cannot differ at the same income"
+        "text": "Their deprivation must converge whenever they face the same market prices"
       }
     ],
     "correct_answer": "B",
@@ -757,7 +757,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Astronomical instrumentation"
+        "text": "A dynastic chronology of the Qutb Shahi rulers"
       },
       {
         "value": "B",
@@ -765,11 +765,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Structural design"
+        "text": "A linguistic grammar of classical Telugu"
       },
       {
         "value": "D",
-        "text": "Criminal procedure"
+        "text": "A critical commentary on Telugu devotional poetry"
       }
     ],
     "correct_answer": "B",
@@ -785,15 +785,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Vaccines function only as painkillers"
+        "text": "Vaccines provide passive ready-made antibodies; antibiotics stimulate immune memory"
       },
       {
         "value": "C",
-        "text": "Antibiotics cure every viral infection"
+        "text": "Vaccines directly inhibit bacterial protein synthesis; antibiotics induce antigen-specific memory"
       },
       {
         "value": "D",
-        "text": "All vaccines necessarily contain a disease-causing live organism"
+        "text": "Vaccines treat established bacterial infection; antibiotics prevent infection through immune priming"
       }
     ],
     "correct_answer": "A",
@@ -805,7 +805,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A municipal resolution alone created the state in 2009"
+        "text": "The Andhra Pradesh Reorganisation Act, 2014 provided the legal basis; 1 March 2014 was the appointed day"
       },
       {
         "value": "B",
@@ -813,11 +813,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "The States Reorganisation Act, 1956 created separate Telangana on 2 June 2014"
+        "text": "The Andhra Pradesh Reorganisation Act, 2014 provided the legal basis; 30 July 2013 was the appointed day"
       },
       {
         "value": "D",
-        "text": "The Constitution ceased to apply on the appointed day"
+        "text": "The States Reorganisation Act, 1956 provided the legal basis; 2 June 2014 was the appointed day"
       }
     ],
     "correct_answer": "B",
@@ -829,7 +829,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Their masses become zero"
+        "text": "Atmospheric drag balances gravity so that no force acts on the spacecraft"
       },
       {
         "value": "B",
@@ -837,11 +837,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "The vacuum cancels gravitational force"
+        "text": "Centripetal acceleration is absent once orbital speed is reached"
       },
       {
         "value": "D",
-        "text": "Earth's gravity is exactly zero there"
+        "text": "Gravity acts on the spacecraft but is screened from astronauts inside it"
       }
     ],
     "correct_answer": "B",
@@ -853,11 +853,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Central Information Commission"
+        "text": "GST Council"
       },
       {
         "value": "B",
-        "text": "Election Commission"
+        "text": "Inter-State Council"
       },
       {
         "value": "C",
@@ -865,7 +865,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "National Human Rights Commission"
+        "text": "NITI Aayog"
       }
     ],
     "correct_answer": "C",
@@ -901,7 +901,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Bharatiya Nyaya Sanhita - election delimitation"
+        "text": "Bharatiya Nyaya Sanhita - criminal procedure"
       },
       {
         "value": "B",
@@ -909,11 +909,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Bharatiya Sakshya Adhiniyam - land acquisition"
+        "text": "Bharatiya Nagarik Suraksha Sanhita - substantive offences"
       },
       {
         "value": "D",
-        "text": "Bharatiya Nagarik Suraksha Sanhita - income tax"
+        "text": "Bharatiya Sakshya Adhiniyam - criminal sentencing"
       }
     ],
     "correct_answer": "B",
@@ -925,15 +925,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Replacement of all school education boards"
+        "text": "Apprenticeship placement through an industry association without a university framework"
       },
       {
         "value": "B",
-        "text": "Exclusive preparation for judicial examinations"
+        "text": "Academic engineering research through a conventional public university framework"
       },
       {
         "value": "C",
-        "text": "Regulation of national monetary policy"
+        "text": "Vocational certification through an examination board without industry-led curricula"
       },
       {
         "value": "D",
@@ -1001,15 +1001,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Only the number of building permits"
+        "text": "Flood storage while leaving habitat and water-quality functions unchanged"
       },
       {
         "value": "C",
-        "text": "The need for any storm drainage forever"
+        "text": "Habitat while leaving flood-water storage and nutrient retention unchanged"
       },
       {
         "value": "D",
-        "text": "All evaporation across an entire state"
+        "text": "Water-quality regulation while increasing the filled site's flood storage"
       }
     ],
     "correct_answer": "A",
@@ -1021,11 +1021,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Every intermediate sale plus the final sale in full"
+        "text": "Gross sales at each stage without deducting intermediate consumption"
       },
       {
         "value": "B",
-        "text": "Only imported raw-material costs"
+        "text": "Final sales plus the intermediate inputs embodied in those sales"
       },
       {
         "value": "C",
@@ -1033,7 +1033,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "All transfers as current production"
+        "text": "Wages plus transfers without including profits and depreciation"
       }
     ],
     "correct_answer": "C",
@@ -1049,15 +1049,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Replacement of all crop cultivation with industry"
+        "text": "Compensation assessed after crop losses from notified disasters"
       },
       {
         "value": "C",
-        "text": "Payment exclusively for deep-sea fishing"
+        "text": "Interest reimbursement on eligible agricultural term loans"
       },
       {
         "value": "D",
-        "text": "Fixing the national policy repo rate"
+        "text": "Procurement-linked price support after the crop is marketed"
       }
     ],
     "correct_answer": "A",
@@ -1069,11 +1069,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Defence and foreign affairs only"
+        "text": "Reserved subjects under ministers and transferred subjects under the Governor's executive councillors"
       },
       {
         "value": "B",
-        "text": "Union and municipal categories only"
+        "text": "Federal subjects under elected ministers and provincial subjects under the Viceroy"
       },
       {
         "value": "C",
@@ -1081,7 +1081,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Judicial and electoral categories only"
+        "text": "All provincial subjects under ministers jointly responsible to the legislature"
       }
     ],
     "correct_answer": "C",
@@ -1165,7 +1165,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Were constructed only for deep-sea navigation"
+        "text": "Used isolated storage structures without catchment or settlement linkages"
       },
       {
         "value": "B",
@@ -1173,11 +1173,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Depended exclusively on year-round glacier melt"
+        "text": "Primarily diverted perennial river flows through continuous large canals"
       },
       {
         "value": "D",
-        "text": "Eliminated every need for maintenance"
+        "text": "Prioritised flood evacuation over seasonal agricultural water storage"
       }
     ],
     "correct_answer": "B",
@@ -1189,15 +1189,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Only nitrogen gas"
+        "text": "Sodium and potassium ions"
       },
       {
         "value": "B",
-        "text": "Only sodium chloride in every case"
+        "text": "Chloride and nitrate ions"
       },
       {
         "value": "C",
-        "text": "Only glucose"
+        "text": "Hydrogen and ammonium ions"
       },
       {
         "value": "D",
@@ -1213,15 +1213,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "They prohibited all local-language publication"
+        "text": "They mainly standardised revenue records for the state administration"
       },
       {
         "value": "B",
-        "text": "They functioned solely as military arsenals"
+        "text": "They mainly provided formal training for appointments in the state army"
       },
       {
         "value": "C",
-        "text": "They replaced every court in Hyderabad"
+        "text": "They mainly operated as official bodies for enforcing press regulations"
       },
       {
         "value": "D",
@@ -1237,11 +1237,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Was only a maritime trading company"
+        "text": "Functioned as the Nizam's official council for revenue settlement"
       },
       {
         "value": "B",
-        "text": "Was the 2014 Parliament itself"
+        "text": "Served as an association restricted to commercial arbitration"
       },
       {
         "value": "C",
@@ -1249,7 +1249,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Administered British India from London"
+        "text": "Operated as a party devoted to preserving jagirdari privileges"
       }
     ],
     "correct_answer": "C",
@@ -1265,15 +1265,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Its composition entirely of Indian women"
+        "text": "Its exclusion of elected Indian representatives from the commission's membership while retaining nominated Indian members"
       },
       {
         "value": "C",
-        "text": "Its proposal to end colonial rule immediately without conditions"
+        "text": "Its immediate implementation of separate electorates without legislative approval"
       },
       {
         "value": "D",
-        "text": "Its establishment after independence in 1950"
+        "text": "Its replacement of provincial dyarchy with immediate Dominion status"
       }
     ],
     "correct_answer": "A",
@@ -1285,7 +1285,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "State law always prevails without exception"
+        "text": "The law enacted later prevails irrespective of the legislature that enacted it"
       },
       {
         "value": "B",
@@ -1293,11 +1293,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "The district magistrate alone chooses the applicable law"
+        "text": "State law prevails whenever its subject has a stronger local connection"
       },
       {
         "value": "D",
-        "text": "Both laws automatically cease to exist"
+        "text": "Both laws remain equally enforceable and the affected person may choose either"
       }
     ],
     "correct_answer": "B",
@@ -1309,7 +1309,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Bonalu is celebrated only through Buddhist monastic debate"
+        "text": "Bathukamma centres on food offerings; Bonalu centres on floral arrangements"
       },
       {
         "value": "B",
@@ -1317,11 +1317,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Both are exclusively harvest dances of Punjab"
+        "text": "Bathukamma centres on decorated bull processions; Bonalu on floral immersion"
       },
       {
         "value": "D",
-        "text": "Bathukamma is a colonial revenue tax; Bonalu is a land tenure"
+        "text": "Bathukamma centres on tribal commemorative worship at Medaram; Bonalu on floral immersion"
       }
     ],
     "correct_answer": "B",
@@ -1333,11 +1333,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A permanent constitutional amendment requiring no legislature"
+        "text": "Delegated rule-making under an existing statute without the force of primary legislation"
       },
       {
         "value": "B",
-        "text": "A substitute for every future election"
+        "text": "Emergency constitutional amendment effective until judicial confirmation"
       },
       {
         "value": "C",
@@ -1345,7 +1345,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "A judicial decree issued by the Governor"
+        "text": "Executive legislation that continues unless expressly repealed by the legislature"
       }
     ],
     "correct_answer": "C",
@@ -1381,11 +1381,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A uniform land-survey instrument"
+        "text": "A compulsory levy payable as a share of agricultural produce"
       },
       {
         "value": "B",
-        "text": "An elected urban council"
+        "text": "A hereditary right to collect village land revenue"
       },
       {
         "value": "C",
@@ -1393,7 +1393,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "A voluntary irrigation cooperative"
+        "text": "A tenancy payment made in lieu of cultivating land"
       }
     ],
     "correct_answer": "C",
@@ -1429,7 +1429,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Tax the same input repeatedly without adjustment"
+        "text": "Reduce output liability by deducting the full purchase price rather than eligible input tax"
       },
       {
         "value": "B",
@@ -1437,11 +1437,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Eliminate all compliance records"
+        "text": "Refund every tax paid on inputs irrespective of output liability and eligibility"
       },
       {
         "value": "D",
-        "text": "Replace every direct tax"
+        "text": "Replace the output-tax liability with a tax only on business profits"
       }
     ],
     "correct_answer": "B",
@@ -1453,7 +1453,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A rule that all differential treatment is automatically unconstitutional"
+        "text": "Formal equality requiring identical treatment despite relevant disadvantage"
       },
       {
         "value": "B",
@@ -1461,11 +1461,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "An exclusive foreign-affairs power"
+        "text": "Executive discretion exempt from constitutional review once a policy is called protective"
       },
       {
         "value": "D",
-        "text": "The prohibition of every social classification"
+        "text": "A requirement that protective measures be based solely on current household income"
       }
     ],
     "correct_answer": "B",
@@ -1529,15 +1529,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Abolition of all village institutions"
+        "text": "Individual land titles in exchange for surrendering community forest access"
       },
       {
         "value": "C",
-        "text": "Only expansion of foreign trade"
+        "text": "Forest conservation through exclusion of resident tribal communities"
       },
       {
         "value": "D",
-        "text": "Replacement of agriculture by mining in every forest"
+        "text": "Cash compensation for relocation without community resource rights"
       }
     ],
     "correct_answer": "A",
@@ -1577,15 +1577,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Only administrative district lines"
+        "text": "Valley axes connecting the lowest points along stream channels"
       },
       {
         "value": "C",
-        "text": "The centreline of every perennial river"
+        "text": "Contours connecting points of equal elevation around each outlet"
       },
       {
         "value": "D",
-        "text": "Every contour of minimum elevation"
+        "text": "Groundwater equipotential lines inferred independently of surface relief"
       }
     ],
     "correct_answer": "A",
@@ -1625,15 +1625,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "A compulsory fall in every tax rate"
+        "text": "Lower financing costs and increased interest-sensitive spending"
       },
       {
         "value": "C",
-        "text": "Direct abolition of all bank deposits"
+        "text": "Higher bank reserves automatically producing lower loan rates"
       },
       {
         "value": "D",
-        "text": "An automatic increase in every household's cash income"
+        "text": "Lower deposit returns automatically expanding household consumption"
       }
     ],
     "correct_answer": "A",
@@ -1645,15 +1645,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Cannot enter the bloodstream"
+        "text": "Oxidises haemoglobin iron to form methaemoglobin as its principal mechanism"
       },
       {
         "value": "B",
-        "text": "Is identical to carbon dioxide in blood chemistry"
+        "text": "Primarily blocks oxygen entry by causing fluid secretion into the alveoli"
       },
       {
         "value": "C",
-        "text": "Is always visible as a green cloud"
+        "text": "Primarily reduces blood oxygen through rapid destruction of red blood cells"
       },
       {
         "value": "D",
@@ -1669,7 +1669,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Full use of every worker's marginal productivity"
+        "text": "Seasonal unemployment caused by a recurring absence of farm work"
       },
       {
         "value": "B",
@@ -1677,11 +1677,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "A fall in the number of crops grown nationally"
+        "text": "Frictional unemployment during movement between farm employers"
       },
       {
         "value": "D",
-        "text": "An inevitable increase in land area"
+        "text": "Structural unemployment caused by a mismatch with industrial job requirements"
       }
     ],
     "correct_answer": "B",
@@ -1693,7 +1693,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Directive Principles apply only to foreign governments"
+        "text": "Directive Principles confer directly enforceable individual remedies equivalent to Article 32"
       },
       {
         "value": "B",
@@ -1701,11 +1701,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Fundamental Rights can never be limited by law"
+        "text": "Directive Principles bind courts to invalidate every inconsistent statute without further constitutional grounds"
       },
       {
         "value": "D",
-        "text": "Directive Principles are outside the Constitution"
+        "text": "Directive Principles operate as judicially enforceable duties of individual citizens"
       }
     ],
     "correct_answer": "B",
@@ -1813,11 +1813,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Only coarse quartz sand without clay"
+        "text": "Kaolinitic clays with low shrink-swell potential"
       },
       {
         "value": "B",
-        "text": "Permanent ice lenses in tropical summers"
+        "text": "Iron-oxide cementation without expandable clay minerals"
       },
       {
         "value": "C",
@@ -1825,7 +1825,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "An impermeable metal layer"
+        "text": "High silt content with negligible clay-related volume change"
       }
     ],
     "correct_answer": "C",
@@ -1837,15 +1837,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Both - exclusively urban municipalities"
+        "text": "Ryotwari - village estate; Mahalwari - individual cultivator"
       },
       {
         "value": "B",
-        "text": "Ryotwari - princely ruler; Mahalwari - overseas company"
+        "text": "Ryotwari - zamindar; Mahalwari - individual cultivator"
       },
       {
         "value": "C",
-        "text": "Ryotwari - only port merchants; Mahalwari - factory workers"
+        "text": "Ryotwari - village estate; Mahalwari - zamindar"
       },
       {
         "value": "D",
@@ -1861,15 +1861,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A permanent absence of upper-air winds"
+        "text": "Northeast monsoon depressions"
       },
       {
         "value": "B",
-        "text": "The equatorial counter-current alone"
+        "text": "Southwest monsoon onset vortices"
       },
       {
         "value": "C",
-        "text": "Only the retreat of Antarctic sea ice"
+        "text": "Local pre-monsoon convective storms"
       },
       {
         "value": "D",
@@ -1885,11 +1885,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Landing a crew on the Moon"
+        "text": "Autonomous rendezvous without mechanical capture"
       },
       {
         "value": "B",
-        "text": "Navigation using underwater beacons"
+        "text": "Transfer of propellant between docked spacecraft"
       },
       {
         "value": "C",
@@ -1897,7 +1897,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Sampling an asteroid surface"
+        "text": "Robotic assembly of a modular space station"
       }
     ],
     "correct_answer": "C",
@@ -1913,15 +1913,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Every inflation-indexed payment by exactly the same percentage"
+        "text": "A nominal income that rises in the same proportion as the consumer price level"
       },
       {
         "value": "C",
-        "text": "Only foreign tourists' passports"
+        "text": "A nominal income that rises faster than the consumer price level"
       },
       {
         "value": "D",
-        "text": "A physical quantity of grain measured in kilograms"
+        "text": "A payment fully indexed to the same consumer price measure"
       }
     ],
     "correct_answer": "A",
@@ -1937,15 +1937,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "India's Chandrayaan-3 and NASA's Perseverance"
+        "text": "India's Aditya-L1 and Europe's Solar Orbiter"
       },
       {
         "value": "C",
-        "text": "ISRO's NavIC and Europe's Galileo"
+        "text": "India's Aditya-L1 and NASA's Parker Solar Probe"
       },
       {
         "value": "D",
-        "text": "NASA's Juno and ISRO's Mars Orbiter"
+        "text": "Europe's Proba-3 and NASA's Solar Dynamics Observatory"
       }
     ],
     "correct_answer": "A",
@@ -1957,7 +1957,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Magnitude of the same flood hazard"
+        "text": "Hazard intensity"
       },
       {
         "value": "B",
@@ -1965,11 +1965,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Astronomical tide alone"
+        "text": "Forecast lead time"
       },
       {
         "value": "D",
-        "text": "Latitude"
+        "text": "Return period of the flood"
       }
     ],
     "correct_answer": "B",
@@ -2005,11 +2005,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Exclusion from all digital and physical service channels"
+        "text": "Account ownership without affordable access to transactions or credit"
       },
       {
         "value": "B",
-        "text": "A bank account that can never be operated"
+        "text": "Expanded loan access without assessment of suitability or repayment capacity"
       },
       {
         "value": "C",
@@ -2017,7 +2017,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Compulsory borrowing regardless of repayment capacity"
+        "text": "Digital registration without accessible mechanisms for complaints and redress"
       }
     ],
     "correct_answer": "C",
@@ -2077,15 +2077,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "DNA contains no sugar; RNA contains no bases"
+        "text": "DNA usually contains ribose and thymine; RNA usually contains deoxyribose and uracil"
       },
       {
         "value": "B",
-        "text": "Both always have identical sugars and bases"
+        "text": "DNA usually contains deoxyribose and uracil; RNA usually contains ribose and thymine"
       },
       {
         "value": "C",
-        "text": "RNA is always a double-stranded chromosome"
+        "text": "DNA usually contains ribose and uracil; RNA usually contains deoxyribose and thymine"
       },
       {
         "value": "D",
@@ -2101,7 +2101,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Painting every motif only after weaving"
+        "text": "Wax-resist dyeing of cloth after weaving"
       },
       {
         "value": "B",
@@ -2109,11 +2109,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Using only undyed plastic sheets"
+        "text": "Block-printing repeated motifs on woven cloth"
       },
       {
         "value": "D",
-        "text": "Carving motifs into granite"
+        "text": "Supplementary-weft insertion of motifs using pre-dyed yarn"
       }
     ],
     "correct_answer": "B",
@@ -2149,7 +2149,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Industrial blueprint reproduction"
+        "text": "Freehand textile painting organised around temple hangings"
       },
       {
         "value": "B",
@@ -2157,11 +2157,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Only stone inscriptions in Latin"
+        "text": "Wax-resist textile patterning for repeated decorative motifs"
       },
       {
         "value": "D",
-        "text": "A form of European oil portraiture"
+        "text": "Metal-inlay ornamentation on darkened alloy surfaces"
       }
     ],
     "correct_answer": "B",
@@ -2197,7 +2197,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Is impossible to read"
+        "text": "Must be followed without any later revision"
       },
       {
         "value": "B",
@@ -2205,11 +2205,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Was carved on a monument"
+        "text": "Has been formally approved for immediate implementation"
       },
       {
         "value": "D",
-        "text": "Has already been cancelled"
+        "text": "Has been postponed until a final decision is made"
       }
     ],
     "correct_answer": "B",
@@ -2249,15 +2249,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Convert every virus into a bacterium"
+        "text": "Create immune memory against the antibiotic rather than the pathogen"
       },
       {
         "value": "C",
-        "text": "Make all bacteria permanently harmless"
+        "text": "Cause susceptible bacteria to become resistant through purposeful adaptation to the patient's needs"
       },
       {
         "value": "D",
-        "text": "Remove every environmental source of infection"
+        "text": "Increase resistance mainly by reducing the patient's antibody production"
       }
     ],
     "correct_answer": "A",
@@ -2293,11 +2293,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "The 1935 provincial autonomy provisions"
+        "text": "Subsidiary alliances guaranteeing unrestricted adoption-based succession"
       },
       {
         "value": "B",
-        "text": "The 1919 dyarchy scheme"
+        "text": "Permanent Settlement provisions governing revenue in Bengal"
       },
       {
         "value": "C",
@@ -2305,11 +2305,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "The 1947 Mountbatten Plan"
+        "text": "The Charter Act's opening of Indian trade to private British merchants"
       }
     ],
     "correct_answer": "C",
-    "explanation": "Annexations under the Doctrine of Lapse preceded 1857; the other measures belong to later periods."
+    "explanation": "The Doctrine of Lapse challenged adoption-based succession and enabled annexations, creating resentment among affected ruling families. The other policies address different mechanisms of colonial control."
   },
   {
     "display_order": 97,
@@ -2341,11 +2341,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Only official English parliamentary reports"
+        "text": "Indian-language publications regardless of whether they criticised the government, under rules identical to English newspapers"
       },
       {
         "value": "B",
-        "text": "All Sanskrit manuscripts from antiquity"
+        "text": "English-language publications critical of colonial administration under a separate licensing system"
       },
       {
         "value": "C",
@@ -2353,7 +2353,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Private letters sent outside India exclusively"
+        "text": "All periodicals through a uniform pre-publication censorship rule irrespective of language"
       }
     ],
     "correct_answer": "C",
@@ -2365,7 +2365,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A low orbit around Mars"
+        "text": "The second Sun-Earth Lagrange point"
       },
       {
         "value": "B",
@@ -2373,11 +2373,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "The Moon's south pole"
+        "text": "The fourth Sun-Earth Lagrange point"
       },
       {
         "value": "D",
-        "text": "The centre of the asteroid belt"
+        "text": "The second Earth-Moon Lagrange point"
       }
     ],
     "correct_answer": "B",
@@ -2413,11 +2413,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Grid frequency is unrelated to supply-demand balance"
+        "text": "Solar output follows demand closely enough that storage mainly compensates for billing delays"
       },
       {
         "value": "B",
-        "text": "Storage creates energy without input"
+        "text": "Installed solar capacity measures guaranteed instantaneous output regardless of weather"
       },
       {
         "value": "C",
@@ -2425,7 +2425,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Solar panels generate constant power through every night"
+        "text": "Storage increases the daily solar energy input rather than shifting delivery over time"
       }
     ],
     "correct_answer": "C",
@@ -2441,15 +2441,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Victorian ballroom dance"
+        "text": "Qutb Shahi court traditions of narrative dance"
       },
       {
         "value": "C",
-        "text": "Portuguese naval drill"
+        "text": "Asaf Jahi court traditions of devotional music"
       },
       {
         "value": "D",
-        "text": "Only Mughal miniature painting"
+        "text": "Vijayanagara temple traditions of dance-drama"
       }
     ],
     "correct_answer": "A",
@@ -2461,7 +2461,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A property-tax exemption"
+        "text": "Formal equality through identical examination conditions for every candidate"
       },
       {
         "value": "B",
@@ -2469,11 +2469,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Abolition of every academic standard"
+        "text": "Compensatory preference unrelated to barriers in the examination process"
       },
       {
         "value": "D",
-        "text": "A constitutional ban on written examinations"
+        "text": "Equality of outcomes through identical marks for eligible candidates"
       }
     ],
     "correct_answer": "B",
@@ -2509,7 +2509,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Only the smallest producers"
+        "text": "Short-lived primary producers at the base of the same food chain"
       },
       {
         "value": "B",
@@ -2517,11 +2517,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Rainwater before atmospheric contact in every case"
+        "text": "Primary consumers feeding only on the producers in that chain"
       },
       {
         "value": "D",
-        "text": "Every organism at exactly the same concentration"
+        "text": "Secondary consumers below the top predators in that chain"
       }
     ],
     "correct_answer": "B",
@@ -2533,15 +2533,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Conduct of all state elections"
+        "text": "Executive financial control through prior approval of each spending decision"
       },
       {
         "value": "B",
-        "text": "Appointment of every High Court judge"
+        "text": "Legislative budget allocation through binding recommendations on tax rates"
       },
       {
         "value": "C",
-        "text": "Direct day-to-day execution of every ministry's spending"
+        "text": "Administrative financial management through preparation of departmental accounts"
       },
       {
         "value": "D",
@@ -2581,11 +2581,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Forward the password to classmates for checking"
+        "text": "Open the supplied link and trust it if the page displays a padlock"
       },
       {
         "value": "B",
-        "text": "Send the password because the logo is familiar"
+        "text": "Reply to the sender requesting confirmation before entering the password on the supplied page"
       },
       {
         "value": "C",
@@ -2593,7 +2593,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Disable all account protections"
+        "text": "Enter the password if the linked page reproduces the portal's usual branding"
       }
     ],
     "correct_answer": "C",
@@ -2629,7 +2629,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Chief architect of the 1935 Government of India Act"
+        "text": "Court-centred poetry celebrating dynastic authority"
       },
       {
         "value": "B",
@@ -2637,11 +2637,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Founder of the East India Company"
+        "text": "Devotional poetry centred on the Telugu Bhagavata rendering"
       },
       {
         "value": "D",
-        "text": "Exclusive authorship of Sanskrit hydraulic treatises"
+        "text": "Classical court epic centred on the Vijayanagara imperial ideal"
       }
     ],
     "correct_answer": "B",
@@ -2657,15 +2657,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Abolish every regional development institution"
+        "text": "Establish a separate Telangana state before the linguistic merger"
       },
       {
         "value": "C",
-        "text": "Transfer Hyderabad to direct British rule"
+        "text": "Extend the Andhra region's service rules without regional safeguards"
       },
       {
         "value": "D",
-        "text": "Partition Hyderabad into two foreign states"
+        "text": "Place the Telangana region under a separately administered Union Territory"
       }
     ],
     "correct_answer": "A",
@@ -2677,15 +2677,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "It is collected only at railway stations"
+        "text": "Its marginal rate is positive but its average rate remains constant"
       },
       {
         "value": "B",
-        "text": "Every taxpayer pays an identical fixed sum"
+        "text": "Its average rate falls as taxable income rises"
       },
       {
         "value": "C",
-        "text": "Its rate necessarily falls as income rises"
+        "text": "Its absolute tax payment rises while its average rate falls"
       },
       {
         "value": "D",
@@ -2701,7 +2701,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "It makes sample size irrelevant"
+        "text": "Sampling variance caused solely by a small independent test set"
       },
       {
         "value": "B",
@@ -2709,11 +2709,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "It guarantees fair generalization"
+        "text": "Underfitting caused solely by an insufficiently complex model"
       },
       {
         "value": "D",
-        "text": "It proves the model understands every concept"
+        "text": "Label imbalance caused solely by unequal numbers of classes"
       }
     ],
     "correct_answer": "B",
@@ -2725,11 +2725,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A natural shortage of rivers in India"
+        "text": "Adverse terms of trade caused solely by changes in international commodity prices"
       },
       {
         "value": "B",
-        "text": "Only losses caused by monsoon flooding"
+        "text": "Domestic transfers of agricultural surplus from tenants to Indian landlords"
       },
       {
         "value": "C",
@@ -2737,7 +2737,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "The absence of any colonial trade"
+        "text": "Revenue loss caused solely by collecting land taxes below their assessed value"
       }
     ],
     "correct_answer": "C",
@@ -2749,11 +2749,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Toda"
+        "text": "Gond"
       },
       {
         "value": "B",
-        "text": "Jarawa"
+        "text": "Chenchu"
       },
       {
         "value": "C",
@@ -2761,7 +2761,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Bhotia"
+        "text": "Lambada"
       }
     ],
     "correct_answer": "C",
@@ -2777,15 +2777,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Launch of the 1942 Quit India movement"
+        "text": "Congress-League rejection of separate electorates in favour of joint electorates"
       },
       {
         "value": "C",
-        "text": "Creation of the Planning Commission"
+        "text": "Congress-League agreement to launch an immediate nationwide non-cooperation movement"
       },
       {
         "value": "D",
-        "text": "Adoption of the 1950 Constitution"
+        "text": "Congress-League acceptance of provincial partition into sovereign states"
       }
     ],
     "correct_answer": "A",
@@ -2801,15 +2801,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Article 360"
+        "text": "Article 226"
       },
       {
         "value": "C",
-        "text": "Article 280"
+        "text": "Article 136"
       },
       {
         "value": "D",
-        "text": "Article 148"
+        "text": "Article 227"
       }
     ],
     "correct_answer": "A",
@@ -2821,11 +2821,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Mandatory work at peak afternoon heat without breaks"
+        "text": "Maintain afternoon shifts and rely on drinking water only after work"
       },
       {
         "value": "B",
-        "text": "Replacing all drinking water with strong stimulants"
+        "text": "Provide shaded breaks while withholding drinking water until thirst becomes severe"
       },
       {
         "value": "C",
@@ -2833,7 +2833,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "Closing every shaded rest area"
+        "text": "Replace work-rest scheduling with acclimatisation alone during extreme heat"
       }
     ],
     "correct_answer": "C",
@@ -2849,15 +2849,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "would finds"
+        "text": "would find"
       },
       {
         "value": "C",
-        "text": "will find"
+        "text": "would have find"
       },
       {
         "value": "D",
-        "text": "has finding"
+        "text": "had found"
       }
     ],
     "correct_answer": "A",
@@ -2897,15 +2897,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "An exclusive ban on semiconductor research"
+        "text": "Standardising quantum-resistant encryption across all UN member states"
       },
       {
         "value": "C",
-        "text": "Only classical railway signalling"
+        "text": "Establishing a UN licensing authority for quantum computing laboratories"
       },
       {
         "value": "D",
-        "text": "A new global currency"
+        "text": "Restricting quantum research funding to high-energy particle physics"
       }
     ],
     "correct_answer": "A",
@@ -2921,15 +2921,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Submission was prohibited for selected candidates"
+        "text": "Submission was sufficient for consideration, whether or not other requirements were met"
       },
       {
         "value": "C",
-        "text": "Every applicant who submitted was selected"
+        "text": "Every candidate who submitted the form was necessarily considered"
       },
       {
         "value": "D",
-        "text": "Every eligible person was considered without a form"
+        "text": "Consideration was necessary before a candidate could submit the form"
       }
     ],
     "correct_answer": "A",
@@ -2941,11 +2941,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "The Earth's axial tilt"
+        "text": "Ground shaking generated by seismic-wave propagation"
       },
       {
         "value": "B",
-        "text": "The existence of tectonic plates"
+        "text": "Surface displacement along the ruptured fault"
       },
       {
         "value": "C",
@@ -2953,7 +2953,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "The tectonic rupture itself only"
+        "text": "Release of accumulated strain on the fault plane"
       }
     ],
     "correct_answer": "C",
@@ -2965,15 +2965,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "The abolition of all financial audit"
+        "text": "Departmental verification limited to internal vouchers and accounting entries"
       },
       {
         "value": "B",
-        "text": "Secrecy of muster rolls from beneficiaries"
+        "text": "Independent financial certification limited to compliance with accounting standards"
       },
       {
         "value": "C",
-        "text": "Exclusive reliance on unverified contractor claims"
+        "text": "Technical appraisal limited to engineering specifications of completed works"
       },
       {
         "value": "D",
@@ -3017,15 +3017,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Eliminate drainage bottlenecks"
+        "text": "Decrease rapid runoff and lengthen catchment response time"
       },
       {
         "value": "C",
-        "text": "Guarantee zero runoff during intense storms"
+        "text": "Increase infiltration while leaving the runoff peak unchanged"
       },
       {
         "value": "D",
-        "text": "Increase infiltration everywhere"
+        "text": "Reduce the runoff coefficient while shortening catchment response time"
       }
     ],
     "correct_answer": "A",
@@ -3085,15 +3085,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "The construction of Sanchi under Ashoka"
+        "text": "Bidar and the development of the Barid Shahi capital"
       },
       {
         "value": "B",
-        "text": "The Mughal capital at Fatehpur Sikri alone"
+        "text": "Bijapur and the development of the Adil Shahi capital"
       },
       {
         "value": "C",
-        "text": "The foundation of Calcutta by the British"
+        "text": "Ahmadnagar and the development of the Nizam Shahi capital"
       },
       {
         "value": "D",
@@ -3109,7 +3109,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A human eye observing daylight"
+        "text": "A multispectral scanner recording reflected solar radiation"
       },
       {
         "value": "B",
@@ -3117,11 +3117,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "A camera using only reflected sunlight"
+        "text": "A thermal infrared radiometer recording terrestrial emission"
       },
       {
         "value": "D",
-        "text": "A passive thermal detector without a transmitted signal"
+        "text": "A microwave radiometer recording natural surface emission"
       }
     ],
     "correct_answer": "B",
@@ -3133,7 +3133,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A continuous coastal delta below sea level"
+        "text": "An extensive alluvial plain dominated by recent river deposits"
       },
       {
         "value": "B",
@@ -3141,11 +3141,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "A coral atoll chain"
+        "text": "A young folded upland dominated by active crustal compression"
       },
       {
         "value": "D",
-        "text": "An active Himalayan fold belt"
+        "text": "A basaltic coastal plain dominated by tidal estuaries"
       }
     ],
     "correct_answer": "B",
@@ -3157,7 +3157,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Acceptance of permanent colonial economic dependence"
+        "text": "Promotion of imported substitutes through preferential imperial tariffs"
       },
       {
         "value": "B",
@@ -3165,11 +3165,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Withdrawal from all public association"
+        "text": "Expansion of elected councils as a substitute for economic boycott"
       },
       {
         "value": "D",
-        "text": "Exclusive support for imported British cloth"
+        "text": "Reliance on petitions while discouraging national educational institutions"
       }
     ],
     "correct_answer": "B",
@@ -3181,7 +3181,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Set the nationwide policy repo rate"
+        "text": "Frame binding service-allocation rules for two already-created successor states"
       },
       {
         "value": "B",
@@ -3189,11 +3189,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Draft India's original Constitution in 1946"
+        "text": "Determine the interstate river-water entitlements of two successor states"
       },
       {
         "value": "D",
-        "text": "Determine the design flood of every Indian dam"
+        "text": "Implement the final territorial boundaries of an already-approved Telangana state"
       }
     ],
     "correct_answer": "B",
@@ -3253,7 +3253,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Abolition of the Telugu language"
+        "text": "Seniority based on length of service irrespective of domicile"
       },
       {
         "value": "B",
@@ -3261,11 +3261,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Ocean territorial boundaries"
+        "text": "Reservation of legislative seats by regional population"
       },
       {
         "value": "D",
-        "text": "Exclusive ownership of all irrigation tanks by the Union"
+        "text": "Allocation of regional revenue by place of tax collection"
       }
     ],
     "correct_answer": "B",
@@ -3277,7 +3277,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "A necessary fall in all land values"
+        "text": "Lower production risk even when supply reliability and distribution remain unchanged"
       },
       {
         "value": "B",
@@ -3285,11 +3285,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "No connection with farm income"
+        "text": "Higher productivity independent of crop choice and complementary farm inputs"
       },
       {
         "value": "D",
-        "text": "A guaranteed elimination of every crop failure"
+        "text": "Higher rural incomes through expansion of cultivated area even when water availability falls"
       }
     ],
     "correct_answer": "B",
@@ -3325,7 +3325,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Photosynthesis never occurs in lakes"
+        "text": "Algal photosynthesis consumes oxygen during daylight faster than respiration"
       },
       {
         "value": "B",
@@ -3333,11 +3333,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Nitrogen and phosphorus directly replace all oxygen molecules by volume"
+        "text": "Nutrients lower oxygen mainly by increasing its chemical solubility"
       },
       {
         "value": "D",
-        "text": "All aquatic microbes stop respiring"
+        "text": "Nutrients suppress biomass production, thereby increasing decomposition demand"
       }
     ],
     "correct_answer": "B",
@@ -3373,11 +3373,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Every peninsular river is glacier-fed"
+        "text": "Himalayan flows depend mainly on winter rain, while peninsular flows depend mainly on summer snowmelt"
       },
       {
         "value": "B",
-        "text": "Himalayan rivers have no sediment"
+        "text": "Both river groups generally receive equal proportions of glacier melt and monsoon rainfall"
       },
       {
         "value": "C",
@@ -3385,7 +3385,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "D",
-        "text": "All Himalayan rivers dry completely every winter"
+        "text": "Peninsular flows are less seasonal because their catchments generally contain larger glaciers"
       }
     ],
     "correct_answer": "C",
@@ -3473,15 +3473,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "All alien species are necessarily invasive"
+        "text": "An invasive alien is any introduced species, regardless of spread or ecological impact"
       },
       {
         "value": "C",
-        "text": "Endemic means globally abundant in every habitat"
+        "text": "An endemic is any threatened species, regardless of its native geographic range"
       },
       {
         "value": "D",
-        "text": "Every endemic species was introduced from another continent"
+        "text": "An invasive alien must be globally widespread, while an endemic must be locally abundant"
       }
     ],
     "correct_answer": "A",
@@ -3493,15 +3493,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Arthashastra"
+        "text": "Andhra Mahabharatamu"
       },
       {
         "value": "B",
-        "text": "Rajatarangini"
+        "text": "Panduranga Mahatmyamu"
       },
       {
         "value": "C",
-        "text": "Amuktamalyada"
+        "text": "Manucharitramu"
       },
       {
         "value": "D",
@@ -3517,7 +3517,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Only the length of ordinary budget speeches"
+        "text": "Parliament's ordinary legislative competence under the Union List"
       },
       {
         "value": "B",
@@ -3525,11 +3525,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Every possible judicial interpretation"
+        "text": "The executive's power to frame rules under an ordinary statute"
       },
       {
         "value": "D",
-        "text": "The use of local languages in schools"
+        "text": "The judiciary's power to review administrative discretion"
       }
     ],
     "correct_answer": "B",
@@ -3569,15 +3569,15 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "B",
-        "text": "Civil aviation safety"
+        "text": "Regulation of agricultural tenancy and crop-sharing contracts"
       },
       {
         "value": "C",
-        "text": "Marine fishing licences"
+        "text": "Consolidation of fragmented agricultural holdings"
       },
       {
         "value": "D",
-        "text": "Inter-state currency issuance"
+        "text": "Acquisition of agricultural land for public infrastructure"
       }
     ],
     "correct_answer": "A",
@@ -3589,7 +3589,7 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
     "options": [
       {
         "value": "A",
-        "text": "Lord Mountbatten"
+        "text": "Lord Amherst"
       },
       {
         "value": "B",
@@ -3597,11 +3597,11 @@ DECLARE v_branch UUID; v_subject UUID; v_test UUID; v_new BOOLEAN := FALSE;
       },
       {
         "value": "C",
-        "text": "Lord Ripon"
+        "text": "Lord Hastings"
       },
       {
         "value": "D",
-        "text": "Lord Curzon"
+        "text": "Lord Auckland"
       }
     ],
     "correct_answer": "B",

@@ -1,0 +1,104 @@
+# GS distractor revision
+
+Reviewed all 150 items. Revised three distractors in 94 questions in the matching edition; retained its three matching questions. Numerical and other plausible options retained. Answer letters, correct answer text, question order, marks and duration remain unchanged.
+
+Apply `supabase/seeds/tgpsc_aee_2026_gs_distractor_revision.sql` after the matching revision. Unchanged reruns are allowed. Changed tests with attempts are refused; no history is deleted.
+
+Alternatives use nearby concepts, comparable timelines, and common misconceptions. This is an editorial improvement, not a measured difficulty rating. Independent subject review remains pending.
+
+Sakala Janula Samme primary record: https://www.tgtransco.com/toos_2008-2012/addl-secy-too-ms-no-22-dt-27-04-2012.pdf
+
+- Q1: [Telangana History, Culture & State Formation] The 2011 Sakala Janula Samme was principally a:
+- Q2: [Indian Geography & Telangana Geography] In a semi-arid plateau region, replacing a water-intensive crop with an appropriate millet can primarily improve:
+- Q5: [General Science & Technology] A pressure cooker cooks food faster mainly because increased pressure:
+- Q9: [Indian History & National Movement] The Cabinet Mission Plan of 1946 principally sought:
+- Q10: [Indian Geography & Telangana Geography] Lateritic profiles are associated especially with:
+- Q12: [Telangana History, Culture & State Formation] Which feature of the Ramappa Temple illustrates deliberate reduction of roof weight?
+- Q13: [Indian Geography & Telangana Geography] In much of the Telangana hard-rock terrain, productive groundwater is principally stored and transmitted through:
+- Q14: [Indian History & National Movement] Under the Permanent Settlement, the revenue demand was fixed with zamindars. A major structural consequence was:
+- Q15: [Current Affairs] Which statement correctly describes the Maratha Military Landscapes of India inscribed by UNESCO in 2025?
+- Q16: [Telangana History, Culture & State Formation] Salar Jung I is most closely associated with which nineteenth-century Hyderabad development?
+- Q18: [General Science & Technology] Adding a suitable pentavalent impurity to silicon ordinarily produces:
+- Q19: [Indian History & National Movement] The Poona Pact of 1932 replaced the proposed separate electorates for Depressed Classes with:
+- Q20: [Indian Geography & Telangana Geography] Why is the interior Deccan generally drier than the windward western coastal belt during the southwest monsoon?
+- Q22: [Telangana History, Culture & State Formation] Chakali Ilamma is remembered in Telangana history particularly for:
+- Q24: [Indian Geography & Telangana Geography] A falling share of dependent ages and rising working-age share can create a demographic dividend only if accompanied by:
+- Q26: [Telangana History, Culture & State Formation] The political consequence of the September 1948 military action in Hyderabad was:
+- Q28: [Indian Polity & Constitution] Under the Tenth Schedule, the initial decision on a legislator's disqualification on defection grounds is ordinarily made by:
+- Q30: [Indian Economy & Telangana Economy] Why can two households with the same income have different multidimensional deprivation levels?
+- Q32: [Telangana History, Culture & State Formation] Suravaram Pratap Reddy's 'Andhrula Sanghika Charitra' is primarily a work of:
+- Q33: [General Science & Technology] Which statement is correct?
+- Q34: [Telangana History, Culture & State Formation] Which statement correctly distinguishes the legislative basis of Telangana's formation from its effective formation date?
+- Q35: [General Science & Technology] Astronauts in a low Earth orbit appear weightless primarily because:
+- Q38: [Current Affairs] Which pairing correctly matches a new criminal law implemented from 1 July 2024 with its primary field?
+- Q39: [Current Affairs] Telangana's Young India Skills University, established in 2024, is distinguished chiefly by:
+- Q42: [Environment & Disaster Management] Converting an urban wetland into filled construction land can reduce:
+- Q43: [Indian Economy & Telangana Economy] To avoid double counting when measuring domestic output, national accounts primarily sum:
+- Q44: [Current Affairs] According to Telangana's Rythu Bharosa portal, the scheme's principal agricultural purpose is:
+- Q45: [Indian History & National Movement] Under the Government of India Act, 1919, dyarchy in provinces divided subjects into:
+- Q49: [Telangana History, Culture & State Formation] Kakatiya tank systems are important in environmental history mainly because they:
+- Q50: [General Science & Technology] Hard water forms scum with soap mainly due to dissolved:
+- Q51: [Telangana History, Culture & State Formation] Why do libraries and vernacular associations figure prominently in accounts of cultural awakening in Telangana under the Nizam?
+- Q52: [Telangana History, Culture & State Formation] In Telangana's twentieth-century political history, the Andhra Mahasabha is significant because it:
+- Q53: [Indian History & National Movement] A principal reason for Indian opposition to the Simon Commission was:
+- Q54: [Indian Polity & Constitution] Where valid Union and state laws on a Concurrent List matter conflict, what is the general constitutional rule, subject to Article 254 exceptions?
+- Q55: [Telangana History, Culture & State Formation] Which distinction between Bathukamma and Bonalu is correct?
+- Q56: [Indian Polity & Constitution] An ordinance promulgated when the relevant legislature is not in session is best understood as:
+- Q58: [Telangana History, Culture & State Formation] In discussions of Telangana's agrarian history, vetti refers primarily to:
+- Q60: [Indian Economy & Telangana Economy] The principal economic purpose of input tax credit in a value-added tax system is to:
+- Q61: [Indian Polity & Constitution] Reservations and targeted inclusion measures are most appropriately assessed in relation to:
+- Q64: [Telangana History, Culture & State Formation] The slogan 'Jal, Jangal, Zameen' associated with Komaram Bheem emphasizes:
+- Q66: [Indian Geography & Telangana Geography] A watershed boundary generally follows:
+- Q68: [Indian Economy & Telangana Economy] Other things equal, a policy-rate increase intended to restrain demand generally works through:
+- Q69: [General Science & Technology] Carbon monoxide is dangerous chiefly because it:
+- Q70: [Indian Economy & Telangana Economy] Several workers leave a farm without reducing its output. This is evidence consistent with:
+- Q71: [Indian Polity & Constitution] Which statement correctly distinguishes Directive Principles from Fundamental Rights?
+- Q76: [Indian Geography & Telangana Geography] Deep black soils commonly develop shrinkage cracks during dry weather because they contain:
+- Q77: [Indian History & National Movement] Which pairing correctly identifies the principal settlement unit?
+- Q78: [Indian Geography & Telangana Geography] Winter precipitation over northwestern India is closely associated with:
+- Q79: [Current Affairs] ISRO's successful SpaDeX docking on 16 January 2025 principally demonstrated which capability?
+- Q80: [Indian Economy & Telangana Economy] Unexpected inflation most directly reduces the purchasing power of:
+- Q81: [Current Affairs] An ISRO report in October 2026 described a joint coronagraph view of solar eruptions near their origin. Which mission pair was involved?
+- Q82: [Environment & Disaster Management] Two towns face the same flood depth, but one has weaker housing and fewer evacuation resources. Its greater expected loss chiefly reflects higher:
+- Q84: [Indian Economy & Telangana Economy] For a small enterprise, financial inclusion is most meaningful when formal access is accompanied by:
+- Q87: [General Science & Technology] Which pairing correctly distinguishes typical DNA from RNA?
+- Q90: [Telangana History, Culture & State Formation] Cheriyal painting is especially associated with:
+- Q92: [Basic English] In 'The revised timetable is not set in stone', the phrase means that the timetable:
+- Q94: [General Science & Technology] Stopping an antibiotic course or using antibiotics unnecessarily is a concern chiefly because inappropriate use can:
+- Q96: [Indian History & National Movement] Which policy intensified resentment among several princely ruling families before the revolt of 1857?
+- Q98: [Indian History & National Movement] The Vernacular Press Act of 1878 particularly targeted:
+- Q99: [Current Affairs] Aditya-L1's halo-orbit insertion on 6 January 2024 placed the observatory around:
+- Q101: [General Science & Technology] A grid with a large share of solar generation particularly benefits from storage and flexible demand because:
+- Q102: [Telangana History, Culture & State Formation] Perini Sivatandavam is conventionally linked with which historical-cultural setting?
+- Q103: [Indian Polity & Constitution] A public examination provides an accessible format and reasonable adjustments for eligible disabled candidates. This most directly advances:
+- Q105: [Environment & Disaster Management] A persistent fat-soluble pollutant tends to reach its highest concentration in:
+- Q106: [Indian Polity & Constitution] The constitutional audit institution headed by the CAG primarily supports:
+- Q108: [General Science & Technology] A message imitates a trusted portal and requests a password through an unfamiliar link. The safest immediate response is to:
+- Q110: [Telangana History, Culture & State Formation] Which description best fits Kaloji Narayana Rao's literary and public contribution?
+- Q111: [Telangana History, Culture & State Formation] The Gentlemen's Agreement associated with the 1956 merger was principally intended to:
+- Q112: [Indian Economy & Telangana Economy] A tax is progressive in the income-tax sense when:
+- Q113: [General Science & Technology] An educational prediction model is tested on examples that were also used to train it. The principal evaluation problem is:
+- Q114: [Indian History & National Movement] Dadabhai Naoroji's drain theory emphasized:
+- Q115: [Telangana History, Culture & State Formation] The Sammakka-Saralamma Jatara at Medaram is especially associated with which tribal community?
+- Q117: [Indian Polity & Constitution] A person directly approaches the Supreme Court to enforce a fundamental right. The principal constitutional remedy is under:
+- Q118: [Environment & Disaster Management] Which measure most directly protects outdoor workers during a heatwave?
+- Q119: [Basic English] Choose the correct completion: 'If she had checked the units, she ___ the error.'
+- Q121: [Current Affairs] The UN's 2025 International Year of Quantum Science and Technology most directly sought attention to:
+- Q122: [Basic English] Read: 'Only candidates who submitted the form were considered.' Which conclusion follows?
+- Q123: [Environment & Disaster Management] Which is a secondary hazard that an earthquake can trigger?
+- Q124: [Indian Economy & Telangana Economy] A social audit of a public employment programme primarily strengthens:
+- Q126: [Environment & Disaster Management] Replacing permeable ground with connected paved surfaces tends to:
+- Q129: [Telangana History, Culture & State Formation] The Qutb Shahi dynasty is historically associated most directly with:
+- Q130: [General Science & Technology] Which system is an active remote-sensing instrument?
+- Q131: [Indian Geography & Telangana Geography] Which physical description best characterizes most of Telangana?
+- Q132: [Indian History & National Movement] The Swadeshi movement following Bengal's 1905 partition combined boycott with:
+- Q133: [Telangana History, Culture & State Formation] The committee headed by Justice B.N. Srikrishna in 2010 was appointed primarily to:
+- Q136: [Telangana History, Culture & State Formation] Debates over Mulki rules in the former Hyderabad region primarily concerned:
+- Q137: [Indian Economy & Telangana Economy] Public investment in reliable irrigation can affect rural development through:
+- Q139: [Environment & Disaster Management] Excess nutrient input into a lake can ultimately lower dissolved oxygen because:
+- Q141: [Indian Geography & Telangana Geography] Which contrast is broadly correct?
+- Q145: [Environment & Disaster Management] Which statement distinguishes an invasive alien species from an endemic species?
+- Q146: [Telangana History, Culture & State Formation] Which work is associated with Bammera Pothana?
+- Q147: [Indian Polity & Constitution] The basic-structure doctrine chiefly limits:
+- Q149: [Current Affairs] Under Telangana GO Ms No.36 dated 14 April 2025, the Bhu Bharati Act brought into force on that date principally concerns:
+- Q150: [Indian History & National Movement] The 1829 regulation prohibiting sati in the Bengal Presidency is associated with which Governor-General?

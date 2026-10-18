@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import QuestionText from './QuestionText';
 import { getOfficialPaper } from './OfficialPaperQuestion';
 
 function answerText(answer, options) {
@@ -69,7 +70,7 @@ function ReviewQuestion({ question, number }) {
   const options = paper ? paper.response_type === 'NAT' ? [] : ['A','B','C','D'] : Array.isArray(question.options) ? question.options : [];
   return <article className="border-t border-slate-200 pt-6" aria-label={`Question ${number}, ${status}`}>
     <div className="flex flex-wrap justify-between gap-2"><h3 className="font-bold">Question {number}</h3><span className={`text-sm font-semibold ${unanswered ? 'text-slate-500' : question.is_correct ? 'text-emerald-700' : 'text-rose-700'}`}>{status} - {question.marks_awarded} / {question.marks} marks</span></div>
-    <p className="my-4 whitespace-pre-wrap leading-7">{question.question_text}</p>
+    <QuestionText className="my-4 whitespace-pre-wrap leading-7" text={question.question_text} />
     {image && <img src={image.url} alt={image.alt || 'Question diagram'} className="my-4 max-w-full" />}
     {source && <details className="my-4"><summary className="cursor-pointer text-indigo-700">View original question {paper.number}</summary><a href={source} target="_blank" rel="noreferrer" className="underline">Open original paper</a><iframe loading="lazy" src={source} title={`Original question ${paper.number}`} className="mt-3 h-96 w-full border" /></details>}
     {options.length > 0 ? <ul className="space-y-2">{options.map((o, n) => {

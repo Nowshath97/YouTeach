@@ -1,4 +1,6 @@
 import MemberChat from './MemberChat';
+import { PASSWORD_REQUIREMENTS, isValidNewPassword } from './passwordRules.mjs';
+import { isExistingSignupAccount } from './signupResult.mjs';
 import { StudyFocus, ExamAndProgress } from './DashboardSidebars';
 import SocialWall from './SocialWall';
 import { ALL_BRANCHES, DEFAULT_BRANCH, getBranchOptions, getMockBranch, matchesMockBranch } from './mockBranches.mjs';
@@ -145,17 +147,24 @@ function CreateAccountScreen({ onSignIn, onGoogle, googleBusy, authError }) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [sent, setSent] = useState(false);
+  const [accountExists, setAccountExists] = useState(false);
+  const passwordsMismatch = confirmation.length > 0 && password !== confirmation;
 
   async function register(event) {
     event.preventDefault();
     if (busy || googleBusy || !supabase) return;
     if (password !== confirmation) { setError('Passwords do not match.'); return; }
-    setBusy(true); setError('');
+    if (!isValidNewPassword(password)) { setError(PASSWORD_REQUIREMENTS); return; }
+    setBusy(true); setError(''); setAccountExists(false);
     try {
       const { data, error: signupError } = await supabase.auth.signUp({
         email: email.trim(), password,
         options: { data: { full_name: name.trim(), jobforsure_preferences: { preferredBranch: interestBranch === 'others' ? '' : interestBranch, educationInterest: interestBranch } }, emailRedirectTo: window.location.origin },
       });
+      if (isExistingSignupAccount(data, signupError)) {
+        setAccountExists(true);
+        return;
+      }
       if (signupError) throw signupError;
       if (!data.session) setSent(true);
     } catch (e) {
@@ -176,11 +185,14 @@ function CreateAccountScreen({ onSignIn, onGoogle, googleBusy, authError }) {
           <input className="field" id="signup-name" autoComplete="name" placeholder="Your full name" value={name} onChange={e => setName(e.target.value)} maxLength={100} required disabled={busy || googleBusy} pattern=".*\S.*" />
           <label htmlFor="signup-branch">Graduation / field of study (optional)</label><select id="signup-branch" className="field" value={interestBranch} onChange={e => setInterestBranch(e.target.value)} disabled={busy || googleBusy}><StudyInterestOptions /></select>
           <label htmlFor="signup-email">Email address</label>
-          <input className="field" id="signup-email" type="email" autoComplete="email" placeholder="you@example.com" value={email} onChange={e => setEmail(e.target.value)} required disabled={busy || googleBusy} />
+          <input className="field" id="signup-email" type="email" autoComplete="email" placeholder="you@example.com" value={email} onChange={e => { setEmail(e.target.value); setAccountExists(false); setError(''); }} aria-invalid={accountExists} aria-describedby={accountExists ? 'signup-existing-account' : undefined} required disabled={busy || googleBusy} />
+          {accountExists && <div id="signup-existing-account" className="auth-message" role="alert">An account with this email already exists. Please sign in instead. <button type="button" className="text-indigo-600 underline" onClick={onSignIn} disabled={busy || googleBusy}>Sign in</button></div>}
           <label htmlFor="signup-password">Password</label>
-          <input className="field" id="signup-password" type="password" autoComplete="new-password" placeholder="At least 6 characters" value={password} onChange={e => setPassword(e.target.value)} minLength={6} required disabled={busy || googleBusy} />
+          <input className="field" id="signup-password" type="password" autoComplete="new-password" placeholder="At least 8 characters" value={password} onChange={e => { setPassword(e.target.value); setError(''); }} minLength={8} aria-describedby="signup-password-rules" required disabled={busy || googleBusy} />
+          <p id="signup-password-rules" className="small">{PASSWORD_REQUIREMENTS}</p>
           <label htmlFor="signup-confirm">Confirm password</label>
-          <input className="field" id="signup-confirm" type="password" autoComplete="new-password" placeholder="Enter your password again" value={confirmation} onChange={e => setConfirmation(e.target.value)} minLength={6} required disabled={busy || googleBusy} />
+          <input className="field" id="signup-confirm" type="password" autoComplete="new-password" placeholder="Enter your password again" value={confirmation} onChange={e => { setConfirmation(e.target.value); setError(''); }} aria-invalid={passwordsMismatch} aria-describedby={passwordsMismatch ? 'signup-password-mismatch' : undefined} required disabled={busy || googleBusy} />
+          {passwordsMismatch && <p id="signup-password-mismatch" className="auth-message" role="alert">Passwords do not match.</p>}
           <button className="btn btn-primary auth-submit" disabled={busy || googleBusy || !supabase}>{busy ? 'Creating account...' : 'Create account'}</button>
         </form>
         {(error || authError) && <p className="auth-message" role="alert">{error || authError}</p>}

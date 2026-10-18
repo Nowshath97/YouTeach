@@ -1,11 +1,11 @@
 # TGPSC AEE 2026 - General Studies Full Length Mock 01
 
-Unofficial draft answer key and solutions. Independent review pending.
+Editorial distractor revision; difficulty is not empirically calibrated.
 
 ## 1. Telangana History, Culture & State Formation - answer D
 The 2011 Sakala Janula Samme was principally a:
 
-The mobilisation involved many social and occupational groups supporting the separate-state demand.
+Sakala Janula Samme was a sustained, broad strike for Telangana statehood involving multiple occupational and social groups. A single rally, rail blockade or administrative non-cooperation campaign describes a narrower protest form rather than the mobilisation as a whole.
 
 ## 2. Indian Geography & Telangana Geography - answer D
 In a semi-arid plateau region, replacing a water-intensive crop with an appropriate millet can primarily improve:
@@ -480,7 +480,7 @@ Revenue deficit isolates the revenue account; fiscal deficit is a broader borrow
 ## 96. Indian History & National Movement - answer C
 Which policy intensified resentment among several princely ruling families before the revolt of 1857?
 
-Annexations under the Doctrine of Lapse preceded 1857; the other measures belong to later periods.
+The Doctrine of Lapse challenged adoption-based succession and enabled annexations, creating resentment among affected ruling families. The other policies address different mechanisms of colonial control.
 
 ## 97. Logical Reasoning & Analytical Ability - answer B
 A sequence has successive differences 3, 5, 7 and 9: 2, 5, 10, 17, 26. Next term is:
@@ -751,3 +751,4 @@ The commencement order identifies the Telangana Bhu Bharati (Record of Rights in
 The 1829 regulation prohibiting sati in the Bengal Presidency is associated with which Governor-General?
 
 Bentinck issued the regulation amid sustained reform advocacy, including the work of Raja Rammohan Roy.
+
