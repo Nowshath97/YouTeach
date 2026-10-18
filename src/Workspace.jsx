@@ -1,3 +1,5 @@
+import {examCatalog, examFamilies, mockExamId} from './mockExamCatalog.mjs';
+import {isSscCgl} from './sscSectionTiming.mjs';
 import AdminMockStatistics from './AdminMockStatistics';
 import MemberChat from './MemberChat';
 import { PASSWORD_REQUIREMENTS, isValidNewPassword } from './passwordRules.mjs';
@@ -1154,7 +1156,8 @@ function SimulationsPage({ user, filters }) {
     catch { return DEFAULT_BRANCH; }
   });
   const [testSearch, setTestSearch] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All tests');
+  const [selectedExam, setSelectedExam] = useState(null);
+  const [examFamily, setExamFamily] = useState('All Exams');
   const [attempt, setAttempt] = useState(null);
   const [answers, setAnswers] = useState({});
   const [examState, setExamState] = useState({});
@@ -1196,8 +1199,6 @@ function SimulationsPage({ user, filters }) {
       setLoading(true);
       if (!supabase) { setLoading(false); return; }
       let query = supabase.from('mock_tests').select('id,title,description,exam_type,subject_id,duration_minutes,total_marks,passing_marks').eq('is_published', true);
-      if (filters.subjectId) query = query.eq('subject_id', filters.subjectId);
-      if (filters.examType) query = query.in('exam_type', [filters.examType.toUpperCase(), 'OTHER']);
       const [testResult, subjectResult, branchResult] = await Promise.all([
         query.order('created_at', { ascending: false }),
         supabase.from('subjects').select('id,name,branch_id'),
@@ -1258,7 +1259,7 @@ function SimulationsPage({ user, filters }) {
       queueSave().then(data => { if (data) setSaveStatus('Answers saved'); }).catch(e => {
         setSaveStatus('Not saved - check your connection'); setError(e.message);
       });
-    }, 700);
+    }, isSscCgl(attempt.test_title) ? 0 : 700);
     return () => clearTimeout(timer);
   }, [attempt, answers, examState, busy]);
   useEffect(() => () => { attemptRef.current = null; }, []);
@@ -1345,69 +1346,43 @@ function SimulationsPage({ user, filters }) {
     setBusy(false);
   }
   const clock = `${String(Math.floor(remaining / 60)).padStart(2, '0')}:${String(remaining % 60).padStart(2, '0')}`;
-  const getCategory = test => /^GATE/i.test(test.title) ? 'GATE' : /ssc\s*cgl/i.test(test.title) ? 'SSC CGL' : /tgpsc|tspsc/i.test(test.title) ? 'TGPSC AEE' : test.title.toLowerCase().includes('junior engineer') ? 'SSC JE' : String(test.exam_type || 'Other');
-  const branchOptions = getBranchOptions(tests, mockSubjects, mockBranches);
+  const getCategory = test => examCatalog.find(e=>e.id===mockExamId(test))?.name || 'Other Exams';
+  const activeExam = examCatalog.find(e=>e.id===selectedExam);
+  const examTests = tests.filter(t=>mockExamId(t)===selectedExam);
+  const branchOptions = getBranchOptions(examTests, mockSubjects, mockBranches);
   const activeBranch = selectedBranch;
-  const branchTests = tests.filter(test => matchesMockBranch(test, activeBranch, mockSubjects, mockBranches));
-  const categories = ['All tests', ...new Set(branchTests.map(getCategory))];
-  const activeCategory = categories.includes(selectedCategory) ? selectedCategory : 'All tests';
-  function chooseBranch(branch) {
-    setSelectedBranch(branch);
-    setSelectedCategory('All tests');
-    try { localStorage.setItem('jobforsure.mocks.branch', branch); } catch { /* Browsing still works without storage. */ }
-  }
-  const visibleTests = branchTests.filter(test => {
-    const matchesCategory = activeCategory === 'All tests' || getCategory(test) === activeCategory;
+  const visibleTests = examTests.filter(test => {
+    const branchMatch = !activeExam?.branches || matchesMockBranch(test, activeBranch, mockSubjects, mockBranches);
     const query = testSearch.trim().toLowerCase();
-    const matchesSearch = !query || `${test.title} ${test.description || ''} ${getCategory(test)}`.toLowerCase().includes(query);
-    return matchesCategory && matchesSearch;
+    return branchMatch && (!query || `${test.title} ${test.description || ''} ${getMockBranch(test,mockSubjects,mockBranches)}`.toLowerCase().includes(query));
   });
+  const explorerCards = examCatalog.map(exam=>({...exam, tests:tests.filter(t=>mockExamId(t)===exam.id)})).filter(exam=>{
+    if(examFamily!=='All Exams' && exam.family!==examFamily)return false;
+    const query=testSearch.trim().toLowerCase();
+    return !query || `${exam.name} ${exam.family} ${exam.description}`.toLowerCase().includes(query) || exam.tests.some(t=>`${t.title} ${t.description||''}`.toLowerCase().includes(query));
+  });
+  function openExam(id) {setSelectedExam(id);setSelectedBranch(ALL_BRANCHES);setTestSearch('');}
   if (reviewAttempt) return <div className="space-y-4"><h2 className="text-xl font-bold">{reviewAttempt.title}</h2><MockTestReview supabase={supabase} attemptId={reviewAttempt.attempt_id} onClose={() => { setReviewAttempt(null); setResult(null); setHistoryOpen(false); window.scrollTo(0, 0); }} onBack={() => { setResult(reviewAttempt); setReviewAttempt(null); window.scrollTo(0, 0); }} /></div>;
-  return <div className="space-y-4">{attempt ? <MockExam key={attempt.session_token} attempt={attempt} onPause={pauseAttempt} onQuit={canQuitTestingMocks ? quitTestingAttempts : undefined} onStateChange={setExamState} saveStatus={saveStatus} answers={answers} setAnswers={setAnswers} clock={clock} busy={busy} onSubmit={submitAttempt} error={error} /> : <>
+  return <div className="space-y-4">{attempt ? <MockExam key={attempt.session_token} attempt={attempt} onPause={pauseAttempt} onQuit={canQuitTestingMocks ? quitTestingAttempts : undefined} onStateChange={setExamState} saveStatus={saveStatus} answers={answers} setAnswers={setAnswers} clock={clock} remainingSeconds={remaining} busy={busy} onSubmit={submitAttempt} error={error} /> : <>
     {result && <AttemptScorecard result={result} supabase={supabase} onReview={openReview} onClose={() => setResult(null)} />}
 
-    <section className="overflow-hidden rounded-2xl border border-indigo-100 bg-white shadow-sm">
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 px-5 py-4">
-        <div className="flex items-center gap-3"><div className="rounded-xl bg-indigo-50 p-2.5 text-indigo-600"><GraduationCap size={22} /></div><div><h2 className="text-base font-extrabold text-slate-900">Find your next mock test</h2><p className="mt-0.5 text-xs text-slate-500">Timed practice with instant scores and section insights.</p></div></div>
-        <div className="flex items-center gap-2"><span className="rounded-full bg-indigo-50 px-3 py-1.5 text-xs font-bold text-indigo-700">{branchTests.length} available {branchTests.length === 1 ? 'test' : 'tests'}</span><button className="btn" aria-expanded={historyOpen} aria-controls="mock-attempt-history" onClick={() => setHistoryOpen(value => !value)}>View attempts</button></div>
-      </div>
-
-      <MockAttemptHistory onReview={openReview} open={historyOpen} supabase={supabase} user={user} refresh={historyRefresh} onClose={closeAttemptHistory} />
-
-      <div className="mock-branch-layout">
-        <aside className="mock-branch-sidebar" aria-label="Mock test branches">
-          <h3>Choose your branch</h3>
-          <p>Find exams in your domain.</p>
-          <nav aria-label="Filter mock tests by branch">
-            {branchOptions.map(branch => <button key={branch} type="button" aria-pressed={activeBranch === branch} onClick={() => chooseBranch(branch)} className={`mock-branch-button ${activeBranch === branch ? 'mock-branch-button-active' : ''}`}>
-              <span>{branch}</span><span className="mock-branch-count">{tests.filter(test => matchesMockBranch(test, branch, mockSubjects, mockBranches)).length}</span>
-            </button>)}
-          </nav>
-          <p className="mock-branch-hint">Browse any branch here. Your profile branch remains your default. Common general studies and aptitude exams are also included.</p>
-        </aside>
-        <div className="mock-branch-content">
-      <div className="border-b border-slate-100 p-4 sm:p-6">
-        <label className="flex h-11 max-w-2xl items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-3.5 text-slate-400 focus-within:border-indigo-400 focus-within:bg-white focus-within:ring-2 focus-within:ring-indigo-100">
-          <Search size={17} />
-          <input className="h-full min-w-0 flex-1 border-0 bg-transparent text-sm text-slate-800 outline-none placeholder:text-slate-400" value={testSearch} onChange={event => setTestSearch(event.target.value)} placeholder="Search exams or mock tests" aria-label="Search mock tests" />
-          <SlidersHorizontal size={16} />
-        </label>
-        <div className="mt-4 flex flex-wrap gap-2" role="tablist" aria-label="Filter tests by exam">
-          {categories.map(category => <button key={category} type="button" role="tab" aria-selected={activeCategory === category} onClick={() => setSelectedCategory(category)} className={`rounded-full border px-4 py-2 text-xs font-bold transition ${activeCategory === category ? 'border-indigo-600 bg-indigo-600 text-white shadow-sm' : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-200 hover:text-indigo-700'}`}>{category}</button>)}
-        </div>
-      </div>
-
-      <div className="bg-slate-50/70 p-4 sm:p-6">
-        <div className="mb-4 flex items-center justify-between gap-3">
-          <div>
-            <h3 className="text-base font-extrabold text-slate-900">{activeCategory === 'All tests' ? (activeBranch === ALL_BRANCHES ? 'Explore mock tests' : `${activeBranch} mocks`) : `${activeCategory} mock tests`}</h3>
-            <p className="mt-1 text-xs text-slate-500">{loading ? 'Finding available tests...' : `${visibleTests.length} ${visibleTests.length === 1 ? 'test' : 'tests'} to practice`}</p>
-          </div>
-          <span className="hidden items-center gap-1.5 text-xs font-semibold text-slate-500 sm:flex"><FileQuestion size={15} /> Exam-style practice</span>
-        </div>
-        {loading && <div className="rounded-xl border border-slate-200 bg-white p-6 text-sm text-slate-500">Loading available tests...</div>}
-        {!loading && !tests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-12 text-center"><GraduationCap size={26} className="mx-auto text-indigo-400" /><h4 className="mt-3 text-sm font-bold text-slate-800">No mock tests available yet</h4><p className="mt-1 text-xs text-slate-500">Published tests will appear here when they are ready.</p></div>}
-        {!loading && tests.length > 0 && !visibleTests.length && <div className="rounded-xl border border-dashed border-slate-300 bg-white px-5 py-10 text-center"><p className="text-sm font-bold text-slate-800">No matching tests</p><p className="mt-1 text-xs text-slate-500">Try another exam category or search term, or choose a different branch.</p></div>}
+    <section className="exam-explorer">
+      <div className="explorer-heading"><div>{activeExam&&<button className="explorer-back" onClick={()=>{setSelectedExam(null);setTestSearch('');}}><ArrowLeft size={15}/> All exams</button>}<h2>{activeExam?activeExam.name:'Mock Tests'}</h2><p>{activeExam?'Choose a mock and start your next practice session.':'Discover full-length mocks, sectional tests and exam practice.'}</p></div><button className="btn" aria-expanded={historyOpen} aria-controls="mock-attempt-history" onClick={()=>setHistoryOpen(v=>!v)}><Clock3 size={15}/> My attempts</button></div>
+      <MockAttemptHistory onReview={openReview} open={historyOpen} supabase={supabase} user={user} refresh={historyRefresh} onClose={closeAttemptHistory}/>
+      <label className="explorer-search"><Search size={18}/><input value={testSearch} onChange={e=>setTestSearch(e.target.value)} placeholder={activeExam?'Search mock tests in this exam':'Search exams, subjects or mock tests (e.g. TGPSC AEE, SSC CGL, GATE)'} aria-label="Search exams or mock tests"/></label>
+      {!activeExam ? <>
+        <div className="explorer-filters" role="group" aria-label="Exam categories">{examFamilies.map(family=><button key={family} aria-pressed={examFamily===family} onClick={()=>setExamFamily(family)} className={examFamily===family?'active':''}>{family}</button>)}</div>
+        {loading?<p className="explorer-empty" role="status">Loading exams...</p>:<div className="exam-explorer-grid">{explorerCards.map(exam=><button key={exam.id} disabled={!exam.tests.length} className={`exam-explorer-card exam-tone-${exam.tone}`} onClick={()=>openExam(exam.id)}><span className="exam-card-top"><span className="exam-card-icon">{exam.family==='Engineering'?<GraduationCap size={26}/>:exam.family==='State PSC'?<Building2 size={25}/>:exam.family==='Banking'?<Briefcase size={25}/>:<FileQuestion size={25}/>}</span><span><strong>{exam.name}</strong><span className="exam-family-tag">{exam.family}</span></span></span><span className="exam-card-count">{exam.tests.length?`${exam.tests.length} mock ${exam.tests.length===1?'test':'tests'}`:'Coming soon'}</span><span className="exam-card-bottom"><span>{exam.description}</span><span className="exam-card-arrow"><ArrowRight size={17}/></span></span></button>)}</div>}
+        {!loading&&!explorerCards.length&&<p className="explorer-empty">No exams match your search.</p>}
+      </> : <>
+        {activeExam.branches && <section className="mock-branch-cards-section" aria-label="Choose a branch"><div className="mock-branch-cards-heading"><h3>Choose your branch</h3><p>Explore mocks by discipline, or view all branches.</p></div><div className="mock-branch-cards" role="group" aria-label="Filter mocks by branch">{branchOptions.map(branch => {
+          const BranchIcon = branch === ALL_BRANCHES ? Grid2X2 : /civil/i.test(branch) ? Building2 : /mechanical/i.test(branch) ? Wrench : /electronics/i.test(branch) ? CircuitBoard : /electrical/i.test(branch) ? Zap : /computer/i.test(branch) ? Cpu : BookOpen;
+          const count = examTests.filter(test => matchesMockBranch(test, branch, mockSubjects, mockBranches)).length;
+          return <button key={branch} type="button" aria-pressed={selectedBranch === branch} onClick={() => setSelectedBranch(branch)} className={`mock-branch-choice ${selectedBranch === branch ? 'is-selected' : ''}`}><span className="mock-branch-choice-icon"><BranchIcon size={21}/></span><span className="mock-branch-choice-copy"><strong>{branch}</strong><small>{count} {count === 1 ? 'mock test' : 'mock tests'}</small></span><span className="mock-branch-choice-check">{selectedBranch === branch && <CheckCircle2 size={17}/>}</span></button>;
+        })}</div></section>}
+        <div className="exam-list-toolbar"><p><strong>{visibleTests.length}</strong> available {visibleTests.length===1?'mock':'mocks'}{activeExam.branches && <span className="ml-2">in {selectedBranch}</span>}</p></div>
+        {loading&&<p className="explorer-empty" role="status">Loading mock tests...</p>}
+        {!loading&&!visibleTests.length&&<p className="explorer-empty">No mocks match your search or branch. Try another filter.</p>}
         <div className="mock-catalog-grid">
           {visibleTests.map(test => <article key={test.id} className="mock-catalog-card">
             <div className="mock-catalog-top">
@@ -1417,8 +1392,8 @@ function SimulationsPage({ user, filters }) {
             <div className="mock-catalog-category">{getCategory(test)}</div><p className="mock-catalog-branch">{getMockBranch(test, mockSubjects, mockBranches)}</p>
             <h4 title={test.title}>{test.title}</h4>
             {Number(popularity[test.id]?.learners) > 0 && <p className="mt-2 text-xs font-semibold text-indigo-700" title="Share of unique learners who have started any published mock. Repeat attempts, administrators and the testing account are excluded. Percentages across mocks can exceed 100% because learners may attempt several mocks.">
-              {Number(popularity[test.id].learners) >= 10 && Number(popularity[test.id].learner_percentage) >= 20 ? 'Popular ? ' : ''}
-              {Number(popularity[test.id].learners).toLocaleString()} learners ? {popularity[test.id].learner_percentage}% of mock learners
+              {Number(popularity[test.id].learners) >= 10 && Number(popularity[test.id].learner_percentage) >= 20 ? 'Popular - ' : ''}
+              {Number(popularity[test.id].learners).toLocaleString()} learners - {popularity[test.id].learner_percentage}% of mock learners
             </p>}
             <p className="mock-catalog-description">{test.description || 'Timed exam practice with instant scoring after submission.'}</p>
             <div className="mock-catalog-details">
@@ -1433,9 +1408,7 @@ function SimulationsPage({ user, filters }) {
           </article>)}
         </div>
         {!supabase && <p className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs text-amber-800">Connect Supabase to load tests and save attempts.</p>}
-      </div>
-        </div>
-      </div>
+      </>}
     </section>
     {restartTest && <div className="mock-modal-backdrop"><section className="mock-modal" role="dialog" aria-modal="true" aria-labelledby="restart-test-title"><h3 id="restart-test-title">Start this test again?</h3><p>Your saved attempt will be closed. A new attempt starts with no answers and the full time allowance.</p><div><button autoFocus className="btn" disabled={busy} onClick={() => setRestartTest(null)}>Keep saved attempt</button><button className="btn btn-primary" disabled={busy} onClick={() => start(restartTest, null, true)}>Start again</button></div></section></div>}
   </>}{error && <p className="text-xs text-rose-700" role="alert">{error}</p>}</div>;
