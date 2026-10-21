@@ -1,0 +1,570 @@
+[
+  {
+    "id": "upsc-buddhism-1",
+    "year": 2024,
+    "question": "Gautama Buddha was generally known by which epithets:\n1. Nayaputta\n2. Shakyamuni\n3. Tathagata",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 only"
+      },
+      {
+        "value": "B",
+        "text": "2 and 3 only"
+      },
+      {
+        "value": "C",
+        "text": "1, 2 and 3"
+      },
+      {
+        "value": "D",
+        "text": "None of the above"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Shakyamuni and Tathagata refer to Buddha; Nayaputta refers to Mahavira.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-2",
+    "year": 2023,
+    "question": "In which region was Dhanyakataka, a prominent Buddhist centre under the Mahasanghikas, located?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Andhra"
+      },
+      {
+        "value": "B",
+        "text": "Gandhara"
+      },
+      {
+        "value": "C",
+        "text": "Kalinga"
+      },
+      {
+        "value": "D",
+        "text": "Magadha"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Dhanyakataka was in Andhra, near present-day Amaravati.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-3",
+    "year": 2023,
+    "question": "Are these statements about stupas correct:\n1. The concept of stupa is Buddhist in origin.\n2. A stupa is generally a repository of relics.\n3. A stupa is a votive and commemorative structure.",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 only"
+      },
+      {
+        "value": "B",
+        "text": "2 and 3 only"
+      },
+      {
+        "value": "C",
+        "text": "3 only"
+      },
+      {
+        "value": "D",
+        "text": "1, 2 and 3"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Stupas preserve relics and commemorate events; their origins predate Buddhism.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-4",
+    "year": 2020,
+    "question": "Which statements are correct:\n1. Sthaviravadins belong to Mahayana Buddhism.\n2. Lokottaravadin sect was an offshoot of Mahasanghika.\n3. Deification of Buddha by Mahasanghikas fostered Mahayana Buddhism.",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 and 2 only"
+      },
+      {
+        "value": "B",
+        "text": "2 and 3 only"
+      },
+      {
+        "value": "C",
+        "text": "3 only"
+      },
+      {
+        "value": "D",
+        "text": "1, 2 and 3"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Sthaviravadins were not Mahayana; Lokottaravadins arose from Mahasanghikas, whose doctrines influenced Mahayana.",
+    "answerSource": "https://saarthik.com/pyqs/upsc-cse/prelims/buddhism-119",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-5",
+    "year": 2020,
+    "question": "Which option best describes 'paramitas'?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Earliest Dharmashastra texts in aphoristic style"
+      },
+      {
+        "value": "B",
+        "text": "Philosophical schools rejecting the Vedas"
+      },
+      {
+        "value": "C",
+        "text": "Perfections whose attainment leads to the Bodhisattva path"
+      },
+      {
+        "value": "D",
+        "text": "Merchant guilds of South India"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Paramitas are virtues perfected on the Bodhisattva path.",
+    "answerSource": "https://saarthik.com/pyqs/upsc-cse/prelims/buddhism-119",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-6",
+    "year": 2019,
+    "question": "Which of these are features of Mahayana Buddhism:\n1. Deification of the Buddha\n2. Treading the path of Bodhisattvas\n3. Image worship and rituals",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 only"
+      },
+      {
+        "value": "B",
+        "text": "1 and 2 only"
+      },
+      {
+        "value": "C",
+        "text": "2 and 3 only"
+      },
+      {
+        "value": "D",
+        "text": "1, 2 and 3"
+      }
+    ],
+    "answer": "D",
+    "explanation": "All three describe Mahayana: Buddha's deification, the Bodhisattva ideal, and devotional images and rituals.",
+    "answerSource": "https://saarthik.com/pyqs/upsc-cse/prelims/buddhism-119",
+    "answerStatus": "researched",
+    "editorialNote": "Corrected reference-text typo: Definition to Deification."
+  },
+  {
+    "id": "upsc-buddhism-7",
+    "year": 2019,
+    "question": "In which relief sculpture inscription is 'Ranyo Ashoka' mentioned along with Ashoka's stone portrait?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Kanganahalli"
+      },
+      {
+        "value": "B",
+        "text": "Sanchi"
+      },
+      {
+        "value": "C",
+        "text": "Shahbazgarhi"
+      },
+      {
+        "value": "D",
+        "text": "Sohgaura"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Kanaganahalli preserves the labelled sculptural portrait of Ashoka.",
+    "answerSource": "https://bharatshri.asi.gov.in/?lang=en",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-8",
+    "year": 1998,
+    "question": "Which of the following pairs are correctly matched?\n1. Lothal : Ancient dockyard\n2. Sarnath : First Sermon of Buddha\n3. Rajgir : Lion capital of Asoka\n4. Nalanda : Great seat of Buddhist learning",
+    "options": [
+      {
+        "value": "A",
+        "text": "1, 2, 3 and 4"
+      },
+      {
+        "value": "B",
+        "text": "3 and 4"
+      },
+      {
+        "value": "C",
+        "text": "1, 2 and 4"
+      },
+      {
+        "value": "D",
+        "text": "1 and 2"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Lion Capital belongs to Sarnath, not Rajgir. The other three pairings are correct.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-9",
+    "year": 1998,
+    "question": "The concept of Eight-fold Path forms the theme of",
+    "options": [
+      {
+        "value": "A",
+        "text": "Dipavamsa"
+      },
+      {
+        "value": "B",
+        "text": "Divyavadana"
+      },
+      {
+        "value": "C",
+        "text": "Mahaparinibban Sutta"
+      },
+      {
+        "value": "D",
+        "text": "Dharma Chakara Pravartana Sutta"
+      }
+    ],
+    "answer": "D",
+    "explanation": "This first-sermon discourse teaches the Noble Eightfold Path.",
+    "answerSource": "https://accesstoinsight.org/tipitaka/sn/sn56/sn56.011.than",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-10",
+    "year": 1997,
+    "question": "In Mahayana Buddhism, the Bodhisattva Avalokitesvara was also known as",
+    "options": [
+      {
+        "value": "A",
+        "text": "Vajrapani"
+      },
+      {
+        "value": "B",
+        "text": "Manjusri"
+      },
+      {
+        "value": "C",
+        "text": "Padmapani"
+      },
+      {
+        "value": "D",
+        "text": "Maitreya"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Padmapani, the lotus bearer, is a form of Avalokiteshvara.",
+    "answerSource": "https://www.metmuseum.org/art/collection/search/700507",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-11",
+    "year": 1996,
+    "question": "Which of the following were common to both Buddhism and Jainism?\n1. Avoidance of extremities of penance and enjoyment\n2. Indifference to the authority of the Vedas\n3. Denial of efficacy of rituals\n4. Non-injury to animal life",
+    "options": [
+      {
+        "value": "A",
+        "text": "1, 2, 3 and 4"
+      },
+      {
+        "value": "B",
+        "text": "2, 3 and 4"
+      },
+      {
+        "value": "C",
+        "text": "1, 3 and 4"
+      },
+      {
+        "value": "D",
+        "text": "1 and 2"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Both reject Vedic authority and ritual efficacy and value non-injury; severe asceticism distinguishes Jain practice.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-12",
+    "year": 1994,
+    "question": "Which one of the following is the most fundamental difference between Mahayana Buddhism and Hinayana Buddhism?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Emphasis on ahimsa"
+      },
+      {
+        "value": "B",
+        "text": "Casteless society"
+      },
+      {
+        "value": "C",
+        "text": "Worship of gods and goddesses"
+      },
+      {
+        "value": "D",
+        "text": "Worship of stupa"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Among these options, devotional worship distinguishes Mahayana. The historical label Hinayana is broad and imprecise.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-13",
+    "year": 1994,
+    "question": "In the Gandhara sculptures the preaching Mudra associated with the Buddha's First Sermon at Sarnath is",
+    "options": [
+      {
+        "value": "A",
+        "text": "Abhaya"
+      },
+      {
+        "value": "B",
+        "text": "Dhyana"
+      },
+      {
+        "value": "C",
+        "text": "Dharmachakra"
+      },
+      {
+        "value": "D",
+        "text": "Bhumisparsha"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Dharmachakra signifies teaching and the turning of the wheel of Dharma.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-14",
+    "year": 1993,
+    "question": "The Buddhist sect Mahayana formally came into existence during the reign of",
+    "options": [
+      {
+        "value": "A",
+        "text": "Ajatashatru"
+      },
+      {
+        "value": "B",
+        "text": "Ashoka"
+      },
+      {
+        "value": "C",
+        "text": "Dharmapala"
+      },
+      {
+        "value": "D",
+        "text": "Kanishka"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Kanishka is the conventional examination answer; Mahayana developed gradually, rather than at a single founding event.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-15",
+    "year": 1992,
+    "question": "Some Buddhist rock-cut caves are called chaityas while the others viharas. What is the difference between the two?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Chaityas is a place of worship while vihara is the dwelling place of the monks"
+      },
+      {
+        "value": "B",
+        "text": "Chaityas is the stupa at the far end of the cave while vihara is the hall axial to it"
+      },
+      {
+        "value": "C",
+        "text": "There is no material difference between the two"
+      },
+      {
+        "value": "D",
+        "text": "Vihara is a place of worship while chaityas is the dwelling place of the monks"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Chaityas are worship halls; viharas house monastic communities.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-16",
+    "year": 2015,
+    "question": "Which of the following kingdoms were associated with the life of the Buddha?\n1. Avanti\n2. Gandhara\n3. Kosala\n4. Magadha",
+    "options": [
+      {
+        "value": "A",
+        "text": "1, 2 and 3"
+      },
+      {
+        "value": "B",
+        "text": "2 and 3 only"
+      },
+      {
+        "value": "C",
+        "text": "1, 3 and 4"
+      },
+      {
+        "value": "D",
+        "text": "3 and 4 only"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Kosala and Magadha were central to Buddha's teaching career.",
+    "answerSource": "https://wrapexams.com/upsc/prelims/gs/2015/which-of-the-following-kingdoms-were-associated-with-the-life-of-the-buddha-1-avanti-2-gandhara-3-kosala-4-magadha-select-the-correct-answer-using-the-codes-given-below/",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-17",
+    "year": 2014,
+    "question": "Which of the following kingdoms were associated with the life of the Buddha?\n1. Avanti\n2. Gandhara\n3. Kosala\n4. Magadha",
+    "options": [
+      {
+        "value": "A",
+        "text": "1, 2 and 3"
+      },
+      {
+        "value": "B",
+        "text": "2 and 4"
+      },
+      {
+        "value": "C",
+        "text": "3 and 4 only"
+      },
+      {
+        "value": "D",
+        "text": "1, 3 and 4"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The same kingdom pair appears here under a different option letter: Kosala and Magadha.",
+    "answerSource": "https://redpapr.com/upsc/papers/prelims-gs/2014/kingdoms-life-of-buddha",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-18",
+    "year": 2010,
+    "question": "Why did Buddhism start declining in India in the early medieval times?\n1. Buddha was by that time considered as one of the incarnations of Vishnu and thus became a part of Vaishnavism.\n2. The invading tribes from Central Asia till the time of last Gupta king adopted Hinduism and persecuted Buddhists.\n3. The Kings of Gupta dynasty were strongly opposed to Buddhism.",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 only"
+      },
+      {
+        "value": "B",
+        "text": "1 and 3 only"
+      },
+      {
+        "value": "C",
+        "text": "2 and 3 only"
+      },
+      {
+        "value": "D",
+        "text": "1, 2 and 3"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Statement 1 is accepted here; statements 2 and 3 make incorrect blanket claims of persecution.",
+    "answerSource": "https://www.iasbook.com/buddhism-questions/",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-19",
+    "year": 2005,
+    "question": "Who among the following was not a contemporary of the other three?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Bimbisara"
+      },
+      {
+        "value": "B",
+        "text": "Gautama Buddha"
+      },
+      {
+        "value": "C",
+        "text": "Milinda"
+      },
+      {
+        "value": "D",
+        "text": "Prasenjit"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Milinda (Menander) lived centuries after Buddha, Bimbisara and Prasenjit.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-20",
+    "year": 2004,
+    "question": "Consider the following statements:\n1. The Chinese pilgrim Fa-Hien attended the fourth Great Buddhist Council held by Kanishka.\n2. The Chinese pilgrim Hiuen-Tsang met Harsha and found him to be antagonistic to Buddhism.\nWhich of these statements given above is/are correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 only"
+      },
+      {
+        "value": "B",
+        "text": "2 only"
+      },
+      {
+        "value": "C",
+        "text": "Both 1 and 2"
+      },
+      {
+        "value": "D",
+        "text": "Neither 1 nor 2"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Fa-Hien lived later than Kanishka; Harsha patronised Buddhism rather than opposing it.",
+    "answerSource": "https://upsca2z.com/pyq/ancient-history/buddhism",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-buddhism-21",
+    "year": 2001,
+    "question": "Who among the following presided over the Buddhist Council held during the reign of Kanishka at Kashmir?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Parsva"
+      },
+      {
+        "value": "B",
+        "text": "Nagarjuna"
+      },
+      {
+        "value": "C",
+        "text": "Sudraka"
+      },
+      {
+        "value": "D",
+        "text": "Vasumitra"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Vasumitra traditionally presided over Kanishka's council in Kashmir.",
+    "answerSource": "https://prelims.ai/previous-year-questions/2001",
+    "answerStatus": "researched"
+  }
+]

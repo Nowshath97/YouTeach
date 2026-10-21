@@ -1,4 +1,5 @@
 import {examCatalog, examFamilies, mockExamId} from './mockExamCatalog.mjs';
+import {revealMobileResults} from './catalogNavigation.mjs';
 import {isSscCgl} from './sscSectionTiming.mjs';
 import AdminMockStatistics from './AdminMockStatistics';
 import MemberChat from './MemberChat';
@@ -15,7 +16,7 @@ import { supabase } from './supabase';
 import MockExam from './MockExam';
 import PreviousYearPapers, { isLinkedPaperMock } from './PreviousYearPapers';
 
-const pages = [['Dashboard', LayoutDashboard], ['Practice', Target], ['Tutorials', BookOpen], ['Mock Tests', GraduationCap], ['Previous Papers', FileQuestion], ['Community', MessageCircle], ['Notifications', Bell]];
+const pages = [['Dashboard', LayoutDashboard], ['Practice', Target], ['Tutorials', BookOpen], ['Mock Tests', GraduationCap], ['PYQs', FileQuestion], ['Community', MessageCircle], ['Notifications', Bell]];
 const Card = ({ children, className = '' }) => <section className={`card ${className}`}>{children}</section>;
 
 function AuthPanel({ user, onLogout, setPage }) {
@@ -1157,6 +1158,7 @@ function SimulationsPage({ user, filters }) {
   });
   const [testSearch, setTestSearch] = useState('');
   const [selectedExam, setSelectedExam] = useState(null);
+  const mockResultsRef = useRef(null);
   const [examFamily, setExamFamily] = useState('All Exams');
   const [attempt, setAttempt] = useState(null);
   const [answers, setAnswers] = useState({});
@@ -1374,13 +1376,16 @@ function SimulationsPage({ user, filters }) {
         <div className="explorer-filters" role="group" aria-label="Exam categories">{examFamilies.map(family=><button key={family} aria-pressed={examFamily===family} onClick={()=>setExamFamily(family)} className={examFamily===family?'active':''}>{family}</button>)}</div>
         {loading?<p className="explorer-empty" role="status">Loading exams...</p>:<div className="exam-explorer-grid">{explorerCards.map(exam=><button key={exam.id} disabled={!exam.tests.length} className={`exam-explorer-card exam-tone-${exam.tone}`} onClick={()=>openExam(exam.id)}><span className="exam-card-top"><span className="exam-card-icon">{exam.family==='Engineering'?<GraduationCap size={26}/>:exam.family==='State PSC'?<Building2 size={25}/>:exam.family==='Banking'?<Briefcase size={25}/>:<FileQuestion size={25}/>}</span><span><strong>{exam.name}</strong><span className="exam-family-tag">{exam.family}</span></span></span><span className="exam-card-count">{exam.tests.length?`${exam.tests.length} mock ${exam.tests.length===1?'test':'tests'}`:'Coming soon'}</span><span className="exam-card-bottom"><span>{exam.description}</span><span className="exam-card-arrow"><ArrowRight size={17}/></span></span></button>)}</div>}
         {!loading&&!explorerCards.length&&<p className="explorer-empty">No exams match your search.</p>}
-      </> : <>
-        {activeExam.branches && <section className="mock-branch-cards-section" aria-label="Choose a branch"><div className="mock-branch-cards-heading"><h3>Choose your branch</h3><p>Explore mocks by discipline, or view all branches.</p></div><div className="mock-branch-cards" role="group" aria-label="Filter mocks by branch">{branchOptions.map(branch => {
-          const BranchIcon = branch === ALL_BRANCHES ? Grid2X2 : /civil/i.test(branch) ? Building2 : /mechanical/i.test(branch) ? Wrench : /electronics/i.test(branch) ? CircuitBoard : /electrical/i.test(branch) ? Zap : /computer/i.test(branch) ? Cpu : BookOpen;
-          const count = examTests.filter(test => matchesMockBranch(test, branch, mockSubjects, mockBranches)).length;
-          return <button key={branch} type="button" aria-pressed={selectedBranch === branch} onClick={() => setSelectedBranch(branch)} className={`mock-branch-choice ${selectedBranch === branch ? 'is-selected' : ''}`}><span className="mock-branch-choice-icon"><BranchIcon size={21}/></span><span className="mock-branch-choice-copy"><strong>{branch}</strong><small>{count} {count === 1 ? 'mock test' : 'mock tests'}</small></span><span className="mock-branch-choice-check">{selectedBranch === branch && <CheckCircle2 size={17}/>}</span></button>;
-        })}</div></section>}
-        <div className="exam-list-toolbar"><p><strong>{visibleTests.length}</strong> available {visibleTests.length===1?'mock':'mocks'}{activeExam.branches && <span className="ml-2">in {selectedBranch}</span>}</p></div>
+      </> : <div className={activeExam.branches ? `mock-explorer-layout${activeExam.id === 'aee' ? ' mock-explorer-aee' : ''}` : ''}>
+        {activeExam.branches && <>
+          <aside className="mock-category-sidebar" aria-label="Choose a branch">
+            <h3>Choose your branch</h3>
+            <div className="mock-category-nav" role="group" aria-label="Filter mocks by branch">{branchOptions.map(branch => <button key={branch} type="button" aria-pressed={selectedBranch === branch} onClick={() => setSelectedBranch(branch)} className={selectedBranch === branch ? 'active' : ''}>{branch}<ArrowRight size={15}/></button>)}</div>
+          </aside>
+          <label className="mock-category-mobile">Choose your branch<select value={selectedBranch} onChange={event => {setSelectedBranch(event.target.value);revealMobileResults(mockResultsRef);}}>{branchOptions.map(branch => <option key={branch}>{branch}</option>)}</select></label>
+        </>}
+        <div className="mock-explorer-results">
+        <div ref={mockResultsRef} tabIndex={-1} className="exam-list-toolbar catalog-results" aria-label="Filtered mock tests"><p role="status"><strong>{visibleTests.length}</strong> available {visibleTests.length===1?'mock':'mocks'}{activeExam.branches && <span className="ml-2">in {selectedBranch}</span>}</p></div>
         {loading&&<p className="explorer-empty" role="status">Loading mock tests...</p>}
         {!loading&&!visibleTests.length&&<p className="explorer-empty">No mocks match your search or branch. Try another filter.</p>}
         <div className="mock-catalog-grid">
@@ -1408,7 +1413,8 @@ function SimulationsPage({ user, filters }) {
           </article>)}
         </div>
         {!supabase && <p className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs text-amber-800">Connect Supabase to load tests and save attempts.</p>}
-      </>}
+        </div>
+      </div>}
     </section>
     {restartTest && <div className="mock-modal-backdrop"><section className="mock-modal" role="dialog" aria-modal="true" aria-labelledby="restart-test-title"><h3 id="restart-test-title">Start this test again?</h3><p>Your saved attempt will be closed. A new attempt starts with no answers and the full time allowance.</p><div><button autoFocus className="btn" disabled={busy} onClick={() => setRestartTest(null)}>Keep saved attempt</button><button className="btn btn-primary" disabled={busy} onClick={() => start(restartTest, null, true)}>Start again</button></div></section></div>}
   </>}{error && <p className="text-xs text-rose-700" role="alert">{error}</p>}</div>;
@@ -1496,7 +1502,7 @@ export default function App() {
     : page === 'Notifications' ? <NotificationsPage user={user} setPage={setPage} />
     : page === 'Tutorials' ? <TutorialsPage user={user} />
       : page === 'Mock Tests' ? <SimulationsPage user={user} filters={practiceFilters} />
-        : page === 'Previous Papers' ? <PreviousYearPapers key={preferences.preferredBranch} preferredBranch={preferences.preferredBranch} />
+        : page === 'PYQs' ? <PreviousYearPapers key={preferences.preferredBranch} preferredBranch={preferences.preferredBranch} />
         : page === 'Community' ? <CommunityPage user={user} />
           : page === 'Profile' ? <SocialWall user={user} ownProfile onPreferences={() => setPage('Study Preferences')} />
           : page === 'Study Preferences' ? <ProfilePage user={user} setUser={setUser} />

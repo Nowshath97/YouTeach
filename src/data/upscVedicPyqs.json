@@ -1,0 +1,473 @@
+[
+  {
+    "id": "upsc-vedic-1",
+    "year": null,
+    "question": "Are these statements correct:\n1. There are no parables in the Upanishads.\n2. Upanishads were composed earlier than the Puranas.",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 only"
+      },
+      {
+        "value": "B",
+        "text": "2 only"
+      },
+      {
+        "value": "C",
+        "text": "Both 1 and 2"
+      },
+      {
+        "value": "D",
+        "text": "Neither 1 nor 2"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Upanishads contain parables; the principal Upanishads precede the Puranas.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-2",
+    "year": 2017,
+    "question": "Which statements distinguish Rigvedic Aryans from Indus Valley people:\n1. Coat of mail and helmet.\n2. Knowledge of gold, silver and copper versus only copper and iron.\n3. Horse domestication.",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 only"
+      },
+      {
+        "value": "B",
+        "text": "2 and 3 only"
+      },
+      {
+        "value": "C",
+        "text": "1 and 3 only"
+      },
+      {
+        "value": "D",
+        "text": "1, 2 and 3"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The conventional exam answer accepts armour and horse domestication. Harappans also knew gold and silver; the metals comparison is false.",
+    "answerStatus": "researched",
+    "editorialNote": "The supplied stem is abbreviated. The answer follows the standard historical comparison used in this PYQ; archaeological interpretations of horse evidence vary."
+  },
+  {
+    "id": "upsc-vedic-3",
+    "year": 2016,
+    "question": "Who was the profession of memorising chronicles, dynasty histories and epic tales attributed to?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Shramana"
+      },
+      {
+        "value": "B",
+        "text": "Parivraajaka"
+      },
+      {
+        "value": "C",
+        "text": "Agrahaarika"
+      },
+      {
+        "value": "D",
+        "text": "Magadha"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Magadhas were bards who preserved genealogies and historical traditions orally.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-4",
+    "year": 2012,
+    "question": "The religion of early Vedic Aryans was primarily of",
+    "options": [
+      {
+        "value": "A",
+        "text": "Bhakti"
+      },
+      {
+        "value": "B",
+        "text": "image worship and Yajnas"
+      },
+      {
+        "value": "C",
+        "text": "worship of nature and Yajnas"
+      },
+      {
+        "value": "D",
+        "text": "worship of nature and Bhakti"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Nature deities and sacrificial rituals were central to early Vedic worship.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-5",
+    "year": 2011,
+    "question": "The 'dharma' and 'Rita' depict a central idea of ancient Vedic civilization of India. In this context, consider the following statements:\n1. Dharma was a conception of obligations and of the discharge of one's duties to oneself and to others.\n2. Rita was the fundamental moral law governing the functioning of the universe and all it contained.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 only"
+      },
+      {
+        "value": "B",
+        "text": "2 only"
+      },
+      {
+        "value": "C",
+        "text": "Both 1 and 2"
+      },
+      {
+        "value": "D",
+        "text": "Neither 1 nor 2"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Dharma concerns duties; Rita expresses cosmic and moral order.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-6",
+    "year": 2004,
+    "question": "Which one of the following four Vedas contains an account of magical charms and spells?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Rig-veda"
+      },
+      {
+        "value": "B",
+        "text": "Yajur-veda"
+      },
+      {
+        "value": "C",
+        "text": "Atharva-veda"
+      },
+      {
+        "value": "D",
+        "text": "Sama-veda"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Atharvaveda includes charms, spells and healing prayers.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-7",
+    "year": 1999,
+    "question": "Which one of the following was initially the most powerful city state of India in the 6th century B.C.?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Gandhar"
+      },
+      {
+        "value": "B",
+        "text": "Kamboj"
+      },
+      {
+        "value": "C",
+        "text": "Kashi"
+      },
+      {
+        "value": "D",
+        "text": "Magadh"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Kashi was initially prominent; Magadha rose to dominance subsequently.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-8",
+    "year": 1999,
+    "question": "The term 'Aryan' denotes",
+    "options": [
+      {
+        "value": "A",
+        "text": "an ethnic group"
+      },
+      {
+        "value": "B",
+        "text": "a nomadic people"
+      },
+      {
+        "value": "C",
+        "text": "a speech group"
+      },
+      {
+        "value": "D",
+        "text": "a superior race"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Here Aryan denotes a linguistic grouping, rather than a biological race.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-9",
+    "year": 1996,
+    "question": "In the context of ancient Indian society, which one of the following terms does not belong to the category of the other three?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Kula"
+      },
+      {
+        "value": "B",
+        "text": "Vamsa"
+      },
+      {
+        "value": "C",
+        "text": "Kosa"
+      },
+      {
+        "value": "D",
+        "text": "Gotra"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Kosa means treasury; the other terms concern kinship or descent.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-10",
+    "year": 1996,
+    "question": "The river most mentioned in early Vedic literature is",
+    "options": [
+      {
+        "value": "A",
+        "text": "Sindhu"
+      },
+      {
+        "value": "B",
+        "text": "Sutudri"
+      },
+      {
+        "value": "C",
+        "text": "Sarasvati"
+      },
+      {
+        "value": "D",
+        "text": "Ganga"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Sindhu is the most frequently mentioned river in the Rigveda.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-11",
+    "year": 1995,
+    "question": "According to Mimamsa system of philosophy, liberation is possible by means of",
+    "options": [
+      {
+        "value": "A",
+        "text": "Jnana"
+      },
+      {
+        "value": "B",
+        "text": "Bhakti"
+      },
+      {
+        "value": "C",
+        "text": "Yoga"
+      },
+      {
+        "value": "D",
+        "text": "Karma"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Purva Mimamsa stresses prescribed actions and Vedic ritual duties.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-12",
+    "year": 1995,
+    "question": "Who among the following was a Brahmavadini who composed some hymns of the Vedas?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Lopamudra"
+      },
+      {
+        "value": "B",
+        "text": "Gargi"
+      },
+      {
+        "value": "C",
+        "text": "Leelavati"
+      },
+      {
+        "value": "D",
+        "text": "Savitri"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Lopamudra is credited with verses in the Rigveda.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-13",
+    "year": 1995,
+    "question": "The word 'Hindu' as reference to the people of Hind (India) was first used by",
+    "options": [
+      {
+        "value": "A",
+        "text": "the Greeks"
+      },
+      {
+        "value": "B",
+        "text": "the Romans"
+      },
+      {
+        "value": "C",
+        "text": "the Chinese"
+      },
+      {
+        "value": "D",
+        "text": "the Arabs"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Many reproduced exam keys give the Arabs for this wording.",
+    "answerStatus": "researched",
+    "editorialNote": "Answer references disagree on this question. D is commonly listed, but the word has earlier Persian roots; an original official key has not been verified."
+  },
+  {
+    "id": "upsc-vedic-14",
+    "year": 1994,
+    "question": "Which one of the following usages was a post-Vedic development?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Dharma - Artha - Kama - Moksha"
+      },
+      {
+        "value": "B",
+        "text": "Brahmana - Kshatriya - Vaishya - Shudra"
+      },
+      {
+        "value": "C",
+        "text": "Brahmacharya - Grihasthashrama - Vanaprastha - Sanyasa"
+      },
+      {
+        "value": "D",
+        "text": "Indra - Surya - Rudra - Marut"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The expected answer is the formal four-stage ashrama scheme.",
+    "answerStatus": "researched",
+    "editorialNote": "This is the conventional keyed answer. The chronology of the four ashramas and four purusharthas is more nuanced than the wording suggests."
+  },
+  {
+    "id": "upsc-vedic-15",
+    "year": 1993,
+    "question": "The term nishka, which meant an ornament in the Vedic period, was used in later times to denote a/an",
+    "options": [
+      {
+        "value": "A",
+        "text": "weapon"
+      },
+      {
+        "value": "B",
+        "text": "agricultural implement"
+      },
+      {
+        "value": "C",
+        "text": "script"
+      },
+      {
+        "value": "D",
+        "text": "coin"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Nishka later denoted a monetary unit or coin.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-16",
+    "year": 1992,
+    "question": "Which one of the following is a Vedanga?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Sruti"
+      },
+      {
+        "value": "B",
+        "text": "Smriti"
+      },
+      {
+        "value": "C",
+        "text": "Nirukta"
+      },
+      {
+        "value": "D",
+        "text": "Samhita"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Nirukta, concerned with etymology, is one of the six Vedangas.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-17",
+    "year": 1992,
+    "question": "Which one of the following was worshipped as a heavenly God by ancient Indians?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Surya"
+      },
+      {
+        "value": "B",
+        "text": "Angaraka (Mangala)"
+      },
+      {
+        "value": "C",
+        "text": "Sukra"
+      },
+      {
+        "value": "D",
+        "text": "Sani"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Surya is the Vedic solar deity.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-vedic-18",
+    "year": 1992,
+    "question": "Which one of the following does not constitute part of the Veda?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Nirukta"
+      },
+      {
+        "value": "B",
+        "text": "Samhita"
+      },
+      {
+        "value": "C",
+        "text": "Brahmana"
+      },
+      {
+        "value": "D",
+        "text": "Aranyaka"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Nirukta is an auxiliary Vedanga, rather than a division of Vedic literature.",
+    "answerStatus": "researched"
+  }
+]
