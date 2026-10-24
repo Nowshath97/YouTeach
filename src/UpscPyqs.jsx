@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import buddhismQuestions from './data/upscBuddhismPyqs.json';
 import vedicQuestions from './data/upscVedicPyqs.json';
 
+import { AiChatDrawer, AskAiButton, useAiDrawerState } from './AskAi';
+
 export default function UpscPyqs() {
+  const ai = useAiDrawerState();
   const [topic, setTopic] = useState('Vedic Period');
   const questions = topic === 'Vedic Period' ? vedicQuestions : buddhismQuestions;
   const [year, setYear] = useState('All years');
@@ -32,8 +35,10 @@ export default function UpscPyqs() {
         <p>{question.explanation}</p>
         {question.editorialNote && <p className="small">{question.editorialNote}</p>}
       </div>}
+      {responses[question.id] && question.explanation && <AskAiButton questionId={question.id} examType="UPSC" questionText={question.question} staticExplanation={question.explanation} onOpen={ai.openDrawer} />}
       {responses[question.id] && <button className="btn" onClick={() => setResponses(current => { const next = { ...current }; delete next[question.id]; return next; })}>Clear selection</button>}
     </article>)}</div>
     {!visible.length && <p className="explorer-empty">No questions match your filters.</p>}
+    <AiChatDrawer isOpen={ai.isOpen} onClose={ai.closeDrawer} messages={ai.messages} isLoading={ai.isLoading} context={ai.currentQuestionContext} onSend={ai.sendMessage} />
   </div>;
 }
