@@ -1,6 +1,6 @@
 {
   // Cloudflare static-assets deployment: serves the Vite build output (run `npm run build` first).
-  "name": "YouTeach", // must match your Cloudflare Workers project name
+  "name": "youteach", // must match your Cloudflare Workers project name
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./dist",
