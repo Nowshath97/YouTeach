@@ -7,14 +7,23 @@ import FormattedMessage from './FormattedMessage';
 
 const EXAM_LABELS = { UPSC: 'UPSC', GATE: 'GATE', SSC_CGL: 'SSC CGL', TGPSC_AEE: 'TGPSC AEE' };
 
-// Calls POST /api/ask-ai (server/askAi.mjs). Only the question id is sent; the server looks up the question itself.
+// Local dev: the Vite proxy sends /api/ask-ai to server/askAi.mjs (npm run api).
+// Deployed site: the Supabase Edge Function "ask-ai". Set VITE_ASK_AI_URL to override either.
+const ASK_AI_URL =
+  import.meta.env.VITE_ASK_AI_URL ||
+  (import.meta.env.DEV
+    ? '/api/ask-ai'
+    : 'https://hcdjbvgabqfqfmbisngv.supabase.co/functions/v1/ask-ai');
+    
+// Only the question id is sent; the server looks up the question itself.
 export async function fetchAskAiReply({ context, history, userText }) {
   const headers = { 'Content-Type': 'application/json' };
+  if (import.meta.env.VITE_SUPABASE_ANON_KEY) headers.apikey = import.meta.env.VITE_SUPABASE_ANON_KEY;
   const session = supabase ? (await supabase.auth.getSession()).data.session : null;
   if (session?.access_token) headers.Authorization = `Bearer ${session.access_token}`;
   let res;
   try {
-    res = await fetch('/api/ask-ai', {
+    res = await fetch(ASK_AI_URL, {
       method: 'POST',
       headers,
       body: JSON.stringify({
@@ -28,7 +37,15 @@ export async function fetchAskAiReply({ context, history, userText }) {
     throw new Error('Could not reach the AI service. Check your connection and try again.');
   }
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data?.error?.message || 'Something went wrong. Please try again.');
+  if (!res.ok) {
+    console.error('[ask-ai] request failed', res.status, ASK_AI_URL, data);
+    // Our server sends { error: { message } }; the Supabase gateway sends { message } or { msg }.
+    throw new Error(data?.error?.message || data?.message || data?.msg || `The AI service is unavailable (error ${res.status}). Please try again.`);
+  }
+  if (typeof data.reply !== 'string') {
+    console.error('[ask-ai] unexpected response', res.status, ASK_AI_URL);
+    throw new Error('The AI service is not set up correctly on this site. Please contact support.');
+  }
   return data.reply;
 }
 const makeId = () => (globalThis.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2)}`);
