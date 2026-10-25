@@ -34,16 +34,31 @@ const findCaption = row => {
 const isTableLine = line => line.includes('|') && line.split('|').filter(cell => cell.trim()).length >= 2;
 const isSeparator = line => /^[\s|:-]+$/.test(line);
 const splitCells = line => line.replace(/^\s*\|/, '').replace(/\|\s*$/, '').split('|').map(cell => cell.trim());
+// "Match the following" rows keep their two columns separated by a tab (real, or typed as the characters "\t").
+const splitTabbed = line => line.replace(/\\t/g, '\t').split(/\t+/).map(cell => cell.trim()).filter(Boolean);
+const hasLabel = cell => /^([A-Za-z]+|\d+)\s*[.)]\s+/.test(cell);
+const CELL = { border: '1px solid #cbd5e1', padding: '6px 10px' };
 function RichText({ text }) {
   const blocks = [];
   let table = [];
+  let matching = [];
   const flush = () => { if (table.length) blocks.push({ table }); table = []; };
+  const flushMatching = () => { if (matching.length) blocks.push({ matching }); matching = []; };
   clean(text).split('\n').forEach(line => {
+    const cells = splitTabbed(line);
+    if (cells.length === 2 && hasLabel(cells[0]) && hasLabel(cells[1])) { flush(); matching.push(cells); return; }
+    flushMatching();
     if (isTableLine(line)) { if (!isSeparator(line)) table.push(splitCells(line)); }
     else { flush(); blocks.push({ line }); }
   });
   flush();
-  return <>{blocks.map((block, index) => block.table
+  flushMatching();
+  return <>{blocks.map((block, index) => block.matching
+    ? <div key={index} style={{ overflowX: 'auto', margin: '8px 0' }}><table aria-label="Lists to match" style={{ borderCollapse: 'collapse', fontSize: '0.92em' }}>
+      <thead><tr><th style={{ ...CELL, background: '#f1f5f9', textAlign: 'left' }}>List I</th><th style={{ ...CELL, background: '#f1f5f9', textAlign: 'left' }}>List II</th></tr></thead>
+      <tbody>{block.matching.map((cells, r) => <tr key={r}>{cells.map((cell, i) => <td key={i} style={CELL}>{cell}</td>)}</tr>)}</tbody>
+    </table></div>
+    : block.table
     ? <div key={index} style={{ overflowX: 'auto', margin: '8px 0' }}><table style={{ borderCollapse: 'collapse', fontSize: '0.92em' }}>
       <thead><tr>{block.table[0].map((cell, i) => <th key={i} style={{ border: '1px solid #cbd5e1', padding: '6px 10px', background: '#f1f5f9', textAlign: 'left' }}>{cell}</th>)}</tr></thead>
       <tbody>{block.table.slice(1).map((cells, r) => <tr key={r}>{cells.map((cell, i) => <td key={i} style={{ border: '1px solid #cbd5e1', padding: '6px 10px' }}>{cell}</td>)}</tr>)}</tbody>
@@ -56,6 +71,7 @@ export default function TgpscAeePyqs() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [query, setQuery] = useState('');
+  const [subject, setSubject] = useState('');
   const [responses, setResponses] = useState({});
   const ai = useAiDrawerState();
 
@@ -72,10 +88,19 @@ export default function TgpscAeePyqs() {
   }, []);
 
   const search = query.trim().toLowerCase();
-  const visible = rows.filter(row => !search || `${row.question_text} ${normalizeOptions(row.options).join(' ')}`.toLowerCase().includes(search));
+  const subjectOf = row => String(row.subject ?? '').trim() || 'Other';
+  const subjectCounts = rows.reduce((counts, row) => counts.set(subjectOf(row), (counts.get(subjectOf(row)) || 0) + 1), new Map());
+  const subjects = [...subjectCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const visible = rows.filter(row => (!subject || subjectOf(row) === subject)
+    && (!search || `${row.question_text} ${normalizeOptions(row.options).join(' ')}`.toLowerCase().includes(search)));
 
   return <div>
     <div className="explorer-heading"><div><h3>TGPSC AEE · Previous Year Questions</h3><p>{rows.length} questions</p></div></div>
+    {subjects.length > 0 && <div className="pyq-subject-cards" role="group" aria-label="Filter by subject">
+      {[['', rows.length], ...subjects].map(([name, count]) => <button key={name || 'all'} type="button" aria-pressed={subject === name} className={`pyq-subject-card${subject === name ? ' is-active' : ''}`} onClick={() => setSubject(name)}>
+        <strong>{name || 'All subjects'}</strong><span>{count} question{count === 1 ? '' : 's'}</span>
+      </button>)}
+    </div>}
     <div className="upsc-pyq-filters">
       <label>Search questions <input value={query} onChange={event => setQuery(event.target.value)} placeholder="Search TGPSC AEE PYQs" /></label>
     </div>
