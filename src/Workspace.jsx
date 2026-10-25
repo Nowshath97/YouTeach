@@ -213,6 +213,24 @@ function AuthScreen({ authError }) {
   const [mode, setMode] = useState(() => window.location.hash === '#/create-account' ? 'signup' : 'signin');
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
+  const MAX_FAILS = 5, LOCK_MS = 30000, LOCK_KEY = 'jfs-signin-lock';
+  const [lock, setLock] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(LOCK_KEY)) || { fails: 0, until: 0 }; } catch { return { fails: 0, until: 0 }; }
+  });
+  const [now, setNow] = useState(Date.now());
+  const secondsLeft = Math.max(0, Math.ceil((lock.until - now) / 1000));
+  useEffect(() => {
+    try { localStorage.setItem(LOCK_KEY, JSON.stringify(lock)); } catch { /* storage unavailable */ }
+  }, [lock]);
+  useEffect(() => {
+    if (lock.until <= Date.now()) return undefined;
+    const timer = setInterval(() => {
+      const t = Date.now();
+      setNow(t);
+      if (t >= lock.until) { setLock({ fails: 0, until: 0 }); setMessage(''); }
+    }, 500);
+    return () => clearInterval(timer);
+  }, [lock.until]);
   useEffect(() => {
     const navigate = () => {
       setMode(window.location.hash === '#/create-account' ? 'signup' : 'signin');
@@ -231,12 +249,31 @@ function AuthScreen({ authError }) {
       setMessage('Sign-in is unavailable until Supabase is configured.');
       return;
     }
+    if (mode === 'signin' && lock.until > Date.now()) {
+      setNow(Date.now());
+      setMessage('Too many failed attempts. Please wait before trying again.');
+      return;
+    }
     setBusy(true);
     setMessage('');
     try {
       const result = mode === 'signin'
         ? await supabase.auth.signInWithPassword({ email, password })
         : await supabase.auth.signUp({ email, password });
+      if (mode === 'signin') {
+        if (result.error) {
+          const fails = lock.fails + 1;
+          if (fails >= MAX_FAILS) {
+            const until = Date.now() + LOCK_MS;
+            setNow(Date.now());
+            setLock({ fails, until });
+            setPassword('');
+            setMessage('Too many failed attempts. Sign-in is locked for 30 seconds.');
+            return;
+          }
+          setLock({ fails, until: 0 });
+        } else setLock({ fails: 0, until: 0 });
+      }
       if (result.error) setMessage(result.error.message);
       else if (mode === 'signup' && !result.data.session) setMessage('Account created. Check your email to confirm your account, then sign in.');
     } catch (error) {
@@ -270,50 +307,125 @@ function AuthScreen({ authError }) {
 
   if (mode === 'signup') return <CreateAccountScreen onSignIn={() => { window.location.hash = '/sign-in'; }} onGoogle={signInWithGoogle} googleBusy={busy} authError={message || authError} />;
 
-  return <main className="auth-page">
-    <div className="auth-layout">
-      <section className="auth-intro">
-        <a href="/" className="auth-brand" aria-label="JobForSure home">
-          <span className="auth-brand-mark">J.</span>
-          <span>JobFor<span className="text-indigo-600">Sure</span></span>
-        </a>
-        <div className="auth-intro-copy">
-          <span className="auth-kicker">YOUR NEXT CHAPTER STARTS HERE</span>
-          <h1>Prepare with purpose.<br /><span>Get there with confidence.</span></h1>
-          <p>A focused learning space for engineering students preparing for the exams that matter.</p>
-          <div className="auth-benefits">
-            <div><BookOpen size={18} /><span>Learn with structured tutorials</span></div>
-            <div><Target size={18} /><span>Practice around your exam goals</span></div>
-            <div><GraduationCap size={18} /><span>Grow alongside your community</span></div>
-          </div>
-        </div>
-        <span className="auth-footer">A little progress, every day.</span>
-      </section>
-      <section className="auth-card" aria-labelledby="auth-heading">
-        <span className="auth-kicker">{mode === 'signin' ? 'WELCOME BACK' : 'GET STARTED'}</span>
-        <h2 id="auth-heading" tabIndex={-1}>{mode === 'signin' ? 'Sign in to your account' : 'Create your student account'}</h2>
-        <p className="small">{mode === 'signin' ? 'Pick up where your preparation left off.' : 'Create an account to start your exam preparation.'}</p>
-        <form className="auth-form" onSubmit={submit}>
-          <label htmlFor="auth-email">Email address</label>
-          <input id="auth-email" className="field" type="email" autoComplete="email" placeholder="you@example.com" value={email} onChange={event => setEmail(event.target.value)} required />
-          <label htmlFor="auth-password">Password</label>
-          <input id="auth-password" className="field" type="password" autoComplete={mode === 'signin' ? 'current-password' : 'new-password'} placeholder="At least 6 characters" value={password} onChange={event => setPassword(event.target.value)} minLength={6} required />
-          <button className="btn btn-primary auth-submit" type="submit" disabled={busy || !supabase}>
-            {busy ? 'Please wait...' : mode === 'signin' ? 'Sign in' : 'Create account'}
-          </button>
-        </form>
-        {!supabase && <p className="auth-notice" role="status">Authentication is not configured. Add your Supabase URL and anon key to <code>.env</code>, then restart the app.</p>}
-        {authError && <p className="auth-message" role="alert">{authError}</p>}
-        {message && <p className="auth-message" role="alert">{message}</p>}
-        <p className="auth-switch">
-          {mode === 'signin' ? 'New to JobForSure?' : 'Already have an account?'}
-          <button type="button" disabled={busy} onClick={() => { window.location.hash = '/create-account'; }}>
-            {mode === 'signin' ? 'Create an account' : 'Sign in'}
-          </button>
-        </p>
-        <p className="auth-terms">By continuing, you agree to use JobForSure for your learning journey.</p>
-      </section>
+  const highlights = [
+    { icon: Sparkles, title: 'Ask AI, learn deeply', text: 'Get contextual explanations, hints and smarter ways to solve difficult questions.', status: 'Available now' },
+    { icon: Target, title: 'Fix My Weakness', text: 'Turn incorrect answers into focused lessons, practice and mastery checks.', status: 'On our roadmap' },
+    { icon: CalendarDays, title: 'Your daily study plan', text: 'An adaptive preparation path built around your goals, progress and available time.', status: 'On our roadmap' },
+    { icon: Activity, title: 'Mock test insights', text: 'Review your performance today; get deeper AI-led diagnosis as the coach evolves.', status: 'Evolving' },
+    { icon: BookOpen, title: 'Smart revision', text: 'Revisit difficult concepts at the right time and strengthen long-term recall.', status: 'On our roadmap' },
+    { icon: GraduationCap, title: 'One AI exam coach', text: 'A connected learning experience that can guide your next best study action.', status: 'Our vision' },
+  ];
+
+  return <main className="jfs-landing">
+    <style>{`
+      .jfs-landing{--jfs-ink:#172044;--jfs-muted:#68738b;--jfs-primary:#5046db;--jfs-border:#e6e9f4;font-family:inherit;background:#f8faff;color:var(--jfs-ink);min-height:100vh;overflow-x:hidden}
+      .jfs-landing *{box-sizing:border-box}
+      .jfs-landing .jfs-shell{max-width:1440px;margin:auto;padding:0 clamp(24px,4vw,64px)}
+      .jfs-landing .jfs-nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+      .jfs-landing .jfs-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1b2446;font-weight:850;font-size:21px;letter-spacing:-.7px}
+      .jfs-landing .jfs-brand-mark{width:39px;height:39px;border-radius:12px;background:#5147dd;color:white;display:grid;place-items:center;font-weight:900}
+      .jfs-landing .jfs-brand strong{color:#5147dd}
+      .jfs-landing .jfs-navlinks{display:flex;align-items:center;gap:25px}
+      .jfs-landing .jfs-navlinks a{font-size:13px;font-weight:700;color:#57637c;text-decoration:none}
+      .jfs-landing .jfs-navlinks a:hover{color:#5147dd}
+      .jfs-landing .jfs-navlinks a.jfs-button,.jfs-landing .jfs-navlinks a.jfs-button:hover{color:white}
+      .jfs-landing .jfs-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:12px;padding:13px 20px;background:#5147dd;color:white;font-weight:750;font-size:14px;cursor:pointer;text-decoration:none;transition:transform .15s,background .15s}
+      .jfs-landing .jfs-button:hover{background:#4036bf;transform:translateY(-1px)}
+      .jfs-landing .jfs-button:disabled{opacity:.55;cursor:not-allowed;transform:none}
+      .jfs-landing .jfs-button-light{background:white;color:#453cc4;border:1px solid #d9d9f8}
+      .jfs-landing .jfs-button-light:hover{background:#f0efff}
+      .jfs-landing .jfs-hero{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(330px,.85fr);gap:clamp(30px,4vw,68px);align-items:center;padding:42px 0 62px;min-height:570px;background:none}
+      .jfs-landing .jfs-eyebrow{display:inline-flex;align-items:center;gap:7px;color:#5147dd;font-size:11px;font-weight:850;letter-spacing:1.5px;text-transform:uppercase}
+      .jfs-landing .jfs-hero h1{font-size:clamp(38px,3.7vw,54px);line-height:1.13;letter-spacing:-.045em;font-weight:850;margin:19px 0 18px;max-width:720px}
+      .jfs-landing .jfs-hero h1 em{font-style:normal;color:#5147dd}
+      .jfs-landing .jfs-lead{font-size:16px;line-height:1.7;color:#67728a;max-width:610px}
+      .jfs-landing .jfs-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+      .jfs-landing .jfs-trust{display:flex;flex-wrap:wrap;gap:16px;margin-top:27px;color:#67728a;font-size:12px;font-weight:650}
+      .jfs-landing .jfs-trust span{display:inline-flex;gap:6px;align-items:center}
+      .jfs-landing .jfs-auth-card{background:white;border:1px solid #e4e7f3;border-radius:22px;padding:30px;box-shadow:0 18px 55px rgba(45,47,116,.10);min-width:0;width:100%;max-width:420px;justify-self:end}
+      .jfs-landing .jfs-auth-card h2{font-size:25px;line-height:1.3;letter-spacing:-.7px;font-weight:800;margin:11px 0 8px}
+      .jfs-landing .jfs-auth-card .jfs-sub{font-size:13px;color:#7a849a;line-height:1.7;margin-bottom:24px}
+      .jfs-landing .jfs-form{display:flex;flex-direction:column;gap:10px}
+      .jfs-landing .jfs-form label{font-size:12px;font-weight:750;color:#36415c;margin-top:5px}
+      .jfs-landing .jfs-form input{display:block;width:100%;height:46px;padding:0 14px;border:1px solid #dce1ef;border-radius:10px;background:white;color:#202945;font-size:14px;outline:none}
+      .jfs-landing .jfs-form input:focus{border-color:#7167ee;box-shadow:0 0 0 3px #eeedff}
+      .jfs-landing .jfs-form .jfs-button{width:100%;margin-top:11px}
+      .jfs-landing .jfs-auth-switch{margin-top:20px;text-align:center;font-size:13px;color:#66718a}
+      .jfs-landing .jfs-auth-switch button{border:0;background:none;color:#5147dd;font-weight:800;cursor:pointer;margin-left:5px}
+      .jfs-landing .jfs-notice{margin-top:14px;border-radius:9px;background:#fff8e8;color:#865f14;padding:10px;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+      .jfs-landing .jfs-error{margin-top:12px;color:#ae2543;font-size:12px;overflow-wrap:anywhere}
+      .jfs-landing .jfs-terms{text-align:center;color:#9ba2b3;font-size:11px;line-height:1.6;margin-top:18px}
+      .jfs-landing .jfs-section{padding:76px 0}
+      .jfs-landing .jfs-section-soft{background:white;border-top:1px solid #eef0f7;border-bottom:1px solid #eef0f7}
+      .jfs-landing .jfs-section-head{text-align:center;max-width:680px;margin:0 auto 42px}
+      .jfs-landing .jfs-section-head h2{font-size:clamp(28px,3.2vw,39px);letter-spacing:-1.3px;line-height:1.2;font-weight:850;margin:12px 0}
+      .jfs-landing .jfs-section-head p{color:#68738b;font-size:15px;line-height:1.75}
+      .jfs-landing .jfs-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+      .jfs-landing .jfs-feature{padding:26px;border:1px solid #e7eaf5;border-radius:17px;background:#fff;min-width:0}
+      .jfs-landing .jfs-icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:#efedff;color:#5147dd;margin-bottom:20px}
+      .jfs-landing .jfs-feature h3{font-size:16px;font-weight:800;margin:0 0 10px}
+      .jfs-landing .jfs-feature p{font-size:13px;line-height:1.75;color:#737e95;margin:0 0 18px}
+      .jfs-landing .jfs-status{display:inline-flex;border-radius:30px;background:#f2f4fa;color:#626e88;padding:6px 10px;font-size:10px;font-weight:800}
+      .jfs-landing .jfs-status-live{background:#e9f8f1;color:#167751}
+      .jfs-landing .jfs-journey{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:30px}
+      .jfs-landing .jfs-step{border:1px solid #e4e7f3;background:#fff;border-radius:15px;padding:24px 20px}
+      .jfs-landing .jfs-step b{display:block;font-size:12px;color:#5147dd;margin-bottom:10px}
+      .jfs-landing .jfs-step strong{display:block;font-size:17px;margin-bottom:9px}
+      .jfs-landing .jfs-step p{font-size:12px;line-height:1.7;color:#748097;margin:0}
+      .jfs-landing .jfs-final{background:#29226f;border-radius:24px;padding:50px 28px;text-align:center;color:white}
+      .jfs-landing .jfs-final h2{font-size:clamp(26px,3.5vw,40px);font-weight:850;letter-spacing:-1px;margin:0 0 13px}
+      .jfs-landing .jfs-final p{color:#d9d6ff;max-width:540px;margin:0 auto 25px;line-height:1.7}
+      .jfs-landing .jfs-footer{display:flex;justify-content:space-between;gap:15px;padding:30px 0;color:#8892a7;font-size:12px}
+      @media(max-width:1050px){.jfs-landing .jfs-hero{gap:28px;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr)}.jfs-landing .jfs-hero h1{font-size:clamp(36px,4vw,44px)}.jfs-landing .jfs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.jfs-landing .jfs-journey{grid-template-columns:repeat(2,minmax(0,1fr))}}
+      @media(max-width:760px){.jfs-landing .jfs-shell{padding:0 18px}.jfs-landing .jfs-nav{height:66px}.jfs-landing .jfs-navlinks a{display:none}.jfs-landing .jfs-navlinks .jfs-button{padding:10px 13px;font-size:12px}.jfs-landing .jfs-hero{grid-template-columns:minmax(0,1fr);gap:30px;padding-top:30px;padding-bottom:54px;min-height:0}.jfs-landing .jfs-hero h1{font-size:clamp(35px,9vw,48px);letter-spacing:-1.5px}.jfs-landing .jfs-lead{font-size:15px}.jfs-landing .jfs-auth-card{padding:25px 21px;max-width:500px;justify-self:center}.jfs-landing .jfs-section{padding:58px 0}.jfs-landing .jfs-grid{grid-template-columns:minmax(0,1fr)}.jfs-landing .jfs-journey{grid-template-columns:minmax(0,1fr)}.jfs-landing .jfs-footer{flex-direction:column}.jfs-landing .jfs-final{padding:36px 22px}}
+    `}</style>
+    <div className="jfs-shell">
+      <header className="jfs-nav">
+        <a className="jfs-brand" href="#top" aria-label="JobForSure home"><span className="jfs-brand-mark">J.</span><span>JobFor<strong>Sure</strong></span></a>
+        <nav className="jfs-navlinks" aria-label="Landing page navigation"><a href="#features">Features</a><a href="#how-it-works">How it works</a><a className="jfs-button" href="#join">Sign in <ArrowRight size={15}/></a></nav>
+      </header>
+      <div id="top" className="jfs-hero">
+        <section>
+          <span className="jfs-eyebrow"><Sparkles size={15}/> THE FUTURE OF ENGINEERING EXAM PREP</span>
+          <h1>Prepare smarter.<br/><em>Improve with every question.</em></h1>
+          <p className="jfs-lead">Meet JobForSure: your engineering exam preparation space, evolving into a personal AI coach that helps you understand mistakes, build confidence and make every study session count.</p>
+          <div className="jfs-hero-actions"><a className="jfs-button" href="#join">Start preparing <ArrowRight size={17}/></a><a className="jfs-button jfs-button-light" href="#features">Explore our vision</a></div>
+          <div className="jfs-trust"><span><CheckCircle2 size={15}/> Engineering-focused practice</span><span><CheckCircle2 size={15}/> Mock tests &amp; PYQs</span><span><CheckCircle2 size={15}/> AI-powered learning</span></div>
+        </section>
+        <section id="join" className="jfs-auth-card" aria-labelledby="auth-heading">
+          <span className="jfs-eyebrow">WELCOME BACK</span>
+          <h2 id="auth-heading" tabIndex={-1}>Continue your preparation</h2>
+          <p className="jfs-sub">Sign in to pick up where you left off, review your progress and keep learning.</p>
+          <form className="jfs-form" onSubmit={submit}>
+            <label htmlFor="auth-email">Email address</label>
+            <input id="auth-email" type="email" autoComplete="email" placeholder="you@example.com" value={email} onChange={event => setEmail(event.target.value)} required disabled={busy}/>
+            <label htmlFor="auth-password">Password</label>
+            <input id="auth-password" type="password" autoComplete="current-password" placeholder="Enter your password" value={password} onChange={event => setPassword(event.target.value)} minLength={6} required disabled={busy}/>
+            <button className="jfs-button" type="submit" disabled={busy || !supabase || secondsLeft > 0}>{busy ? 'Please wait...' : secondsLeft > 0 ? `Try again in ${secondsLeft}s` : 'Sign in to JobForSure'} <ArrowRight size={16}/></button>
+          </form>
+          {!supabase && <p className="jfs-notice" role="status">Authentication is not configured. Add your Supabase URL and anon key to your .env file and restart the app.</p>}
+          {authError && <p className="jfs-error" role="alert">{authError}</p>}
+          {message && <p className="jfs-error" role="alert">{message}</p>}
+          <p className="jfs-auth-switch">New to JobForSure?<button type="button" disabled={busy} onClick={() => { window.location.hash = '/create-account'; }}>Create an account</button></p>
+          <p className="jfs-terms">By continuing, you agree to use JobForSure for your learning journey.</p>
+        </section>
+      </div>
     </div>
+    <section id="features" className="jfs-section jfs-section-soft"><div className="jfs-shell">
+      <div className="jfs-section-head"><span className="jfs-eyebrow">YOUR LEARNING COMPANION</span><h2>More than answers. A smarter way to prepare.</h2><p>Practice and mock tests are just the beginning. We're building a connected AI learning journey around each student's strengths, mistakes and goals.</p></div>
+      <div className="jfs-grid">{highlights.map(({icon:Icon,title,text,status}) => <article className="jfs-feature" key={title}><span className="jfs-icon"><Icon size={22}/></span><h3>{title}</h3><p>{text}</p><span className={`jfs-status ${status === 'Available now' ? 'jfs-status-live' : ''}`}>{status}</span></article>)}</div>
+    </div></section>
+    <section id="how-it-works" className="jfs-section"><div className="jfs-shell">
+      <div className="jfs-section-head"><span className="jfs-eyebrow">OUR PRODUCT VISION</span><h2>Every mistake can become progress.</h2><p>Our planned AI coaching experience follows a simple learning loop designed to turn practice into measurable improvement.</p></div>
+      <div className="jfs-journey">{[
+        ['01','Practice','Attempt exam-focused questions and mock tests.'],
+        ['02','Understand','Get explanations and uncover the reason behind errors.'],
+        ['03','Improve','Work through focused lessons and targeted practice.'],
+        ['04','Remember','Review weaker concepts and track mastery over time.']
+      ].map(([number,title,description]) => <article className="jfs-step" key={number}><b>{number}</b><strong>{title}</strong><p>{description}</p></article>)}</div>
+    </div></section>
+    <section className="jfs-section jfs-section-soft"><div className="jfs-shell"><div className="jfs-final"><h2>Your next breakthrough starts with one question.</h2><p>Prepare for GATE, ESE, ISRO, PSU and more with JobForSure. Start with today's tools and grow with our vision for personalized AI coaching.</p><a className="jfs-button jfs-button-light" href="#join">Get started <ArrowRight size={17}/></a></div></div></section>
+    <footer className="jfs-shell jfs-footer"><span>© {new Date().getFullYear()} JobForSure</span><span>A little progress, every day. · Upcoming AI features are part of our roadmap.</span></footer>
   </main>;
 }
 
