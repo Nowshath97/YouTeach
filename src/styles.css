@@ -640,3 +640,13 @@
   .jfs-site .jfs-account-section { padding: 56px 18px; }
   .jfs-site .jfs-auth-card { padding: 24px; }
 }
+
+/* Subject filter cards on the TGPSC AEE PYQ page. */
+.pyq-subject-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;margin:16px 0}
+.pyq-subject-card{display:flex;flex-direction:column;gap:4px;min-width:0;padding:12px 14px;text-align:left;border:1px solid #e2e8f0;border-radius:10px;background:#fff;transition:border-color .15s,background .15s}
+.pyq-subject-card strong{font-size:13px;font-weight:750;color:#1e293b;overflow-wrap:anywhere}
+.pyq-subject-card span{font-size:11px;color:#64748b}
+.pyq-subject-card:hover{border-color:#a5b4fc;background:#fafaff}
+.pyq-subject-card:focus-visible{outline:3px solid #a5b4fc;outline-offset:2px}
+.pyq-subject-card.is-active{border-color:#5141f5;background:#eef2ff;box-shadow:0 0 0 1px #5141f5}
+.pyq-subject-card.is-active strong{color:#4338ca}
