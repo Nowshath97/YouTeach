@@ -22,7 +22,7 @@ const findImageUrl = row => {
 };
 
 // Text may contain real line breaks or a literal "\n" (typed into the table editor); keep both as line breaks.
-const clean = text => String(text ?? '').replace(/\\r\\n|\\n|\\r/g, '\n').replace(/\r\n?/g, '\n').trim();
+export const clean = text => String(text ?? '').replace(/\\r\\n|\\n|\\r/g, '\n').replace(/\r\n?/g, '\n').trim();
 const MULTILINE = { whiteSpace: 'pre-line' };
 // Text shown under the diagram (e.g. "Where S1 and S2 are specific gravity ...")
 const findCaption = row => {
@@ -38,7 +38,7 @@ const splitCells = line => line.replace(/^\s*\|/, '').replace(/\|\s*$/, '').spli
 const splitTabbed = line => line.replace(/\\t/g, '\t').split(/\t+/).map(cell => cell.trim()).filter(Boolean);
 const hasLabel = cell => /^([A-Za-z]+|\d+)\s*[.)]\s+/.test(cell);
 const CELL = { border: '1px solid #cbd5e1', padding: '6px 10px' };
-function RichText({ text }) {
+export function RichText({ text }) {
   const blocks = [];
   let table = [];
   let matching = [];
