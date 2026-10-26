@@ -4,6 +4,7 @@ import { examCatalog, examFamilies } from './mockExamCatalog.mjs';
 import { revealMobileResults } from './catalogNavigation.mjs';
 import UpscPyqs from './UpscPyqs';
 import TgpscAeePyqs from './TgpscAeePyqs';
+import GatePyqs from './GatePyqs';
 
 export const previousYearPapers = [
   { code: 'ME', branch: 'Mechanical Engineering', title: 'GATE 2025 Mechanical Engineering', pages: 41 },
@@ -45,8 +46,11 @@ export default function PreviousYearPapers({ preferredBranch }) {
     </div></div>
     {exam === 'upsc' ? <UpscPyqs /> : exam === 'aee' ? <TgpscAeePyqs /> : selected ? <div ref={readerRef} tabIndex={-1} className="previous-paper-reader catalog-results">
       <div className="previous-paper-reader-toolbar"><button className="btn" onClick={() => setSelected(null)}><ArrowLeft size={14} /> All papers</button><h3>{selected.title}</h3><a className="btn" href={selected.url} target="_blank" rel="noreferrer">Open PDF <ExternalLink size={13} /></a><a className="btn" href={selected.keyUrl} target="_blank" rel="noreferrer">Answer key <ExternalLink size={13} /></a></div>
-      <iframe src={`${selected.url}#view=FitH`} title={selected.title} />
-      <p className="small p-3">If the PDF does not display in your browser, select Open PDF. Source: IIT Roorkee, GATE 2025.</p>
+      <GatePyqs paper={selected} year={2025} fallback={<>
+        <iframe src={`${selected.url}#view=FitH`} title={selected.title} />
+        <p className="small p-3">If the PDF does not display in your browser, select Open PDF. Source: IIT Roorkee, GATE 2025.</p>
+      </>} />
+      <p className="small p-3">Source: IIT Roorkee, GATE 2025.</p>
     </div> : <>
       <label className="explorer-search"><Search size={18} /><input value={query} onChange={event => setQuery(event.target.value)} placeholder={activeExam ? 'Search papers in this exam' : 'Search exams or previous year papers'} aria-label="Search PYQs" /></label>
       {!activeExam ? <>
