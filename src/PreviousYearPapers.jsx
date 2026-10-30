@@ -2,7 +2,7 @@
 import { ArrowLeft, ArrowRight, BookOpen, ExternalLink, FileQuestion, GraduationCap, Search } from 'lucide-react';
 import { examCatalog, examFamilies } from './mockExamCatalog.mjs';
 import { revealMobileResults } from './catalogNavigation.mjs';
-import UpscPyqs from './UpscPyqs';
+import UpscPyqs, { upscQuestionCount } from './UpscPyqs';
 
 export const previousYearPapers = [
   { code: 'ME', branch: 'Mechanical Engineering', title: 'GATE 2025 Mechanical Engineering', pages: 41 },
@@ -27,7 +27,7 @@ export default function PreviousYearPapers({ preferredBranch }) {
   const search = query.trim().toLowerCase();
   const visible = examPapers.filter(paper => (branch === 'All branches' || paper.branch === branch)
     && (!search || `${paper.title} ${paper.branch}`.toLowerCase().includes(search)));
-  const cards = examCatalog.map(item => ({ ...item, papers: item.id === 'upsc' ? [{ title: 'Ancient History Buddhism Vedic Period', branch: 'Ancient History' }] : previousYearPapers.filter(paper => paper.examId === item.id) }))
+  const cards = examCatalog.map(item => ({ ...item, papers: item.id === 'upsc' ? [{ title: 'Ancient History Buddhism Vedic Period Gupta Period', branch: 'Ancient History' }] : previousYearPapers.filter(paper => paper.examId === item.id) }))
     .filter(item => (family === 'All Exams' || item.family === family)
       && (!search || `${item.name} ${item.family}`.toLowerCase().includes(search)
         || item.papers.some(paper => `${paper.title} ${paper.branch}`.toLowerCase().includes(search))));
@@ -52,7 +52,7 @@ export default function PreviousYearPapers({ preferredBranch }) {
         <div className="explorer-filters" role="group" aria-label="Exam categories">{examFamilies.map(item => <button key={item} aria-pressed={family === item} className={family === item ? 'active' : ''} onClick={() => setFamily(item)}>{item}</button>)}</div>
         <div className="exam-explorer-grid">{cards.map(item => <button key={item.id} disabled={!item.papers.length} className={`exam-explorer-card exam-tone-${item.tone}`} onClick={() => openExam(item)}>
           <span className="exam-card-top"><span className="exam-card-icon">{item.family === 'Engineering' ? <GraduationCap size={26} /> : <FileQuestion size={25} />}</span><span><strong>{item.name}</strong><span className="exam-family-tag">{item.family}</span></span></span>
-          <span className="exam-card-count">{item.id === 'upsc' ? '39 questions' : item.papers.length ? `${item.papers.length} ${item.papers.length === 1 ? 'paper' : 'papers'}` : 'Coming soon'}</span>
+          <span className="exam-card-count">{item.id === 'upsc' ? `${upscQuestionCount} questions` : item.papers.length ? `${item.papers.length} ${item.papers.length === 1 ? 'paper' : 'papers'}` : 'Coming soon'}</span>
           <span className="exam-card-bottom"><span>{item.id === 'upsc' ? 'Browse questions by topic and year' : item.papers.length ? 'Original papers and official answer keys' : 'Papers will be added for this exam.'}</span><span className="exam-card-arrow"><ArrowRight size={17} /></span></span>
         </button>)}</div>
         {!cards.length && <p className="explorer-empty">No exams match your search.</p>}

@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import buddhismQuestions from './data/upscBuddhismPyqs.json';
 import vedicQuestions from './data/upscVedicPyqs.json';
+import guptaQuestions from './data/upscGuptaPyqs.json';
+
+const topics = { 'Gupta Period': guptaQuestions, 'Vedic Period': vedicQuestions, Buddhism: buddhismQuestions };
+export const upscQuestionCount = Object.values(topics).reduce((total, questions) => total + questions.length, 0);
 
 export default function UpscPyqs() {
-  const [topic, setTopic] = useState('Vedic Period');
-  const questions = topic === 'Vedic Period' ? vedicQuestions : buddhismQuestions;
+  const [topic, setTopic] = useState('Gupta Period');
+  const questions = topics[topic];
   const [year, setYear] = useState('All years');
   const [query, setQuery] = useState('');
   const [responses, setResponses] = useState({});
@@ -14,7 +18,7 @@ export default function UpscPyqs() {
   return <div>
     <div className="explorer-heading"><div><h3>Ancient History · {topic}</h3><p>{questions.length} questions · Years as supplied in the reference text.</p></div></div>
     <div className="upsc-pyq-filters">
-      <label>Topic <select value={topic} onChange={event => { setTopic(event.target.value); setYear('All years'); setQuery(''); }}><option>Vedic Period</option><option>Buddhism</option></select></label>
+      <label>Topic <select value={topic} onChange={event => { setTopic(event.target.value); setYear('All years'); setQuery(''); }}>{Object.keys(topics).map(name => <option key={name}>{name}</option>)}</select></label>
       <label>Year <select value={year} onChange={event => setYear(event.target.value)}><option>All years</option>{years.map(item => <option key={item}>{item}</option>)}{questions.some(question => !question.year) && <option>Not provided</option>}</select></label>
       <label>Search questions <input value={query} onChange={event => setQuery(event.target.value)} placeholder={`Search ${topic} PYQs`} /></label>
     </div>
@@ -28,7 +32,7 @@ export default function UpscPyqs() {
         <span><strong>{option.value}.</strong> {option.text}</span>
       </label>)}</fieldset>
       {responses[question.id] && <div className="upsc-pyq-feedback" role="status">
-        <strong>{responses[question.id] === question.answer ? 'Correct!' : 'Incorrect.'} Answer: {question.answer}. {question.options.find(option => option.value === question.answer)?.text}</strong>
+        <strong>{question.answer ? <>{responses[question.id] === question.answer ? 'Correct!' : 'Incorrect.'} Answer: {question.answer}. {question.options.find(option => option.value === question.answer)?.text}</> : 'Question needs correction ? selection is not scored.'}</strong>
         <p>{question.explanation}</p>
         {question.editorialNote && <p className="small">{question.editorialNote}</p>}
       </div>}

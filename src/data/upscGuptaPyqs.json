@@ -1,0 +1,475 @@
+[
+  {
+    "id": "upsc-gupta-1",
+    "year": null,
+    "question": "The following persons came to India at one time or another:\n1. Fa-Hien\n2. I-Tsing\n3. Megasthenese\n4. Hieun-Tsang\n\nThe correct chronological sequence of their visits is:",
+    "options": [
+      {
+        "value": "A",
+        "text": "3, 1, 2, 4"
+      },
+      {
+        "value": "B",
+        "text": "3, 1, 4, 2"
+      },
+      {
+        "value": "C",
+        "text": "1, 3, 2, 4"
+      },
+      {
+        "value": "D",
+        "text": "1, 3, 4, 2"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Megasthenes visited in the Mauryan period; Faxian followed in the early fifth century, Xuanzang in the seventh century, and Yijing later in that century.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-2",
+    "year": 1999,
+    "question": "From the third century AD when the Hun invasion ended the Roman Empire, the Indian merchants relied more and more on the",
+    "options": [
+      {
+        "value": "A",
+        "text": "African trade"
+      },
+      {
+        "value": "B",
+        "text": "West-European trade"
+      },
+      {
+        "value": "C",
+        "text": "South-East Asian trade"
+      },
+      {
+        "value": "D",
+        "text": "Middle-Eastern trade"
+      }
+    ],
+    "answer": "C",
+    "explanation": "South-East Asian trade became increasingly important as commerce with the Roman world declined.",
+    "answerStatus": "researched",
+    "editorialNote": "The supplied chronology is inaccurate: the Western Roman Empire ended in 476 CE, not in the third century, and its fall cannot be attributed solely to a Hun invasion."
+  },
+  {
+    "id": "upsc-gupta-3",
+    "year": 1999,
+    "question": "Which one of the following ports handled the north Indian trade during the Gupta period?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Tamralipti"
+      },
+      {
+        "value": "B",
+        "text": "Broach"
+      },
+      {
+        "value": "C",
+        "text": "Kalyan"
+      },
+      {
+        "value": "D",
+        "text": "Cambray"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Tamralipti connected the Gangetic hinterland with overseas trading routes.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-4",
+    "year": 1997,
+    "question": "Match List I with List II and select the correct answer using the codes given below the lists:\nList I\nA. Varahamihira\nB. Visakhadatta\nC. Sudraka\nD. Bilhana\n\nList II\n1. Prabandha Chintamani\n2. Mrchchhakatikam\n3. Brhat-Samhita\n4. Devi Chandraguptam\n5. Vikramankadevacharita",
+    "options": [
+      {
+        "value": "A",
+        "text": "3 4 2 5"
+      },
+      {
+        "value": "B",
+        "text": "3 1 4 2"
+      },
+      {
+        "value": "C",
+        "text": "5 3 4 2"
+      },
+      {
+        "value": "D",
+        "text": "1 3 5 2"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The authors match respectively with Brhat-Samhita, Devi Chandraguptam, Mrchchhakatikam and Vikramankadevacharita.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-5",
+    "year": 1997,
+    "question": "The silver coins issued by the Guptas were called",
+    "options": [
+      {
+        "value": "A",
+        "text": "Rupaka"
+      },
+      {
+        "value": "B",
+        "text": "Karshapana"
+      },
+      {
+        "value": "C",
+        "text": "Dinara"
+      },
+      {
+        "value": "D",
+        "text": "Pana"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Gupta silver coins are known as rupakas; dinaras were gold coins.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-6",
+    "year": 1996,
+    "question": "Match List I with List II and select the correct answer by using the codes given below the lists:\nList I\nA. Visakhadatta\nB. Sushruta\nC. Charaka\nD. Brahmagupta\n\nList II\n1. Medicine\n2. Drama\n3. Astronomy\n4. Mathematics",
+    "options": [
+      {
+        "value": "A",
+        "text": "1 3 4 2"
+      },
+      {
+        "value": "B",
+        "text": "2 1 3 4"
+      },
+      {
+        "value": "C",
+        "text": "2 4 1 3"
+      },
+      {
+        "value": "D",
+        "text": "3 1 2 4"
+      }
+    ],
+    "answer": null,
+    "explanation": "No option correctly matches this supplied list. Visakhadatta is associated with drama; Sushruta and Charaka with medicine; Brahmagupta with mathematics and astronomy.",
+    "answerStatus": "needs-correction",
+    "editorialNote": "The reproduced 1996 PYQ commonly lists Varahamihira instead of Sushruta and has different answer codes. This supplied version is retained without scoring."
+  },
+  {
+    "id": "upsc-gupta-7",
+    "year": 1996,
+    "question": "Who among the following is known for his work on medicine during the Gupta period?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Saumilla"
+      },
+      {
+        "value": "B",
+        "text": "Sudraka"
+      },
+      {
+        "value": "C",
+        "text": "Shaunaka"
+      },
+      {
+        "value": "D",
+        "text": "Susrutha"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Sushruta is associated with surgery and the Sushruta Samhita.",
+    "answerStatus": "researched",
+    "editorialNote": "The expected answer identifies the medical author; Sushruta?s dating is disputed and should not be confined confidently to the Gupta period."
+  },
+  {
+    "id": "upsc-gupta-8",
+    "year": 1995,
+    "question": "In Sanskrit plays written during the Gupta Period, women and sudras speak",
+    "options": [
+      {
+        "value": "A",
+        "text": "Sanskrit"
+      },
+      {
+        "value": "B",
+        "text": "Prakrit"
+      },
+      {
+        "value": "C",
+        "text": "Pali"
+      },
+      {
+        "value": "D",
+        "text": "Sauraseni"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Classical Sanskrit drama conventionally assigns Prakrit speech to these characters.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-9",
+    "year": 1994,
+    "question": "Toramana belonged to the ethnic horde of the",
+    "options": [
+      {
+        "value": "A",
+        "text": "Scythians"
+      },
+      {
+        "value": "B",
+        "text": "Hunas"
+      },
+      {
+        "value": "C",
+        "text": "Yue-chis"
+      },
+      {
+        "value": "D",
+        "text": "Sakas"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Toramana was a Huna ruler who expanded into northern India.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-10",
+    "year": 1994,
+    "question": "In ancient Indian historical geography the name 'Ratnakara' denoted",
+    "options": [
+      {
+        "value": "A",
+        "text": "the Arabian Sea"
+      },
+      {
+        "value": "B",
+        "text": "the Bay of Bengal"
+      },
+      {
+        "value": "C",
+        "text": "the Indian Ocean"
+      },
+      {
+        "value": "D",
+        "text": "the confluence of the Ganga, the Yamuna and the mythical Saraswati at Prayaga"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Ratnakara, meaning a source of jewels, is a traditional name for the Indian Ocean.",
+    "answerStatus": "researched",
+    "editorialNote": "Some secondary answer references instead give the Arabian Sea. The original official key has not been verified."
+  },
+  {
+    "id": "upsc-gupta-11",
+    "year": 1993,
+    "question": "Who among the following is NOT associated with medicine in India?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Dhanvantri"
+      },
+      {
+        "value": "B",
+        "text": "Bhaskaracharya"
+      },
+      {
+        "value": "C",
+        "text": "Charaka"
+      },
+      {
+        "value": "D",
+        "text": "Susruta"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Bhaskaracharya is associated with mathematics and astronomy.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-12",
+    "year": 1993,
+    "question": "Among the four works mentioned below, which one is encyclopedic in nature?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Amarakosa"
+      },
+      {
+        "value": "B",
+        "text": "Siddhantasiromani"
+      },
+      {
+        "value": "C",
+        "text": "Brihat Samhita"
+      },
+      {
+        "value": "D",
+        "text": "Ashtangahrdaya"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Varahamihira?s Brihat Samhita covers a wide range of subjects, including astronomy, weather and architecture.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-13",
+    "year": 1992,
+    "question": "Burma was known to ancient Indians as",
+    "options": [
+      {
+        "value": "A",
+        "text": "Suvarnabhumi"
+      },
+      {
+        "value": "B",
+        "text": "Suvarnadvipa"
+      },
+      {
+        "value": "C",
+        "text": "Yavadvipa"
+      },
+      {
+        "value": "D",
+        "text": "Malayamandalam"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Suvarnabhumi is the conventional answer; the ancient geographical label was applied more broadly to parts of mainland Southeast Asia.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-14",
+    "year": 1992,
+    "question": "Fresco paintings in the Ajanta Caves were done, while which of the following dynasties was flourishing?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Guptas"
+      },
+      {
+        "value": "B",
+        "text": "Sungas"
+      },
+      {
+        "value": "C",
+        "text": "Kanvas"
+      },
+      {
+        "value": "D",
+        "text": "Mauryas"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The celebrated later Ajanta paintings belong to the fifth-century period, contemporary with the Guptas and patronised locally by the Vakatakas.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-15",
+    "year": 2020,
+    "question": "With reference to the period of Gupta dynasty in ancient India, the towns Ghantasala, Kadura and Chaul were well known as",
+    "options": [
+      {
+        "value": "A",
+        "text": "ports handling foreign trade"
+      },
+      {
+        "value": "B",
+        "text": "capitals of powerful kingdoms"
+      },
+      {
+        "value": "C",
+        "text": "places of exquisite stone art and architecture"
+      },
+      {
+        "value": "D",
+        "text": "important Buddhist pilgrimage centres"
+      }
+    ],
+    "answer": "A",
+    "explanation": "These settlements are associated with maritime commerce and foreign trade.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-16",
+    "year": 2019,
+    "question": "With reference to forced labour (Vishti) in India during the Gupta period, which one of the following statements is correct?",
+    "options": [
+      {
+        "value": "A",
+        "text": "It was considered a source of income for the State, a sort of tax paid by the people."
+      },
+      {
+        "value": "B",
+        "text": "It was totally absent in the Madhya Pradesh and Kathiawar regions of the Gupta Empire."
+      },
+      {
+        "value": "C",
+        "text": "The forced labourer was entitled to weekly wages."
+      },
+      {
+        "value": "D",
+        "text": "The eldest son of the labourer was sent as the forced labourer."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Vishti was compulsory labour treated as a levy or obligation owed to the state.",
+    "answerStatus": "researched"
+  },
+  {
+    "id": "upsc-gupta-17",
+    "year": 2006,
+    "question": "The Allahabad Pillar inscription is associated with which one of the following?",
+    "options": [
+      {
+        "value": "A",
+        "text": "Mahapadma Nanda"
+      },
+      {
+        "value": "B",
+        "text": "Chandragupta Maurya"
+      },
+      {
+        "value": "C",
+        "text": "Ashoka"
+      },
+      {
+        "value": "D",
+        "text": "Samudragupta"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The Prayaga Prashasti, composed by Harishena, praises Samudragupta?s achievements.",
+    "answerStatus": "researched",
+    "editorialNote": "The question refers to Samudragupta?s prashasti; the same pillar also carries Ashokan inscriptions."
+  },
+  {
+    "id": "upsc-gupta-18",
+    "year": 2025,
+    "question": "Fa-hien (Faxian), the Chinese pilgrim, travelled to India during the reign of",
+    "options": [
+      {
+        "value": "A",
+        "text": "Samudragupta"
+      },
+      {
+        "value": "B",
+        "text": "Chandragupta II"
+      },
+      {
+        "value": "C",
+        "text": "Kumaragupta I"
+      },
+      {
+        "value": "D",
+        "text": "Skandagupta"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Faxian travelled in India during Chandragupta II?s reign in the early fifth century CE.",
+    "answerStatus": "researched"
+  }
+]
