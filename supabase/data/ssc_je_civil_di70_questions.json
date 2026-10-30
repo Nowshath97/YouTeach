@@ -1,0 +1,3202 @@
+[
+  {
+    "number": 1,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "Find the next term: 5, 11, 23, 47, 95, ?",
+    "options": [
+      "181",
+      "191",
+      "189",
+      "193"
+    ],
+    "correct_answer": "B",
+    "rationale": "Each term is twice the previous term plus 1; 95×2+1=191.",
+    "topic": "Number series",
+    "type": "theory"
+  },
+  {
+    "number": 2,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "Find the next letter: C, F, J, O, U, ?",
+    "options": [
+      "A",
+      "D",
+      "C",
+      "B"
+    ],
+    "correct_answer": "D",
+    "rationale": "The forward gaps are +3,+4,+5,+6; the next is +7, wrapping after Z to B.",
+    "topic": "Letter series",
+    "type": "theory"
+  },
+  {
+    "number": 3,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "In a code, LAMP is written as MBNQ. How is ROAD written by the same rule?",
+    "options": [
+      "TQCF",
+      "SPAD",
+      "QNBC",
+      "SPBE"
+    ],
+    "correct_answer": "D",
+    "rationale": "Each letter is replaced by the next letter of the alphabet.",
+    "topic": "Coding-decoding",
+    "type": "theory"
+  },
+  {
+    "number": 4,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "A worker walks 7 m east, 4 m north, and 7 m west. Where is the worker relative to the starting point?",
+    "options": [
+      "11 m north",
+      "4 m south",
+      "7 m east",
+      "4 m north"
+    ],
+    "correct_answer": "D",
+    "rationale": "The east and west movements cancel, leaving a 4 m north displacement.",
+    "topic": "Direction sense",
+    "type": "theory"
+  },
+  {
+    "number": 5,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "M is 16th from the left and 21st from the right in a row. How many people are in the row?",
+    "options": [
+      "35",
+      "37",
+      "36",
+      "38"
+    ],
+    "correct_answer": "C",
+    "rationale": "Total = left rank + right rank − 1 = 16+21−1=36.",
+    "topic": "Ranking",
+    "type": "theory"
+  },
+  {
+    "number": 6,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "All culverts are structures. No structure in the set is temporary. Which conclusion follows?",
+    "options": [
+      "All culverts are temporary",
+      "No culvert is temporary",
+      "Some temporary items are culverts",
+      "No culvert is a structure"
+    ],
+    "correct_answer": "B",
+    "rationale": "Culverts are a subset of structures, and the stated sets of structures and temporary items do not overlap.",
+    "topic": "Syllogism",
+    "type": "theory"
+  },
+  {
+    "number": 7,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "Choose the odd one out.",
+    "options": [
+      "17",
+      "23",
+      "39",
+      "31"
+    ],
+    "correct_answer": "C",
+    "rationale": "17, 23 and 31 are prime; 39 is divisible by 3.",
+    "topic": "Classification",
+    "type": "theory"
+  },
+  {
+    "number": 8,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "If 8 identical pumps empty a tank in 15 hours, how long would 12 such pumps take at the same rate?",
+    "options": [
+      "8 hours",
+      "10 hours",
+      "12 hours",
+      "22.5 hours"
+    ],
+    "correct_answer": "B",
+    "rationale": "Work is constant: 8×15=120 pump-hours; 120/12=10 hours.",
+    "topic": "Work and time",
+    "type": "numerical"
+  },
+  {
+    "number": 9,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "A clock shows 4:00. What is the smaller angle between its hands?",
+    "options": [
+      "120°",
+      "100°",
+      "90°",
+      "150°"
+    ],
+    "correct_answer": "A",
+    "rationale": "At 4:00 the hands are four hour divisions apart; 4×30°=120°.",
+    "topic": "Clock",
+    "type": "theory"
+  },
+  {
+    "number": 10,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "Which number replaces the question mark? 2, 6, 12, 20, 30, ?",
+    "options": [
+      "42",
+      "41",
+      "40",
+      "44"
+    ],
+    "correct_answer": "A",
+    "rationale": "Terms are n(n+1) for n=1,2,3,…; the next is 6×7=42.",
+    "topic": "Number series",
+    "type": "theory"
+  },
+  {
+    "number": 11,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "R is the brother of S. S is the daughter of T. T is the wife of U. How is U related to R?",
+    "options": [
+      "Maternal uncle",
+      "Father",
+      "Brother",
+      "Grandfather"
+    ],
+    "correct_answer": "B",
+    "rationale": "T is R's mother and U is T's husband, so U is R's father.",
+    "topic": "Blood relations",
+    "type": "theory"
+  },
+  {
+    "number": 12,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "Choose the pair with the same relationship as 9:81.",
+    "options": [
+      "7:56",
+      "6:30",
+      "8:64",
+      "5:20"
+    ],
+    "correct_answer": "C",
+    "rationale": "The second number is the square of the first: 8²=64.",
+    "topic": "Analogy",
+    "type": "theory"
+  },
+  {
+    "number": 13,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "If today is Thursday, what day will it be 100 days later?",
+    "options": [
+      "Saturday",
+      "Friday",
+      "Sunday",
+      "Monday"
+    ],
+    "correct_answer": "A",
+    "rationale": "100 leaves remainder 2 on division by 7; two days after Thursday is Saturday.",
+    "topic": "Calendar",
+    "type": "theory"
+  },
+  {
+    "number": 14,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "Four files P, Q, R and S are arranged left to right. P is left of Q, R is right of Q, and S is left of P. Which file is second from the left?",
+    "options": [
+      "R",
+      "Q",
+      "P",
+      "S"
+    ],
+    "correct_answer": "C",
+    "rationale": "The constraints give S–P–Q–R; P is second.",
+    "topic": "Ordering",
+    "type": "theory"
+  },
+  {
+    "number": 15,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "Select the missing pair: AZ, BY, CX, DW, ?",
+    "options": [
+      "EU",
+      "EV",
+      "FV",
+      "EW"
+    ],
+    "correct_answer": "B",
+    "rationale": "The first letters advance and the second letters retreat: E pairs with V.",
+    "topic": "Letter pattern",
+    "type": "theory"
+  },
+  {
+    "number": 16,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "A number is increased by 20% and then decreased by 20%. What is the net result?",
+    "options": [
+      "No change",
+      "4% increase",
+      "4% decrease",
+      "2% decrease"
+    ],
+    "correct_answer": "C",
+    "rationale": "For an initial 100, the result is 120×0.8=96, a 4% decrease.",
+    "topic": "Percentages",
+    "type": "numerical"
+  },
+  {
+    "number": 17,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "If the letters of SURVEY are arranged alphabetically, which letter is fourth?",
+    "options": [
+      "U",
+      "S",
+      "R",
+      "V"
+    ],
+    "correct_answer": "A",
+    "rationale": "Alphabetical order is E, R, S, U, V, Y; the fourth letter is U.",
+    "topic": "Alphabetical order",
+    "type": "theory"
+  },
+  {
+    "number": 18,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "A is taller than B. C is shorter than B, and D is taller than A. Who is the shortest?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "C",
+    "rationale": "C is shorter than B, which is shorter than A and D.",
+    "topic": "Comparison",
+    "type": "theory"
+  },
+  {
+    "number": 19,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "A, B and C complete a job in 12 days together. At equal individual rates, how many days would 6 such workers take?",
+    "options": [
+      "4 days",
+      "6 days",
+      "8 days",
+      "18 days"
+    ],
+    "correct_answer": "B",
+    "rationale": "The total work is 3×12=36 worker-days; 36/6=6 days.",
+    "topic": "Work and time",
+    "type": "numerical"
+  },
+  {
+    "number": 20,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Moderate",
+    "question_text": "Which term is different from the other three?",
+    "options": [
+      "Litre",
+      "Metre",
+      "Kilometre",
+      "Centimetre"
+    ],
+    "correct_answer": "A",
+    "rationale": "Litre measures volume; the others are units of length.",
+    "topic": "Classification",
+    "type": "theory"
+  },
+  {
+    "number": 21,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Find the next term: 3, 8, 18, 38, 78, ?",
+    "options": [
+      "148",
+      "156",
+      "160",
+      "158"
+    ],
+    "correct_answer": "D",
+    "rationale": "Each term is twice the previous term plus 2; 78×2+2=158.",
+    "topic": "Number series",
+    "type": "theory"
+  },
+  {
+    "number": 22,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "If ENGINE is coded by shifting each letter one place backwards, what is the code?",
+    "options": [
+      "FNHJOF",
+      "DMFJMD",
+      "DMFHMD",
+      "DMFINE"
+    ],
+    "correct_answer": "C",
+    "rationale": "E→D, N→M, G→F, I→H, N→M, E→D.",
+    "topic": "Coding-decoding",
+    "type": "theory"
+  },
+  {
+    "number": 23,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "A person faces north, turns 135° clockwise and then 90° anticlockwise. Which direction are they facing?",
+    "options": [
+      "East",
+      "North-east",
+      "South-east",
+      "South"
+    ],
+    "correct_answer": "B",
+    "rationale": "Net turn is 45° clockwise from north, which is north-east.",
+    "topic": "Direction sense",
+    "type": "theory"
+  },
+  {
+    "number": 24,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "In a queue of 42 people, K is 13th from the front. What is K's position from the back?",
+    "options": [
+      "28th",
+      "29th",
+      "31st",
+      "30th"
+    ],
+    "correct_answer": "D",
+    "rationale": "Position from back = 42−13+1=30.",
+    "topic": "Ranking",
+    "type": "theory"
+  },
+  {
+    "number": 25,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Some bridges are steel. All steel objects conduct electricity. Which conclusion must follow?",
+    "options": [
+      "All bridges conduct electricity",
+      "Some conductors are not steel",
+      "No bridges conduct electricity",
+      "Some bridges conduct electricity"
+    ],
+    "correct_answer": "D",
+    "rationale": "The bridges that are steel are members of the steel set, all of which conduct electricity.",
+    "topic": "Syllogism",
+    "type": "theory"
+  },
+  {
+    "number": 26,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Find the next number: 1, 4, 10, 22, 46, ?",
+    "options": [
+      "88",
+      "94",
+      "92",
+      "90"
+    ],
+    "correct_answer": "B",
+    "rationale": "The rule is ×2+2, giving 46×2+2=94.",
+    "topic": "Number series",
+    "type": "theory"
+  },
+  {
+    "number": 27,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "If a word's value is the sum of its letters' alphabet positions, what is the value of CIVIL?",
+    "options": [
+      "55",
+      "52",
+      "50",
+      "57"
+    ],
+    "correct_answer": "A",
+    "rationale": "C(3)+I(9)+V(22)+I(9)+L(12)=55.",
+    "topic": "Letter coding",
+    "type": "theory"
+  },
+  {
+    "number": 28,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "A person is 5 years older than twice a child's age. If the person is 35, how old is the child?",
+    "options": [
+      "12",
+      "20",
+      "18",
+      "15"
+    ],
+    "correct_answer": "D",
+    "rationale": "35=2x+5, so x=15.",
+    "topic": "Age relation",
+    "type": "numerical"
+  },
+  {
+    "number": 29,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Which number does not fit: 8, 27, 64, 100, 125?",
+    "options": [
+      "100",
+      "64",
+      "27",
+      "125"
+    ],
+    "correct_answer": "A",
+    "rationale": "8, 27, 64 and 125 are consecutive cubes; 100 is not a cube.",
+    "topic": "Classification",
+    "type": "theory"
+  },
+  {
+    "number": 30,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "If 3 March is a Monday, what day is 24 March in the same year?",
+    "options": [
+      "Sunday",
+      "Wednesday",
+      "Tuesday",
+      "Monday"
+    ],
+    "correct_answer": "D",
+    "rationale": "The dates are 21 days apart, exactly three weeks.",
+    "topic": "Calendar",
+    "type": "theory"
+  },
+  {
+    "number": 31,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "In a certain arrangement, every consonant is replaced by the next letter and every vowel by the previous letter. How is ROAD written?",
+    "options": [
+      "SNZE",
+      "SPBC",
+      "SPAD",
+      "SQAD"
+    ],
+    "correct_answer": "A",
+    "rationale": "R→S, O→N, A→Z, D→E, giving SNZE.",
+    "topic": "Coding-decoding",
+    "type": "theory"
+  },
+  {
+    "number": 32,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Select the number that completes the sequence: 2, 5, 11, 23, 47, ?",
+    "options": [
+      "95",
+      "93",
+      "91",
+      "97"
+    ],
+    "correct_answer": "A",
+    "rationale": "Each term is double the previous term plus 1; 47×2+1=95.",
+    "topic": "Number series",
+    "type": "theory"
+  },
+  {
+    "number": 33,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "A is the mother of B. C is the father of A. D is the only sister of B. How is C related to D?",
+    "options": [
+      "Maternal grandfather",
+      "Paternal grandfather",
+      "Uncle",
+      "Father"
+    ],
+    "correct_answer": "A",
+    "rationale": "C is the father of D's mother, so C is D's maternal grandfather.",
+    "topic": "Blood relations",
+    "type": "theory"
+  },
+  {
+    "number": 34,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "A, B, C, D and E are ranked. A is above C; C is above E; B is above A; D is below E. Who ranks highest?",
+    "options": [
+      "A",
+      "D",
+      "C",
+      "B"
+    ],
+    "correct_answer": "D",
+    "rationale": "The relations imply B>A>C>E>D.",
+    "topic": "Ordering",
+    "type": "theory"
+  },
+  {
+    "number": 35,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "A two-digit number has digit sum 12. Reversing its digits increases the number by 18. What is the original number?",
+    "options": [
+      "57",
+      "75",
+      "48",
+      "84"
+    ],
+    "correct_answer": "A",
+    "rationale": "Let tens digit x and units y. x+y=12 and 9(y−x)=18; hence y−x=2, x=5 and y=7.",
+    "topic": "Digit reasoning",
+    "type": "numerical"
+  },
+  {
+    "number": 36,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Find the next pair: BC, EF, HI, KL, ?",
+    "options": [
+      "MN",
+      "PQ",
+      "OP",
+      "NO"
+    ],
+    "correct_answer": "D",
+    "rationale": "Each pair uses consecutive letters, with a two-letter jump between the pair starts; next is NO.",
+    "topic": "Letter series",
+    "type": "theory"
+  },
+  {
+    "number": 37,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "A is east of B. C is north of A. D is west of C and directly north of B. Where is D relative to B?",
+    "options": [
+      "North-east",
+      "North",
+      "East",
+      "Cannot be determined"
+    ],
+    "correct_answer": "B",
+    "rationale": "D is stated to lie directly north of B.",
+    "topic": "Direction sense",
+    "type": "theory"
+  },
+  {
+    "number": 38,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "If all X are Y and no Y are Z, which statement is necessarily true?",
+    "options": [
+      "Some X are Z",
+      "Some Y are X",
+      "All Z are X",
+      "No X are Z"
+    ],
+    "correct_answer": "D",
+    "rationale": "X is wholly inside Y, and Y does not overlap Z; therefore X cannot overlap Z.",
+    "topic": "Syllogism",
+    "type": "theory"
+  },
+  {
+    "number": 39,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Find the next term: 6, 13, 27, 55, 111, ?",
+    "options": [
+      "223",
+      "221",
+      "219",
+      "225"
+    ],
+    "correct_answer": "A",
+    "rationale": "The terms follow ×2+1, so 111×2+1=223.",
+    "topic": "Number series",
+    "type": "theory"
+  },
+  {
+    "number": 40,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "A 150 m train passes a stationary signal in 10 seconds. What is its speed in km/h?",
+    "options": [
+      "45",
+      "54",
+      "50",
+      "60"
+    ],
+    "correct_answer": "B",
+    "rationale": "Speed=150/10=15 m/s; 15×3.6=54 km/h.",
+    "topic": "Speed and distance",
+    "type": "numerical"
+  },
+  {
+    "number": 41,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "If each letter is replaced with its opposite in the alphabet (A↔Z, B↔Y, …), what does DOG become?",
+    "options": [
+      "XLT",
+      "WOG",
+      "VLT",
+      "WLT"
+    ],
+    "correct_answer": "D",
+    "rationale": "D↔W, O↔L and G↔T, giving WLT.",
+    "topic": "Coding-decoding",
+    "type": "theory"
+  },
+  {
+    "number": 42,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Select the odd pair.",
+    "options": [
+      "2:8",
+      "5:100",
+      "4:64",
+      "3:27"
+    ],
+    "correct_answer": "B",
+    "rationale": "The first three are n:n³; 5³ is 125, not 100.",
+    "topic": "Analogy",
+    "type": "theory"
+  },
+  {
+    "number": 43,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "What is the smaller angle between the hands of a clock at 5:20?",
+    "options": [
+      "30°",
+      "50°",
+      "40°",
+      "60°"
+    ],
+    "correct_answer": "C",
+    "rationale": "Minute hand is at 120°; hour hand at 160°; difference is 40°.",
+    "topic": "Clock",
+    "type": "theory"
+  },
+  {
+    "number": 44,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "If 1 January is Wednesday in a non-leap year, what day is 1 March?",
+    "options": [
+      "Friday",
+      "Sunday",
+      "Saturday",
+      "Monday"
+    ],
+    "correct_answer": "C",
+    "rationale": "January and February total 59 days; 59 mod 7=3, so Wednesday plus 3 is Saturday.",
+    "topic": "Calendar",
+    "type": "theory"
+  },
+  {
+    "number": 45,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "In a group of 60, 32 study surveying, 28 study structures and 12 study both. How many study neither?",
+    "options": [
+      "12",
+      "10",
+      "8",
+      "14"
+    ],
+    "correct_answer": "A",
+    "rationale": "At least one =32+28−12=48; neither=60−48=12.",
+    "topic": "Set reasoning",
+    "type": "numerical"
+  },
+  {
+    "number": 46,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "The symbols mean P@Q: P>Q; P#Q: P=Q; P$Q: P<Q. Given A@B, B#C and C$D, which relation is definitely true?",
+    "options": [
+      "D>A",
+      "A>D",
+      "A>C",
+      "B>D"
+    ],
+    "correct_answer": "C",
+    "rationale": "A>B and B=C, therefore A>C. Since D is only known to exceed C, A and D cannot be compared.",
+    "topic": "Symbol logic",
+    "type": "theory"
+  },
+  {
+    "number": 47,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Find the missing term: 2, 3, 5, 9, 17, ?",
+    "options": [
+      "31",
+      "33",
+      "32",
+      "34"
+    ],
+    "correct_answer": "B",
+    "rationale": "Successive increments are 1,2,4,8, so the next increment is 16; 17+16=33.",
+    "topic": "Number series",
+    "type": "theory"
+  },
+  {
+    "number": 48,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "Six people sit in a row. L is immediately left of M; N is immediately right of M; P is left of L. Which must be true?",
+    "options": [
+      "M is left of P",
+      "N is left of L",
+      "P is left of M",
+      "L is right of N"
+    ],
+    "correct_answer": "C",
+    "rationale": "The fixed local order is P–L–M–N, so P is left of M.",
+    "topic": "Ordering",
+    "type": "theory"
+  },
+  {
+    "number": 49,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "A can finish a task in 12 days and B in 18 days. Working together at constant rates, how many days do they need?",
+    "options": [
+      "6 days",
+      "7.2 days",
+      "8 days",
+      "9 days"
+    ],
+    "correct_answer": "B",
+    "rationale": "Combined daily rate is 1/12+1/18=5/36; time=36/5=7.2 days.",
+    "topic": "Work and time",
+    "type": "numerical"
+  },
+  {
+    "number": 50,
+    "section": "General Intelligence and Reasoning",
+    "difficulty": "Hard",
+    "question_text": "A code changes each letter to the letter two places ahead. How is BRIDGE coded?",
+    "options": [
+      "DTKHEG",
+      "DSKFIG",
+      "DTKFIG",
+      "CTKFIG"
+    ],
+    "correct_answer": "C",
+    "rationale": "B→D, R→T, I→K, D→F, G→I, E→G.",
+    "topic": "Coding-decoding",
+    "type": "theory"
+  },
+  {
+    "number": 51,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Which Part of the Constitution of India contains the Directive Principles of State Policy?",
+    "options": [
+      "Part III",
+      "Part IVA",
+      "Part IV",
+      "Part V"
+    ],
+    "correct_answer": "C",
+    "rationale": "Directive Principles are set out in Part IV (Articles 36–51).",
+    "topic": "Indian polity",
+    "type": "theory"
+  },
+  {
+    "number": 52,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Which constitutional Article guarantees equality before the law and equal protection of the laws?",
+    "options": [
+      "Article 32",
+      "Article 19",
+      "Article 21",
+      "Article 14"
+    ],
+    "correct_answer": "D",
+    "rationale": "Article 14 provides equality before law and equal protection of laws.",
+    "topic": "Indian polity",
+    "type": "theory"
+  },
+  {
+    "number": 53,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "A Money Bill can be introduced only in which House of Parliament?",
+    "options": [
+      "Rajya Sabha",
+      "A joint sitting",
+      "Either House",
+      "Lok Sabha"
+    ],
+    "correct_answer": "D",
+    "rationale": "The Constitution requires a Money Bill to be introduced only in the Lok Sabha.",
+    "topic": "Indian polity",
+    "type": "theory"
+  },
+  {
+    "number": 54,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Who is the ex-officio Chairperson of the Rajya Sabha?",
+    "options": [
+      "President of India",
+      "Vice-President of India",
+      "Prime Minister",
+      "Speaker of Lok Sabha"
+    ],
+    "correct_answer": "B",
+    "rationale": "The Vice-President of India is the ex-officio Chairman of the Rajya Sabha.",
+    "topic": "Indian polity",
+    "type": "theory"
+  },
+  {
+    "number": 55,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Fundamental Duties are listed in which Article of the Constitution?",
+    "options": [
+      "Article 51A",
+      "Article 32",
+      "Article 280",
+      "Article 368"
+    ],
+    "correct_answer": "A",
+    "rationale": "Article 51A enumerates the Fundamental Duties.",
+    "topic": "Indian polity",
+    "type": "theory"
+  },
+  {
+    "number": 56,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Which body recommends the distribution of certain tax revenues between the Union and the States?",
+    "options": [
+      "Election Commission",
+      "Union Public Service Commission",
+      "Finance Commission",
+      "NITI Aayog"
+    ],
+    "correct_answer": "C",
+    "rationale": "The Finance Commission is constituted under Article 280 and recommends fiscal devolution.",
+    "topic": "Indian polity",
+    "type": "theory"
+  },
+  {
+    "number": 57,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "The power of judicial review in India is exercised by:",
+    "options": [
+      "Only Parliament",
+      "Only the Election Commission",
+      "The Finance Commission",
+      "The Supreme Court and High Courts"
+    ],
+    "correct_answer": "D",
+    "rationale": "Constitutional courts may review laws and executive action for constitutional validity.",
+    "topic": "Indian polity",
+    "type": "theory"
+  },
+  {
+    "number": 58,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Which is the largest state of India by area?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Uttar Pradesh"
+    ],
+    "correct_answer": "A",
+    "rationale": "Rajasthan is India's largest state by geographical area.",
+    "topic": "Indian geography",
+    "type": "theory"
+  },
+  {
+    "number": 59,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "The Tropic of Cancer passes through which Indian state?",
+    "options": [
+      "Kerala",
+      "Punjab",
+      "Jharkhand",
+      "Himachal Pradesh"
+    ],
+    "correct_answer": "C",
+    "rationale": "The Tropic of Cancer crosses Jharkhand, among other Indian states.",
+    "topic": "Indian geography",
+    "type": "theory"
+  },
+  {
+    "number": 60,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Which river is commonly called the 'Dakshin Ganga'?",
+    "options": [
+      "Narmada",
+      "Kaveri",
+      "Godavari",
+      "Mahanadi"
+    ],
+    "correct_answer": "C",
+    "rationale": "The Godavari is widely known as the Dakshin Ganga because of its length and basin in peninsular India.",
+    "topic": "Indian geography",
+    "type": "theory"
+  },
+  {
+    "number": 61,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Black cotton soil in India is largely associated with the weathering of:",
+    "options": [
+      "Recent alluvium",
+      "Basaltic lava rocks",
+      "Wind-blown loess",
+      "Coral limestone"
+    ],
+    "correct_answer": "B",
+    "rationale": "Regur soil developed extensively over basaltic Deccan Trap material.",
+    "topic": "Indian geography",
+    "type": "theory"
+  },
+  {
+    "number": 62,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Which Indian state has the longest coastline among the states?",
+    "options": [
+      "Tamil Nadu",
+      "Gujarat",
+      "Andhra Pradesh",
+      "Maharashtra"
+    ],
+    "correct_answer": "B",
+    "rationale": "Gujarat has the longest coastline among Indian states.",
+    "topic": "Indian geography",
+    "type": "theory"
+  },
+  {
+    "number": 63,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "The Indian Standard Meridian is:",
+    "options": [
+      "68°7′ E",
+      "75° E",
+      "82°30′ E",
+      "90° E"
+    ],
+    "correct_answer": "C",
+    "rationale": "Indian Standard Time is based on the 82°30′ east longitude meridian.",
+    "topic": "Indian geography",
+    "type": "theory"
+  },
+  {
+    "number": 64,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "The Siachen Glacier lies in which mountain range?",
+    "options": [
+      "Aravalli",
+      "Pir Panjal",
+      "Western Ghats",
+      "Karakoram"
+    ],
+    "correct_answer": "D",
+    "rationale": "Siachen Glacier is in the eastern Karakoram range.",
+    "topic": "Indian geography",
+    "type": "theory"
+  },
+  {
+    "number": 65,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Which of the following is a west-flowing river that drains into the Arabian Sea?",
+    "options": [
+      "Godavari",
+      "Krishna",
+      "Narmada",
+      "Mahanadi"
+    ],
+    "correct_answer": "C",
+    "rationale": "The Narmada flows west through a rift valley and enters the Arabian Sea.",
+    "topic": "Indian geography",
+    "type": "theory"
+  },
+  {
+    "number": 66,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "The Battle of Plassey was fought in:",
+    "options": [
+      "1761",
+      "1757",
+      "1764",
+      "1773"
+    ],
+    "correct_answer": "B",
+    "rationale": "The Battle of Plassey took place in 1757.",
+    "topic": "Indian history",
+    "type": "theory"
+  },
+  {
+    "number": 67,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "The Dandi March of 1930 was launched to protest the British:",
+    "options": [
+      "Salt laws",
+      "Partition of Bengal",
+      "Rowlatt Act",
+      "Vernacular Press Act"
+    ],
+    "correct_answer": "A",
+    "rationale": "Gandhi's march to Dandi challenged the colonial salt monopoly and tax.",
+    "topic": "Indian history",
+    "type": "theory"
+  },
+  {
+    "number": 68,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "Who founded the Mauryan Empire?",
+    "options": [
+      "Chandragupta Maurya",
+      "Bindusara",
+      "Ashoka",
+      "Bimbisara"
+    ],
+    "correct_answer": "A",
+    "rationale": "Chandragupta Maurya established the Mauryan Empire in the fourth century BCE.",
+    "topic": "Indian history",
+    "type": "theory"
+  },
+  {
+    "number": 69,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "The Quit India Movement was launched in:",
+    "options": [
+      "1919",
+      "1929",
+      "1930",
+      "1942"
+    ],
+    "correct_answer": "D",
+    "rationale": "The Congress launched the Quit India Movement in August 1942.",
+    "topic": "Indian history",
+    "type": "theory"
+  },
+  {
+    "number": 70,
+    "section": "General Awareness",
+    "difficulty": "Moderate",
+    "question_text": "The Permanent Settlement of Bengal is associated with:",
+    "options": [
+      "Lord Dalhousie",
+      "Lord Cornwallis",
+      "Warren Hastings",
+      "Lord Curzon"
+    ],
+    "correct_answer": "B",
+    "rationale": "Cornwallis introduced the Permanent Settlement in Bengal in 1793.",
+    "topic": "Indian history",
+    "type": "theory"
+  },
+  {
+    "number": 71,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which gas is released as a major product of photosynthesis?",
+    "options": [
+      "Carbon dioxide",
+      "Nitrogen",
+      "Oxygen",
+      "Methane"
+    ],
+    "correct_answer": "C",
+    "rationale": "Oxygen is released when water is split during photosynthesis.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 72,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The SI unit of electric charge is:",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Coulomb"
+    ],
+    "correct_answer": "D",
+    "rationale": "Electric charge is measured in coulombs; one coulomb equals one ampere-second.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 73,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which vitamin is synthesized in human skin on exposure to ultraviolet radiation?",
+    "options": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin K"
+    ],
+    "correct_answer": "C",
+    "rationale": "UVB exposure enables the skin to synthesize vitamin D precursors.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 74,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "At standard atmospheric pressure, pure water boils at:",
+    "options": [
+      "0°C",
+      "100°C",
+      "50°C",
+      "212°C"
+    ],
+    "correct_answer": "B",
+    "rationale": "The normal boiling point of pure water is 100°C at 1 atmosphere.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 75,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which blood cells are primarily responsible for oxygen transport?",
+    "options": [
+      "Platelets",
+      "Red blood cells",
+      "Lymphocytes",
+      "Monocytes"
+    ],
+    "correct_answer": "B",
+    "rationale": "Haemoglobin in red blood cells binds and transports most blood oxygen.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 76,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The pH of a neutral aqueous solution at 25°C is approximately:",
+    "options": [
+      "0",
+      "5",
+      "14",
+      "7"
+    ],
+    "correct_answer": "D",
+    "rationale": "At 25°C, neutral water has equal hydrogen and hydroxide ion activities and pH about 7.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 77,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which instrument measures atmospheric pressure?",
+    "options": [
+      "Barometer",
+      "Anemometer",
+      "Hygrometer",
+      "Seismograph"
+    ],
+    "correct_answer": "A",
+    "rationale": "A barometer measures atmospheric pressure.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 78,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which metal is liquid at ordinary room temperature?",
+    "options": [
+      "Aluminium",
+      "Mercury",
+      "Sodium",
+      "Zinc"
+    ],
+    "correct_answer": "B",
+    "rationale": "Mercury is liquid at common room temperatures.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 79,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "A convex lens brings parallel rays of light to a:",
+    "options": [
+      "Virtual focus on the incident side",
+      "Real focus on the opposite side",
+      "Point at infinity",
+      "Principal axis only"
+    ],
+    "correct_answer": "B",
+    "rationale": "A converging convex lens focuses parallel paraxial rays at a real principal focus on the far side.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 80,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which cell organelle is the principal site of aerobic respiration?",
+    "options": [
+      "Ribosome",
+      "Mitochondrion",
+      "Golgi apparatus",
+      "Lysosome"
+    ],
+    "correct_answer": "B",
+    "rationale": "Mitochondria host the principal stages of aerobic ATP production.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 81,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The ozone layer that absorbs much of the Sun's ultraviolet radiation is concentrated in the:",
+    "options": [
+      "Stratosphere",
+      "Troposphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "correct_answer": "A",
+    "rationale": "Most atmospheric ozone is concentrated in the stratosphere.",
+    "topic": "Environment",
+    "type": "theory"
+  },
+  {
+    "number": 82,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which gas is the principal anthropogenic contributor to long-lived radiative forcing by volume of emissions?",
+    "options": [
+      "Hydrogen",
+      "Argon",
+      "Neon",
+      "Carbon dioxide"
+    ],
+    "correct_answer": "D",
+    "rationale": "Carbon dioxide is a major long-lived greenhouse gas emitted through fossil-fuel use and land-use change.",
+    "topic": "Environment",
+    "type": "theory"
+  },
+  {
+    "number": 83,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "A food chain usually has the greatest available energy at the level of:",
+    "options": [
+      "Top predators",
+      "Primary consumers",
+      "Secondary consumers",
+      "Primary producers"
+    ],
+    "correct_answer": "D",
+    "rationale": "Energy is lost at each trophic transfer, so producers contain the greatest initial energy.",
+    "topic": "Environment",
+    "type": "theory"
+  },
+  {
+    "number": 84,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The Convention on Biological Diversity was opened for signature at the:",
+    "options": [
+      "Rio Earth Summit, 1992",
+      "Stockholm Conference, 1972",
+      "Kyoto Conference, 1997",
+      "Paris Conference, 2015"
+    ],
+    "correct_answer": "A",
+    "rationale": "The Convention on Biological Diversity was adopted and opened for signature at the 1992 Rio Earth Summit.",
+    "topic": "Environment",
+    "type": "theory"
+  },
+  {
+    "number": 85,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which gas is a principal cause of acid rain when emitted from combustion sources?",
+    "options": [
+      "Sulphur dioxide",
+      "Oxygen",
+      "Helium",
+      "Hydrogen"
+    ],
+    "correct_answer": "A",
+    "rationale": "Sulphur dioxide can oxidize and form sulphuric acid in atmospheric moisture.",
+    "topic": "Environment",
+    "type": "theory"
+  },
+  {
+    "number": 86,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The Chipko movement is most closely associated with:",
+    "options": [
+      "Urban transport",
+      "Coastal fishing rights",
+      "Forest conservation",
+      "River navigation"
+    ],
+    "correct_answer": "C",
+    "rationale": "The movement became known for community action to protect trees and forests.",
+    "topic": "Environment",
+    "type": "theory"
+  },
+  {
+    "number": 87,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which organization publishes the Human Development Report?",
+    "options": [
+      "World Bank",
+      "World Trade Organization",
+      "UN Development Programme",
+      "International Labour Organization"
+    ],
+    "correct_answer": "C",
+    "rationale": "The Human Development Report is published by the United Nations Development Programme.",
+    "topic": "International organisations",
+    "type": "theory"
+  },
+  {
+    "number": 88,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The headquarters of the World Health Organization is in:",
+    "options": [
+      "New York",
+      "Paris",
+      "Geneva",
+      "Rome"
+    ],
+    "correct_answer": "C",
+    "rationale": "WHO's headquarters is in Geneva, Switzerland.",
+    "topic": "International organisations",
+    "type": "theory"
+  },
+  {
+    "number": 89,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The currency of Japan is the:",
+    "options": [
+      "Yen",
+      "Yuan",
+      "Won",
+      "Ringgit"
+    ],
+    "correct_answer": "A",
+    "rationale": "Japan's currency is the yen.",
+    "topic": "World geography",
+    "type": "theory"
+  },
+  {
+    "number": 90,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The headquarters of the International Court of Justice is located in:",
+    "options": [
+      "Geneva",
+      "The Hague",
+      "Vienna",
+      "Brussels"
+    ],
+    "correct_answer": "B",
+    "rationale": "The ICJ is based at the Peace Palace in The Hague, Netherlands.",
+    "topic": "International organisations",
+    "type": "theory"
+  },
+  {
+    "number": 91,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which is the largest planet in the Solar System by diameter?",
+    "options": [
+      "Earth",
+      "Neptune",
+      "Saturn",
+      "Jupiter"
+    ],
+    "correct_answer": "D",
+    "rationale": "Jupiter is the largest planet in the Solar System by diameter.",
+    "topic": "Astronomy",
+    "type": "theory"
+  },
+  {
+    "number": 92,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which Indian classical dance form originated in Kerala and is known for elaborate facial expression and makeup?",
+    "options": [
+      "Kathakali",
+      "Bharatanatyam",
+      "Kathak",
+      "Odissi"
+    ],
+    "correct_answer": "A",
+    "rationale": "Kathakali is a classical dance-drama tradition from Kerala, known for stylized expression and makeup.",
+    "topic": "Culture",
+    "type": "theory"
+  },
+  {
+    "number": 93,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The Ajanta caves are especially renowned for their ancient:",
+    "options": [
+      "Buddhist paintings and sculpture",
+      "Mughal miniature paintings",
+      "Chola bronze workshops",
+      "Rock-cut Jain temples only"
+    ],
+    "correct_answer": "A",
+    "rationale": "Ajanta is celebrated for Buddhist cave architecture, murals and sculpture.",
+    "topic": "Culture",
+    "type": "theory"
+  },
+  {
+    "number": 94,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which instrument is used to measure relative humidity?",
+    "options": [
+      "Potentiometer",
+      "Barometer",
+      "Calorimeter",
+      "Hygrometer"
+    ],
+    "correct_answer": "D",
+    "rationale": "A hygrometer measures humidity in air.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 95,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The law of conservation of mass in a chemical reaction states that, in a closed system:",
+    "options": [
+      "Total mass remains constant",
+      "Mass is created",
+      "Atoms disappear",
+      "Volume must remain constant"
+    ],
+    "correct_answer": "A",
+    "rationale": "Chemical reactions rearrange matter; the total mass of a closed system is conserved.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 96,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which Indian institution is primarily responsible for issuing currency notes, except the one-rupee note?",
+    "options": [
+      "State Bank of India",
+      "Reserve Bank of India",
+      "Ministry of Commerce",
+      "NITI Aayog"
+    ],
+    "correct_answer": "B",
+    "rationale": "The Reserve Bank of India issues banknotes, while the Government of India issues the one-rupee note.",
+    "topic": "Indian economy",
+    "type": "theory"
+  },
+  {
+    "number": 97,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The Green Revolution in India is most strongly associated with increased production of:",
+    "options": [
+      "Cotton and jute",
+      "Tea and coffee",
+      "Wheat and rice",
+      "Pulses only"
+    ],
+    "correct_answer": "C",
+    "rationale": "High-yielding varieties and associated inputs sharply increased wheat and rice output.",
+    "topic": "Indian economy",
+    "type": "theory"
+  },
+  {
+    "number": 98,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Which fundamental right is protected by Article 21 of the Constitution?",
+    "options": [
+      "Freedom of religion",
+      "Equality of opportunity in public employment",
+      "Protection of life and personal liberty",
+      "Right to constitutional remedies"
+    ],
+    "correct_answer": "C",
+    "rationale": "Article 21 states that no person shall be deprived of life or personal liberty except according to procedure established by law.",
+    "topic": "Indian polity",
+    "type": "theory"
+  },
+  {
+    "number": 99,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "Under the Constitution, the Rajya Sabha can have a maximum of how many members?",
+    "options": [
+      "238",
+      "250",
+      "245",
+      "252"
+    ],
+    "correct_answer": "B",
+    "rationale": "Article 80 provides for a maximum of 250 members, including nominated members.",
+    "topic": "Indian polity",
+    "type": "theory"
+  },
+  {
+    "number": 100,
+    "section": "General Awareness",
+    "difficulty": "Hard",
+    "question_text": "The SI unit of frequency is the:",
+    "options": [
+      "Joule",
+      "Pascal",
+      "Newton",
+      "Hertz"
+    ],
+    "correct_answer": "D",
+    "rationale": "Frequency is measured in hertz, equivalent to one cycle per second.",
+    "topic": "General science",
+    "type": "theory"
+  },
+  {
+    "number": 101,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In a well-graded aggregate, the particle-size distribution is characterized by:",
+    "options": [
+      "Particles all of one size",
+      "A wide range of particle sizes with relatively few voids",
+      "Only fine particles",
+      "A gap in every intermediate size"
+    ],
+    "correct_answer": "B",
+    "rationale": "A well-graded aggregate contains a broad, continuous range of sizes that packs efficiently and reduces void space.",
+    "topic": "Building materials",
+    "type": "theory"
+  },
+  {
+    "number": 102,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The principal purpose of seasoning timber before use is to:",
+    "options": [
+      "Convert all sapwood to heartwood",
+      "Increase sap content",
+      "Reduce its moisture content to a suitable level",
+      "Remove every knot"
+    ],
+    "correct_answer": "C",
+    "rationale": "Seasoning reduces moisture, improving dimensional stability and serviceability; it does not eliminate all natural defects.",
+    "topic": "Building materials",
+    "type": "theory"
+  },
+  {
+    "number": 103,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "A concrete cube is tested in compression at 28 days. If its failure load is 600 kN and loaded face area is 150,000 mm², its compressive strength is:",
+    "options": [
+      "2 MPa",
+      "6 MPa",
+      "4 MPa",
+      "9 MPa"
+    ],
+    "correct_answer": "C",
+    "rationale": "Stress=600,000 N/150,000 mm²=4 N/mm²=4 MPa.",
+    "topic": "Concrete testing",
+    "type": "numerical"
+  },
+  {
+    "number": 104,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The main function of a damp-proof course in a wall is to:",
+    "options": [
+      "Act as a lintel",
+      "Increase the wall's axial load capacity",
+      "Limit moisture rising from the ground by capillary action",
+      "Provide lateral restraint to the roof"
+    ],
+    "correct_answer": "C",
+    "rationale": "A damp-proof course interrupts or resists moisture movement from the ground into the superstructure.",
+    "topic": "Building construction",
+    "type": "theory"
+  },
+  {
+    "number": 105,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "Which constituent of ordinary Portland cement contributes most to early strength development?",
+    "options": [
+      "Tetracalcium aluminoferrite (C4AF)",
+      "Dicalcium silicate (C2S)",
+      "Tricalcium silicate (C3S)",
+      "Gypsum"
+    ],
+    "correct_answer": "C",
+    "rationale": "C3S hydrates relatively rapidly and contributes substantially to early strength.",
+    "topic": "Cement",
+    "type": "theory"
+  },
+  {
+    "number": 106,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "For a nominal cement:sand mortar mix of 1:4 by volume, which statement correctly describes the proportion?",
+    "options": [
+      "Four volumes of cement are combined with one volume of sand",
+      "One measured volume of cement is combined with four measured volumes of sand",
+      "The mix contains equal cement and sand volumes",
+      "The ratio is by mass unless the aggregate is dry"
+    ],
+    "correct_answer": "B",
+    "rationale": "A 1:4 volumetric proportion means one volume of cement to four volumes of sand; it does not by itself specify a mass ratio.",
+    "topic": "Building materials",
+    "type": "theory"
+  },
+  {
+    "number": 107,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The soundness test of cement primarily assesses its resistance to:",
+    "options": [
+      "Segregation of coarse aggregate",
+      "Loss of colour during storage",
+      "Abrasion in a road surface",
+      "Excessive delayed expansion after setting"
+    ],
+    "correct_answer": "D",
+    "rationale": "Soundness indicates whether cement undergoes unacceptable delayed expansion, often associated with excess free lime or magnesia.",
+    "topic": "Cement",
+    "type": "theory"
+  },
+  {
+    "number": 108,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "For a given cement content and aggregate system, an excessively high water-cement ratio generally causes:",
+    "options": [
+      "Immediate prevention of hydration",
+      "Higher strength and zero shrinkage",
+      "No change in durability",
+      "Lower strength and greater permeability"
+    ],
+    "correct_answer": "D",
+    "rationale": "Excess mixing water leaves capillary pores after hardening, typically reducing strength and increasing permeability.",
+    "topic": "Concrete technology",
+    "type": "theory"
+  },
+  {
+    "number": 109,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The nominal size of coarse aggregate refers to the:",
+    "options": [
+      "Smallest particle present",
+      "Mean size of every particle",
+      "Approximate sieve size associated with the aggregate's upper size limit",
+      "Size of the cement grains"
+    ],
+    "correct_answer": "C",
+    "rationale": "Nominal maximum size is an upper grading descriptor used in specifying coarse aggregate; it does not mean all particles are identical.",
+    "topic": "Building materials",
+    "type": "theory"
+  },
+  {
+    "number": 110,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "A concrete member is vibrated for an adequate period. The primary intended effect is to:",
+    "options": [
+      "Increase the water-cement ratio",
+      "Expel entrapped air and compact the concrete",
+      "Cause deliberate segregation",
+      "Replace curing"
+    ],
+    "correct_answer": "B",
+    "rationale": "Proper vibration consolidates fresh concrete by removing entrapped air; over-vibration can instead cause segregation.",
+    "topic": "Concrete construction",
+    "type": "theory"
+  },
+  {
+    "number": 111,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In a building estimate, plastering of a wall is ordinarily measured by:",
+    "options": [
+      "Kilogram",
+      "Cubic metre",
+      "Square metre",
+      "Litre"
+    ],
+    "correct_answer": "C",
+    "rationale": "Plastering is a surface finish and is ordinarily quantified by area.",
+    "topic": "Estimating",
+    "type": "theory"
+  },
+  {
+    "number": 112,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In levelling, the backsight at a benchmark of RL 100.000 m is 1.250 m. What is the height of instrument?",
+    "options": [
+      "98.750 m",
+      "100.000 m",
+      "101.250 m",
+      "102.500 m"
+    ],
+    "correct_answer": "C",
+    "rationale": "Height of instrument = benchmark RL + backsight = 100.000+1.250=101.250 m.",
+    "topic": "Surveying",
+    "type": "numerical"
+  },
+  {
+    "number": 113,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In chain surveying, a check line is mainly provided to:",
+    "options": [
+      "Test the accuracy of the framework and field measurements",
+      "Locate every contour point",
+      "Measure magnetic declination",
+      "Replace all tie lines"
+    ],
+    "correct_answer": "A",
+    "rationale": "A check line gives an independent check on the accuracy of the triangular framework.",
+    "topic": "Surveying",
+    "type": "theory"
+  },
+  {
+    "number": 114,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "A map has a representative fraction of 1:2,000. A ground distance of 80 m is represented by:",
+    "options": [
+      "2 cm",
+      "4 cm",
+      "8 cm",
+      "16 cm"
+    ],
+    "correct_answer": "B",
+    "rationale": "80 m is 8,000 cm; 8,000/2,000=4 cm on the map.",
+    "topic": "Surveying",
+    "type": "numerical"
+  },
+  {
+    "number": 115,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In plane-table surveying, an alidade is used primarily to:",
+    "options": [
+      "Sight an object and draw its direction",
+      "Measure the staff intercept",
+      "Determine magnetic dip",
+      "Measure a vertical angle electronically"
+    ],
+    "correct_answer": "A",
+    "rationale": "The alidade provides a sighting edge for orienting and drawing rays to plotted points.",
+    "topic": "Surveying",
+    "type": "theory"
+  },
+  {
+    "number": 116,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In the height-of-instrument method, the height of instrument at a setup is obtained by:",
+    "options": [
+      "Subtracting the RL from the staff reading",
+      "Subtracting the backsight from the known RL",
+      "Adding a foresight to the known RL",
+      "Adding the backsight to the RL of the known point"
+    ],
+    "correct_answer": "D",
+    "rationale": "The height of instrument is the known reduced level plus the backsight taken on that point.",
+    "topic": "Surveying",
+    "type": "theory"
+  },
+  {
+    "number": 117,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The reduced level of a point determined by the height-of-instrument method is:",
+    "options": [
+      "Staff reading minus height of instrument",
+      "Height of instrument plus staff reading",
+      "Height of instrument minus staff reading",
+      "Backsight minus foresight only"
+    ],
+    "correct_answer": "C",
+    "rationale": "For a point observed from the setup, RL = HI − staff reading.",
+    "topic": "Surveying",
+    "type": "theory"
+  },
+  {
+    "number": 118,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In a closed traverse, the algebraic sum of the latitude components should ideally be:",
+    "options": [
+      "Equal to the total number of stations",
+      "Equal to the perimeter",
+      "Zero",
+      "Twice the northing"
+    ],
+    "correct_answer": "C",
+    "rationale": "A closed traverse returns to its starting point, so its net north-south displacement is zero.",
+    "topic": "Surveying",
+    "type": "theory"
+  },
+  {
+    "number": 119,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In differential levelling, the reduced level of a change point is computed from the instrument height by:",
+    "options": [
+      "Subtracting the backsight from the instrument height",
+      "Adding the foresight to the instrument height",
+      "Subtracting the foresight from the instrument height",
+      "Adding the backsight to the staff reading"
+    ],
+    "correct_answer": "C",
+    "rationale": "A foresight is subtracted from the height of instrument to obtain the point's reduced level.",
+    "topic": "Surveying",
+    "type": "theory"
+  },
+  {
+    "number": 120,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The principal purpose of a contour line on a topographic map is to join points of:",
+    "options": [
+      "Equal soil density",
+      "Equal horizontal distance from the map edge",
+      "Equal elevation",
+      "Equal rainfall"
+    ],
+    "correct_answer": "C",
+    "rationale": "A contour joins points having the same reduced level or elevation.",
+    "topic": "Surveying",
+    "type": "theory"
+  },
+  {
+    "number": 121,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "For a saturated soil, the effective stress principle is expressed as:",
+    "options": [
+      "σ′ = σ + u",
+      "σ′ = σu",
+      "σ′ = u − σ",
+      "σ′ = σ − u"
+    ],
+    "correct_answer": "D",
+    "rationale": "Terzaghi's effective stress relation is total stress minus pore-water pressure.",
+    "topic": "Soil mechanics",
+    "type": "theory"
+  },
+  {
+    "number": 122,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "A saturated soil has total vertical stress 180 kPa and pore-water pressure 65 kPa. Its effective vertical stress is:",
+    "options": [
+      "65 kPa",
+      "245 kPa",
+      "180 kPa",
+      "115 kPa"
+    ],
+    "correct_answer": "D",
+    "rationale": "σ′=σ−u=180−65=115 kPa.",
+    "topic": "Soil mechanics",
+    "type": "numerical"
+  },
+  {
+    "number": 123,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The liquid limit of a soil is the water content at the boundary between the:",
+    "options": [
+      "Plastic and semi-solid states",
+      "Liquid and plastic states",
+      "Semi-solid and solid states",
+      "Dry and saturated states"
+    ],
+    "correct_answer": "B",
+    "rationale": "The liquid limit separates the liquid and plastic consistency states.",
+    "topic": "Soil classification",
+    "type": "theory"
+  },
+  {
+    "number": 124,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "For a normally consolidated clay, the preconsolidation pressure is approximately:",
+    "options": [
+      "Less than current effective overburden pressure",
+      "Greater than current effective overburden pressure",
+      "Equal to current effective overburden pressure",
+      "Independent of overburden history"
+    ],
+    "correct_answer": "C",
+    "rationale": "Normally consolidated soil has not experienced a past effective pressure greater than its current effective overburden pressure.",
+    "topic": "Soil mechanics",
+    "type": "theory"
+  },
+  {
+    "number": 125,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "A soil sample has wet mass 180 g and dry mass 150 g. Its water content is:",
+    "options": [
+      "15%",
+      "20%",
+      "30%",
+      "33.3%"
+    ],
+    "correct_answer": "B",
+    "rationale": "Water mass=30 g; water content=30/150×100=20%.",
+    "topic": "Soil mechanics",
+    "type": "numerical"
+  },
+  {
+    "number": 126,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The coefficient of permeability of a soil is most directly associated with its ability to:",
+    "options": [
+      "Transmit water through interconnected voids",
+      "Resist particle crushing",
+      "Store heat",
+      "Develop cohesion under dry conditions"
+    ],
+    "correct_answer": "A",
+    "rationale": "Permeability describes the ease with which water flows through soil pores.",
+    "topic": "Soil mechanics",
+    "type": "theory"
+  },
+  {
+    "number": 127,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "For a fully saturated soil, the void ratio e and porosity n are related by:",
+    "options": [
+      "n=e/(1+e)",
+      "n=(1+e)/e",
+      "n=1−e",
+      "n=e²"
+    ],
+    "correct_answer": "A",
+    "rationale": "With solids volume Vs, void ratio e=Vv/Vs and porosity n=Vv/(Vs+Vv)=e/(1+e).",
+    "topic": "Soil phase relations",
+    "type": "theory"
+  },
+  {
+    "number": 128,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "A saturated soil has void ratio 0.6. Its porosity is:",
+    "options": [
+      "0.30",
+      "0.375",
+      "0.60",
+      "0.625"
+    ],
+    "correct_answer": "B",
+    "rationale": "n=e/(1+e)=0.6/1.6=0.375.",
+    "topic": "Soil mechanics",
+    "type": "numerical"
+  },
+  {
+    "number": 129,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The standard Proctor compaction test is used to determine the relationship between:",
+    "options": [
+      "Plasticity index and liquid limit",
+      "Permeability and hydraulic gradient only",
+      "Dry density and water content at a specified compactive effort",
+      "Shear strength and elapsed time only"
+    ],
+    "correct_answer": "C",
+    "rationale": "The compaction curve gives dry density versus water content for a specified compactive effort, including maximum dry density and optimum moisture content.",
+    "topic": "Soil compaction",
+    "type": "theory"
+  },
+  {
+    "number": 130,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "For a shallow foundation on cohesionless soil, increasing footing width can increase the bearing-capacity contribution associated with:",
+    "options": [
+      "The soil unit-weight term, which includes footing width",
+      "The cohesion term, even when cohesion is zero",
+      "Eliminating settlement checks",
+      "Removing groundwater effects"
+    ],
+    "correct_answer": "A",
+    "rationale": "In classical bearing-capacity formulations the unit-weight term is proportional to footing width; settlement and groundwater effects still require consideration.",
+    "topic": "Foundations",
+    "type": "theory"
+  },
+  {
+    "number": 131,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "For steady incompressible flow through a pipe of changing area, the continuity equation requires:",
+    "options": [
+      "Pressure to remain constant",
+      "A/V to remain constant",
+      "AV to remain constant along the pipe",
+      "Velocity to remain constant"
+    ],
+    "correct_answer": "C",
+    "rationale": "For steady incompressible one-dimensional flow, discharge Q=AV is conserved.",
+    "topic": "Fluid mechanics",
+    "type": "theory"
+  },
+  {
+    "number": 132,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "Water flows at 2 m/s through a pipe of area 0.03 m². Its discharge is:",
+    "options": [
+      "0.015 m³/s",
+      "0.6 m³/s",
+      "0.06 m³/s",
+      "1.5 m³/s"
+    ],
+    "correct_answer": "C",
+    "rationale": "Q=AV=2×0.03=0.06 m³/s.",
+    "topic": "Fluid mechanics",
+    "type": "numerical"
+  },
+  {
+    "number": 133,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In a venturimeter, the throat pressure is lower than the upstream pressure during forward flow primarily because:",
+    "options": [
+      "Elevation is always higher at the throat",
+      "The fluid becomes compressible",
+      "The throat area is larger",
+      "Velocity increases as the flow area contracts"
+    ],
+    "correct_answer": "D",
+    "rationale": "Continuity raises velocity in the smaller throat; Bernoulli's relation associates this with lower static pressure.",
+    "topic": "Hydraulics",
+    "type": "theory"
+  },
+  {
+    "number": 134,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The hydraulic gradient line (HGL) at a section of a pipe represents:",
+    "options": [
+      "Pressure head plus elevation head",
+      "Velocity head plus pressure head",
+      "Total energy head including velocity head",
+      "Friction head alone"
+    ],
+    "correct_answer": "A",
+    "rationale": "HGL is z+p/γ; the energy grade line additionally includes velocity head.",
+    "topic": "Hydraulics",
+    "type": "theory"
+  },
+  {
+    "number": 135,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "A pump delivers 0.04 m³/s against a head of 10 m. Taking water unit weight as 9.81 kN/m³, the hydraulic power is approximately:",
+    "options": [
+      "3.92 kW",
+      "0.39 kW",
+      "39.2 kW",
+      "392 kW"
+    ],
+    "correct_answer": "A",
+    "rationale": "P=γQH=9.81×0.04×10=3.924 kW.",
+    "topic": "Fluid machinery",
+    "type": "numerical"
+  },
+  {
+    "number": 136,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "For a hydraulic jump in a rectangular channel, the flow changes from:",
+    "options": [
+      "Uniform to zero discharge",
+      "Subcritical to supercritical",
+      "Laminar to inviscid",
+      "Supercritical to subcritical"
+    ],
+    "correct_answer": "D",
+    "rationale": "A hydraulic jump is an abrupt transition from supercritical to subcritical flow, with energy dissipation.",
+    "topic": "Open-channel flow",
+    "type": "theory"
+  },
+  {
+    "number": 137,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "For a small orifice discharging under a constant head, Torricelli's ideal velocity is:",
+    "options": [
+      "H/(2g)",
+      "gH²",
+      "2g/H",
+      "√(2gH)"
+    ],
+    "correct_answer": "D",
+    "rationale": "From Bernoulli's equation with negligible losses, exit velocity v=√(2gH).",
+    "topic": "Hydraulics",
+    "type": "theory"
+  },
+  {
+    "number": 138,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "An ideal jet issues under a head of 5 m. Taking g=10 m/s², its velocity is:",
+    "options": [
+      "5 m/s",
+      "10 m/s",
+      "15 m/s",
+      "20 m/s"
+    ],
+    "correct_answer": "B",
+    "rationale": "v=√(2gH)=√(2×10×5)=√100=10 m/s.",
+    "topic": "Hydraulics",
+    "type": "numerical"
+  },
+  {
+    "number": 139,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "The Reynolds number for pipe flow is the ratio of:",
+    "options": [
+      "Inertial forces to viscous forces",
+      "Pressure forces to gravity forces",
+      "Elastic forces to surface-tension forces",
+      "Gravity forces to mass forces"
+    ],
+    "correct_answer": "A",
+    "rationale": "Reynolds number characterizes the relative importance of inertial and viscous effects.",
+    "topic": "Fluid mechanics",
+    "type": "theory"
+  },
+  {
+    "number": 140,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Moderate",
+    "question_text": "In a rectangular channel, the most hydraulically efficient section for a given flow area has:",
+    "options": [
+      "Hydraulic radius equal to the depth",
+      "Top width equal to twice the depth",
+      "Hydraulic radius equal to half the flow depth",
+      "Wetted perimeter equal to zero"
+    ],
+    "correct_answer": "C",
+    "rationale": "For the best rectangular section, width is twice depth; area=2y² and wetted perimeter=4y, so R=A/P=y/2.",
+    "topic": "Open-channel flow",
+    "type": "theory"
+  },
+  {
+    "number": 141,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "Duty of irrigation water is the:",
+    "options": [
+      "Ratio of canal length to command area",
+      "Depth of water applied per irrigation",
+      "Area irrigated per unit discharge flowing continuously during the base period",
+      "Volume of runoff per unit rainfall"
+    ],
+    "correct_answer": "C",
+    "rationale": "Duty relates the area served to a unit discharge supplied over the crop's base period.",
+    "topic": "Irrigation",
+    "type": "theory"
+  },
+  {
+    "number": 142,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A discharge of 1 m³/s supplies 1,000 ha continuously for a 100-day base period. The equivalent depth of water is:",
+    "options": [
+      "0.0864 m",
+      "8.64 m",
+      "0.864 m",
+      "86.4 m"
+    ],
+    "correct_answer": "C",
+    "rationale": "Volume=1×100×86,400=8,640,000 m³; area=10,000,000 m²; depth=0.864 m.",
+    "topic": "Irrigation",
+    "type": "numerical"
+  },
+  {
+    "number": 143,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The base period of a crop is the time between:",
+    "options": [
+      "Sowing and germination only",
+      "First and last watering of the crop",
+      "Harvest and threshing",
+      "Two successive monsoons"
+    ],
+    "correct_answer": "B",
+    "rationale": "Base period is the interval between the first watering and the last watering before harvest.",
+    "topic": "Irrigation",
+    "type": "theory"
+  },
+  {
+    "number": 144,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The relation among duty D (ha per cumec), base period B (days) and delta Δ (m) is:",
+    "options": [
+      "Δ=BD/8.64",
+      "Δ=8.64B/D",
+      "Δ=8.64D/B",
+      "Δ=B/(8.64D)"
+    ],
+    "correct_answer": "B",
+    "rationale": "One cumec flowing for B days supplies 86,400B m³ over D hectares (10,000D m²), giving Δ=8.64B/D.",
+    "topic": "Irrigation",
+    "type": "theory"
+  },
+  {
+    "number": 145,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A crop has a 120-day base period and duty 1,200 ha/cumec. Its delta is:",
+    "options": [
+      "0.0864 m",
+      "10.0 m",
+      "8.64 m",
+      "0.864 m"
+    ],
+    "correct_answer": "D",
+    "rationale": "Δ=8.64×120/1,200=0.864 m.",
+    "topic": "Irrigation",
+    "type": "numerical"
+  },
+  {
+    "number": 146,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A canal falls when its bed slope is:",
+    "options": [
+      "Independent of flow direction",
+      "Upstream in the direction of flow",
+      "Exactly horizontal",
+      "Downstream in the direction of flow"
+    ],
+    "correct_answer": "D",
+    "rationale": "A canal ordinarily conveys water by gravity, so its bed and water surface fall downstream.",
+    "topic": "Canal engineering",
+    "type": "theory"
+  },
+  {
+    "number": 147,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A weir across a river is commonly provided to:",
+    "options": [
+      "Raise the upstream water level and regulate/divert flow",
+      "Remove all sediment from the basin",
+      "Measure rainfall directly",
+      "Prevent evaporation"
+    ],
+    "correct_answer": "A",
+    "rationale": "A weir raises the upstream level and can help regulate or divert water; it does not remove all sediment.",
+    "topic": "Hydraulic structures",
+    "type": "theory"
+  },
+  {
+    "number": 148,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The principal purpose of a canal escape is to:",
+    "options": [
+      "Measure crop evapotranspiration",
+      "Admit sediment into the canal",
+      "Increase crop duty",
+      "Dispose of surplus canal water safely"
+    ],
+    "correct_answer": "D",
+    "rationale": "An escape releases excess canal water to a natural drain or other safe outlet.",
+    "topic": "Canal engineering",
+    "type": "theory"
+  },
+  {
+    "number": 149,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A cross regulator in a canal is used mainly to:",
+    "options": [
+      "Measure sediment concentration",
+      "Carry a road over a canal",
+      "Drain water beneath a canal bank",
+      "Raise and control the upstream water level in the canal"
+    ],
+    "correct_answer": "D",
+    "rationale": "A cross regulator controls canal water level and discharge by regulating flow across the canal.",
+    "topic": "Canal engineering",
+    "type": "theory"
+  },
+  {
+    "number": 150,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A canal has a discharge of 4 m³/s. If 25% of that discharge is lost by seepage and leakage, the delivered discharge is:",
+    "options": [
+      "1 m³/s",
+      "2 m³/s",
+      "5 m³/s",
+      "3 m³/s"
+    ],
+    "correct_answer": "D",
+    "rationale": "Delivered flow=4×(1−0.25)=3 m³/s.",
+    "topic": "Irrigation",
+    "type": "numerical"
+  },
+  {
+    "number": 151,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The principal purpose of providing superelevation on a horizontal road curve is to:",
+    "options": [
+      "Counteract the outward centrifugal effect on a moving vehicle",
+      "Increase stopping distance",
+      "Remove pavement camber on straight sections",
+      "Reduce the wheelbase"
+    ],
+    "correct_answer": "A",
+    "rationale": "Superelevation banks the pavement to help balance the lateral effect of vehicle motion on a curve.",
+    "topic": "Transportation engineering",
+    "type": "theory"
+  },
+  {
+    "number": 152,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "On a level road, estimate stopping sight distance for speed 54 km/h, reaction time 2 s and coefficient of longitudinal friction 0.35. Use g=9.81 m/s².",
+    "options": [
+      "50 m",
+      "60 m",
+      "75 m",
+      "63 m"
+    ],
+    "correct_answer": "D",
+    "rationale": "Speed=15 m/s. SSD=vt+v²/(2gf)=30+225/(2×9.81×0.35)=62.8 m, about 63 m.",
+    "topic": "Highway engineering",
+    "type": "numerical"
+  },
+  {
+    "number": 153,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The camber provided on a road surface is primarily intended to:",
+    "options": [
+      "Reduce the road width",
+      "Increase pavement thickness at the centre",
+      "Provide superelevation on every straight",
+      "Drain surface water toward the edges"
+    ],
+    "correct_answer": "D",
+    "rationale": "Camber gives the pavement a cross slope so rainwater drains toward the shoulders or gutters.",
+    "topic": "Highway engineering",
+    "type": "theory"
+  },
+  {
+    "number": 154,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A road's stopping sight distance on a level gradient consists of:",
+    "options": [
+      "Overtaking distance and headway",
+      "Reaction distance and braking distance",
+      "Wheelbase and skid distance",
+      "Gradient distance only"
+    ],
+    "correct_answer": "B",
+    "rationale": "SSD is the distance travelled during perception-reaction time plus the braking distance.",
+    "topic": "Highway engineering",
+    "type": "theory"
+  },
+  {
+    "number": 155,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A vehicle moves at 72 km/h for 2.5 seconds during the perception-reaction interval. The reaction distance is:",
+    "options": [
+      "25 m",
+      "40 m",
+      "72 m",
+      "50 m"
+    ],
+    "correct_answer": "D",
+    "rationale": "72 km/h=20 m/s; reaction distance=20×2.5=50 m.",
+    "topic": "Highway engineering",
+    "type": "numerical"
+  },
+  {
+    "number": 156,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "In flexible pavement, the wheel load is transferred to lower layers mainly through:",
+    "options": [
+      "Grain-to-grain contact and load distribution through the layered system",
+      "Slab action of a rigid concrete plate only",
+      "Suspension from reinforcement bars",
+      "Hydrostatic pressure alone"
+    ],
+    "correct_answer": "A",
+    "rationale": "Flexible pavements distribute load through layers and aggregate contact, with stresses reducing with depth.",
+    "topic": "Pavement engineering",
+    "type": "theory"
+  },
+  {
+    "number": 157,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The California Bearing Ratio (CBR) test is primarily used to assess:",
+    "options": [
+      "Cement soundness",
+      "Subgrade strength for pavement design",
+      "Bitumen flash point",
+      "Aggregate impact resistance"
+    ],
+    "correct_answer": "B",
+    "rationale": "CBR is an empirical index of soil strength used in flexible pavement subgrade and pavement design.",
+    "topic": "Pavement engineering",
+    "type": "theory"
+  },
+  {
+    "number": 158,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The Los Angeles abrasion test on aggregate indicates its:",
+    "options": [
+      "Cement content",
+      "Water absorption only",
+      "Flakiness only",
+      "Resistance to abrasion and impact degradation"
+    ],
+    "correct_answer": "D",
+    "rationale": "The test measures aggregate degradation caused by a specified combination of abrasion and impact.",
+    "topic": "Highway materials",
+    "type": "theory"
+  },
+  {
+    "number": 159,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "On a highway curve, the centrifugal ratio is defined as:",
+    "options": [
+      "Centrifugal force divided by vehicle weight",
+      "Vehicle weight divided by centrifugal force",
+      "Friction divided by superelevation",
+      "Radius divided by speed"
+    ],
+    "correct_answer": "A",
+    "rationale": "The centrifugal ratio is the lateral centrifugal force divided by the vehicle's weight.",
+    "topic": "Highway engineering",
+    "type": "theory"
+  },
+  {
+    "number": 160,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A vehicle negotiates a curve of radius 100 m at 20 m/s. The centrifugal acceleration is:",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "5 m/s²",
+      "10 m/s²"
+    ],
+    "correct_answer": "B",
+    "rationale": "a=v²/R=20²/100=4 m/s².",
+    "topic": "Highway engineering",
+    "type": "numerical"
+  },
+  {
+    "number": 161,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "In conventional activated-sludge treatment, return activated sludge is sent from the secondary clarifier to the aeration tank mainly to:",
+    "options": [
+      "Maintain an adequate concentration of biological solids",
+      "Increase grit in the influent",
+      "Replace primary sedimentation",
+      "Disinfect the final effluent"
+    ],
+    "correct_answer": "A",
+    "rationale": "Return sludge recycles settled microorganisms to sustain the biomass concentration in the aeration tank.",
+    "topic": "Environmental engineering",
+    "type": "theory"
+  },
+  {
+    "number": 162,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A wastewater sample has BOD₅ of 150 mg/L and COD of 300 mg/L. Its BOD₅/COD ratio is:",
+    "options": [
+      "0.25",
+      "2.0",
+      "0.50",
+      "450"
+    ],
+    "correct_answer": "C",
+    "rationale": "150/300=0.50; both quantities use the same concentration units.",
+    "topic": "Environmental engineering",
+    "type": "numerical"
+  },
+  {
+    "number": 163,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The principal purpose of primary sedimentation in sewage treatment is to remove:",
+    "options": [
+      "Settleable suspended solids",
+      "Dissolved salts",
+      "All pathogens",
+      "Dissolved oxygen"
+    ],
+    "correct_answer": "A",
+    "rationale": "Primary clarifiers settle a portion of suspended and settleable solids before biological treatment.",
+    "topic": "Environmental engineering",
+    "type": "theory"
+  },
+  {
+    "number": 164,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "Nitrification in wastewater treatment is the biological oxidation of:",
+    "options": [
+      "Nitrate to nitrogen gas",
+      "Ammonium to nitrite and nitrate",
+      "Organic carbon to methane only",
+      "Sulphate to sulphide"
+    ],
+    "correct_answer": "B",
+    "rationale": "Nitrifying microorganisms oxidize ammonia/ammonium first to nitrite and then nitrate, generally under aerobic conditions.",
+    "topic": "Environmental engineering",
+    "type": "theory"
+  },
+  {
+    "number": 165,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A treatment plant receives 20,000 m³/day. If the average suspended-solids concentration is 250 mg/L, the incoming solids load is:",
+    "options": [
+      "0.5 kg/day",
+      "500,000 kg/day",
+      "50,000 kg/day",
+      "5,000 kg/day"
+    ],
+    "correct_answer": "D",
+    "rationale": "20,000 m³/day×1,000 L/m³×250 mg/L=5×10⁹ mg/day=5,000 kg/day.",
+    "topic": "Environmental engineering",
+    "type": "numerical"
+  },
+  {
+    "number": 166,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A slow sand filter removes contaminants principally through:",
+    "options": [
+      "Straining and biological activity in the filter bed, including its surface layer",
+      "Chemical coagulation by alum stored in the sand",
+      "Reverse osmosis through a membrane",
+      "Boiling water in the bed"
+    ],
+    "correct_answer": "A",
+    "rationale": "Slow sand filtration combines physical removal and biological action, particularly in the biologically active surface zone.",
+    "topic": "Water treatment",
+    "type": "theory"
+  },
+  {
+    "number": 167,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "Chlorine demand is the difference between:",
+    "options": [
+      "Influent turbidity and effluent turbidity",
+      "Chlorine dose applied and residual chlorine after the specified contact period",
+      "BOD and COD",
+      "Water hardness and alkalinity"
+    ],
+    "correct_answer": "B",
+    "rationale": "Demand equals the applied chlorine dose minus the residual measured after a defined contact time.",
+    "topic": "Water treatment",
+    "type": "theory"
+  },
+  {
+    "number": 168,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A water sample contains 2 mg/L of chlorine before contact. After the specified contact period, residual chlorine is 0.4 mg/L. The chlorine demand is:",
+    "options": [
+      "0.4 mg/L",
+      "1.0 mg/L",
+      "1.6 mg/L",
+      "2.4 mg/L"
+    ],
+    "correct_answer": "C",
+    "rationale": "Demand=2.0−0.4=1.6 mg/L.",
+    "topic": "Water treatment",
+    "type": "numerical"
+  },
+  {
+    "number": 169,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The principal purpose of a grit chamber in a sewage-treatment plant is to remove:",
+    "options": [
+      "Dissolved organic matter",
+      "Heavy inorganic particles such as sand and grit",
+      "Bacteria by chlorination",
+      "All floating oils"
+    ],
+    "correct_answer": "B",
+    "rationale": "Grit chambers settle dense inorganic particles while keeping lighter organic solids largely in suspension.",
+    "topic": "Environmental engineering",
+    "type": "theory"
+  },
+  {
+    "number": 170,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A sanitary landfill should include a low-permeability liner primarily to:",
+    "options": [
+      "Promote uncontrolled gas escape",
+      "Increase rainfall infiltration",
+      "Limit leachate migration into surrounding soil and groundwater",
+      "Eliminate the need for waste cover"
+    ],
+    "correct_answer": "C",
+    "rationale": "The liner acts as a barrier to reduce migration of leachate from the waste cell.",
+    "topic": "Environmental engineering",
+    "type": "theory"
+  },
+  {
+    "number": 171,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "For a simply supported beam with a central point load P and span L, the maximum bending moment is:",
+    "options": [
+      "PL/2",
+      "PL/4",
+      "PL/8",
+      "P/L"
+    ],
+    "correct_answer": "B",
+    "rationale": "Each support reaction is P/2; the midspan moment is (P/2)(L/2)=PL/4.",
+    "topic": "Structural analysis",
+    "type": "theory"
+  },
+  {
+    "number": 172,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A simply supported beam of span 6 m carries a central point load of 12 kN. Its maximum bending moment is:",
+    "options": [
+      "12 kN·m",
+      "36 kN·m",
+      "24 kN·m",
+      "18 kN·m"
+    ],
+    "correct_answer": "D",
+    "rationale": "Mmax=PL/4=12×6/4=18 kN·m.",
+    "topic": "Structural analysis",
+    "type": "numerical"
+  },
+  {
+    "number": 173,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "For a beam, the rate of change of bending moment with respect to the beam axis equals the:",
+    "options": [
+      "Deflection",
+      "Load intensity",
+      "Slope",
+      "Shear force"
+    ],
+    "correct_answer": "D",
+    "rationale": "Using the usual sign convention, dM/dx=V, where V is shear force.",
+    "topic": "Strength of materials",
+    "type": "theory"
+  },
+  {
+    "number": 174,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The bending stress at a distance y from the neutral axis in an elastic beam is given by:",
+    "options": [
+      "σ=My/I",
+      "σ=MI/y",
+      "σ=Iy/M",
+      "σ=M/(Iy)"
+    ],
+    "correct_answer": "A",
+    "rationale": "The flexure formula is σ/y=M/I, giving σ=My/I.",
+    "topic": "Strength of materials",
+    "type": "theory"
+  },
+  {
+    "number": 175,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "For a rectangular beam section of breadth b and depth d, the elastic section modulus about its centroidal horizontal axis is:",
+    "options": [
+      "b³d/12",
+      "b²d/6",
+      "bd³/12",
+      "bd²/6"
+    ],
+    "correct_answer": "D",
+    "rationale": "The second moment of area is bd³/12 and the extreme-fibre distance is d/2; Z=I/(d/2)=bd²/6.",
+    "topic": "Strength of materials",
+    "type": "theory"
+  },
+  {
+    "number": 176,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "For a homogeneous, prismatic beam in simple bending, the neutral axis passes through the:",
+    "options": [
+      "Top fibre",
+      "Shear centre in every section",
+      "Centroid of the cross-section",
+      "Support reaction point"
+    ],
+    "correct_answer": "C",
+    "rationale": "For a homogeneous section under elastic simple bending, the neutral axis passes through the centroid.",
+    "topic": "Strength of materials",
+    "type": "theory"
+  },
+  {
+    "number": 177,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The Euler critical load of an ideal pin-ended column varies with effective length L as:",
+    "options": [
+      "Directly proportional to L",
+      "Inversely proportional to L²",
+      "Inversely proportional to L",
+      "Directly proportional to L²"
+    ],
+    "correct_answer": "B",
+    "rationale": "Pcr=π²EI/L² for a pin-ended ideal column.",
+    "topic": "Structural stability",
+    "type": "theory"
+  },
+  {
+    "number": 178,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A 2 m long pin-ended column has E=200 GPa and second moment of area I=1×10⁻⁶ m⁴. Its Euler load is approximately:",
+    "options": [
+      "49.3 kN",
+      "197.4 kN",
+      "987 kN",
+      "493.5 kN"
+    ],
+    "correct_answer": "D",
+    "rationale": "Pcr=π²EI/L²=π²×200×10⁹×10⁻⁶/2²≈493,480 N=493.5 kN.",
+    "topic": "Structural stability",
+    "type": "numerical"
+  },
+  {
+    "number": 179,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "In a pin-jointed ideal truss, a two-force member carries:",
+    "options": [
+      "Axial force only",
+      "Bending moment only",
+      "Torsion only",
+      "Uniform transverse shear only"
+    ],
+    "correct_answer": "A",
+    "rationale": "An ideal truss member is connected at its ends and carries only axial tension or compression.",
+    "topic": "Structural analysis",
+    "type": "theory"
+  },
+  {
+    "number": 180,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The area under a stress-strain curve up to the elastic limit represents the material's:",
+    "options": [
+      "Toughness to fracture",
+      "Modulus of resilience per unit volume",
+      "Creep coefficient",
+      "Poisson ratio"
+    ],
+    "correct_answer": "B",
+    "rationale": "The elastic strain energy stored per unit volume up to the elastic limit is the modulus of resilience.",
+    "topic": "Strength of materials",
+    "type": "theory"
+  },
+  {
+    "number": 181,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "In limit state design, characteristic strength is conventionally defined by a value below which what fraction of test results is expected to fall?",
+    "options": [
+      "5%",
+      "1%",
+      "10%",
+      "25%"
+    ],
+    "correct_answer": "A",
+    "rationale": "The conventional characteristic-strength definition uses a 5% lower-tail probability.",
+    "topic": "RCC design concepts",
+    "type": "theory"
+  },
+  {
+    "number": 182,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The primary role of stirrups in a reinforced-concrete beam is to resist:",
+    "options": [
+      "Shear and help control diagonal cracking",
+      "Longitudinal flexural tension alone",
+      "Concrete creep only",
+      "Bearing pressure under every column"
+    ],
+    "correct_answer": "A",
+    "rationale": "Transverse reinforcement such as stirrups resists shear and helps control diagonal tension cracking.",
+    "topic": "RCC",
+    "type": "theory"
+  },
+  {
+    "number": 183,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "In a singly reinforced rectangular beam under sagging moment, the main tension reinforcement is placed near the:",
+    "options": [
+      "Section centroid irrespective of bending",
+      "Neutral axis",
+      "Top compression face only",
+      "Bottom (tension) face"
+    ],
+    "correct_answer": "D",
+    "rationale": "Sagging bending places the bottom fibres in tension; the principal tension steel is placed near that face with required cover.",
+    "topic": "RCC",
+    "type": "theory"
+  },
+  {
+    "number": 184,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A singly reinforced concrete beam has 1,000 mm² of tensile steel with design stress 250 N/mm². The tensile force in the steel is:",
+    "options": [
+      "25 kN",
+      "100 kN",
+      "2,500 kN",
+      "250 kN"
+    ],
+    "correct_answer": "D",
+    "rationale": "T=Ast fs=1,000×250=250,000 N=250 kN.",
+    "topic": "RCC",
+    "type": "numerical"
+  },
+  {
+    "number": 185,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The development length of a reinforcing bar is provided to:",
+    "options": [
+      "Transfer bar force to surrounding concrete through bond",
+      "Eliminate the need for anchorage",
+      "Reduce nominal cover to zero",
+      "Increase the concrete water-cement ratio"
+    ],
+    "correct_answer": "A",
+    "rationale": "Adequate development length enables the required bar force to be transferred through bond stresses.",
+    "topic": "RCC",
+    "type": "theory"
+  },
+  {
+    "number": 186,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "For a simply supported one-way slab, the main reinforcement generally runs along the:",
+    "options": [
+      "Shorter span",
+      "Longer span",
+      "Perimeter only",
+      "Diagonal"
+    ],
+    "correct_answer": "A",
+    "rationale": "A one-way slab spans and bends predominantly in the shorter direction, so main reinforcement is aligned with that span.",
+    "topic": "RCC",
+    "type": "theory"
+  },
+  {
+    "number": 187,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A slab panel is 3 m by 7 m and is supported on all four sides. The longer-to-shorter span ratio is:",
+    "options": [
+      "1.5",
+      "2.33",
+      "2.0",
+      "3.0"
+    ],
+    "correct_answer": "B",
+    "rationale": "7/3≈2.33.",
+    "topic": "RCC",
+    "type": "numerical"
+  },
+  {
+    "number": 188,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "In a doubly reinforced concrete beam, compression reinforcement is placed mainly to:",
+    "options": [
+      "Prevent cement hydration",
+      "Replace all tensile reinforcement",
+      "Eliminate shear reinforcement",
+      "Increase moment capacity when depth is constrained and assist ductility/service behaviour"
+    ],
+    "correct_answer": "D",
+    "rationale": "Compression steel can supplement the concrete compression block when beam depth is limited and can improve deformation characteristics.",
+    "topic": "RCC",
+    "type": "theory"
+  },
+  {
+    "number": 189,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "Nominal cover to reinforcement is provided principally for:",
+    "options": [
+      "Durability, fire protection and bond protection",
+      "Increasing the applied live load",
+      "Replacing stirrups",
+      "Reducing bar development length to zero"
+    ],
+    "correct_answer": "A",
+    "rationale": "Concrete cover protects reinforcement against environmental exposure and fire and helps ensure bond and placement.",
+    "topic": "RCC",
+    "type": "theory"
+  },
+  {
+    "number": 190,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A short axially loaded concrete column has gross area 300,000 mm² and average compressive stress 10 N/mm². The corresponding axial load is:",
+    "options": [
+      "300 kN",
+      "1,000 kN",
+      "3,000 kN",
+      "30,000 kN"
+    ],
+    "correct_answer": "C",
+    "rationale": "P=σA=10×300,000=3,000,000 N=3,000 kN.",
+    "topic": "RCC",
+    "type": "numerical"
+  },
+  {
+    "number": 191,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "For a bolted steel tension member, the net area at a section through bolt holes is obtained by:",
+    "options": [
+      "Adding the bolt-hole area to gross area",
+      "Subtracting the hole deductions from the gross section area",
+      "Ignoring all holes",
+      "Subtracting the member length"
+    ],
+    "correct_answer": "B",
+    "rationale": "Bolt holes reduce the effective net area available to carry tension.",
+    "topic": "Steel design",
+    "type": "theory"
+  },
+  {
+    "number": 192,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A steel plate 100 mm wide and 10 mm thick has one 20 mm bolt hole across the critical section. Its net area is:",
+    "options": [
+      "600 mm²",
+      "1,200 mm²",
+      "1,000 mm²",
+      "800 mm²"
+    ],
+    "correct_answer": "D",
+    "rationale": "Net width=100−20=80 mm; net area=80×10=800 mm².",
+    "topic": "Steel design",
+    "type": "numerical"
+  },
+  {
+    "number": 193,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "In a fillet weld, the theoretical throat thickness for an equal-leg 90° weld of leg size s is approximately:",
+    "options": [
+      "0.5s",
+      "0.707s",
+      "s",
+      "1.414s"
+    ],
+    "correct_answer": "B",
+    "rationale": "The shortest distance from root to face for an equal-leg 90° fillet is s sin 45°≈0.707s.",
+    "topic": "Steel design",
+    "type": "theory"
+  },
+  {
+    "number": 194,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A laterally unsupported steel beam may fail by:",
+    "options": [
+      "Only crushing of its supports",
+      "Lateral-torsional buckling",
+      "Hydration shrinkage",
+      "Piping through its web"
+    ],
+    "correct_answer": "B",
+    "rationale": "A slender beam without sufficient lateral restraint can buckle laterally while twisting under bending.",
+    "topic": "Steel design",
+    "type": "theory"
+  },
+  {
+    "number": 195,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "In a simply supported steel beam, lateral restraint to the compression flange is especially effective in improving resistance to:",
+    "options": [
+      "Lateral-torsional buckling",
+      "Local bearing at the support only",
+      "Tensile yielding of the bottom flange only",
+      "Corrosion"
+    ],
+    "correct_answer": "A",
+    "rationale": "Bracing the compression flange restrains lateral movement and twist, increasing lateral-torsional buckling resistance.",
+    "topic": "Steel design",
+    "type": "theory"
+  },
+  {
+    "number": 196,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "The slenderness ratio of a compression member is the ratio of:",
+    "options": [
+      "Effective length to least radius of gyration",
+      "Gross area to net area",
+      "Yield stress to elastic modulus",
+      "Radius of gyration to effective length"
+    ],
+    "correct_answer": "A",
+    "rationale": "Slenderness ratio λ=Le/r, using the relevant effective length and radius of gyration.",
+    "topic": "Steel design",
+    "type": "theory"
+  },
+  {
+    "number": 197,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A compression member has effective length 3 m and least radius of gyration 30 mm. Its slenderness ratio is:",
+    "options": [
+      "10",
+      "100",
+      "30",
+      "300"
+    ],
+    "correct_answer": "B",
+    "rationale": "Convert 3 m to 3,000 mm; λ=3,000/30=100.",
+    "topic": "Steel design",
+    "type": "numerical"
+  },
+  {
+    "number": 198,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A gusset plate in a truss connection is used primarily to:",
+    "options": [
+      "Connect members and transfer forces at a joint",
+      "Increase the member's elastic modulus",
+      "Act as a hinge with zero force transfer",
+      "Provide corrosion allowance"
+    ],
+    "correct_answer": "A",
+    "rationale": "A gusset plate connects intersecting truss members and transfers their joint forces through the connection.",
+    "topic": "Steel construction",
+    "type": "theory"
+  },
+  {
+    "number": 199,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "In a steel tension member, block shear is a failure mode involving:",
+    "options": [
+      "Concrete crushing under a base plate",
+      "Only elastic buckling about the major axis",
+      "A block of material tearing along combined shear and tension planes",
+      "Fatigue of the paint film"
+    ],
+    "correct_answer": "C",
+    "rationale": "Block shear combines shear failure along one or more planes with tension failure across another plane near a connection.",
+    "topic": "Steel design",
+    "type": "theory"
+  },
+  {
+    "number": 200,
+    "section": "General Engineering (Civil and Structural)",
+    "difficulty": "Hard",
+    "question_text": "A steel member is connected by bolts. The design should check the connected parts and fasteners for:",
+    "options": [
+      "Only member self-weight",
+      "Only colour uniformity",
+      "Relevant yielding, rupture, bearing and shear limit states",
+      "Only thermal conductivity"
+    ],
+    "correct_answer": "C",
+    "rationale": "Safe connection design checks the applicable failure modes of both bolts and connected material, including shear, bearing and tension-related failures.",
+    "topic": "Steel design",
+    "type": "theory"
+  }
+]

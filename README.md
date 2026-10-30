@@ -28,6 +28,12 @@ Without Supabase credentials, authentication is unavailable and the app stays on
 
 Never put a Supabase service-role/secret key in a Vite `VITE_` variable.
 
+### SSC JE Civil DI-70 Paper-I practice mock
+
+Run `supabase/junior_engineer_civil_paper_i_di70_mock_seed.sql` after the student learning schema and `supabase/mock_simulation_functions.sql`. It publishes one original, unofficial 200-question Civil-branch practice mock with a 50/50/100 section blueprint, 120-minute practice duration, +1/−0.25/0 practice scoring, 80 Moderate and 120 Hard items, and 75 theory/concept/application plus 25 short numerical Civil questions. The cycle-specific SSC pattern could not be verified while authoring; these proportions and settings are mock configuration, not a claim about current official rules. The seed checks existing questions and will not overwrite conflicting question content.
+
+The full answer key and worked explanations are in `supabase/data/ssc_je_civil_di70_review.md`; the keyed question source is `supabase/data/ssc_je_civil_di70_questions.json`. Both are answer-bearing authoring/review files and should not be copied into browser assets. Regenerate deliverables with `python scripts/build_ssc_je_civil_di70_seed.py` after editing its authored question banks. See the review file for the editorial blueprint, validation summary, and source limitations. The supplied 2024 PDF was used only as a style reference; no question text or explanations were copied or paraphrased.
+
 Notifications include a checked snapshot of recent FreeJobAlert exam notices with future exam or selection dates. This is not a live feed or a complete site-wide import; use the source links and verify dates with the conducting authority.
 
 ## Scope / known gaps
