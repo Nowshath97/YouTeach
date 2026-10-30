@@ -1,8 +1,10 @@
-﻿import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, ExternalLink, FileQuestion, GraduationCap, Search } from 'lucide-react';
 import { examCatalog, examFamilies } from './mockExamCatalog.mjs';
 import { revealMobileResults } from './catalogNavigation.mjs';
-import UpscPyqs, { upscQuestionCount } from './UpscPyqs';
+import UpscPyqs from './UpscPyqs';
+import TgpscAeePyqs from './TgpscAeePyqs';
+import GatePyqs from './GatePyqs';
 
 export const previousYearPapers = [
   { code: 'ME', branch: 'Mechanical Engineering', title: 'GATE 2025 Mechanical Engineering', pages: 41 },
@@ -27,7 +29,7 @@ export default function PreviousYearPapers({ preferredBranch }) {
   const search = query.trim().toLowerCase();
   const visible = examPapers.filter(paper => (branch === 'All branches' || paper.branch === branch)
     && (!search || `${paper.title} ${paper.branch}`.toLowerCase().includes(search)));
-  const cards = examCatalog.map(item => ({ ...item, papers: item.id === 'upsc' ? [{ title: 'Ancient History Buddhism Vedic Period Gupta Period', branch: 'Ancient History' }] : previousYearPapers.filter(paper => paper.examId === item.id) }))
+  const cards = examCatalog.map(item => ({ ...item, papers: item.id === 'upsc' ? [{ title: 'Ancient History Buddhism Vedic Period', branch: 'Ancient History' }] : item.id === 'aee' ? [{ title: 'TGPSC AEE PYQs', branch: 'Questions' }] : previousYearPapers.filter(paper => paper.examId === item.id) }))
     .filter(item => (family === 'All Exams' || item.family === family)
       && (!search || `${item.name} ${item.family}`.toLowerCase().includes(search)
         || item.papers.some(paper => `${paper.title} ${paper.branch}`.toLowerCase().includes(search))));
@@ -42,18 +44,21 @@ export default function PreviousYearPapers({ preferredBranch }) {
       <h2>{activeExam ? `${activeExam.name} PYQs` : 'PYQs'}</h2>
       <p>Explore previous year question papers and official answer keys by exam.</p>
     </div></div>
-    {exam === 'upsc' ? <UpscPyqs /> : selected ? <div ref={readerRef} tabIndex={-1} className="previous-paper-reader catalog-results">
+    {exam === 'upsc' ? <UpscPyqs /> : exam === 'aee' ? <TgpscAeePyqs /> : selected ? <div ref={readerRef} tabIndex={-1} className="previous-paper-reader catalog-results">
       <div className="previous-paper-reader-toolbar"><button className="btn" onClick={() => setSelected(null)}><ArrowLeft size={14} /> All papers</button><h3>{selected.title}</h3><a className="btn" href={selected.url} target="_blank" rel="noreferrer">Open PDF <ExternalLink size={13} /></a><a className="btn" href={selected.keyUrl} target="_blank" rel="noreferrer">Answer key <ExternalLink size={13} /></a></div>
-      <iframe src={`${selected.url}#view=FitH`} title={selected.title} />
-      <p className="small p-3">If the PDF does not display in your browser, select Open PDF. Source: IIT Roorkee, GATE 2025.</p>
+      <GatePyqs paper={selected} year={2025} fallback={<>
+        <iframe src={`${selected.url}#view=FitH`} title={selected.title} />
+        <p className="small p-3">If the PDF does not display in your browser, select Open PDF. Source: IIT Roorkee, GATE 2025.</p>
+      </>} />
+      <p className="small p-3">Source: IIT Roorkee, GATE 2025.</p>
     </div> : <>
       <label className="explorer-search"><Search size={18} /><input value={query} onChange={event => setQuery(event.target.value)} placeholder={activeExam ? 'Search papers in this exam' : 'Search exams or previous year papers'} aria-label="Search PYQs" /></label>
       {!activeExam ? <>
         <div className="explorer-filters" role="group" aria-label="Exam categories">{examFamilies.map(item => <button key={item} aria-pressed={family === item} className={family === item ? 'active' : ''} onClick={() => setFamily(item)}>{item}</button>)}</div>
         <div className="exam-explorer-grid">{cards.map(item => <button key={item.id} disabled={!item.papers.length} className={`exam-explorer-card exam-tone-${item.tone}`} onClick={() => openExam(item)}>
           <span className="exam-card-top"><span className="exam-card-icon">{item.family === 'Engineering' ? <GraduationCap size={26} /> : <FileQuestion size={25} />}</span><span><strong>{item.name}</strong><span className="exam-family-tag">{item.family}</span></span></span>
-          <span className="exam-card-count">{item.id === 'upsc' ? `${upscQuestionCount} questions` : item.papers.length ? `${item.papers.length} ${item.papers.length === 1 ? 'paper' : 'papers'}` : 'Coming soon'}</span>
-          <span className="exam-card-bottom"><span>{item.id === 'upsc' ? 'Browse questions by topic and year' : item.papers.length ? 'Original papers and official answer keys' : 'Papers will be added for this exam.'}</span><span className="exam-card-arrow"><ArrowRight size={17} /></span></span>
+          <span className="exam-card-count">{item.id === 'upsc' ? '39 questions' : item.id === 'aee' ? 'Question bank' : item.papers.length ? `${item.papers.length} ${item.papers.length === 1 ? 'paper' : 'papers'}` : 'Coming soon'}</span>
+          <span className="exam-card-bottom"><span>{item.id === 'upsc' ? 'Browse questions by topic and year' : item.id === 'aee' ? 'Practice previous year questions' : item.papers.length ? 'Original papers and official answer keys' : 'Papers will be added for this exam.'}</span><span className="exam-card-arrow"><ArrowRight size={17} /></span></span>
         </button>)}</div>
         {!cards.length && <p className="explorer-empty">No exams match your search.</p>}
       </> : <>
